@@ -1,0 +1,176 @@
+/* Google Fonts - Devanagari Support (must be first) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@300;400;500;600;700&family=Noto+Serif+Devanagari:wght@400;500;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
+
+@import "tailwindcss";
+
+/* ================================================
+   TRUPTI DESIGN SYSTEM — Tailwind v4 Theme
+   Senior-First, Hindi-First, Saffron Palette
+   ================================================ */
+
+:root {
+  --font-scale: 1;
+}
+
+@theme inline {
+  /* Colors - Cream backgrounds */
+  --color-cream-50: #FFFDF8;
+  --color-cream-100: #F9F6F0;
+  --color-cream-200: #F0EBE0;
+  --color-cream-300: #E5DED0;
+
+  /* Colors - Saffron accent */
+  --color-saffron-50: #FFF3E0;
+  --color-saffron-100: #FFE0B2;
+  --color-saffron-200: #FFCC80;
+  --color-saffron-300: #FFB74D;
+  --color-saffron-400: #FFA726;
+  --color-saffron-500: #FF9800;
+  --color-saffron-600: #C25E00;
+  --color-saffron-700: #A73A00;
+  --color-saffron-800: #8B2500;
+  --color-saffron-900: #6D1B00;
+
+  /* Colors - Temple Brass */
+  --color-brass: #8D6E63;
+  --color-brass-light: #A1887F;
+  --color-brass-dark: #6D4C41;
+
+  /* Colors - Sacred */
+  --color-sacred-vermillion: #E53935;
+  --color-sacred-green: #2E7D32;
+  --color-sacred-gold: #C49B30;
+
+  /* Colors - Text */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #4A4A4A;
+  --color-text-muted: #757575;
+
+  /* Fonts */
+  --font-hindi: 'Noto Sans Devanagari', sans-serif;
+  --font-sanskrit: 'Noto Serif Devanagari', serif;
+  --font-heading: 'Tiro Devanagari Hindi', serif;
+  --font-body: 'Inter', 'Noto Sans', sans-serif;
+
+  /* Senior-friendly spacing */
+  --spacing-touch: 3.5rem;
+  --spacing-touch-lg: 4rem;
+
+  /* Card radius */
+  --radius-card: 0.75rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--color-cream-50);
+  color: var(--color-text-primary);
+  font-family: var(--font-hindi);
+  font-size: calc(1rem * var(--font-scale));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure Devanagari ligatures render correctly */
+* {
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+/* Large scrollbar for elderly users */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--color-cream-200);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-brass);
+  border-radius: 9999px;
+}
+
+/* ================================================
+   Component Classes
+   ================================================ */
+
+/* Senior-friendly primary button */
+.btn-primary {
+  min-height: var(--spacing-touch);
+  min-width: var(--spacing-touch);
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-saffron-600);
+  color: white;
+  font-family: var(--font-hindi);
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  border-radius: var(--radius-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 150ms;
+  cursor: pointer;
+  border: none;
+}
+.btn-primary:active {
+  background-color: var(--color-saffron-700);
+}
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Secondary button */
+.btn-secondary {
+  min-height: var(--spacing-touch);
+  min-width: var(--spacing-touch);
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-cream-200);
+  color: var(--color-text-primary);
+  font-family: var(--font-hindi);
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  border-radius: var(--radius-card);
+  border: 2px solid var(--color-brass);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 150ms;
+  cursor: pointer;
+}
+.btn-secondary:active {
+  background-color: var(--color-cream-300);
+}
+
+/* Card component */
+.card {
+  background-color: white;
+  border-radius: var(--radius-card);
+  padding: 1.25rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-cream-200);
+}
+
+/* Pillar journey card */
+.pillar-card {
+  background-color: white;
+  border-radius: var(--radius-card);
+  padding: 1.25rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-cream-200);
+  cursor: pointer;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 200ms;
+}
+.pillar-card:active {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-saffron-600);
+}

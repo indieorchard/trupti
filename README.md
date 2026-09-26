@@ -1,88 +1,77 @@
-# 🪔 Trupti - Your Gateway to Spirituality
+# तृप्ति (Trupti) — Your Gateway to Spiritual Fulfillment
 
-> **A cross-platform mobile application for Android & iOS built with React Native and Expo.**
+> A mobile-responsive web companion for Sanatana Dharma practitioners, designed with love for the 60+ generation.
 
-[![Expo](https://img.shields.io/badge/Expo-SDK%2057-black?style=flat&logo=expo)](https://expo.dev/)
-[![React Native](https://img.shields.io/badge/React%20Native-0.86-61DAFB?style=flat&logo=react)](https://reactnative.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
-[![Platform](https://img.shields.io/badge/Platforms-Android%20%7C%20iOS-brightgreen?style=flat)]()
+## 🪷 What is Trupti?
 
----
+Trupti (तृप्ति — Soul-Contentment) is a digital spiritual companion that guides practitioners through structured spiritual journeys rooted in Hindu scriptures and traditions. Unlike content libraries, Trupti provides **pathways, not just pages.**
 
-## 📖 Overview
+## ✨ Features (MVP)
 
-**Trupti** is a dedicated spiritual companion mobile application engineered for seamless daily devotion, meditation, and spiritual learning across Android and iOS devices.
+- 🌅 **Prahar-Aware Home Screen** — adapts to the time of day with relevant guidance
+- 📅 **Panchang Integration** — daily tithi, nakshatra, vrat info, sunrise/sunset
+- ✅ **Daily Kriya Checklist** — interactive tracker for 10 daily spiritual practices
+- 📿 **90-Day Moksha Sadhana** — structured 3-phase spiritual journey
+- 🛕 **Temple Explorer** — Char Dham, Sapta Puri, 12 Jyotirlinga with virtual darshan
+- 📖 **Sacred Text Reader** — Gita, Vishnu Sahasranama, Garuda Purana
+- 🪔 **Audio Library** — offline-capable aartis, stotras, and mantras
+- 📿 **Japa Mala Counter** — digital mala with tracking
+- 🔤 **Bilingual** — Hindi (primary) + English toggle
+- ♿ **Senior-First Design** — 56dp touch targets, 18sp+ fonts, WCAG AAA contrast
 
-### Core Features
-- **Daily Darshan & Thought**: Inspiring spiritual quotes, daily thoughts, and tithi/panchang.
-- **Mantras, Chants & Aartis**: High quality audio chanting, stotrams, and aarti library with background playback capability.
-- **Prayer & Scripture Reader**: Clean typography for reading sacred texts, chalisa, and shlokas with Hindi, Sanskrit, and English translations.
-- **Sadhana & Meditation Timer**: Focus timer and daily streak tracker to nurture daily spiritual practices.
-- **Cross-Platform Parity**: Unified TypeScript codebase delivering 60+ FPS native performance on both Android and iOS.
+## 🛠️ Tech Stack
 
----
-
-## 🏛️ Project Architecture
-
-```
-trupti/
-├── app/                      # File-based routing (Expo Router)
-│   ├── (tabs)/               # Bottom tab navigation
-│   │   ├── index.tsx         # Home / Daily Darshan & Highlights
-│   │   ├── explore.tsx       # Chants, Prayers & Spiritual Library
-│   │   └── _layout.tsx       # Tab bar navigation configuration
-│   ├── +not-found.tsx        # 404 handler
-│   └── _layout.tsx           # Root navigation & theme provider
-├── assets/
-│   └── images/               # App icons, splash screens, and imagery
-├── components/               # Reusable UI widgets, cards, and theme elements
-├── constants/                # App colors, spiritual themes, and typography
-├── app.json                  # Expo, Android (package) & iOS (bundle ID) configuration
-├── package.json              # Project dependencies and run scripts
-└── tsconfig.json             # TypeScript configuration
-```
-
----
+- **Framework:** Next.js 16 (App Router, Turbopack)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4 with custom design system
+- **Fonts:** Noto Sans/Serif Devanagari, Tiro Devanagari Hindi, Inter
+- **Target:** Mobile-responsive PWA (installable on Android)
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- **Node.js**: `v18.x` or higher (tested on Node 24)
-- **npm**: `v9.x` or higher
-- **Expo Go App**: Download on your physical [Android (Google Play)](https://play.google.com/store/apps/details?id=host.exp.exponent) or [iOS (App Store)](https://apps.apple.com/app/expo-go/id982107779) phone for instant live testing.
-
-### 1. Install Dependencies
 ```bash
 npm install
+npm run dev
 ```
 
-### 2. Start the Development Server
-```bash
-npm run start
+Open [http://localhost:3000](http://localhost:3000)
+
+## 📁 Project Structure
+
 ```
-Scan the QR code displayed in the terminal using the Expo Go app on Android, or the Camera app on iOS.
+src/
+├── app/              # Next.js App Router pages
+│   ├── page.tsx      # Home (Today/Prahar view)
+│   ├── journey/      # Journey pages
+│   ├── knowledge/    # Knowledge library pages
+│   ├── settings/     # Settings page
+│   └── welcome/      # Onboarding flow
+├── components/       # React components
+│   ├── layout/       # Header, BottomNav
+│   ├── home/         # PanchangStrip, DailyChecklist, QuickAccess
+│   ├── journey/      # Journey-specific components
+│   └── knowledge/    # Reader, Audio player
+├── data/             # Seed data (JSON)
+├── hooks/            # Custom hooks (useLanguage, useFontScale)
+├── lib/              # Utilities
+└── types/            # TypeScript types
+```
+
+## 🎨 Design System
+
+- **Warm Cream Background:** `#FFFDF8`
+- **Saffron Accent:** `#C25E00`
+- **Temple Brass:** `#8D6E63`
+- **Min Touch Target:** 56 × 56 dp
+- **Min Font Size:** 18sp (Hindi body)
+- **Persistent Font Scaler:** `[ अ- | अ | अ+ | अ++ ]`
+- **Zero Ads. Ever.**
+
+## 📜 License
+
+© 2026 IndieOrchard. All rights reserved.
 
 ---
 
-## 📱 Building & Running on Android & iOS
-
-### Running on Android
-- **Via Physical Device**: Scan the Metro QR code with Expo Go.
-- **Via Android Emulator / Native Build**:
-  ```bash
-  npm run android
-  ```
-
-### Running on iOS
-- **Without a Mac (from Windows)**: Scan the QR code using the iOS Camera app to launch directly inside the **Expo Go** app.
-- **Via Cloud Production Build (EAS)**:
-  ```bash
-  npx eas-cli build -p ios
-  ```
-
----
-
-## 📄 License & Attribution
-
-- **Organization**: [Indie Orchard](https://github.com/indieorchard)
-- **Repository**: [indieorchard/trupti](https://github.com/indieorchard/trupti)
+*तृप्ति — आत्मा की संतुष्टि का द्वार*
+*(Trupti — Gateway to Soul-Contentment)*
