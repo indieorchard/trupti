@@ -1,0 +1,204 @@
+[
+  {
+    "id": "ekadashi",
+    "name_hi": "एकादशी व्रत (वर्ष भर की 24-26 एकादशियां)",
+    "name_en": "Ekadashi Vrata (All 24 Annual Observances)",
+    "deity_id": "vishnu",
+    "deity_name": "Lord Sri Hari Vishnu",
+    "frequency": "Bi-monthly (Shukla and Krishna Paksha 11th Lunar Tithi)",
+    "tithi_info": "शुक्ल व कृष्ण पक्ष की एकादशी तिथि",
+    "fasting_rules_hi": "अन्न, अनाज, दालें और विशेषकर चावल का सेवन पूर्णतः वर्जित है। निर्जला (जल रहित), सजल (जल युक्त) या फलाहार (दूध, फल, कुट्टू, सिंघाड़ा, सेंधा नमक) किया जाता है।",
+    "fasting_rules_en": "Strict prohibition of rice, grains, and beans. Observed as Nirjala (waterless) or Phalahar (fruits, milk, buckwheat, rock salt).",
+    "permitted_foods": [
+      "दूध",
+      "फल",
+      "कुट्टू का आटा",
+      "सिंघाड़े का आटा",
+      "सेंधा नमक",
+      "साबूदाना",
+      "मखाना"
+    ],
+    "prohibited_foods": [
+      "चावल",
+      "गेहूं",
+      "दालें",
+      "लहसुन-प्याज",
+      "मसालेदार तामसिक भोजन"
+    ],
+    "significance_hi": "पद्म पुराण के अनुसार एकादशी का व्रत समस्त पापों को भस्म करने वाला, 10 इंद्रियों और मन को वश में करने वाला और अंतकाल में वैकुंठ की प्राप्ति कराने वाला परम व्रत है।",
+    "parana_guidelines_hi": "द्वादशी तिथि के सूर्योदय के पश्चात तथा हरि वासर समाप्त होने से पूर्व पारण (व्रत खोलना) अनिवार्य है।"
+  },
+  {
+    "id": "pradosha_vrata",
+    "name_hi": "प्रदोष व्रत (त्रयोदशी)",
+    "name_en": "Pradosha Vrata",
+    "deity_id": "shiva",
+    "deity_name": "Lord Shiva and Mata Parvati",
+    "frequency": "Bi-monthly (Shukla and Krishna Trayodashi, sunset period)",
+    "tithi_info": "त्रयोदशी तिथि (सूर्यास्त से 45 मिनट पूर्व व पश्चात का काल)",
+    "fasting_rules_hi": "दिन भर उपवास रखें। प्रदोष काल (सूर्यास्त के समय) में शिवजी का दूध, जल, बेलपत्र से अभिषेक और पूजा के बाद ही सात्विक फलाहार या एकभुक्त भोजन करें।",
+    "fasting_rules_en": "Fasting until sunset. Performing Shiva Abhishekam during the 1.5-hour sunset window (Pradosha Kala), followed by light sattvic meal.",
+    "permitted_foods": [
+      "फल",
+      "दूध",
+      "पंचामृत",
+      "साबूदाना खीर",
+      "सेंधा नमक"
+    ],
+    "prohibited_foods": [
+      "अन्न (पूजा से पूर्व)",
+      "तामसिक भोजन",
+      "मादक पदार्थ"
+    ],
+    "significance_hi": "शनि प्रदोष से साढ़ेसाती और शनि दोष शांत होते हैं। सोम प्रदोष से मानसिक शांति, और भौम (मंगल) प्रदोष से ऋण मुक्ति मिलती है।",
+    "parana_guidelines_hi": "प्रदोष काल की पूजा और आरती के पश्चात पारण करें।"
+  },
+  {
+    "id": "somvar_vrata",
+    "name_hi": "सोमवार व्रत (विशेषतः सावन सोमवार)",
+    "name_en": "Somvar Vrata (Mondays & Shravan)",
+    "deity_id": "shiva",
+    "deity_name": "Lord Shiva (Chandrashekhara)",
+    "frequency": "Weekly (Every Monday; especially in Shravana Month)",
+    "tithi_info": "प्रत्येक सोमवार",
+    "fasting_rules_hi": "प्रातः स्नान कर शिवजी को जल-बिल्वपत्र अर्पित करें। एकभुक्त (दोपहर बाद केवल एक समय बिना नमक का या सेंधा नमक युक्त भोजन) करें।",
+    "fasting_rules_en": "Single sattvic meal without table salt after offering Bilva leaves and water to Shiva Lingam.",
+    "permitted_foods": [
+      "फल",
+      "दूध",
+      "खीर",
+      "सिंघाड़े का हलवा"
+    ],
+    "prohibited_foods": [
+      "सफेद नमक",
+      "अन्न (दोपहर से पूर्व)",
+      "लहसुन-प्याज"
+    ],
+    "significance_hi": "चंद्रमा को अनुकूल करने, मानसिक तनाव व अवसाद को दूर करने तथा सुयोग्य जीवनसाथी और अखंड सौभाग्य की प्राप्ति हेतु।",
+    "parana_guidelines_hi": "सायंकाल दीप दर्शन व शिव आरती के पश्चात भोजन ग्रहण करें।"
+  },
+  {
+    "id": "masik_shivaratri",
+    "name_hi": "मासिक शिवरात्रि एवं महाशिवरात्रि",
+    "name_en": "Maha Shivaratri & Masik Shivaratri",
+    "deity_id": "shiva",
+    "deity_name": "Lord Shiva & Mata Parvati",
+    "frequency": "Monthly (Krishna Chaturdashi); Phalguna Krishna 14 for Maha Shivaratri",
+    "tithi_info": "कृष्ण पक्ष की चतुर्दशी तिथि",
+    "fasting_rules_hi": "रात्रि जागरण, चारों पहर में शिवलिंग का दुग्ध, दही, घी, मधु, गंगाजल (पंचामृत) से अभिषेक। पूर्ण उपवास या फलाहार।",
+    "fasting_rules_en": "Night vigil (Jagran), four-pahar Rudrabhishek with Panchamrit, full fast or phalahar.",
+    "permitted_foods": [
+      "फल",
+      "दूध",
+      "पंचामृत",
+      "सेंधा नमक"
+    ],
+    "prohibited_foods": [
+      "अन्न",
+      "दालें",
+      "तेलयुक्त भोजन"
+    ],
+    "significance_hi": "शिव और शक्ति के दिव्य मिलन की रात्रि। अहंकार और काम-क्रोध के संहार का दिन। महाशिवरात्रि पर व्रत करने वाले को मोक्ष की प्राप्ति निश्चित मानी गई है।",
+    "parana_guidelines_hi": "अगले दिन प्रातःकाल सूर्योदय के बाद और चतुर्दशी तिथि समाप्त होने से पूर्व पारण।"
+  },
+  {
+    "id": "satyanarayan_purnima",
+    "name_hi": "सत्यनारायण पूर्णिमा व्रत",
+    "name_en": "Satyanarayan Vrata (Full Moon)",
+    "deity_id": "vishnu",
+    "deity_name": "Lord Satyanarayan (Vishnu)",
+    "frequency": "Monthly (Purnima Tithi)",
+    "tithi_info": "प्रत्येक पूर्णिमा तिथि",
+    "fasting_rules_hi": "दिन भर उपवास रखकर सायंकाल श्री सत्यनारायण कथा का श्रवण करें। सपादभक्ष पंजीरी प्रसाद (भुना आटा, घी, चीनी, केला, दूध) ग्रहण करने के बाद फलाहार करें।",
+    "fasting_rules_en": "Fasting until evening recitation of the 5 chapters of Satyanarayan Katha from Skanda Purana, followed by Sapadbhaksh Prasad.",
+    "permitted_foods": [
+      "सपादभक्ष पंजीरी प्रसाद",
+      "पंचामृत",
+      "फल",
+      "दूध",
+      "सात्विक भोजन"
+    ],
+    "prohibited_foods": [
+      "लहसुन-प्याज",
+      "तामसिक भोजन"
+    ],
+    "significance_hi": "पारिवारिक सुख-शांति, गृहक्लेश निवारण, व्यापार में वृद्धि और सत्य के आचरण की प्रेरणा।",
+    "parana_guidelines_hi": "कथा श्रवण व चंद्रमा को अर्घ्य देने के पश्चात प्रसाद ग्रहण कर पारण करें।"
+  },
+  {
+    "id": "navratri_vrata",
+    "name_hi": "नवरात्रि व्रत (चैत्र व शारदीय)",
+    "name_en": "Navratri Vrata (Chaitra & Sharad)",
+    "deity_id": "durga",
+    "deity_name": "Navadurga (Shailaputri to Siddhidatri)",
+    "frequency": "Twice a year (9 days in Chaitra & 9 days in Ashvin)",
+    "tithi_info": "शुक्ल प्रतिपदा से नवमी पर्यंत",
+    "fasting_rules_hi": "घटस्थापना, अखंड ज्योति प्रज्वलन। नौ दिनों तक फलाहार (कुट्टू, सिंघाड़ा, साबूदाना, फल) अथवा केवल एक समय सात्विक भोजन। लहसुन, प्याज, मांस-मदिरा का पूर्ण त्याग।",
+    "fasting_rules_en": "9 days of Akhanda Jyoti, daily Durga Saptashati path, phalahar diet with Kuttu, Singhada, Sabudana, and seasonal fruits.",
+    "permitted_foods": [
+      "कुट्टू का आटा",
+      "सिंघाड़े का आटा",
+      "साबूदाना",
+      "मखाना",
+      "सेंधा नमक",
+      "फल",
+      "दूध"
+    ],
+    "prohibited_foods": [
+      "अन्न",
+      "दालें",
+      "सफेद नमक",
+      "हल्दी",
+      "लहसुन-प्याज"
+    ],
+    "significance_hi": "शरीर के नौ द्वारों और छह आंतरिक शत्रुओं (काम, क्रोध, लोभ, मोह, मद, मत्सर) की शुद्धि। माँ भगवती के आशीर्वाद से सर्वकल्याण।",
+    "parana_guidelines_hi": "दशमी तिथि को कन्या पूजन के पश्चात पारण संपन्न किया जाता है।"
+  },
+  {
+    "id": "karwa_chauth",
+    "name_hi": "करवा चौथ व्रत",
+    "name_en": "Karwa Chauth (Suhag Vrata)",
+    "deity_id": "parvati",
+    "deity_name": "Mata Parvati (Gauri), Shiva, Kartikeya, Ganesha & Moon",
+    "frequency": "Annual (Kartik Krishna Chaturthi)",
+    "tithi_info": "कार्तिक कृष्ण चतुर्थी",
+    "fasting_rules_hi": "सूर्योदय से पूर्व सरगी ग्रहण करना। दिन भर निर्जला (बिना जल) व्रत। रात्रि में छलनी से चंद्र दर्शन और पति को देखने के पश्चात जल ग्रहण।",
+    "fasting_rules_en": "Nirjala fast observed by married women from sunrise until moonrise for the longevity and prosperity of husbands.",
+    "permitted_foods": [
+      "रात्रि चंद्रदर्शन के बाद सात्विक मिष्ठान्न व भोजन"
+    ],
+    "prohibited_foods": [
+      "दिन भर जल व अन्न सर्वथा वर्जित"
+    ],
+    "significance_hi": "अखंड सौभाग्य, दांपत्य प्रेम और पति की दीर्घायु की रक्षा हेतु सर्वमान्य व्रत।",
+    "parana_guidelines_hi": "चंद्रमा को अर्घ्य देकर, पति के हाथों जल पीकर व्रत पूर्ण करें।"
+  },
+  {
+    "id": "pitru_paksha_shraddha",
+    "name_hi": "पितृपक्ष श्राद्ध एवं तर्पण (16 दिवसीय)",
+    "name_en": "Pitru Paksha Annual Shraddha (16 Days)",
+    "deity_id": "vishnu",
+    "deity_name": "Pitru Devatas, Lord Yama & Bhagavan Vishnu",
+    "frequency": "Annual (Bhadrapada Purnima to Ashvin Amavasya)",
+    "tithi_info": "भाद्रपद पूर्णिमा से सर्वपितृ अमावस्या तक",
+    "fasting_rules_hi": "पूर्वज जिस तिथि को परलोक सिधारे हों, उस तिथि के कुतुप-अपराह्न काल (~11:45 AM - 1:30 PM) में तिल, कुश, जल से तर्पण, पिंडदान, पंचबलि (गाय, कुत्ता, कौआ, चींटी, देव) और ब्राह्मण भोजन कराएं।",
+    "fasting_rules_en": "Observing sacred austerity during Mahalaya Paksha to offer Tarpan, Pinda Daan, and Pancha Bali to ancestors on their lunar death tithis.",
+    "permitted_foods": [
+      "खीर",
+      "पूड़ी",
+      "उड़द दाल की पकौड़ी",
+      "कद्दू",
+      "सेंधा नमक युक्त सात्विक भोजन"
+    ],
+    "prohibited_foods": [
+      "लहसुन-प्याज",
+      "मसूर दाल",
+      "चना",
+      "हींग",
+      "काला नमक",
+      "सरसों"
+    ],
+    "significance_hi": "पितृ ऋण से मुक्ति, पूर्वजों की आत्मा को शांति, वंश वृद्धि, और पारिवारिक सुख-समृद्धि।",
+    "parana_guidelines_hi": "ब्राह्मणों और पंचबलि को भोजन कराने के पश्चात परिवार भोजन करे।"
+  }
+]

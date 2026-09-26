@@ -1,0 +1,586 @@
+import { GitaScripture } from '@/types';
+
+export const gitasData: GitaScripture[] = [
+  {
+    id: 'bhagavad_gita',
+    name_hi: 'श्रीमद् भगवद् गीता',
+    name_en: 'Srimad Bhagavad Gita',
+    sanskrit_name: 'श्रीमद्भगवद्गीता',
+    source_text: 'Mahabharata (Bhishma Parva, Chapters 23–40)',
+    narrator: 'Bhagavan Sri Krishna (transcribed by Sage Vyasa, narrated by Sanjaya to Dhritarashtra)',
+    listener: 'Arjuna (Nara-Narayana Samvada)',
+    chapters_count: 18,
+    total_verses: 700,
+    tradition: 'Universal Sanatana Dharma (Vedanta / Bhakti / Karma / Jnana Yoga)',
+    core_philosophy_hi: 'कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। निष्काम कर्मयोग, अनन्य भक्तियोग और आत्मज्ञान का त्रिवेणी संगम। मोहग्रस्त अर्जुन को कर्तव्य और आत्मतत्त्व का बोध कराकर धर्मयुद्ध हेतु तत्पर करना।',
+    core_philosophy_en: 'The eternal song of God: Nishkama Karma (selfless action), Bhakti (surrender to the Supreme), and Jnana (realization of the immortal Atman).',
+    key_teachings_hi: [
+      'आत्मा अजर, अमर और अविनाशी है — न शस्त्र इसे काट सकते हैं, न अग्नि जला सकती है (अध्याय 2, श्लोक 23)',
+      'कर्म करने में ही तुम्हारा अधिकार है, उसके फलों में कभी नहीं (अध्याय 2, श्लोक 47)',
+      'जब-जब धर्म की हानि और अधर्म की वृद्धि होती है, तब-तब मैं अवतार लेता हूँ (अध्याय 4, श्लोक 7)',
+      'सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज — सब धर्मों को छोड़कर केवल मेरी शरण में आओ, मैं तुम्हें सब पापों से मुक्त कर दूँगा (अध्याय 18, श्लोक 66)'
+    ],
+    pdf_url: 'https://archive.org/details/gita-press-gorakhpur-bhagavad-gita-hindi-translation',
+    archive_url: 'https://vedabase.io/en/library/bg/',
+    chapters: [
+      {
+        chapter_number: 1,
+        title_sanskrit: 'अर्जुनविषादयोग',
+        title_hi: 'अर्जुन विषाद योग',
+        title_en: 'The Despondency of Arjuna',
+        shlokas_count: 47,
+        summary_hi: 'कुरुक्षेत्र की रणभूमि में अपने ही बंधु-बांधवों, गुरुओं और संबंधियों को देखकर अर्जुन मोह और विषाद से ग्रस्त होकर धनुष रख देते हैं।',
+        summary_en: 'Arjuna observes friends and relatives on both sides and collapses into overwhelming grief and confusion.',
+        key_shloka: {
+          shloka_number: '1.28',
+          sanskrit: 'दृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम् । सीदन्ति मम गात्राणि मुखं च परिशुष्यति ॥',
+          transliteration: 'dṛṣṭvemaṁ sva-janaṁ kṛṣṇa yuyutsuṁ samupasthitam | sīdanti mama gātrāṇi mukhaṁ ca pariśuṣyati ||',
+          meaning_hi: 'हे कृष्ण! युद्ध की इच्छा वाले इस स्वजन समुदाय को उपस्थित देखकर मेरे अंग शिथिल हो रहे हैं और मुख सूख रहा है।',
+          meaning_en: 'O Krishna, seeing my kinsmen assembled with a desire to fight, my limbs tremble and my mouth is parched.'
+        }
+      },
+      {
+        chapter_number: 2,
+        title_sanskrit: 'सांख्ययोग',
+        title_hi: 'सांख्य योग (ज्ञानयोग)',
+        title_en: 'The Yoga of Knowledge (Sankhya)',
+        shlokas_count: 72,
+        summary_hi: 'भगवान श्रीकृष्ण आत्मा की अमरता, देह की नश्वरता, स्थितप्रज्ञ के लक्षण और निष्काम कर्मयोग का उपदेश देते हैं। गीता का हृदय अध्याय।',
+        summary_en: 'Lord Krishna expounds the immortality of the soul, the illusion of death, and the traits of a person of steady wisdom (Sthitaprajna).',
+        key_shloka: {
+          shloka_number: '2.47',
+          sanskrit: 'कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥',
+          transliteration: 'karmaṇy-evādhikāras te mā phaleṣu kadācana | mā karma-phala-hetur bhūr mā te saṅgo \'stv akarmaṇi ||',
+          meaning_hi: 'तुम्हारा अधिकार केवल कर्म करने में है, उसके फलों में कभी नहीं। इसलिए कर्मफल के हेतु मत बनो और न ही अकर्मण्यता में तुम्हारी आसक्ति हो।',
+          meaning_en: 'You have a right to perform your prescribed duty, but you are not entitled to the fruits of action. Never consider yourself the cause of results, nor be attached to inaction.'
+        }
+      },
+      {
+        chapter_number: 3,
+        title_sanskrit: 'कर्मयोग',
+        title_hi: 'कर्म योग',
+        title_en: 'The Yoga of Action',
+        shlokas_count: 43,
+        summary_hi: 'बिना आसक्ति के लोकसंग्रह और ईश्वरार्पण भाव से कर्तव्य कर्म करने का विधान। काम और क्रोध को सबसे बड़ा शत्रु बताया गया है।',
+        summary_en: 'Explains why action performed in the spirit of sacrifice (Yajna) elevates consciousness without creating karmic bondage.',
+        key_shloka: {
+          shloka_number: '3.19',
+          sanskrit: 'तस्मादसक्तः सततं कार्यं कर्म समाचर । असक्तो ह्याचरन्कर्म परमाप्नोति पूरुषः ॥',
+          transliteration: 'tasmād asaktaḥ satataṁ kāryaṁ karma samācara | asakto hy ācaran karma param āpnoti pūruṣaḥ ||',
+          meaning_hi: 'अतः निरंतर आसक्तिरहित होकर कर्तव्य कर्म का भली-भांति आचरण करो; क्योंकि आसक्ति से रहित होकर कर्म करने से मनुष्य परमपद को प्राप्त होता है।',
+          meaning_en: 'Therefore, without being attached, always perform the work that ought to be done; for by doing work without attachment, man attains the Supreme.'
+        }
+      },
+      {
+        chapter_number: 4,
+        title_sanskrit: 'ज्ञानकर्मसंन्यासयोग',
+        title_hi: 'ज्ञान कर्म संन्यास योग',
+        title_en: 'The Yoga of Knowledge and Renunciation of Action',
+        shlokas_count: 42,
+        summary_hi: 'अवतार रहस्य, वर्ण व्यवस्था का आध्यात्मिक आधार, और ज्ञान रूपी अग्नि द्वारा समस्त संचित कर्मों को भस्म करने का उपदेश।',
+        summary_en: 'Reveals the mystery of divine incarnation (Avatar), the origin of Vedic wisdom, and the fire of knowledge that incinerates past karma.',
+        key_shloka: {
+          shloka_number: '4.7-8',
+          sanskrit: 'यदा यदा हि धर्मस्य ग्लानिर्भवति भारत । अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम् ॥',
+          transliteration: 'yadā yadā hi dharmasya glānir bhavati bhārata | abhyutthānam adharmasya tadātmānaṁ sṛjāmy aham ||',
+          meaning_hi: 'हे भारत! जब-जब धर्म की हानि और अधर्म का उत्थान होता है, तब-तब मैं अपने आपको प्रकट करता हूँ। साधुओं की रक्षा, दुष्टों के विनाश और धर्म संस्थापना हेतु मैं युग-युग में प्रकट होता हूँ।',
+          meaning_en: 'Whenever there is a decline in righteousness and an increase in unrighteousness, O Bharata, at that time I manifest Myself.'
+        }
+      },
+      {
+        chapter_number: 5,
+        title_sanskrit: 'कर्मसंन्यासयोग',
+        title_hi: 'कर्म संन्यास योग',
+        title_en: 'The Yoga of Renunciation',
+        shlokas_count: 29,
+        summary_hi: 'कर्म संन्यास और कर्मयोग का सामंजस्य। जल में कमल पत्र की भांति संसार में रहते हुए अनासक्त रहने का मार्ग।',
+        summary_en: 'Harmonizes outward action with inward renunciation, living untouched by worldly faults like a lotus leaf in water.',
+        key_shloka: {
+          shloka_number: '5.10',
+          sanskrit: 'ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः । लिप्यते न स पापेन पद्मपत्रमिवाम्भसा ॥',
+          transliteration: 'brahmaṇy ādhāya karmāṇi saṅgaṁ tyaktvā karoti yaḥ | lipyate na sa pāpena padma-patram ivāmbhasā ||',
+          meaning_hi: 'जो व्यक्ति सब कर्मों को ब्रह्म में अर्पण करके आसक्ति छोड़कर कर्म करता है, वह पाप से वैसे ही लिप्त नहीं होता जैसे कमल का पत्ता जल से।',
+          meaning_en: 'One who performs their duty without attachment, surrendering the results unto the Supreme, is unaffected by sinful action, as the lotus leaf is by water.'
+        }
+      },
+      {
+        chapter_number: 6,
+        title_sanskrit: 'आत्मसंयमयोग (ध्यानयोग)',
+        title_hi: 'आत्मसंयम योग (ध्यानयोग)',
+        title_en: 'The Yoga of Meditation',
+        shlokas_count: 47,
+        summary_hi: 'अष्टांग योग, ध्यान की विधि, मन का निग्रह और समत्व दृष्टि। मन ही मनुष्य का बंधु है और मन ही शत्रु।',
+        summary_en: 'The science of meditation (Dhyana Yoga), breath regulation, and conquering the restless mind.',
+        key_shloka: {
+          shloka_number: '6.5',
+          sanskrit: 'उद्धरेदात्मनात्मानं नात्मानमवसादयेत् । आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः ॥',
+          transliteration: 'uddhared ātmanātmānaṁ nātmānam avasādayet | ātmaiva hy ātmano bandhur ātmaiva ripur ātmanaḥ ||',
+          meaning_hi: 'मनुष्य को चाहिए कि अपने मन द्वारा अपना उद्धार करे, अपने को पतन की ओर न ले जाए; क्योंकि मन ही अपना मित्र है और मन ही अपना शत्रु है।',
+          meaning_en: 'Elevate yourself through the power of your mind, and not degrade yourself; for the mind can be the greatest friend and the worst enemy.'
+        }
+      },
+      {
+        chapter_number: 7,
+        title_sanskrit: 'ज्ञानविज्ञानयोग',
+        title_hi: 'ज्ञान विज्ञान योग',
+        title_en: 'The Yoga of Knowledge and Realization',
+        shlokas_count: 30,
+        summary_hi: 'परा और अपरा प्रकृति का विवेचन, माया का स्वरूप, और चार प्रकार के भक्त (आर्त, अर्थार्थी, जिज्ञासु, ज्ञानी)।',
+        summary_en: 'Discrimination between material and spiritual energies, the nature of divine illusion (Maya), and the four types of seekers.',
+        key_shloka: {
+          shloka_number: '7.16',
+          sanskrit: 'चतुर्विधा भजन्ते मां जनाः सुकृतिनोऽर्जुन । आर्तो जिज्ञासुरर्थार्थी ज्ञानी च भरतर्षभ ॥',
+          transliteration: 'catur-vidhā bhajante māṁ janāḥ sukṛtino \'rjuna | ārto jijñāsur arthārthī jñānī ca bharatarṣabha ||',
+          meaning_hi: 'हे भरतश्रेष्ठ अर्जुन! चार प्रकार के पुण्यात्मा मेरा भजन करते हैं—आर्त (दुखी), जिज्ञासु, अर्थार्थी (धन चाहने वाले) और ज्ञानी।',
+          meaning_en: 'Four kinds of pious people worship Me, O Arjuna: the distressed, the seeker of knowledge, the seeker of wealth, and the wise.'
+        }
+      },
+      {
+        chapter_number: 8,
+        title_sanskrit: 'अक्षरब्रह्मयोग',
+        title_hi: 'अक्षर ब्रह्म योग (प्रयाण काल विद्या)',
+        title_en: 'The Yoga of the Imperishable Brahman',
+        shlokas_count: 28,
+        summary_hi: 'मृत्यु के समय अंतकाल में परमात्मा के स्मरण का विज्ञान। अंत समय जैसी भावना होती है, वैसी ही गति प्राप्त होती है। मोक्ष साधना का आधारभूत अध्याय।',
+        summary_en: 'The science of conscious transition: how the final thought at the moment of passing determines the soul’s next state of consciousness.',
+        key_shloka: {
+          shloka_number: '8.6',
+          sanskrit: 'यं यं वापि स्मरन्भावं त्यजत्यन्ते कलेवरम् । तं तमेवैति कौन्तेय सदा तद्भावभावितः ॥',
+          transliteration: 'yaṁ yaṁ vāpi smaran bhāvaṁ tyajaty ante kalevaram | taṁ tam evaiti kaunteya sadā tad-bhāva-bhāvitaḥ ||',
+          meaning_hi: 'हे कौन्तेय! मनुष्य अंतकाल में जिस-जिस भाव का स्मरण करते हुए शरीर त्याग करता है, वह उसी को प्राप्त होता है, क्योंकि वह सदा उसी भाव से भावित रहा है।',
+          meaning_en: 'Whatever state of being one remembers when giving up the body, O son of Kunti, to that very state one will attain, being always absorbed in such contemplation.'
+        }
+      },
+      {
+        chapter_number: 9,
+        title_sanskrit: 'राजविद्याराजगुह्ययोग',
+        title_hi: 'राजविद्या राजगुह्य योग',
+        title_en: 'The Yoga of Royal Knowledge and Royal Mystery',
+        shlokas_count: 34,
+        summary_hi: 'परम गोपनीय ब्रह्मज्ञान, अनन्य भक्ति का महत्व, और भगवान का अभय वचन—"योगक्षेमं वहाम्यहम्"।',
+        summary_en: 'The highest sovereign secret of direct perception, unconditional divine protection, and the efficacy of simple offerings of love.',
+        key_shloka: {
+          shloka_number: '9.22',
+          sanskrit: 'अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते । तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम् ॥',
+          transliteration: 'ananyāś cintayanto māṁ ye janāḥ paryupāsate | teṣāṁ nityābhiyuktānāṁ yoga-kṣemaṁ vahāmy aham ||',
+          meaning_hi: 'जो अनन्य भक्तजन मेरा चिंतन करते हुए मेरी उपासना करते हैं, उन निरंतर मुझमें युक्त भक्तों के योग (अप्राप्त की प्राप्ति) और क्षेम (प्राप्त की रक्षा) का वहन मैं स्वयं करता हूँ।',
+          meaning_en: 'To those who are constantly devoted to Me and worship Me with single-minded contemplation, I carry what they lack and preserve what they have.'
+        }
+      },
+      {
+        chapter_number: 10,
+        title_sanskrit: 'विभूतियोग',
+        title_hi: 'विभूति योग',
+        title_en: 'The Yoga of Divine Glories',
+        shlokas_count: 42,
+        summary_hi: 'सृष्टि के समस्त वैभव, तेज, सौंदर्य और शक्तियों में भगवान की दिव्य विभूतियों का दर्शन।',
+        summary_en: 'Lord Krishna describes His manifold opulences pervading the entire cosmos.',
+        key_shloka: {
+          shloka_number: '10.41',
+          sanskrit: 'यद्यद्विभूतिमत्सत्त्वं श्रीमदूर्जितमेव वा । तत्तदेवावगच्छ त्वं मम तेजोंऽशसम्भवम् ॥',
+          transliteration: 'yad yad vibhūtimat sattvaṁ śrīmad ūrjitam eva vā | tat tad evāvagaccha tvaṁ mama tejo-\'ṁśa-sambhavam ||',
+          meaning_hi: 'जो-जो भी ऐश्वर्ययुक्त, शोभायुक्त और बलयुक्त वस्तु या प्राणी है, उसे तुम मेरे ही तेज के अंश से उत्पन्न समझो।',
+          meaning_en: 'Whatever you see as glorious, prosperous, or powerful, understand that to spring from a spark of My divine splendor.'
+        }
+      },
+      {
+        chapter_number: 11,
+        title_sanskrit: 'विश्वरूपदर्शनयोग',
+        title_hi: 'विश्वरूप दर्शन योग',
+        title_en: 'The Vision of the Universal Form',
+        shlokas_count: 55,
+        summary_hi: 'अर्जुन को दिव्य दृष्टि प्रदान कर भगवान द्वारा अपने विराट विश्वरूप का दर्शन कराना। काल (समय) का संहारक स्वरूप।',
+        summary_en: 'Arjuna receives divine sight and beholds the dazzling, cosmic universal form encompassing all galaxies, gods, and time.',
+        key_shloka: {
+          shloka_number: '11.32',
+          sanskrit: 'कालोऽस्मि लोकक्षयकृत्प्रवृद्धो लोकान्समाहर्तुमिह प्रवृत्ततः ॥',
+          transliteration: 'kālo \'smi loka-kṣaya-kṛt pravṛddho lokān samāhartum iha pravṛttaḥ ||',
+          meaning_hi: 'मैं लोकों का नाश करने वाला महाकाल हूँ, जो इस समय लोकों का संहार करने के लिए प्रवृत्त हुआ हूँ।',
+          meaning_en: 'I am mighty Time, the source of destruction that comes forth to annihilate all worlds.'
+        }
+      },
+      {
+        chapter_number: 12,
+        title_sanskrit: 'भक्तियोग',
+        title_hi: 'भक्ति योग',
+        title_en: 'The Yoga of Devotion',
+        shlokas_count: 20,
+        summary_hi: 'सगुण और निर्गुण उपासना की तुलना, भगवान के प्रिय भक्त के 35 लक्षण (समत्व, करुणा, निरहंकार)।',
+        summary_en: 'Delineates the characteristics of a true Bhakta who is dear to God: free from malice, forgiving, balanced in pleasure and pain.',
+        key_shloka: {
+          shloka_number: '12.13-14',
+          sanskrit: 'अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च । निर्ममो निरहङ्कारः समदुःखसुखः क्षमी ॥',
+          transliteration: 'adveṣṭā sarva-bhūtānāṁ maitraḥ karuṇa eva ca | nirmamo nirahaṅkāraḥ sama-duḥkha-sukhaḥ kṣamī ||',
+          meaning_hi: 'जो सब प्राणियों से द्वेषरहित, सबका मित्र, दयालु, ममतारहित, अहंकाररहित, सुख-दुःख में समान और क्षमाशील है, वह भक्त मुझे अति प्रिय है।',
+          meaning_en: 'One who does not hate any creature, who is friendly and compassionate, free from possessiveness and ego, equipoised in joy and sorrow—that devotee is dear to Me.'
+        }
+      },
+      {
+        chapter_number: 13,
+        title_sanskrit: 'क्षेत्रक्षेत्रज्ञविभागयोग',
+        title_hi: 'क्षेत्र क्षेत्रज्ञ विभाग योग',
+        title_en: 'The Yoga of Discrimination between the Field and the Knower',
+        shlokas_count: 35,
+        summary_hi: 'शरीर (क्षेत्र) और आत्मा/परमात्मा (क्षेत्रज्ञ) का भेद ज्ञान। प्रकृति और पुरुष का विवेक।',
+        summary_en: 'Explains the distinction between the physical vessel (the field) and the indwelling pure consciousness (the knower).',
+        key_shloka: {
+          shloka_number: '13.2',
+          sanskrit: 'इदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते । एतद्यो वेत्ति तं प्राहुः क्षेत्रज्ञ इति तद्विदः ॥',
+          transliteration: 'idaṁ śarīraṁ kaunteya kṣetram ity abhidhīyate | etad yo vetti taṁ prāhuḥ kṣetrajña iti tad-vidaḥ ||',
+          meaning_hi: 'हे कौन्तेय! यह शरीर "क्षेत्र" (खेत) कहलाता है और जो इसे जानता है, उसे तत्त्वदर्शी विद्वान "क्षेत्रज्ञ" कहते हैं।',
+          meaning_en: 'This body, O son of Kunti, is called the field, and he who knows it is called the knower of the field by the sages.'
+        }
+      },
+      {
+        chapter_number: 14,
+        title_sanskrit: 'गुणत्रयविभागयोग',
+        title_hi: 'गुणत्रय विभाग योग',
+        title_en: 'The Yoga of Division of the Three Gunas',
+        shlokas_count: 27,
+        summary_hi: 'प्रकृति के तीन गुणों (सत्त्व, रज, तम) का स्वरूप, उनके बंधन और गुणातीत (तीनों गुणों से परे) होने के लक्षण।',
+        summary_en: 'Detailed analysis of the three cosmic modes (Sattva, Rajas, Tamas) that bind the soul, and how to transcend them.',
+        key_shloka: {
+          shloka_number: '14.26',
+          sanskrit: 'मां च योऽव्यभिचारेण भक्तियोगेन सेवते । स गुणान्समतीत्यैतान्ब्रह्मभूयाय कल्पते ॥',
+          transliteration: 'māṁ ca yo \'vyabhicāreṇa bhakti-yogena sevate | sa guṇān samatītyaitān brahma-bhūyāya kalpate ||',
+          meaning_hi: 'जो अनन्य भक्तियोग द्वारा निरंतर मेरी सेवा करता है, वह इन तीनों गुणों को भली-भांति पार करके ब्रह्मपद (मोक्ष) का पात्र बन जाता है।',
+          meaning_en: 'One who engages in full devotional service, unfailing in all circumstances, at once transcends the modes of material nature and comes to the level of Brahman.'
+        }
+      },
+      {
+        chapter_number: 15,
+        title_sanskrit: 'पुरुषोत्तमयोग',
+        title_hi: 'पुरुषोत्तम योग (अश्वत्थ वृक्ष)',
+        title_en: 'The Yoga of the Supreme Person (Purushottama)',
+        shlokas_count: 20,
+        summary_hi: 'संसार रूपी उल्टे अश्वत्थ (पीपल) वृक्ष का छेदन, क्षर, अक्षर और पुरुषोत्तम परमात्मा का स्वरूप। भोजन के पूर्व नित्य पाठ का विधान।',
+        summary_en: 'Metaphor of the upside-down banyan tree of Samsara, severed by the axe of detachment, revealing the Supreme Being Purushottama.',
+        key_shloka: {
+          shloka_number: '15.15',
+          sanskrit: 'सर्वस्य चाहं हृदि सन्निविष्टो मत्तः स्मृतिर्ज्ञानमपोहनं च । वेदैश्च सर्वैरहमेव वेद्यो वेदान्तकृद्वेदविदेव चाहम् ॥',
+          transliteration: 'sarvasya cāhaṁ hṛdi sanniviṣṭo mattaḥ smṛtir jñānam apohanaṁ ca | vedaiś ca sarvair aham eva vedyo vedānta-kṛd veda-vid eva cāham ||',
+          meaning_hi: 'मैं ही सब प्राणियों के हृदय में अंतर्यामी रूप से स्थित हूँ। मुझसे ही स्मृति, ज्ञान और अपोहन (विस्मृति) होते हैं। सब वेदों द्वारा मैं ही जानने योग्य हूँ और वेदान्त का कर्ता तथा वेदों का ज्ञाता भी मैं ही हूँ।',
+          meaning_en: 'I am seated in everyone’s heart, and from Me come memory, knowledge, and forgetfulness. By all the Vedas, I am to be known; indeed, I am the compiler of Vedanta and the knower of the Vedas.'
+        }
+      },
+      {
+        chapter_number: 16,
+        title_sanskrit: 'दैवासुरसम्पद्विभागयोग',
+        title_hi: 'दैवासुर सम्पद् विभाग योग',
+        title_en: 'The Yoga of Division between the Divine and Demonic Natures',
+        shlokas_count: 24,
+        summary_hi: 'दैवी संपदा (अभय, अहिंसा, सत्य, तेज) और आसुरी संपदा (दंभ, दर्प, क्रोध, अज्ञान) का विवेचन। काम, क्रोध और लोभ नरक के तीन द्वार हैं।',
+        summary_en: 'Contrasts the 26 divine virtues that lead to liberation against demonic vices that lead to lower rebirths.',
+        key_shloka: {
+          shloka_number: '16.21',
+          sanskrit: 'त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः । कामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत् ॥',
+          transliteration: 'tri-vidhaṁ narakasyedaṁ dvāraṁ nāśanam ātmanaḥ | kāmaḥ krodhas tathā lobhas tasmād etat trayaṁ tyajet ||',
+          meaning_hi: 'काम, क्रोध और लोभ—ये आत्मा का नाश करने वाले नरक के तीन द्वार हैं; इसलिए इन तीनों का त्याग कर देना चाहिए।',
+          meaning_en: 'There are three gates leading to the hell of self-destruction for the soul: lust, anger, and greed. Therefore, one should abandon these three.'
+        }
+      },
+      {
+        chapter_number: 17,
+        title_sanskrit: 'श्रद्धात्रयविभागयोग',
+        title_hi: 'श्रद्धात्रय विभाग योग',
+        title_en: 'The Yoga of Division of Threefold Faith',
+        shlokas_count: 28,
+        summary_hi: 'श्रद्धा, आहार, यज्ञ, तप और दान के तीन-तीन भेद (सात्त्विक, राजसिक, तामसिक)। "ॐ तत्सत्" महामंत्र का रहस्य।',
+        summary_en: 'Categorizes human faith, diet, austerities, and charity according to the three Gunas, and unlocks the purifying power of "Om Tat Sat".',
+        key_shloka: {
+          shloka_number: '17.3',
+          sanskrit: 'सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत । श्रद्धामयोऽयं पुरुषो यो यच्छ्रद्धः स एव सः ॥',
+          transliteration: 'sattvānurūpā sarvasya śraddhā bhavati bhārata | śraddhā-mayo \'yaṁ puruṣo yo yac-chraddhaḥ sa eva saḥ ||',
+          meaning_hi: 'हे भारत! सभी मनुष्यों की श्रद्धा उनके अंतःकरण के अनुरूप होती है। मनुष्य श्रद्धामय है; जिसकी जैसी श्रद्धा होती है, वह स्वयं भी वैसा ही होता है।',
+          meaning_en: 'The faith of each individual is in accordance with their nature. A person is made of their faith; as a person’s faith is, so indeed are they.'
+        }
+      },
+      {
+        chapter_number: 18,
+        title_sanskrit: 'मोक्षसंन्यासयोग',
+        title_hi: 'मोक्ष संन्यास योग (गीता का उपसंहार)',
+        title_en: 'The Yoga of Liberation through Renunciation',
+        shlokas_count: 78,
+        summary_hi: 'त्याग और संन्यास का अंतिम निर्णय, संपूर्ण गीता का सार संग्रह, और भगवान का चरम आश्वासन: "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज"। अर्जुन का मोह नष्ट होकर धर्म विजय का शंखनाद।',
+        summary_en: 'The grand synthesis of the entire Gita: final renunciation of ego, supreme surrender (Sharanagati), and the dispelling of all illusion.',
+        key_shloka: {
+          shloka_number: '18.66',
+          sanskrit: 'सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज । अहं त्वां सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥',
+          transliteration: 'sarva-dharmān parityajya mām ekaṁ śaraṇaṁ vraja | ahaṁ tvāṁ sarva-pāpebhyo mokṣayiṣyāmi mā śucaḥ ||',
+          meaning_hi: 'सब धर्मों (कर्तव्यों) के अहंकारी बंधनों को छोड़कर केवल मेरी अनन्य शरण में आ जाओ; मैं तुम्हें समस्त पापों और बंधनों से मुक्त कर दूँगा, शोक मत करो।',
+          meaning_en: 'Abandon all varieties of dharmas and simply surrender unto Me alone. I shall deliver you from all sinful reactions; do not grieve.'
+        }
+      }
+    ]
+  },
+  {
+    id: 'ashtavakra_gita',
+    name_hi: 'अष्टावक्र गीता (अष्टावक्र संहिता)',
+    name_en: 'Ashtavakra Gita',
+    sanskrit_name: 'अष्टावक्रगीता',
+    source_text: 'Classical Advaita Vedanta Text',
+    narrator: 'Sage Ashtavakra (Born with eight physical bends)',
+    listener: 'Raja Janaka (King of Mithila, Videha)',
+    chapters_count: 20,
+    total_verses: 298,
+    tradition: 'Pure Kevala Advaita Vedanta (Non-duality)',
+    core_philosophy_hi: 'तुम न शरीर हो, न मन हो, न कर्ता हो, न भोक्ता हो। तुम नित्य, शुद्ध, बुद्ध, मुक्त और साक्षी आत्मा हो। मुक्ति कहीं पानी नहीं है, मुक्ति तुम्हारा मूल स्वभाव है।',
+    core_philosophy_en: 'Direct recognition of the unconditioned Self: You are not the body, mind, doer, or experiencer. You are the ever-free, silent witness consciousness.',
+    key_teachings_hi: [
+      'यदि देहं पृथक् कृत्य चिति विश्राम्य तिष्ठसि — यदि तुम देह से स्वयं को अलग करके विशुद्ध चैतन्य में विश्राम करो, तो इसी क्षण मुक्त और शांत हो जाओगे।',
+      'मुक्तिमिच्छसि चेत्तात विषयान् विषवत्त्यज — यदि मुक्ति चाहते हो तो विषयों को विष के समान त्याग दो और क्षमा, सरलता, दया व संतोष का अमृत पियो।',
+      'बंधन तब तक है जब तक मन कुछ चाहता है, शोक करता है, त्यागता है या पकड़ता है; जब मन सर्वथा शांत है, वही मुक्ति है।'
+    ],
+    pdf_url: 'https://archive.org/details/AshtavakraGitaHindiGitaPress',
+    archive_url: 'https://sanskritdocuments.org/doc_giitaa/ashtavakra.html'
+  },
+  {
+    id: 'avadhuta_gita',
+    name_hi: 'अवधूत गीता',
+    name_en: 'Avadhuta Gita',
+    sanskrit_name: 'अवधूतगीता',
+    source_text: 'Dattatreya Sampradaya',
+    narrator: 'Bhagavan Dattatreya (The Supreme Avadhuta)',
+    listener: 'Kartavirya Arjuna / Sages',
+    chapters_count: 8,
+    total_verses: 289,
+    tradition: 'Avadhuta / Natha / Advaita Vedanta',
+    core_philosophy_hi: 'ईश्वरानुग्रहादेव पुंसामद्वैतवासना। परमात्मा की कृपा से ही मनुष्य के भीतर अद्वैत (एकात्मता) का भाव जागृत होता है। अवधूत के लिए न कोई विधि है, न कोई निषेध; वह सर्वत्र स्वयं को ही देखता है।',
+    core_philosophy_en: 'The absolute song of the free soul (Avadhuta): by God’s grace alone does the yearning for non-duality arise. Beyond rituals, castes, and duality.',
+    key_teachings_hi: [
+      'ईश्वर की विशेष कृपा से ही अद्वैत में निष्ठा उत्पन्न होती है जो बड़े-बड़े भयों से रक्षा करती है।',
+      'मैं आकाश की भांति सर्वव्यापी, नित्य, शुद्ध और विकाररहित आत्मतत्त्व हूँ।',
+      'न मेरा कोई जन्म है, न मृत्यु; न मेरा कोई कर्म है, न बंधन।'
+    ],
+    pdf_url: 'https://archive.org/details/AvadhutaGitaGorakhpurHindi',
+    archive_url: 'https://sanskritdocuments.org/doc_giitaa/avadhuta.html'
+  },
+  {
+    id: 'uddhava_gita',
+    name_hi: 'उद्धव गीता (हंस गीता)',
+    name_en: 'Uddhava Gita',
+    sanskrit_name: 'उद्धवगीता',
+    source_text: 'Srimad Bhagavatam (11th Canto, Chapters 6–29)',
+    narrator: 'Bhagavan Sri Krishna',
+    listener: 'Uddhava (His closest friend and minister in Dwarka)',
+    chapters_count: 24,
+    total_verses: 1030,
+    tradition: 'Bhagavata Vaishnava / Vedanta Synthesis',
+    core_philosophy_hi: 'भगवान श्रीकृष्ण द्वारा अपनी इहलीला समाप्त करने से ठीक पहले उद्धव को दिया गया अंतिम दिव्य उपदेश। अवधूत के 24 गुरुओं (पृथ्वी, वायु, जल, अग्नि, अजगर, पतंगा आदि) से प्रकृति से ज्ञान सीखने की अद्भुत शिक्षा।',
+    core_philosophy_en: 'Krishna’s parting discourse to Uddhava before leaving for Vaikuntha, teaching non-attachment, Bhakti, and the 24 natural gurus of an ascetic.',
+    key_teachings_hi: [
+      'अवधूत के 24 गुरु: जो व्यक्ति विवेकवान है, वह प्रकृति के हर तत्व (चींटी, मकड़ी, जल, आकाश) से ज्ञान सीख लेता है।',
+      'संसार मन की कल्पना है; जब मन भगवान में स्थिर होता है, तो सारा द्वंद्व समाप्त हो जाता है।',
+      'भक्तियोग ही कलियुग में सबसे सरल और श्रेष्ठ मार्ग है।'
+    ],
+    pdf_url: 'https://archive.org/details/UddhavaGitaGitaPressHindi',
+    archive_url: 'https://vedabase.io/en/library/sb/11/'
+  },
+  {
+    id: 'ribhu_gita',
+    name_hi: 'ऋभु गीता',
+    name_en: 'Ribhu Gita',
+    sanskrit_name: 'ऋभुगीता',
+    source_text: 'Shiva Rahasya Purana (6th Amsa)',
+    narrator: 'Sage Ribhu (Brahma-manasa putra)',
+    listener: 'Sage Nidagha',
+    chapters_count: 50,
+    total_verses: 2000,
+    tradition: 'Advaita Shaivism (Highly praised by Sri Ramana Maharshi)',
+    core_philosophy_hi: 'सर्वं ब्रह्मैव, नान्यदस्ति। सब कुछ साक्षात परब्रह्म ही है, दूसरा कुछ भी नहीं। संसार, मन, देह और दृश्य प्रपंच केवल भ्रांति है। इसका नित्य पाठ आत्मसाक्षात्कार कराता है।',
+    core_philosophy_en: 'The song of Sage Ribhu declaring that all is pure Brahman and nothing else exists. Ramana Maharshi frequently recommended its recitation.',
+    key_teachings_hi: [
+      'अहं ब्रह्मैव सर्वं हि — मैं ही ब्रह्म हूँ, सब कुछ ब्रह्म ही है।',
+      'मन की कोई स्वतंत्र सत्ता नहीं है; मन के शांत होते ही आत्मतत्त्व स्वतः प्रकाशित होता है।',
+      'सर्वं शांतं, सर्वं शून्यं, सर्वं परं ब्रह्म।'
+    ],
+    pdf_url: 'https://archive.org/details/RibhuGitaHindiEnglish',
+    archive_url: 'https://sanskritdocuments.org/doc_giitaa/ribhugita.html'
+  },
+  {
+    id: 'ishvara_gita',
+    name_hi: 'ईश्वर गीता',
+    name_en: 'Ishvara Gita',
+    sanskrit_name: 'ईश्वरगीता',
+    source_text: 'Kurma Purana (Uttara Vibhaga, Chapters 1–11)',
+    narrator: 'Lord Shiva (Ishvara / Mahadeva)',
+    listener: 'Sages Sanatkumara, Vyasa, and others on Mount Meru',
+    chapters_count: 11,
+    total_verses: 498,
+    tradition: 'Pashupata Shaiva Advaita',
+    core_philosophy_hi: 'भगवान शिव द्वारा दिया गया भगवद्गीता के समरूप उपदेश। शिवजी अपने विश्वरूप और पाशुपत योग का वर्णन करते हैं, जिसमें ज्ञान और शिव-भक्ति का सुंदर समन्वय है।',
+    core_philosophy_en: 'The Shaiva counterpart to the Bhagavad Gita found in Kurma Purana, where Shiva reveals His cosmic form and the secret of Pashupata Yoga.',
+    key_teachings_hi: [
+      'शिव ही समस्त सृष्टि के आदि, मध्य और अंत हैं।',
+      'पाशुपत योग द्वारा मन को शिव में लीन करने से समस्त पाशों (बंधनों) से मुक्ति मिलती है।',
+      'लिंग में नित्य पूजा और पंचाक्षर मंत्र (नमः शिवाय) का जप मोक्ष का राजमार्ग है।'
+    ],
+    pdf_url: 'https://archive.org/details/IshvaraGitaKurmaPuranaHindi',
+    archive_url: 'https://sanskritdocuments.org/doc_giitaa/'
+  },
+  {
+    id: 'ganesha_gita',
+    name_hi: 'गणेश गीता',
+    name_en: 'Ganesha Gita',
+    sanskrit_name: 'गणेशगीता',
+    source_text: 'Ganesha Purana (Upasana Khanda, Chapters 138–148)',
+    narrator: 'Lord Ganesha (as Gajanana / Vighnaharta)',
+    listener: 'King Varenya',
+    chapters_count: 11,
+    total_verses: 414,
+    tradition: 'Ganapatya Sampradaya',
+    core_philosophy_hi: 'भगवान गणेश राजा वरेण्य को कर्मयोग, भक्तियोग और ज्ञानयोग का उपदेश देते हैं। गणेश जी ही ओंकार (प्रणव) और चराचर के मूल कारण हैं।',
+    core_philosophy_en: 'Lord Ganesha instructs King Varenya on self-realization, revealing Ganesha as the cosmic source, Pranava (OM), and ultimate refuge.',
+    key_teachings_hi: [
+      'गणेश ही ओंकार का सगुण-साकार स्वरूप हैं।',
+      'जो समस्त कार्यों के आरंभ में अहंकार छोड़कर मेरी शरण लेता है, उसके समस्त विघ्न नष्ट होते हैं।',
+      'समत्व ही सच्चा योग है।'
+    ],
+    pdf_url: 'https://archive.org/details/GaneshaGitaGitaPressHindi',
+    archive_url: 'https://sanskritdocuments.org/doc_giitaa/ganeshagita.html'
+  },
+  {
+    id: 'rama_gita',
+    name_hi: 'राम गीता',
+    name_en: 'Rama Gita',
+    sanskrit_name: 'रामगीता',
+    source_text: 'Adhyatma Ramayana (Uttara Kanda, Chapter 5)',
+    narrator: 'Bhagavan Sri Rama',
+    listener: 'Lakshmana',
+    chapters_count: 1,
+    total_verses: 62,
+    tradition: 'Advaita Vedanta in Ramabhakti',
+    core_philosophy_hi: 'श्री राम अपने प्रिय भ्राता लक्ष्मण को अद्वैत ज्ञान का उपदेश देते हैं। वे समझाते हैं कि अविद्या ही देहाभिमान और संसार के दुःखों का मूल है। "तत्त्वमसि" महावाक्य का विशद विवेचन।',
+    core_philosophy_en: 'Rama instructs Lakshmana on non-dual realization in the Adhyatma Ramayana, dismantling spiritual ignorance through the Mahavakya Tat Tvam Asi.',
+    key_teachings_hi: [
+      'कर्म से चित्त शुद्धि होती है, परंतु मोक्ष केवल और केवल आत्मज्ञान से ही संभव है।',
+      'अविद्या के दो रूप हैं: आवरण (सत्य को ढकना) और विक्षेप (असत्य को दिखाना)।',
+      'मेरी अनन्य भक्ति करने वाले को अंत में यह परमोत्कृष्ट ज्ञान अनायास ही प्राप्त हो जाता है।'
+    ],
+    pdf_url: 'https://archive.org/details/RamaGitaAdhyatmaRamayanaHindi',
+    archive_url: 'https://sanskritdocuments.org/doc_giitaa/ramagita.html'
+  },
+  {
+    id: 'devi_gita',
+    name_hi: 'देवी गीता',
+    name_en: 'Devi Gita',
+    sanskrit_name: 'देवीगीता',
+    source_text: 'Srimad Devi Bhagavata Purana (7th Canto, Chapters 31–40)',
+    narrator: 'Adi Parashakti (Bhuvaneshwari / Maha Maya)',
+    listener: 'Himalaya (King of Mountains, father of Parvati)',
+    chapters_count: 10,
+    total_verses: 507,
+    tradition: 'Shakta Advaita / Sri Vidya',
+    core_philosophy_hi: 'पराशक्ति माँ भुवनेश्वरी अपने विराट स्वरूप, चक्रों के जागरण, कुंडलिनी योग और निष्काम भक्तियोग का उपदेश देती हैं। वे स्वयं को सच्चिदानंदमयी ब्रह्मशक्ति घोषित करती हैं।',
+    core_philosophy_en: 'The Divine Mother reveals Her cosmic majesty to King Himalaya, expounding Shakta philosophy, Kundalini, and meditation on Sri Chakra.',
+    key_teachings_hi: [
+      'मैं ही समस्त ब्रह्मांड की जननी, पालनकर्त्री और संहारक शक्ति हूँ।',
+      'कुंडलिनी का मूलाधार से सहस्रार तक उत्थान ही परम मोक्ष है।',
+      'सच्ची भक्ति वह है जहाँ भक्त संसार के सब प्राणियों में मेरा ही रूप देखता है।'
+    ],
+    pdf_url: 'https://archive.org/details/DeviGitaGitaPressHindi',
+    archive_url: 'https://sanskritdocuments.org/doc_giitaa/devigita.html'
+  },
+  {
+    id: 'guru_gita',
+    name_hi: 'श्री गुरु गीता',
+    name_en: 'Sri Guru Gita',
+    sanskrit_name: 'गुरुगीता',
+    source_text: 'Skanda Purana (Uttara Khanda)',
+    narrator: 'Lord Shiva',
+    listener: 'Maa Parvati',
+    chapters_count: 3,
+    total_verses: 352,
+    tradition: 'Guru Tattva / Tantra / Yoga',
+    core_philosophy_hi: 'गुरुर्ब्रह्मा गुरुर्विष्णुः गुरुर्देवो महेश्वरः। गुरु साक्षात परब्रह्म हैं। अज्ञान के अंधकार (गु) को मिटाकर ज्ञान का प्रकाश (रु) देने वाले सद्गुरु के चरणों में ही तीनों लोकों के तीर्थ विद्यमान हैं।',
+    core_philosophy_en: 'Shiva reveals the sacred mystery of the Guru Principle to Parvati, declaring the Guru as the living embodiment of Brahma, Vishnu, and Shiva.',
+    key_teachings_hi: [
+      'गुरु की कृपा के बिना अनंत जन्मों में भी आत्मसाक्षात्कार संभव नहीं है।',
+      'सद्गुरु की सेवा ही सबसे बड़ा तीर्थ, तप और जप है।',
+      'ध्यानमूलं गुरोर्मूर्तिः पूजामूलं गुरोः पदम् | मंत्रमूलं गुरोर्वाक्यं मोक्षमूलं गुरोः कृपा ||'
+    ],
+    pdf_url: 'https://archive.org/details/GuruGitaGitaPressHindi',
+    archive_url: 'https://sanskritdocuments.org/doc_giitaa/gurugita.html'
+  },
+  {
+    id: 'brahma_gita',
+    name_hi: 'ब्रह्म गीता',
+    name_en: 'Brahma Gita',
+    sanskrit_name: 'ब्रह्मगीता',
+    source_text: 'Skanda Purana (Suta Samhita, Yajna Vaibhava Khanda)',
+    narrator: 'Sage Vasistha & Suta',
+    listener: 'The Assembly of Rishis',
+    chapters_count: 12,
+    total_verses: 750,
+    tradition: 'Vedic Advaita Vedanta',
+    core_philosophy_hi: 'उपनिषदों के महावाक्यों का विशद विश्लेषण। ब्रह्म ही एकमात्र सत्य है और यह जगत स्वप्नवत प्रतीत होता है।',
+    core_philosophy_en: 'Deep analytical exposition of the Upanishadic Mahavakyas in the Suta Samhita, establishing the unreality of the world and oneness of Atman.',
+    key_teachings_hi: [
+      'ब्रह्म सत्यं जगन्मिथ्या जीवो ब्रह्मैव नापरः।',
+      'श्रवण, मनन और निदिध्यासन ही ब्रह्मज्ञान की प्राप्ति के तीन साधन हैं।'
+    ],
+    pdf_url: 'https://archive.org/details/BrahmaGitaSutaSamhita',
+    archive_url: 'https://sanskritdocuments.org/doc_giitaa/'
+  },
+  {
+    id: 'vyadha_gita',
+    name_hi: 'व्याध गीता (धर्मव्याध उपदेश)',
+    name_en: 'Vyadha Gita',
+    sanskrit_name: 'व्याधगीता',
+    source_text: 'Mahabharata (Vana Parva, Chapters 206–216)',
+    narrator: 'Dharmavyadha (A righteous butcher of Mithila)',
+    listener: 'Kaushika (An ascetic Brahmin monk)',
+    chapters_count: 11,
+    total_verses: 280,
+    tradition: 'Karma Yoga / Grihastha Dharma',
+    core_philosophy_hi: 'एक तपस्वी ब्राह्मण को अहंकार हो गया था। तब उसे एक साधारण कसाई (धर्मव्याध) के पास भेजा गया। व्याध ने सिखाया कि अपने स्वधर्म का निष्काम पालन और वृद्ध माता-पिता की सच्ची सेवा ही सबसे बड़ी तपस्या है।',
+    core_philosophy_en: 'A butcher teaches a proud forest hermit that dutifully serving one’s elderly parents and fulfilling svadharma is the highest spiritual attainment.',
+    key_teachings_hi: [
+      'कोई भी कर्म अपने आप में छोटा या बड़ा नहीं होता; कर्म के पीछे की भावना और अनासक्ति उसे पवित्र बनाती है।',
+      'माता-पिता की साक्षात सेवा ही परमात्मा की सर्वोच्च पूजा है।',
+      'अहिंसा, सत्य, दम और परोपकार ही सच्चे ब्राह्मणत्व के लक्षण हैं।'
+    ],
+    pdf_url: 'https://archive.org/details/MahabharataVanaParvaVyadhaGita',
+    archive_url: 'https://sanskritdocuments.org/doc_giitaa/'
+  },
+  {
+    id: 'anu_gita',
+    name_hi: 'अनु गीता',
+    name_en: 'Anu Gita',
+    sanskrit_name: 'अनुगीता',
+    source_text: 'Mahabharata (Ashvamedhika Parva, Chapters 16–51)',
+    narrator: 'Bhagavan Sri Krishna',
+    listener: 'Arjuna (after the Kurukshetra War)',
+    chapters_count: 36,
+    total_verses: 1050,
+    tradition: 'Sankhya / Yoga / Vedanta',
+    core_philosophy_hi: 'युद्ध समाप्ति के बाद अर्जुन ने कृष्ण से कहा कि वे युद्ध के समय कही गई गीता को भूल गए हैं। तब कृष्ण ने कहा कि तुमने ध्यान नहीं दिया, फिर भी मैं प्राचीन ऋषियों के संवाद के माध्यम से पुनः आत्मविद्या का सार बताता हूँ।',
+    core_philosophy_en: 'Recapitulation given by Krishna to Arjuna after the war, expounding Sankhya philosophy and the liberation of the soul through ancient sage dialogues.',
+    key_teachings_hi: [
+      'संसार एक पहिये की तरह घूम रहा है; जो साक्षी भाव में स्थित है, वही मुक्त है।',
+      'प्राण और अपान का संयम ही अंतर्यात्रा की कुंजी है।'
+    ],
+    pdf_url: 'https://archive.org/details/AnuGitaAshvamedhikaParva',
+    archive_url: 'https://sanskritdocuments.org/doc_giitaa/'
+  },
+  {
+    id: 'parashara_gita',
+    name_hi: 'पराशर गीता',
+    name_en: 'Parashara Gita',
+    sanskrit_name: 'पराशरगीता',
+    source_text: 'Mahabharata (Shanti Parva, Chapters 290–298)',
+    narrator: 'Maharshi Parashara (Father of Sage Vyasa)',
+    listener: 'King Janaka',
+    chapters_count: 9,
+    total_verses: 270,
+    tradition: 'Dharma Shastra & Moksha Dharma',
+    core_philosophy_hi: 'महर्षि पराशर राजा जनक को सदाचार, धर्म, तपस्या और कर्मफल के अमिट नियमों का उपदेश देते हैं। मनुष्य अपने कर्मों का ही निर्माता है।',
+    core_philosophy_en: 'Sage Parashara instructs Janaka on righteousness, moral living, the infallibility of the law of karma, and the path to liberation.',
+    key_teachings_hi: [
+      'जो मनुष्य दूसरों के साथ वैसा आचरण नहीं करता जो उसे स्वयं अप्रिय लगे, वही सच्चा धर्मात्मा है।',
+      'तपस्या से ही तेज और विद्या की वृद्धि होती है।'
+    ],
+    pdf_url: 'https://archive.org/details/ParasharaGitaShantiParva',
+    archive_url: 'https://sanskritdocuments.org/doc_giitaa/'
+  }
+];

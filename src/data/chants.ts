@@ -1,0 +1,1021 @@
+import { Mantra } from '@/types';
+
+export const chantsData: Mantra[] = [
+  // ==========================================
+  // CORE VEDIC & MOOL MANTRAS (1-8)
+  // ==========================================
+  {
+    id: 'gayatri_mantra',
+    name_hi: 'गायत्री मंत्र (महामंत्र)',
+    name_en: 'Gayatri Mantra',
+    category: 'sukta',
+    deity_id: 'gayatri',
+    deity_name: 'Devi Gayatri / Savitr (Sun)',
+    source: 'Rigveda (3.62.10) & Yajurveda (36.3)',
+    text_sanskrit: 'ॐ भूर्भुवः स्वः तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि धियो यो नः प्रचोदयात् ॥',
+    text_transliteration: 'oṁ bhūr bhuvaḥ svaḥ tat savitur vareṇyaṁ bhargo devasya dhīmahi dhiyo yo naḥ pracodayāt ||',
+    meaning_hi: 'उस प्राणस्वरूप, दुःखनाशक, सुखस्वरूप, श्रेष्ठ, तेजस्वी, पापनाशक, देवस्वरूप परमात्मा का हम ध्यान करें, जो हमारी बुद्धि को सन्मार्ग की ओर प्रेरित करे।',
+    meaning_en: 'We meditate upon the supreme adorable splendor of the Divine Solar Creator Savitr; may that divine light inspire and illuminate our intellects.',
+    recommended_count: 108,
+    benefit_hi: 'बुद्धि की निर्मलता, स्मरण शक्ति की वृद्धि, मानसिक शांति और आत्मिक प्रकाश की प्राप्ति।',
+    audio_url: 'https://archive.org/download/GayatriMantra108Times/GayatriMantra108Times.mp3',
+    youtube_id: 'K8fW7Vv0b9k'
+  },
+  {
+    id: 'maha_mrityunjaya_mantra',
+    name_hi: 'महामृत्युंजय मंत्र (संजीवनी मंत्र)',
+    name_en: 'Maha Mrityunjaya Mantra',
+    category: 'shloka',
+    deity_id: 'shiva',
+    deity_name: 'Lord Shiva (Tryambaka)',
+    source: 'Rigveda (7.59.12) & Shukla Yajurveda (3.60)',
+    text_sanskrit: 'ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम् । उर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय मामृतात् ॥',
+    text_transliteration: 'oṁ try-ambakaṁ yajāmahe sugandhiṁ puṣṭi-vardhanam | urvārukam iva bandhanān mṛtyor mukṣīya māmṛtāt ||',
+    meaning_hi: 'हम त्रि-नेत्रधारी भगवान शिव की आराधना करते हैं, जो सुगंधित और समस्त जीवन-शक्ति को पुष्ट करने वाले हैं। जिस प्रकार पका हुआ खरबूजा अपनी बेल से सहज ही मुक्त हो जाता है, उसी प्रकार हम मृत्यु के भय और सांसारिक बंधनों से मुक्त हों, मोक्ष (अमरता) से विमुख न हों।',
+    meaning_en: 'We worship the Three-Eyed Lord Shiva, who is fragrant and nourishes all beings. As a ripe melon is released effortlessly from its vine, may He liberate us from death and bondage into immortality.',
+    recommended_count: 108,
+    benefit_hi: 'अकाल मृत्यु से रक्षा, गंभीर रोगों से मुक्ति, भय का नाश और शारीरिक-मानसिक स्वास्थ्य।',
+    audio_url: 'https://archive.org/download/MahamrityunjayaMantra108Times/MahamrityunjayaMantra108Times.mp3',
+    youtube_id: 'c8_X4m7Q2wA'
+  },
+  {
+    id: 'shanti_path',
+    name_hi: 'वैदिक शांति पाठ',
+    name_en: 'Vedic Shanti Path (Cosmic Peace)',
+    category: 'sukta',
+    deity_id: 'vishnu',
+    deity_name: 'Universal Divine (Brahman)',
+    source: 'Shukla Yajurveda (36.17)',
+    text_sanskrit: 'ॐ द्यौः शान्तिरन्तरिक्षं शान्तिः पृथिवी शान्तिरापः शान्तिरोषधयः शान्तिः ।\nवनस्पतयः शान्तिर्विश्वेदेवाः शान्तिर्ब्रह्म शान्तिः सर्वं शान्तिः शान्तिरेव शान्तिः सा मा शान्तिरेधि ॥\nॐ शान्तिः शान्तिः शान्तिः ॥',
+    text_transliteration: 'oṁ dyauḥ śāntir antarikṣaṁ śāntiḥ pṛthivī śāntir āpaḥ śāntir oṣadhayaḥ śāntiḥ | vanaspatayaḥ śāntir viśvedevāḥ śāntir brahma śāntiḥ sarvaṁ śāntiḥ śāntir eva śāntiḥ sā mā śāntir edhi || oṁ śāntiḥ śāntiḥ śāntiḥ ||',
+    meaning_hi: 'द्युलोक में शांति हो, अंतरिक्ष में शांति हो, पृथ्वी पर शांति हो, जल शांत हो, औषधियां शांत हों, वनस्पतियां शांत हों, समस्त देवगण शांत हों, परब्रह्म शांत हो, सब कुछ शांत हो और वह शांति स्वयं मुझे प्राप्त हो।',
+    meaning_en: 'May peace reign in heaven, peace in the ether, peace on earth, peace in water, peace in medicinal herbs, peace in trees, peace across all cosmic energies, and may that supreme peace fill my heart.',
+    recommended_count: 1,
+    benefit_hi: 'पर्यावरण और मन में परम शांति, मानसिक तनाव व अनिद्रा का निवारण।',
+    youtube_id: 'W6_Y4r9X0cE'
+  },
+  {
+    id: 'hare_krishna_mahamantra',
+    name_hi: 'महामंत्र (हरे कृष्ण हरे राम)',
+    name_en: 'Hare Krishna Maha Mantra',
+    category: 'beej',
+    deity_id: 'krishna',
+    deity_name: 'Radha-Krishna & Sita-Rama',
+    source: 'Kali Santarana Upanishad',
+    text_sanskrit: 'हरे कृष्ण हरे कृष्ण कृष्ण कृष्ण हरे हरे ।\nहरे राम हरे राम राम राम हरे हरे ॥',
+    text_transliteration: 'hare kṛṣṇa hare kṛṣṇa kṛṣṇa kṛṣṇa hare hare |\nhare rāma hare rāma rāma rāma hare hare ||',
+    meaning_hi: 'हे भगवान की आह्लादिनी शक्ति (हरा/राधा)! हे सर्व-आकर्षक परमात्मा (कृष्ण)! हे परम आनंद के सागर (राम)! कृपया मुझे अपनी दिव्य सेवा और प्रेम में नियुक्त करें।',
+    meaning_en: 'O Divine Energy of God (Hare), O All-Attractive Supreme Lord (Krishna), O Ocean of Supreme Bliss (Rama), please engage me in Your unconditional loving service.',
+    recommended_count: 108,
+    benefit_hi: 'कलियुग में समस्त पापों से मुक्ति, चित्त के दर्पण की निर्मलता और दिव्य आनंद।',
+    youtube_id: 'K8_R7w2M9aC'
+  },
+  {
+    id: 'om_namah_shivaya',
+    name_hi: 'शिव पंचाक्षर मंत्र',
+    name_en: 'Shiva Panchakshara Mool Mantra',
+    category: 'beej',
+    deity_id: 'shiva',
+    deity_name: 'Lord Shiva',
+    source: 'Krishna Yajurveda (Taittiriya Samhita, Sri Rudram)',
+    text_sanskrit: 'ॐ नमः शिवाय ॥',
+    text_transliteration: 'oṁ namaḥ śivāya ||',
+    meaning_hi: 'मैं भगवान शिव (कल्याणकारी परमात्मा) को नमन करता हूँ। यह पांच अक्षर (न, म, शि, वा, य) पंचतत्वों (पृथ्वी, जल, अग्नि, वायु, आकाश) का शोधन करते हैं।',
+    meaning_en: 'I bow to Lord Shiva, the embodiment of auspiciousness and inner stillness, harmonizing the five elements within.',
+    recommended_count: 108,
+    benefit_hi: 'अहंकार का शमन, प्राणों में स्थिरता, भय मुक्ति और मोक्ष प्राप्ति।',
+    youtube_id: 'P9c4u_X_G9k'
+  },
+  {
+    id: 'om_namo_narayanaya',
+    name_hi: 'विष्णु अष्टाक्षर मंत्र',
+    name_en: 'Ashtakshara Narayana Mantra',
+    category: 'beej',
+    deity_id: 'vishnu',
+    deity_name: 'Lord Narayana',
+    source: 'Narayana Upanishad',
+    text_sanskrit: 'ॐ नमो नारायणाय ॥',
+    text_transliteration: 'oṁ namo nārāyaṇāya ||',
+    meaning_hi: 'समस्त ब्रह्मांड के आधारभूत भगवान श्री नारायण को मेरा बारंबार नमस्कार है।',
+    meaning_en: 'I offer my reverent obeisances unto the Supreme Being Narayana, the shelter and resting place of all living entities.',
+    recommended_count: 108,
+    benefit_hi: 'वैकुंठ की प्राप्ति, पारिवारिक सुख-शांति, दरिद्रता का नाश।',
+    youtube_id: 'CgV7VqJ8_lU'
+  },
+  {
+    id: 'om_namo_bhagavate_vasudevaya',
+    name_hi: 'द्वादशाक्षर वासुदेव मंत्र',
+    name_en: 'Dvadashakshara Vasudeva Mantra',
+    category: 'beej',
+    deity_id: 'krishna',
+    deity_name: 'Lord Krishna / Vasudeva',
+    source: 'Srimad Bhagavatam',
+    text_sanskrit: 'ॐ नमो भगवते वासुदेवाय ॥',
+    text_transliteration: 'oṁ namo bhagavate vāsudevāya ||',
+    meaning_hi: 'समस्त जीवों के अंतर्यामी, सर्वव्यापी भगवान श्रीकृष्ण वासुदेव को मेरा साष्टांग प्रणाम है।',
+    meaning_en: 'Obeisances unto the Supreme Lord Vasudeva Krishna, the indwelling Lord of all living entities.',
+    recommended_count: 108,
+    benefit_hi: 'ध्रुव जी को नारद जी द्वारा प्रदत्त मोक्षप्रद सिद्ध मंत्र।',
+    youtube_id: '7v-m8aW9T0E'
+  },
+  {
+    id: 'vakratunda_mahakaya',
+    name_hi: 'गणेश आदि वंदना',
+    name_en: 'Vakratunda Mahakaya Ganesha Shloka',
+    category: 'shloka',
+    deity_id: 'ganesha',
+    deity_name: 'Lord Ganesha',
+    source: 'Traditional Prayer',
+    text_sanskrit: 'वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ । निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ॥',
+    text_transliteration: 'vakratuṇḍa mahākāya sūryakoṭi samaprabha | nirvighnaṁ kuru me deva sarvakāryeṣu sarvadā ||',
+    meaning_hi: 'हे घुमावदार सूंड वाले, विशालकाय, करोड़ों सूर्यों के समान तेजस्वी देव! मेरे समस्त कार्यों को सदा निर्विघ्न रूप से पूर्ण करें।',
+    meaning_en: 'O Lord with the curved trunk and immense form, whose brilliance equals millions of suns, make all my undertakings hurdle-free always.',
+    recommended_count: 3,
+    benefit_hi: 'दिन की शुरुआत और शुभ कार्यों के प्रारंभ में समस्त विघ्नों का शमन।',
+    youtube_id: 'P9_M4k7W2bA'
+  },
+
+  // ==========================================
+  // CHALISAS (9-18)
+  // ==========================================
+  {
+    id: 'hanuman_chalisa',
+    name_hi: 'श्री हनुमान चालीसा',
+    name_en: 'Shri Hanuman Chalisa',
+    category: 'chalisa',
+    deity_id: 'hanuman',
+    deity_name: 'Lord Hanuman',
+    source: 'Goswami Tulsidas (Awadhi language)',
+    text_sanskrit: `॥ दोहा ॥
+श्रीगुरु चरन सरोज रज, निज मनु मुकुरु सुधारि ।
+बरनऊँ रघुबर बिमल जसु, जो दायकु फल चारि ॥
+बुद्धिहीन तनु जानिके, सुमिरौं पवन-कुमार ।
+बल बुद्धि बिद्या देहु मोहिं, हरहु कलेस बिकार ॥
+
+॥ चौपाई ॥
+जय हनुमान ज्ञान गुन सागर । जय कपीस तिहुँ लोक उजागर ॥ १ ॥
+राम दूत अतुलित बल धामा । अंजनि-पुत्र पवनसुत नामा ॥ २ ॥
+महाबीर बिक्रम बजरंगी । कुमति निवार सुमति के संगी ॥ ३ ॥
+कंचन बरन बिराज सुबेसा । कानन कुंडल कुंचित केसा ॥ ४ ॥
+हाथ बज्र औ ध्वजा बिराजै । काँधे मूँज जनेऊ साजै ॥ ५ ॥
+संकर सुवन केसरीनंदन । तेज प्रताप महा जग बंदन ॥ ६ ॥
+बिद्यावान गुनी अति चातुर । राम काज करिबे को आतुर ॥ ७ ॥
+प्रभु चरित्र सुनिबे को रसिया । राम लखन सीता मन बसिया ॥ ८ ॥
+सूक्ष्म रूप धरि सियहिं दिखावा । बिकट रूप धरि लंक जरावा ॥ ९ ॥
+भीम रूप धरि असुर संहारे । रामचंद्र के काज संवारे ॥ १० ॥
+लाय सजीवन लखन जियाये । श्रीरघुबीर हरषि उर लाये ॥ ११ ॥
+रघुपति कीन्ही बहुत बड़ाई । तुम मम प्रिय भरतहि सम भाई ॥ १२ ॥
+सहस बदन तुम्हरो जस गावैं । अस कहि श्रीपति कंठ लगावैं ॥ १३ ॥
+सनकादिक ब्रह्मादि मुनीसा । नारद सारद सहित अहीसा ॥ १४ ॥
+जम कुबेर दिगपाल जहाँ ते । कबि कोबिद कहि सके कहाँ ते ॥ १५ ॥
+तुम उपकार सुग्रीवहिं कीन्हा । राम मिलाय राज पद दीन्हा ॥ १६ ॥
+तुम्हरो मंत्र बिभीषन माना । लंकेस्वर भए सब जग जाना ॥ १७ ॥
+जुग सहस्र जोजन पर भानू । लील्यो ताहि मधुर फल जानू ॥ १८ ॥
+प्रभु मुद्रिका मेलि मुख माहीं । जलधि लाँघि गये अचरज नाहीं ॥ १९ ॥
+दुर्गम काज जगत के जेते । सुगम अनुग्रह तुम्हरे तेते ॥ २० ॥
+राम दुआरे तुम रखवारे । होत न आज्ञा बिनु पैसारे ॥ २१ ॥
+सब सुख लहै तुम्हारी सरना । तुम रक्षक काहू को डर ना ॥ २२ ॥
+आपन तेज सम्हारो आपै । तीनों लोक हाँक तें काँपै ॥ २३ ॥
+भूत पिसाच निकट नहिं आवै । महाबीर जब नाम सुनावै ॥ २४ ॥
+नासै रोग हरै सब पीरा । जपत निरंतर हनुमत बीरा ॥ २५ ॥
+संकट तें हनुमान छुड़ावै । मन क्रम बचन ध्यान जो लावै ॥ २६ ॥
+सब पर राम तपस्वी राजा । तिन के काज सकल तुम साजा ॥ २७ ॥
+और मनोरथ जो कोई लावै । सोइ अमित जीवन फल पावै ॥ २८ ॥
+चारों जुग परताप तुम्हारा । है परसिद्ध जगत उजियारा ॥ २९ ॥
+साधु संत के तुम रखवारे । असुर निकंदन राम दुलारे ॥ ३० ॥
+अष्ट सिद्धि नौ निधि के दाता । अस बर दीन जानकी माता ॥ ३१ ॥
+राम रसायन तुम्हरे पासा । सदा रहो रघुपति के दासा ॥ ३२ ॥
+तुम्हरे भजन राम को पावै । जनम जनम के दुख बिसरावै ॥ ३३ ॥
+अंत काल रघुबर पुर जाई । जहाँ जन्म हरि-भक्त कहाई ॥ ३४ ॥
+और देवता चित्त न धरई । हनुमत सेइ सर्ब सुख करई ॥ ३५ ॥
+संकट कटै मिटै सब पीरा । जो सुमिरै हनुमत बलबीरा ॥ ३६ ॥
+जै जै जै हनुमान गोसाईं । कृपा करहु गुरुदेव की नाईं ॥ ३७ ॥
+जो सत बार पाठ कर कोई । छूटहि बंदि महा सुख होई ॥ ३८ ॥
+जो यह पढ़ै हनुमान चालीसा । होय सिद्धि साखी गौरीसा ॥ ३९ ॥
+तुलसीदास सदा हरि चेरा । कीजै नाथ हृदय मँह डेरा ॥ ४० ॥
+
+॥ दोहा ॥
+पवनतनय संकट हरन, मंगल मूरति रूप ।
+राम लखन सीता सहित, हृदय बसहु सुर भूप ॥`,
+    text_transliteration: `dohā: śrī-guru carana saroja raja... caupāī: jaya hanumāna jñāna guna sāgara...`,
+    meaning_hi: 'गोस्वामी तुलसीदास कृत 40 चौपाइयों का सिद्ध स्तोत्र, जो भय, भूत-प्रेत, संकट, असाध्य रोगों और शनि-मंगल के अनिष्ट से तत्काल मुक्ति दिलाता है।',
+    meaning_en: 'The legendary 40-verse hymn in praise of Lord Hanuman, destroying all anxiety, physical suffering, and planetary obstacles.',
+    recommended_count: 7,
+    benefit_hi: 'समस्त संकटों से मुक्ति, आत्मबल, आरोग्य और श्री राम की कृपा।',
+    audio_url: 'https://archive.org/download/HanumanChalisaGulshanKumar/HanumanChalisaGulshanKumar.mp3',
+    youtube_id: 'AETFvQonfV8'
+  },
+  {
+    id: 'shiv_chalisa',
+    name_hi: 'श्री शिव चालीसा',
+    name_en: 'Shri Shiv Chalisa',
+    category: 'chalisa',
+    deity_id: 'shiva',
+    deity_name: 'Lord Shiva',
+    source: 'Traditional Awadhi Hymn',
+    text_sanskrit: `॥ दोहा ॥
+जय गणेश गिरिजा सुवन, मंगल मूल सुजान ।
+कहत अयोध्यादास तुम, देहु अभय वरदान ॥
+
+॥ चौपाई ॥
+जय गिरिजापति दीन दयाला । सदा करत संतन प्रतिपाला ॥
+भाल चंद्रमा सोहत नीके । कानन कुण्डल नागफनी के ॥
+अंग गौर शिर गंग बहाये । मुण्डमाल तन छार लगाये ॥
+वस्त्र खाल बाघंबर सोहे । छवि को देख नाग मुनि मोहे ॥
+मैना मातु की ह्वै दुलारी । बाम अंग सोहत छबि न्यारी ॥
+कर त्रिशूल सोहत शुचि भालो । करत सदा शत्रुन क्षयकारी ॥
+नंदी भृंगी नृत्य करावैं । ताल मृदंग अनहद ढोल बजावैं ॥
+देवन जबहीं जाय पुकारा । तबहीं तुम प्रभु आप उबारा ॥`,
+    text_transliteration: `jaya girijāpati dīna dayālā... sadā karata santana pratipālā...`,
+    meaning_hi: 'भोलेनाथ की स्तुति में 40 चौपाइयां, जो जीवन में शांति, आरोग्य, संतान सुख और अकाल मृत्यु से सुरक्षा प्रदान करती हैं।',
+    meaning_en: 'A 40-verse devotional ode to Lord Shiva celebrating His infinite compassion to the distressed.',
+    recommended_count: 1,
+    benefit_hi: 'मानसिक शांति, सावन सोमवार व्रत में पाठ, शिव कृपा।',
+    youtube_id: 'Q5_T7k_Z9aM'
+  },
+  {
+    id: 'durga_chalisa',
+    name_hi: 'श्री दुर्गा चालीसा',
+    name_en: 'Shri Durga Chalisa',
+    category: 'chalisa',
+    deity_id: 'durga',
+    deity_name: 'Devi Durga',
+    source: 'Traditional Shakta Hymn',
+    text_sanskrit: `॥ नमो नमो दुर्गे सुख करनी । नमो नमो दुर्गे दुःख हरनी ॥
+निरंकार है ज्योति तुम्हारी । तिहूँ लोक फैली उजियारी ॥
+शशि ललाट मुख महाविशाला । नेत्र लाल भृकुटी विकराला ॥
+रूप मातु को अधिक सुहावे । दरश करत जन अति सुख पावे ॥
+तुम संसार शक्ति लय कीना । पालन हेतु अन्न धन दीना ॥
+अन्नपूर्णा हुई जग पाला । तुम ही आदि सुन्दरी बाला ॥`,
+    text_transliteration: `namo namo durge sukha karanī | namo namo ambe duḥkha haranī...`,
+    meaning_hi: 'माँ जगदंबा की स्तुति, जो समस्त दुःखों और शत्रुओं का नाश कर सुख-समृद्धि प्रदान करती हैं।',
+    meaning_en: 'Forty verses saluting Mother Durga, vanquisher of suffering and dispenser of abundance.',
+    recommended_count: 1,
+    benefit_hi: 'भयमुक्ति, पारिवारिक सुख, नवरात्र में नित्य पाठ।',
+    youtube_id: 'd9_V7w2Q4aK'
+  },
+  {
+    id: 'ganesh_chalisa',
+    name_hi: 'श्री गणेश चालीसा',
+    name_en: 'Shri Ganesh Chalisa',
+    category: 'chalisa',
+    deity_id: 'ganesha',
+    deity_name: 'Lord Ganesha',
+    source: 'Traditional Ganapatya Hymn',
+    text_sanskrit: `॥ दोहा ॥
+जय गणपति सदगुण सदन, कविवर बदन कृपाल ।
+विघ्न हरन मंगल करन, जय जय गिरिजालाल ॥
+
+॥ चौपाई ॥
+जय जय जय गणपति गणराजू । मंगल भरण करण शुभ काजू ॥
+जय गजबदन सदन सुखदाता । विश्व विनायक बुद्धि विधाता ॥
+वक्रतुण्ड शुचि शुण्ड सुहावन । तिलक त्रिपुण्ड भाल मन भावन ॥
+राजत मणि मुक्तन उर माला । स्वर्ण मुकुट शिर नयन विशाला ॥`,
+    text_transliteration: `jaya jaya jaya gaṇapati gaṇarājū... maṅgala bharaṇa karaṇa śubha kājū...`,
+    meaning_hi: 'भगवान गणेश की स्तुति, जो किसी भी नए कार्य के प्रारंभ में समस्त बाधाओं को दूर करती है।',
+    meaning_en: 'Prayer to Ganesha for the smooth and hurdle-free accomplishment of all endeavors.',
+    recommended_count: 1,
+    benefit_hi: 'विद्या, बुद्धि, व्यापार में सफलता और विघ्न निवारण।',
+    youtube_id: 'P9_M4k7W2bA'
+  },
+  {
+    id: 'krishna_chalisa',
+    name_hi: 'श्री कृष्ण चालीसा',
+    name_en: 'Shri Krishna Chalisa',
+    category: 'chalisa',
+    deity_id: 'krishna',
+    deity_name: 'Lord Sri Krishna',
+    source: 'Traditional Vaishnava Hymn',
+    text_sanskrit: `जय यदुनंदन जय जगवंदन । जय वसुदेव देवकी नंदन ॥
+जय यदुराज कंस अरिकारी । जय गोपीजन वल्लभ गिरधारी ॥
+बंसी मधुर बजावनहारे । जन के संकट काटनहारे ॥
+मोर मुकुट पीताम्बर सोहे । रूप लखि सुर मुनि मन मोहे ॥`,
+    text_transliteration: `jaya yadunandana jaya jagavandana...`,
+    meaning_hi: 'मुरलीधर भगवान श्रीकृष्ण की पावन चालीसा, जिसके पाठ से जीवन में आनंद, प्रेम और निष्काम भक्ति का संचार होता है।',
+    meaning_en: 'Devotional hymn in adoration of Lord Krishna’s divine pastimes and protection.',
+    recommended_count: 1,
+    benefit_hi: 'संतान सुख, प्रेम भाव, कृष्ण जन्मोत्सव पर पाठ।',
+    youtube_id: 'c8_X4m7Q2wB'
+  },
+  {
+    id: 'ram_chalisa',
+    name_hi: 'श्री राम चालीसा',
+    name_en: 'Shri Ram Chalisa',
+    category: 'chalisa',
+    deity_id: 'rama',
+    deity_name: 'Lord Sri Rama',
+    source: 'Traditional Hymn',
+    text_sanskrit: `श्री रघुबीर भक्त हितकारी । सुनि लीजै प्रभु अरज हमारी ॥
+निशिदिन ध्यान धरै जो कोई । ता सम धन्य और नहिं होई ॥
+ध्यान धरे शिवजी मन माहीं । ब्रह्मा इंद्र पार नहिं पाहीं ॥
+जय जय रघुपति कृपा निधाना । महिमा गावत वेद पुराना ॥`,
+    text_transliteration: `śrī raghubīra bhakta hitakārī...`,
+    meaning_hi: 'प्रभु श्री राम की दयालुता और मर्यादा का गुणगान करने वाली चालीसा।',
+    meaning_en: 'Forty verses celebrating Sri Rama’s grace, righteousness, and deliverance of the fallen.',
+    recommended_count: 1,
+    benefit_hi: 'धर्मनिष्ठा, पारिवारिक शांति, राम नवमी पर पाठ।',
+    youtube_id: 'aG9_W7k3Q8k'
+  },
+  {
+    id: 'lakshmi_chalisa',
+    name_hi: 'श्री लक्ष्मी चालीसा',
+    name_en: 'Shri Lakshmi Chalisa',
+    category: 'chalisa',
+    deity_id: 'lakshmi',
+    deity_name: 'Devi Mahalakshmi',
+    source: 'Traditional Shakta-Vaishnava Hymn',
+    text_sanskrit: `मातु लक्ष्मी करि कृपा, करो हृदय में वास ।
+मनोकामना सिद्ध करि, पुरवहु मेरी आस ॥
+सिंधु सुता मैं सुमिरौं तोही । ज्ञान बुद्धि विद्या दो मोही ॥
+तुम समान नहिं कोई उपकारी । सब विधि पुरवहु आस हमारी ॥`,
+    text_transliteration: `mātu lakṣmī kari kṛpā karo hṛdaya meṁ vāsa...`,
+    meaning_hi: 'माँ लक्ष्मी की पावन चालीसा, जो गृह में स्थाई समृद्धि, सद्बुद्धि और सौभाग्य लाती है।',
+    meaning_en: 'Hymn invoking Goddess Lakshmi for spiritual and material well-being.',
+    recommended_count: 1,
+    benefit_hi: 'दीपावली, शुक्रवार व्रत, आर्थिक संकट निवारण।',
+    youtube_id: 'k7_Y9w4M0bC'
+  },
+  {
+    id: 'saraswati_chalisa',
+    name_hi: 'श्री सरस्वती चालीसा',
+    name_en: 'Shri Saraswati Chalisa',
+    category: 'chalisa',
+    deity_id: 'saraswati',
+    deity_name: 'Devi Saraswati',
+    source: 'Traditional Hymn',
+    text_sanskrit: `जनक जननि पद्महिं पगत, निज मति उपजत जोहि ।
+बरनौं विमल सुबाक मति, मात सरस्वती मोहि ॥
+जय श्री सकल बुद्धि बलरासी । जय सर्वज्ञ अमर अविनाशी ॥
+जय जय जय वीणाकर धारी । करती सदा सुहंस सवारी ॥`,
+    text_transliteration: `jaya śrī sakala buddhi balarāsī...`,
+    meaning_hi: 'विद्या और बुद्धि की अधिष्ठात्री माँ सरस्वती की चालीसा, जो अध्ययनरत विद्यार्थियों और साधकों के लिए वरदान है।',
+    meaning_en: 'Invocation of Goddess Saraswati to bestow eloquence, analytical power, and musical creativity.',
+    recommended_count: 1,
+    benefit_hi: 'परीक्षा में सफलता, एकाग्रता, वसंत पंचमी पर पाठ।',
+    youtube_id: 'L7_W8k3N0aP'
+  },
+  {
+    id: 'shani_chalisa',
+    name_hi: 'श्री शनि चालीसा',
+    name_en: 'Shri Shani Chalisa',
+    category: 'chalisa',
+    deity_id: 'shani',
+    deity_name: 'Lord Shani Deva',
+    source: 'Traditional Saurya Hymn',
+    text_sanskrit: `॥ दोहा ॥
+जय गणेश गिरिजा सुवन, मंगल करण कृपाल ।
+दीनन के दुःख दूर करि, कीजै नाथ निहाल ॥
+
+॥ चौपाई ॥
+जय जय श्री शनिदेव दयाला । करत सदा भक्तन प्रतिपाला ॥
+चारि भुजा, तनु श्याम विराजै । माथे रतन मुकुट छवि छाजै ॥
+परम विशाल मनोहर भाला । टेढ़ी दृष्टि भृकुटि विकराला ॥
+कुण्डल श्रवण चमाचम चमके । हिये माल मुक्तन मणि दमके ॥`,
+    text_transliteration: `jaya jaya śrī śanideva dayālā...`,
+    meaning_hi: 'भगवान शनिदेव की क्रूर दृष्टि के कुप्रभावों, साढ़ेसाती, ढैय्या और महादशा के कष्टों को शांत करने वाली चालीसा।',
+    meaning_en: 'Hymn pacifying the malefic influences of Saturn (Sade Sati, Dhayya) and instilling karmic discipline.',
+    recommended_count: 1,
+    benefit_hi: 'शनिवार संध्या पीपल के नीचे दीपक जलाकर पाठ करने से शनि पीड़ा शांत होती है।',
+    youtube_id: 'N9_X7k3W1bM'
+  },
+  {
+    id: 'gayatri_chalisa',
+    name_hi: 'श्री गायत्री चालीसा',
+    name_en: 'Shri Gayatri Chalisa',
+    category: 'chalisa',
+    deity_id: 'gayatri',
+    deity_name: 'Devi Gayatri',
+    source: 'Traditional Hymn',
+    text_sanskrit: `ह्रीं श्रीं क्लीं मेधा प्रभा, जीवन ज्योति प्रचंड ।
+शांति क्रांति चेतना विशद, भ्राज्यंत निष्कंप ॥
+जयति जयति जग जननि भवानी । तुम सम और न कोई दानी ॥
+जो जन ध्यावे तुमहिं सुजाना । पावे सुख सम्पति विज्ञाना ॥`,
+    text_transliteration: `hrīṁ śrīṁ klīṁ medhā prabhā jīvana jyoti pracaṇḍa...`,
+    meaning_hi: 'वेदमाता गायत्री की कृपा प्राप्त करने और आत्मिक चेतना को जगाने वाली पावन चालीसा।',
+    meaning_en: 'Ode to the mother of Vedas bringing mental clarity and divine radiance.',
+    recommended_count: 1,
+    benefit_hi: 'प्रातःकाल संध्यावंदन के पश्चात पाठ।',
+    youtube_id: 'K8fW7Vv0b9k'
+  },
+
+  // ==========================================
+  // SACRED STOTRAS (19-35)
+  // ==========================================
+  {
+    id: 'shiva_tandava_stotra',
+    name_hi: 'शिव तांडव स्तोत्रम्',
+    name_en: 'Shiva Tandava Stotram',
+    category: 'stotra',
+    deity_id: 'shiva',
+    deity_name: 'Lord Shiva',
+    source: 'Composed by Ravana (King of Lanka)',
+    text_sanskrit: `जटाटवीगलज्जलप्रवाहपावितस्थले
+गलेऽवलम्ब्य लम्बितां भुजङ्गतुङ्गमालिकाम् ।
+डमड्डमड्डमड्डमन्निनादवड्डमर्वयं
+चकार चण्डताण्डवं तनोतु नः शिवः शिवम् ॥ १ ॥`,
+    text_transliteration: `jaṭā-ṭavī-galaj-jala-pravāha-pāvita-sthale...`,
+    meaning_hi: 'जटा रूपी वन से गिरती गंगा की धाराओं से पवित्र हुए कंठ में सर्पमाला धारण कर डमरू के डम-डम नाद के साथ तांडव नृत्य करते भगवान शिव हमारा कल्याण करें।',
+    meaning_en: 'Composed by Ravana in ecstasy, describing the cosmic rhythm of Shiva’s locks drenched in Ganga water as He dances the Tandava.',
+    recommended_count: 1,
+    benefit_hi: 'आत्मबल, वाणी में ओज, भय का नाश, शिव साक्षात्कार।',
+    youtube_id: 'jV57Vb-Nq8A'
+  },
+  {
+    id: 'mahishasura_mardini_stotra',
+    name_hi: 'महिषासुर मर्दिनी स्तोत्रम् (अयि गिरिनन्दिनि)',
+    name_en: 'Mahishasura Mardini Stotram (Aigiri Nandini)',
+    category: 'stotra',
+    deity_id: 'durga',
+    deity_name: 'Devi Durga (Mahishasura Mardini)',
+    source: 'Attributed to Adi Shankaracharya',
+    text_sanskrit: `अयि गिरिनन्दिनि नन्दितमेदिनि विश्वविनोदिनि नन्दसुते
+गिरिवरविन्ध्यशिरोऽधिनिवासिनि विष्णुविलासिनि जिष्णुनुते ।
+भगवति हे शितिकण्ठकुटुम्बिनि भूरिकुटुम्बिनि भूरिकृते
+जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १ ॥`,
+    text_transliteration: `ayi giri-nandini nandita-medini viśva-vinodini nanda-sute...`,
+    meaning_hi: 'हे हिमालय राज की पुत्री! संसार को आनंदित करने वाली, विंध्याचल पर निवास करने वाली, भगवान विष्णु को आह्लादित करने वाली, हे महिषासुरमर्दिनी सुंदर जटाओं वाली देवी! आपकी जय हो, जय हो!',
+    meaning_en: 'The electrifying 21-verse hymn celebrating the triumphant Divine Mother who destroyed the buffalo-demon Mahishasura.',
+    recommended_count: 1,
+    benefit_hi: 'शत्रु पराजय, अवसाद व दुर्बलता का नाश, विजय प्राप्ति।',
+    youtube_id: 'N8_Y7w3Q1aA'
+  },
+  {
+    id: 'aditya_hridaya_stotra',
+    name_hi: 'आदित्य हृदय स्तोत्रम्',
+    name_en: 'Aditya Hridaya Stotram',
+    category: 'stotra',
+    deity_id: 'surya',
+    deity_name: 'Lord Surya Narayana',
+    source: 'Valmiki Ramayana (Yuddha Kanda, Sarga 105)',
+    text_sanskrit: `ततो युद्धपरिश्रान्तं समरे चिन्तया स्थितम् ।
+रावणं चाग्रतो दृष्ट्वा युद्धाय समुपस्थितम् ॥
+आदित्यहृदयं पुण्यं सर्वशत्रुविनाशनम् ।
+जयावहं जपेन्नित्यमक्षय्यं परमं शिवम् ॥`,
+    text_transliteration: `tato yuddha-pariśrāntaṁ samare cintayā sthitam...`,
+    meaning_hi: 'रणभूमि में रावण के सामने जब श्री राम युद्ध से किंचित थके हुए थे, तब महर्षि अगस्त्य ने उन्हें सूर्यदेव के इस परम गोपनीय स्तोत्र का उपदेश दिया जिससे रावण पर विजय प्राप्त हुई।',
+    meaning_en: 'Imparted by Sage Agastya to Sri Rama on the battlefield to revitalize courage, dispelling all exhaustion and securing victory.',
+    recommended_count: 1,
+    benefit_hi: 'हृदय रोग निवारण, आत्मविश्वास में वृद्धि, समस्त शत्रुओं और रोगों पर विजय।',
+    youtube_id: 'Konark_Sun_T7'
+  },
+  {
+    id: 'vishnu_sahasranama',
+    name_hi: 'श्री विष्णु सहस्रनाम स्तोत्रम् (1000 नाम)',
+    name_en: 'Vishnu Sahasranama Stotram',
+    category: 'stotra',
+    deity_id: 'vishnu',
+    deity_name: 'Lord Maha Vishnu',
+    source: 'Mahabharata (Anushasana Parva, Chapter 149)',
+    text_sanskrit: `शुक्लाम्बरधरं विष्णुं शशिवर्णं चतुर्भुजम् ।
+प्रसन्नवदनं ध्यायेत् सर्वविघ्नोपशान्तये ॥
+ॐ विश्वं विष्णुर्वषट्कारो भूतभव्यभवत्प्रभुः ।
+भूतकृद् भूतभृद् भावो भूतात्मा भूतभावनः ॥ १ ॥`,
+    text_transliteration: `śuklāmbaradharaṁ viṣṇuṁ śaśivarṇaṁ caturbhujam...`,
+    meaning_hi: 'कुरुक्षेत्र में शरशय्या पर लेटे पितामह भीष्म द्वारा युधिष्ठिर को दिए गए भगवान विष्णु के 1000 दिव्य नाम।',
+    meaning_en: 'The 1,000 names of Lord Vishnu revealed by Bhishma to Yudhishthira, conferring peace, health, and freedom from afflictions.',
+    recommended_count: 1,
+    benefit_hi: 'ग्रह दोष शांति, असाध्य रोगों का शमन, मन की एकाग्रता और मोक्ष।',
+    youtube_id: 'X7_N9k2M1aA'
+  },
+  {
+    id: 'lingashtakam',
+    name_hi: 'लिंगाष्टकम् स्तोत्रम्',
+    name_en: 'Lingashtakam Stotram',
+    category: 'stotra',
+    deity_id: 'shiva',
+    deity_name: 'Lord Shiva',
+    source: 'Traditional Shaiva Hymn',
+    text_sanskrit: `ब्रह्ममुरारिसुरार्चितलिङ्गं निर्मलभासितशोभितलिङ्गम् ।
+जन्मजदुःखविनाशकलिङ्गं तत् प्रणमामि सदाशिवलिङ्गम् ॥ १ ॥`,
+    text_transliteration: `brahma-murāri-surārcita-liṅgaṁ nirmala-bhāsita-śobhita-liṅgam...`,
+    meaning_hi: 'ब्रह्मा, विष्णु और देवताओं द्वारा पूजित, जन्म-मरण के दुःखों का नाश करने वाले पावन सदाशिव लिंग को मैं बारंबार प्रणाम करता हूँ।',
+    meaning_en: 'Eight sacred stanzas venerating the divine Shiva Lingam, adored by Brahma and Vishnu.',
+    recommended_count: 1,
+    benefit_hi: 'शिवलिंग अभिषेक के समय पाठ, पापों का क्षय, मानसिक शांति।',
+    youtube_id: 'b6V-4kM8vT0'
+  },
+  {
+    id: 'bilvashtakam',
+    name_hi: 'बिल्वाष्टकम् स्तोत्रम्',
+    name_en: 'Bilvashtakam Stotram',
+    category: 'stotra',
+    deity_id: 'shiva',
+    deity_name: 'Lord Shiva',
+    source: 'Padma Purana',
+    text_sanskrit: `त्रिदलं त्रिगुणाकारं त्रिनेत्रं च त्रियायुधम् ।
+त्रिजन्मपापसंहारम् एकबिल्वं शिवार्पणम् ॥ १ ॥`,
+    text_transliteration: `tridalaṁ triguṇākāraṁ trinetraṁ ca triyāyudham | trijanma-pāpa-saṁhāram eka-bilvaṁ śivārpaṇam ||`,
+    meaning_hi: 'तीन दलों वाला, तीन गुणों का प्रतीक, त्रिनेत्र शिवजी को प्रिय और तीन जन्मों के पापों को नष्ट करने वाला एक बेलपत्र मैं भगवान शिव को अर्पित करता हूँ।',
+    meaning_en: 'Offering a single trifoliate sacred Bilva leaf to Shiva frees the devotee from sins accumulated over three lifetimes.',
+    recommended_count: 1,
+    benefit_hi: 'शिवजी को बेलपत्र चढ़ाते समय पाठ करने से अनंत कोटि यज्ञों का फल।',
+    youtube_id: 'V7w9q_L1n-s'
+  },
+  {
+    id: 'rudrashtakam',
+    name_hi: 'श्री रुद्राष्टकम् (नमामीशमीशान)',
+    name_en: 'Shri Rudrashtakam',
+    category: 'stotra',
+    deity_id: 'shiva',
+    deity_name: 'Lord Rudra / Shiva',
+    source: 'Goswami Tulsidas (Ramcharitmanas, Uttara Kanda)',
+    text_sanskrit: `नमामीशमीशान निर्वाणरूपं । विभुं व्यापकं ब्रह्मवेदस्वरूपम् ।
+निजं निर्गुणं निर्विकल्पं निरीहं । चिदाकाशमाकाशवासं भजेऽहम् ॥ १ ॥
+निराकारमोंकारमूलं तुरीयं । गिरा ग्यान गोतीतमीशं गिरीशम् ।
+करालं महाकाल कालं कृपालं । गुणागार संसारपारं नतोऽहम् ॥ २ ॥`,
+    text_transliteration: `namāmīśam-īśāna nirvāṇa-rūpaṁ vibhuṁ vyāpakaṁ brahma-veda-svarūpam...`,
+    meaning_hi: 'काकभुशुंडि के गुरु द्वारा भगवान शिव की स्तुति में गाया गया अत्यंत सुरीला व भक्तिमय अष्टक। शिवजी के क्रोध को शांत करने वाला स्तोत्र।',
+    meaning_en: 'Composed by Tulsidas in Ramcharitmanas, a majestic hymn of devotion to the all-pervading formless Brahman manifested as Shiva.',
+    recommended_count: 1,
+    benefit_hi: 'महादेव की विशेष कृपा, सावन में नित्य पाठ, शनि पीड़ा शांति।',
+    youtube_id: 'kQ7uG_F_B4M'
+  },
+  {
+    id: 'madhurashtakam',
+    name_hi: 'मधुराष्टकम् (अधरं मधुरं)',
+    name_en: 'Madhurashtakam',
+    category: 'stotra',
+    deity_id: 'krishna',
+    deity_name: 'Lord Sri Krishna',
+    source: 'Mahaprabhu Vallabhacharya',
+    text_sanskrit: `अधरं मधुरं वदनं मधुरं नयनं मधुरं हसितं मधुरम् ।
+हृदयं मधुरं गमनं मधुरं मधुराधिपतेरखिलं मधुरम् ॥ १ ॥`,
+    text_transliteration: `adharaṁ madhuraṁ vadanaṁ madhuraṁ nayanaṁ madhuraṁ hasitaṁ madhuram...`,
+    meaning_hi: 'मधुराधिपति श्रीकृष्ण के ओंठ मधुर हैं, मुख मधुर है, नेत्र मधुर हैं, हंसी मधुर है, हृदय मधुर है—उनका सब कुछ अतिशय मधुर है!',
+    meaning_en: 'Composed by Vallabhacharya, celebrating that everything about Krishna is profoundly sweet.',
+    recommended_count: 1,
+    benefit_hi: 'भगवान के प्रति अनन्य प्रेम, मन की प्रसन्नता, तनाव मुक्ति।',
+    youtube_id: 'c8_X4m7Q2wB'
+  },
+  {
+    id: 'achyutashtakam',
+    name_hi: 'अच्युताष्टकम् (अच्युतं केशवं)',
+    name_en: 'Achyutashtakam',
+    category: 'stotra',
+    deity_id: 'krishna',
+    deity_name: 'Lord Krishna / Achyuta',
+    source: 'Adi Shankaracharya',
+    text_sanskrit: `अच्युतं केशवं रामनारायणं कृष्णदामोदरं वासुदेवं हरिम् ।
+श्रीधरं माधवं गोपिकावल्लभं जानकीनायकं रामचंद्रं भजे ॥ १ ॥`,
+    text_transliteration: `acyutaṁ keśavaṁ rāma-nārāyaṇaṁ kṛṣṇa-dāmodaraṁ vāsudevaṁ harim...`,
+    meaning_hi: 'अच्युत, केशव, राम, नारायण, कृष्ण, दामोदर, वासुदेव, हरि, श्रीधर, माधव और जानकी के पति श्री रामचंद्र को मैं भजता हूँ।',
+    meaning_en: 'Adi Shankara’s beloved hymn weaving the divine names of Krishna and Rama into a melodious garland.',
+    recommended_count: 1,
+    benefit_hi: 'प्रातःकाल पाठ करने से चित्त प्रसन्न होता है और समस्त संताप मिटते हैं।',
+    youtube_id: 'K8_R7w2M9aC'
+  },
+  {
+    id: 'kanakadhara_stotra',
+    name_hi: 'कनकधारा स्तोत्रम् (स्वर्ण वर्षा स्तोत्र)',
+    name_en: 'Kanakadhara Stotram',
+    category: 'stotra',
+    deity_id: 'lakshmi',
+    deity_name: 'Devi Mahalakshmi',
+    source: 'Composed by Adi Shankaracharya',
+    text_sanskrit: `अङ्गां हरेः पुलकभूषणमाश्रयन्ती भृङ्गाङ्गनेव मुकुलाभरणं तमालम् ।
+अङ्गीकृताखिलविभूतिरपाङ्गलीला माङ्गल्यदास्तु मम मङ्गलदेवतायाः ॥ १ ॥`,
+    text_transliteration: `aṅgāṁ hareḥ pulaka-bhūṣaṇam āśrayantī...`,
+    meaning_hi: 'आदि शंकराचार्य द्वारा एक निर्धन ब्राह्मणी के घर स्वर्ण आंवलों की वर्षा कराने वाला सिद्ध स्तोत्र, जो दरिद्रता को जड़ से समाप्त करता है।',
+    meaning_en: 'Sung spontaneously by Adi Shankara to bring down a rain of golden amla fruits for an impoverished elderly woman, removing all poverty.',
+    recommended_count: 1,
+    benefit_hi: 'ऋण मुक्ति, दरिद्रता का नाश, व्यापार व गृह में समृद्धि।',
+    youtube_id: 'k7_Y9w4M0bC'
+  },
+  {
+    id: 'kaal_bhairav_ashtakam',
+    name_hi: 'कालभैरवाष्टकम्',
+    name_en: 'Kaal Bhairav Ashtakam',
+    category: 'stotra',
+    deity_id: 'kaal_bhairav',
+    deity_name: 'Lord Kaal Bhairava',
+    source: 'Composed by Adi Shankaracharya',
+    text_sanskrit: `देवराजसेव्यमानपावनाङ्घ्रिपङ्कजं
+व्यालयज्ञसूत्रमिन्दुशेखरं कृपाकरम् ।
+नारदादियोगिवृन्दवन्दितं दिगम्बरं
+काशिकापुराधिनाथकालभैरवं भजे ॥ १ ॥`,
+    text_transliteration: `deva-rāja-sevyamāna-pāvanāṅghri-paṅkajaṁ... kāśikā-purādhinātha-kāla-bhairavaṁ bhaje ||`,
+    meaning_hi: 'देवराज इंद्र जिनके चरण कमलों की सेवा करते हैं, जो सर्प का यज्ञोपवीत धारण करते हैं, उन काशी के अधिपति कालभैरव की मैं वंदना करता हूँ।',
+    meaning_en: 'Adoration to the Lord of Kashi, Kaal Bhairava, who dispels the fear of time, ghosts, karmic knots, and rebirth.',
+    recommended_count: 1,
+    benefit_hi: 'भय, प्रेतबाधा और शत्रुओं से मुक्ति; काशी यात्रा के समय अनिवार्य पाठ।',
+    youtube_id: 'Q5_T7k_Z9aM'
+  },
+  {
+    id: 'sankata_nashana_ganesha',
+    name_hi: 'संकटनाशन गणेश स्तोत्रम् (नारद उवाच)',
+    name_en: 'Sankata Nashana Ganesha Stotram',
+    category: 'stotra',
+    deity_id: 'ganesha',
+    deity_name: 'Lord Ganesha (12 Names)',
+    source: 'Narada Purana',
+    text_sanskrit: `प्रणम्य शिरसा देवं गौरीपुत्रं विनायकम् ।
+भक्तावासं स्मरेन्नित्यमायुःकामार्थसिद्धये ॥ १ ॥
+प्रथमं वक्रतुण्डं च एकदन्तं द्वितीयकम् ।
+तृतीयं कृष्णपिङ्गाक्षं गजवक्त्रं चतुर्थकम् ॥ २ ॥
+लम्बोदरं पञ्चमं च षष्ठं विकटमेव च ।
+सप्तमं विघ्नराजेन्द्रं धूम्रवर्णं तथाष्टमम् ॥ ३ ॥
+नवमं भालचन्द्रं च दशमं तु विनायकम् ।
+एकादशं गणपतिं द्वादशं तु गजाननम् ॥ ४ ॥`,
+    text_transliteration: `praṇamya śirasā devaṁ gaurīputraṁ vināyakam...`,
+    meaning_hi: 'देवर्षि नारद द्वारा वर्णित गणेश जी के 12 पवित्र नाम (वक्रतुंड, एकदंत, लंबोदर आदि)। प्रतिदिन तीनों कालों में पाठ करने से कभी कोई संकट नहीं आता।',
+    meaning_en: 'Twelve divine names of Ganesha proclaimed by Sage Narada; recitation at dawn, noon, and dusk banishes all impediments.',
+    recommended_count: 3,
+    benefit_hi: 'विद्यार्थियों को विद्या, धनार्थियों को धन और पुत्रार्थियों को सुयोग्य संतान।',
+    youtube_id: 'P9_M4k7W2bA'
+  },
+  {
+    id: 'ganesha_pancharatnam',
+    name_hi: 'गणेश पञ्चरत्नम् (मुदाकरात्त मोदकम्)',
+    name_en: 'Ganesha Pancharatnam',
+    category: 'stotra',
+    deity_id: 'ganesha',
+    deity_name: 'Lord Ganesha',
+    source: 'Composed by Adi Shankaracharya',
+    text_sanskrit: `मुदाकरात्तमोदकं सदा विमुक्तिसाधकं
+कलाधरावतंसकं विलासिलोकरक्षकम् ।
+अनायकैकनायकं विनाशितेभदैत्यकं
+नताशुभाशूनाशकं नमामि तं विनायकम् ॥ १ ॥`,
+    text_transliteration: `mudākarātta-modakaṁ sadā vimukti-sādhakam...`,
+    meaning_hi: 'हाथ में मोदक धारण किए हुए, मुक्ति के प्रदाता, मस्तक पर चंद्रमा को सजाए विनायक को मेरा प्रणाम है।',
+    meaning_en: 'Five exquisite gems composed by Adi Shankara celebrating Ganesha holding the sweet modaka of liberation.',
+    recommended_count: 1,
+    benefit_hi: 'आरोग्य, दीर्घायु और कार्य सिद्धि।',
+    youtube_id: 'P9_M4k7W2bA'
+  },
+  {
+    id: 'ganesha_atharvashirsha',
+    name_hi: 'गणपति अथर्वशीर्ष (वैदिक उपनिषद)',
+    name_en: 'Ganapati Atharvashirsha',
+    category: 'sukta',
+    deity_id: 'ganesha',
+    deity_name: 'Lord Ganesha (Brahman)',
+    source: 'Atharvaveda',
+    text_sanskrit: `ॐ नमस्ते गणपतये । त्वमेव प्रत्यक्षं तत्त्वमसि ।
+त्वमेव केवलं कर्ताऽसि । त्वमेव केवलं धर्ताऽसि ।
+त्वमेव केवलं हर्ताऽसि । त्वमेव सर्वं खल्विदं ब्रह्मासि ।
+त्वं साक्षादात्माऽसि नित्यम् ॥ १ ॥`,
+    text_transliteration: `oṁ namaste gaṇapataye | tvam eva pratyakṣaṁ tattvam asi...`,
+    meaning_hi: 'हे गणपति! आपको नमस्कार है। आप ही प्रत्यक्ष तत्त्व (ब्रह्म) हैं। आप ही सृष्टि के कर्ता, धर्ता और संहारक हैं।',
+    meaning_en: 'The authoritative Vedic Upanishad from Atharvaveda declaring Ganesha as the supreme cosmic principle.',
+    recommended_count: 1,
+    benefit_hi: 'संकष्टी चतुर्थी पर दुर्वा चढ़ाकर 21 बार पाठ करने से समस्त कामनाओं की सिद्धि।',
+    youtube_id: 'P9_M4k7W2bA'
+  },
+  {
+    id: 'rama_raksha_stotra',
+    name_hi: 'श्री राम रक्षा स्तोत्रम्',
+    name_en: 'Shri Rama Raksha Stotram',
+    category: 'stotra',
+    deity_id: 'rama',
+    deity_name: 'Lord Sri Rama',
+    source: 'Sage Budhakaushika (in a dream vision from Shiva)',
+    text_sanskrit: `चरितं रघुनाथस्य शतकोटिप्रविस्तरम् ।
+एकैकमक्षरं पुंसां महापातकनाशनम् ॥
+ध्यात्वा नीलोत्पलश्यामं रामं राजीवलोचनम् ।
+जानकीलक्ष्मणोपेतं जटामुकुटमण्डितम् ॥
+रामो राजमणिः सदा विजयते रामं रमेशं भजे
+रामेणाभिहता निशाचरचमू रामाय तस्मै नमः ।
+रामान्नास्ति परायणं परतरं रामस्य दासोऽस्म्यहं
+रामे चित्तलयः सदा भवतु मे भो राम मामुद्धर ॥`,
+    text_transliteration: `caritaṁ raghunāthasya śatakoṭi-pravistaram... rāmo rājamaṇiḥ sadā vijayate...`,
+    meaning_hi: 'भगवान शिव द्वारा ऋषि बुधकौशिक को स्वप्न में दिया गया दिव्य रक्षा कवच। जो इसका पाठ करता है, उसकी रक्षा स्वयं श्री राम करते हैं।',
+    meaning_en: 'An impenetrable spiritual armor (Kavacham) shielding every organ of the body with the divine power of Rama.',
+    recommended_count: 1,
+    benefit_hi: 'रोग, संकट, नजर दोष और शत्रुभय से अभेद्य सुरक्षा।',
+    youtube_id: 'aG9_W7k3Q8k'
+  },
+  {
+    id: 'lakshmi_ashtakam',
+    name_hi: 'महालक्ष्म्यष्टकम् (नमस्तेऽस्तु महामाये)',
+    name_en: 'Mahalakshmi Ashtakam',
+    category: 'stotra',
+    deity_id: 'lakshmi',
+    deity_name: 'Devi Mahalakshmi',
+    source: 'Padma Purana (Spoken by Lord Indra)',
+    text_sanskrit: `नमस्तेऽस्तु महामाये श्रीपीठे सुरपूजिते ।
+शङ्खचक्रगदाहस्ते महालक्ष्मि नमोऽस्तु ते ॥ १ ॥
+नमस्ते गरुडारूढे कोलासुरभयङ्करि ।
+सर्वपापहरे देवि महालक्ष्मि नमोऽस्तु ते ॥ २ ॥`,
+    text_transliteration: `namastestu mahāmāye śrīpīṭhe surapūjite...`,
+    meaning_hi: 'हे महामाये! श्रीपीठ पर विराजमान, शंख-चक्र-गदा धारिणी, कोलासुर का वध करने वाली माँ महालक्ष्मी, आपको मेरा नमस्कार है।',
+    meaning_en: 'Indra’s eightfold salutation to Goddess Mahalakshmi at Kolhapur, bestowing kingdom, peace, and wealth.',
+    recommended_count: 1,
+    benefit_hi: 'शुक्रवार को पाठ करने से घर में महालक्ष्मी का स्थाई वास।',
+    youtube_id: 'k7_Y9w4M0bC'
+  },
+  {
+    id: 'saraswati_vandana',
+    name_hi: 'सरस्वती वंदना (या कुन्देन्दु)',
+    name_en: 'Saraswati Vandana (Ya Kundendu)',
+    category: 'shloka',
+    deity_id: 'saraswati',
+    deity_name: 'Devi Saraswati',
+    source: 'Traditional Vedic Shloka',
+    text_sanskrit: `या कुन्देन्दुतुषारहारधवला या शुभ्रवस्त्रावृता
+या वीणावरदण्डमण्डितकरा या श्वेतपद्मासना ।
+या ब्रह्माच्युतशङ्करप्रभृतिभिर्देवैः सदा वन्दिता
+सा मां पातु सरस्वती भगवती निःशेषजाड्यापहा ॥`,
+    text_transliteration: `yā kundendu-tuṣāra-hāra-dhavalā yā śubhra-vastrāvṛtā...`,
+    meaning_hi: 'जो कुंद पुष्प, चंद्रमा और बर्फ के हार के समान श्वेत हैं, जो वीणा से सुशोभित हैं, ब्रह्मा-विष्णु-महेश द्वारा पूजित माँ सरस्वती मेरी बुद्धि की जड़ता को दूर करें।',
+    meaning_en: 'The immortal invocation to Saraswati, pure white as the jasmine, dispelling all lethargy and ignorance of the mind.',
+    recommended_count: 1,
+    benefit_hi: 'विद्या, कला, संगीत और स्मरण शक्ति की सिद्धि।',
+    youtube_id: 'L7_W8k3N0aP'
+  },
+
+  // ==========================================
+  // SACRED AARTIS (36-50)
+  // ==========================================
+  {
+    id: 'aarti_kunj_bihari_ki',
+    name_hi: 'आरती कुंजबिहारी की',
+    name_en: 'Aarti Kunj Bihari Ki',
+    category: 'aarti',
+    deity_id: 'krishna',
+    deity_name: 'Lord Sri Krishna (Bankey Bihari)',
+    source: 'Traditional Braj Aarti',
+    text_sanskrit: `आरती कुंजबिहारी की, श्री गिरिधर कृष्ण मुरारी की ॥
+गले में बैजंती माला, बजावै मुरली मधुर बाला ।
+श्रवण में कुण्डल झलकाला, मुकुट पर मोरपंख लाला ।
+छवि पे देखत मनहारी की, श्री गिरिधर कृष्ण मुरारी की ॥`,
+    text_transliteration: `āratī kuñjabihārī kī, śrī giridhara kṛṣṇa murārī kī...`,
+    meaning_hi: 'वृंदावन के कुंजों में विहार करने वाले, मोरमुकुट धारी, मुरली मनोहर श्री कृष्ण की पावन आरती।',
+    meaning_en: 'The celebrated melodious evening aarti of Bankey Bihari in Vrindavan.',
+    recommended_count: 1,
+    benefit_hi: 'सायंकाल दीपक जलाकर आरती करने से घर में सुख-शांति और आनंद।',
+    youtube_id: 'T7_M9w3K0aC'
+  },
+  {
+    id: 'om_jai_jagdish_hare',
+    name_hi: 'आरती ॐ जय जगदीश हरे',
+    name_en: 'Om Jai Jagdish Hare (Universal Aarti)',
+    category: 'aarti',
+    deity_id: 'vishnu',
+    deity_name: 'Lord Vishnu (Jagdish)',
+    source: 'Pandit Shardha Ram Phillauri (1870)',
+    text_sanskrit: `ॐ जय जगदीश हरे, स्वामी जय जगदीश हरे ।
+भक्त जनों के संकट, दास जनों के संकट, क्षण में दूर करे ॥ ॐ जय जगदीश हरे ॥
+जो ध्यावै फल पावै, दुख बिनसे मन का ।
+सुख सम्पत्ति घर आवै, कष्ट मिटे तन का ॥ ॐ जय जगदीश हरे ॥
+तन-मन-धन सब कुछ है तेरा, स्वामी सब कुछ है तेरा ।
+तेरा तुझको अर्पण, क्या लागे मेरा ॥ ॐ जय जगदीश हरे ॥`,
+    text_transliteration: `om jaya jagadīśa hare, svāmī jaya jagadīśa hare...`,
+    meaning_hi: 'भारत के हर हिंदू घर में सत्यनारायण कथा और संध्या समय गाई जाने वाली सार्वभौमिक आरती। "तेरा तुझको अर्पण, क्या लागे मेरा"।',
+    meaning_en: 'The most popular universal Aarti across India surrendering ego, wealth, and body to the Lord of the Universe.',
+    recommended_count: 1,
+    benefit_hi: 'समस्त विघ्नों और दुःखों का क्षण भर में निवारण, गृह शांति।',
+    youtube_id: '7v-m8aW9T0E'
+  },
+  {
+    id: 'jai_ganesh_deva',
+    name_hi: 'आरती जय गणेश जय गणेश देवा',
+    name_en: 'Aarti Jai Ganesh Jai Ganesh Deva',
+    category: 'aarti',
+    deity_id: 'ganesha',
+    deity_name: 'Lord Ganesha',
+    source: 'Traditional Aarti',
+    text_sanskrit: `जय गणेश जय गणेश जय गणेश देवा ।
+माता जाकी पार्वती पिता महादेवा ॥
+एक दंत दयावंत चार भुजाधारी ।
+माथे सिंदूर सोहे मूसे की सवारी ॥
+पान चढ़े फूल चढ़े और चढ़े मेवा ।
+लड्डुअन का भोग लगे संत करें सेवा ॥
+जय गणेश जय गणेश जय गणेश देवा ॥`,
+    text_transliteration: `jaya gaṇeśa jaya gaṇeśa jaya gaṇeśa devā...`,
+    meaning_hi: 'प्रथम पूज्य भगवान गणेश जी की प्रिय आरती।',
+    meaning_en: 'Beloved traditional Aarti to Lord Ganesha, remover of hurdles and giver of boons.',
+    recommended_count: 1,
+    benefit_hi: 'किसी भी पूजा और अनुष्ठान के प्रारंभ में की जाने वाली अनिवार्य आरती।',
+    youtube_id: 'P9_M4k7W2bA'
+  },
+  {
+    id: 'om_jai_shiv_omkara',
+    name_hi: 'आरती ॐ जय शिव ओंकारा',
+    name_en: 'Aarti Om Jai Shiv Omkara',
+    category: 'aarti',
+    deity_id: 'shiva',
+    deity_name: 'Lord Shiva (Omkara)',
+    source: 'Traditional Shaiva Aarti',
+    text_sanskrit: `ॐ जय शिव ओंकारा, स्वामी जय शिव ओंकारा ।
+ब्रह्मा विष्णु सदाशिव अर्द्धांगी धारा ॥ ॐ जय शिव ओंकारा ॥
+एकानन चतुरानन पंचानन राजे ।
+हंसासन गरुड़ासन वृषवाहन साजे ॥ ॐ जय शिव ओंकारा ॥
+कर के मध्य कमंडलु चक्र त्रिशूल धरता ।
+जगकर्ता जगभर्ता जगसंहारककर्ता ॥ ॐ जय शिव ओंकारा ॥`,
+    text_transliteration: `om jaya śiva oṁkārā, svāmī jaya śiva oṁkārā...`,
+    meaning_hi: 'भगवान शिव की पावन आरती जिसमें ब्रह्मा, विष्णु और महेश के एकत्व का दर्शन है।',
+    meaning_en: 'The classic evening aarti to Lord Shiva depicting Him as the unified essence of the Trimurti.',
+    recommended_count: 1,
+    benefit_hi: 'प्रदोष काल और सोमवार को करने से शिवलोक की प्राप्ति।',
+    youtube_id: 'kQ7uG_F_B4M'
+  },
+  {
+    id: 'aarti_kije_hanuman_lala_ki',
+    name_hi: 'आरती कीजै हनुमान लला की',
+    name_en: 'Aarti Kije Hanuman Lala Ki',
+    category: 'aarti',
+    deity_id: 'hanuman',
+    deity_name: 'Lord Hanuman',
+    source: 'Swami Ramanandacharya',
+    text_sanskrit: `आरती कीजै हनुमान लला की । दुष्ट दलन रघुनाथ कला की ॥
+जाके बल से गिरिवर कांपै । रोग दोष जाके निकट न झांपै ॥
+अंजनि पुत्र महाबलदाई । संतन के प्रभु सदा सहाई ॥
+जो हनुमान जी की आरती गावै । बसि बैकुंठ परम पद पावै ॥`,
+    text_transliteration: `āratī kījai hanumāna lalā kī | duṣṭa dalana raghunātha kalā kī ||`,
+    meaning_hi: 'स्वामी रामानंद जी द्वारा रचित श्री हनुमान जी की विख्यात आरती।',
+    meaning_en: 'Composed by Swami Ramanand, extolling Hanuman’s mighty deeds.',
+    recommended_count: 1,
+    benefit_hi: 'मंगलवार और शनिवार को संध्या आरती, भूत-प्रेत और रोग-दोष से मुक्ति।',
+    youtube_id: 'AETFvQonfV8'
+  },
+  {
+    id: 'ambe_tu_hai_jagdambe_kali',
+    name_hi: 'आरती अंबे तू है जगदंबे काली',
+    name_en: 'Aarti Ambe Tu Hai Jagdambe Kali',
+    category: 'aarti',
+    deity_id: 'durga',
+    deity_name: 'Maa Durga / Kali',
+    source: 'Traditional Devi Aarti',
+    text_sanskrit: `अंबे तू है जगदंबे काली, जय दुर्गे खप्पर वाली ।
+तेरे ही गुण गावें भारती, ओ मैया हम सब उतारें तेरी आरती ॥
+तेरे भक्त जनों पे माता, भीर पड़ी है भारी ।
+दानव दल पर टूट पड़ो माँ, करके सिंह सवारी ॥`,
+    text_transliteration: `ambe tū hai jagadambe kālī, jaya durge khappara vālī...`,
+    meaning_hi: 'नवरात्रि में जगदंबा दुर्गा माँ की गाई जाने वाली अत्यंत भावपूर्ण आरती।',
+    meaning_en: 'A stirring Aarti to Mother Durga beseeching Her protection against inner and outer demons.',
+    recommended_count: 1,
+    benefit_hi: 'नवरात्र में घट स्थापना व आरती पर नित्य गान।',
+    youtube_id: 'd9_V7w2Q4aK'
+  },
+  {
+    id: 'om_jai_lakshmi_mata',
+    name_hi: 'आरती ॐ जय लक्ष्मी माता',
+    name_en: 'Aarti Om Jai Lakshmi Mata',
+    category: 'aarti',
+    deity_id: 'lakshmi',
+    deity_name: 'Devi Mahalakshmi',
+    source: 'Traditional Lakshmi Aarti',
+    text_sanskrit: `ॐ जय लक्ष्मी माता, मैया जय लक्ष्मी माता ।
+तुमको निसदिन सेवत, हर विष्णु विधाता ॥ ॐ जय लक्ष्मी माता ॥
+जिस घर में तुम रहतीं, सब सद्गुण आता ।
+सब संभव हो जाता, मन नहिं घबराता ॥ ॐ जय लक्ष्मी माता ॥`,
+    text_transliteration: `om jaya lakṣmī mātā, maiyā jaya lakṣmī mātā...`,
+    meaning_hi: 'दीपावली और शुक्रवार को धन, ऐश्वर्य, सद्गुण और सुख-समृद्धि की प्राप्ति हेतु माँ लक्ष्मी की आरती।',
+    meaning_en: 'The prime Diwali and Friday evening Aarti invoking Mahalakshmi for spiritual and material wealth.',
+    recommended_count: 1,
+    benefit_hi: 'दीपावली पूजन और शुक्रवार संध्या आरती।',
+    youtube_id: 'k7_Y9w4M0bC'
+  },
+  {
+    id: 'shri_ramachandra_kripalu',
+    name_hi: 'श्री रामचंद्र कृपालु भजु मन',
+    name_en: 'Shri Ramachandra Kripalu Bhajuman',
+    category: 'aarti',
+    deity_id: 'rama',
+    deity_name: 'Lord Sri Rama',
+    source: 'Goswami Tulsidas (Vinaya Patrika)',
+    text_sanskrit: `श्रीरामचन्द्र कृपालु भजु मन हरण भवभय दारुणम् ।
+नवकञ्जलोचन, कञ्जमुख, करकञ्ज, पद कञ्जारुणम् ॥ १ ॥
+कन्दर्प अगणित अमित छबि, नवनीलनीरद सुन्दरम् ।
+पट पीत मानहु तड़ित रुचि शुचि नौमि जनक सुतावरम् ॥ २ ॥`,
+    text_transliteration: `śrī-rāmacandra kṛpālu bhaju mana haraṇa bhava-bhaya dāruṇam...`,
+    meaning_hi: 'हे मन! कृपालु श्री रामचंद्र का भजन कर, जो संसार के दारुण भय को हरने वाले हैं।',
+    meaning_en: 'Tulsidas’s crowning hymn of adoration to Sri Rama in Vinaya Patrika, sung as the closing Ram Aarti worldwide.',
+    recommended_count: 1,
+    benefit_hi: 'राम नवमी, संध्या समय और रामायण पाठ के समापन पर गाने से परम शांति की प्राप्ति।',
+    youtube_id: 'aG9_W7k3Q8k'
+  },
+  {
+    id: 'ganga_aarti',
+    name_hi: 'माँ गंगा आरती (हर की पौड़ी)',
+    name_en: 'Ganga Aarti (Har Ki Pauri)',
+    category: 'aarti',
+    deity_id: 'ganga',
+    deity_name: 'Goddess Ganga',
+    source: 'Traditional Haridwar Aarti',
+    text_sanskrit: `ॐ जय गंगे माता, मैया जय गंगे माता ।
+जो नर तुमको ध्याता, मनवांछित फल पाता ॥ ॐ जय गंगे माता ॥
+चंद्र सी ज्योति तुम्हारी, जल निर्मल आता ।
+शरण पड़े जो तेरी, सो नर तर जाता ॥ ॐ जय गंगे माता ॥`,
+    text_transliteration: `om jaya gaṅge mātā, maiyā jaya gaṅge mātā...`,
+    meaning_hi: 'हरिद्वार और ऋषिकेश में संध्या समय गंगा तट पर दीपदान के साथ गाई जाने वाली पावन गंगा आरती।',
+    meaning_en: 'The world-famous twilight Aarti sung on the banks of Har Ki Pauri with floating diya lamps.',
+    recommended_count: 1,
+    benefit_hi: 'जन्म-जन्मांतर के पापों का शमन, गंगा दर्शन का फल।',
+    youtube_id: 'W6_Y4r9X0cE'
+  },
+  {
+    id: 'satyanarayan_aarti',
+    name_hi: 'श्री सत्यनारायण जी की आरती',
+    name_en: 'Shri Satyanarayan Aarti',
+    category: 'aarti',
+    deity_id: 'vishnu',
+    deity_name: 'Lord Satyanarayan',
+    source: 'Traditional Katha Aarti',
+    text_sanskrit: `जय लक्ष्मीरमणा, श्री जय लक्ष्मीरमणा ।
+सत्यनारायण स्वामी, जन पातक हरणा ॥ ॐ जय लक्ष्मीरमणा ॥
+रत्नजड़ित सिंहासन, अद्भुत छवि राजे ।
+नारद करत निराजन, घंटा ध्वनि बाजे ॥ ॐ जय लक्ष्मीरमणा ॥`,
+    text_transliteration: `jaya lakṣmīramaṇā, śrī jaya lakṣmīramaṇā...`,
+    meaning_hi: 'सत्यनारायण कथा के उपरांत गाई जाने वाली पावन आरती।',
+    meaning_en: 'Aarti sung at the completion of Satyanarayan Vrata Katha invoking Lakshmi and Narayana.',
+    recommended_count: 1,
+    benefit_hi: 'कथा की पूर्णता और भगवान का आशीर्वाद।',
+    youtube_id: '7v-m8aW9T0E'
+  },
+  {
+    id: 'shani_aarti',
+    name_hi: 'श्री शनिदेव जी की आरती',
+    name_en: 'Shri Shani Deva Aarti',
+    category: 'aarti',
+    deity_id: 'shani',
+    deity_name: 'Lord Shani Deva',
+    source: 'Traditional Aarti',
+    text_sanskrit: `जय जय श्री शनिदेव भक्तन हितकारी ।
+सूर्य पुत्र प्रभु छाया महतारी ॥
+श्याम अंग वक्र दृष्टि चर्तुभुजा धारी ।
+नीलाम्बर धार नाथ गज की असवारी ॥ ॐ जय श्री शनिदेव ॥`,
+    text_transliteration: `jaya jaya śrī śanideva bhaktana hitakārī...`,
+    meaning_hi: 'शनिवार की संध्या पर तेल का दीपक जलाकर शनिदेव की आरती।',
+    meaning_en: 'Saturday evening aarti to Shani Deva with mustard oil lamp pacifying malefic karmas.',
+    recommended_count: 1,
+    benefit_hi: 'साढ़ेसाती और ढैय्या की शांति।',
+    youtube_id: 'N9_X7k3W1bM'
+  },
+  {
+    id: 'saraswati_aarti',
+    name_hi: 'श्री सरस्वती जी की आरती',
+    name_en: 'Shri Saraswati Aarti',
+    category: 'aarti',
+    deity_id: 'saraswati',
+    deity_name: 'Devi Saraswati',
+    source: 'Traditional Aarti',
+    text_sanskrit: `जय सरस्वती माता, मैया जय सरस्वती माता ।
+सद्गुण वैभव शालिनी, त्रिभुवन विख्याता ॥ ॐ जय सरस्वती माता ॥
+चंद्रवदनि पद्मासिनि, ध्रुति मंगलकारी ।
+सोहे शुभ्र वसन में, वीणा कर धारी ॥ ॐ जय सरस्वती माता ॥`,
+    text_transliteration: `jaya sarasvatī mātā, maiyā jaya sarasvatī mātā...`,
+    meaning_hi: 'विद्या और ज्ञान की वृद्धि हेतु माँ सरस्वती की आरती।',
+    meaning_en: 'Aarti to Goddess Saraswati for divine intellect and wisdom.',
+    recommended_count: 1,
+    benefit_hi: 'वसंत पंचमी और नित्य प्रातः पूजन।',
+    youtube_id: 'L7_W8k3N0aP'
+  },
+  {
+    id: 'sai_aarti',
+    name_hi: 'श्री साई बाबा की आरती (काकड़ / संध्या आरती)',
+    name_en: 'Shri Sai Baba Kakad & Evening Aarti',
+    category: 'aarti',
+    deity_id: 'dattatreya',
+    deity_name: 'Shri Sai Baba of Shirdi',
+    source: 'Shirdi Sai Sansthan',
+    text_sanskrit: `आरती साईं बाबा, सौख्यदातार जीवा ।
+चरणरजातली, द्यावा दासां विसावा, भक्तां विसावा ॥ आरती साईं बाबा ॥
+जाळुनियां आनंग, स्वरूपीं राहे दंग ।
+मुमुक्षु जनां दावी, निज डोळां श्रीरंग ॥ आरती साईं बाबा ॥`,
+    text_transliteration: `āratī sāīṁ bābā, saukhyadātāra jīvā...`,
+    meaning_hi: 'शिरडी के साईं बाबा की पावन काकड़ और संध्या आरती, जो मन को अगाध शांति प्रदान करती है।',
+    meaning_en: 'The traditional Shirdi Aarti sung at dawn and dusk for deep inner solace.',
+    recommended_count: 1,
+    benefit_hi: 'श्रद्धा और सबूरी की भावना, गुरुवार को विशेष फल।',
+    youtube_id: 'T8_R9w4M1aK'
+  },
+  {
+    id: 'tulsi_aarti',
+    name_hi: 'श्री तुलसी माता की आरती',
+    name_en: 'Shri Tulsi Mata Aarti',
+    category: 'aarti',
+    deity_id: 'tulsi',
+    deity_name: 'Mata Tulsi (Vrinda)',
+    source: 'Traditional Vaishnava Aarti',
+    text_sanskrit: `जय जय तुलसी माता, मैया जय तुलसी माता ।
+सब जग की सुख दाता, सबकी वरदाता ॥ ॐ जय तुलसी माता ॥
+राधा की प्रिय दासी, विष्णु की अर्द्धांगी ।
+दर्शन से अघ नाशे, पातक सब भागी ॥ ॐ जय तुलसी माता ॥`,
+    text_transliteration: `jaya jaya tulasī mātā, maiyā jaya tulasī mātā...`,
+    meaning_hi: 'तुलसी के पौधे के सम्मुख घी का दीपक जलाकर सायंकाल की जाने वाली आरती।',
+    meaning_en: 'Evening aarti performed before the holy Tulsi plant in Hindu households.',
+    recommended_count: 1,
+    benefit_hi: 'गृह में वास्तु दोष निवारण, सकारात्मक ऊर्जा, कार्तिक मास में विशेष फल।',
+    youtube_id: 'c8_X4m7Q2wB'
+  },
+  {
+    id: 'surya_aarti',
+    name_hi: 'भगवान सूर्य नारायण की आरती',
+    name_en: 'Lord Surya Narayana Aarti',
+    category: 'aarti',
+    deity_id: 'surya',
+    deity_name: 'Lord Surya Narayana',
+    source: 'Traditional Saurya Aarti',
+    text_sanskrit: `जय कश्यप-नंदन, ॐ जय अदिति नंदन ।
+त्रिभुवन तिमिर निकंदन, भक्त हृदय चंदन ॥ ॐ जय कश्यप नंदन ॥
+सप्त-अश्वरथ राजित, एक चक्र धारी ।
+दुःखहारी, सुखकारी, मानस मल हारी ॥ ॐ जय कश्यप नंदन ॥`,
+    text_transliteration: `jaya kaśyapa-nandana, om jaya aditi nandana...`,
+    meaning_hi: 'सूर्यदेव की आरती जो अंधकार और रोगों को मिटाकर जीवन में तेज का संचार करती है।',
+    meaning_en: 'Aarti to the Sun God riding the seven-horse chariot, dispelling disease and darkness.',
+    recommended_count: 1,
+    benefit_hi: 'रविवार को अर्घ्यदान के पश्चात पाठ से नेत्र व चर्म रोग दूर होते हैं।',
+    youtube_id: 'Konark_Sun_T7'
+  }
+];

@@ -1,0 +1,463 @@
+import { VedaPurana } from '@/types';
+
+export const vedasPuranasData: VedaPurana[] = [
+  // ==========================================
+  // THE FOUR SACRED VEDAS (चत्वारो वेदाः)
+  // ==========================================
+  {
+    id: 'rigveda',
+    name_hi: 'ऋग्वेद',
+    name_en: 'Rigveda',
+    sanskrit_name: 'ऋग्वेदः',
+    category: 'veda',
+    classification: 'The Veda of Praise & Mantras',
+    traditional_author: 'Apaurusheya (Heard by Vedic Rishis: Vishvamitra, Vamadeva, Bharadvaja, Vashistha, etc.)',
+    total_verses_or_suktas: '10 Mandalas, 1,028 Suktas, 10,552 Mantras',
+    deity: 'Agni, Indra, Surya, Soma, Varuna, Ushas, Savitr',
+    overview_hi: 'मानव जाति का सबसे प्राचीन एवं प्रमुख धर्मग्रंथ। इसमें देवताओं की स्तुति में रचे गए छंदोबद्ध मंत्र (ऋचाएं) हैं। प्रसिद्ध गायत्री मंत्र (तीसरा मंडल) और नासदीय सूक्त (सृष्टि उत्पत्ति का सूक्त) इसी में हैं।',
+    overview_en: 'The oldest known religious text in human history, composed in archaic Vedic Sanskrit. Contains hymns of praise, the Gayatri Mantra, and the profound Nasadiya Sukta (Hymn of Creation).',
+    key_sections: [
+      {
+        title_hi: 'गायत्री मंत्र (३.६२.१०)',
+        title_en: 'Gayatri Mantra (3.62.10)',
+        desc_hi: 'ॐ भूर्भुवः स्वः तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि धियो यो नः प्रचोदयात्। महर्षि विश्वामित्र द्वारा दृष्ट सविता (सूर्य) देव की प्रार्थना जो बुद्धि को प्रेरित करती है।',
+        desc_en: 'The foremost universal prayer invoking the radiant solar power Savitr to illuminate and inspire our higher intellect.'
+      },
+      {
+        title_hi: 'नासदीय सूक्त (१०.१२९)',
+        title_en: 'Nasadiya Sukta (Creation Hymn, 10.129)',
+        desc_hi: 'नासदासीन्नो सदासीत्तदानीं... सृष्टि से पूर्व न सत् था, न असत्; न आकाश था, न मृत्यु। केवल वही एक परम तत्त्व अपनी ही शक्ति से स्पंदित हो रहा था।',
+        desc_en: 'Profound cosmological hymn declaring that in the beginning there was neither existence nor non-existence, only the Unmanifest One.'
+      },
+      {
+        title_hi: 'पुरुष सूक्त (१०.९०)',
+        title_en: 'Purusha Sukta (10.90)',
+        desc_hi: 'सहस्रशीर्षा पुरुषः सहस्राक्षः सहस्रपात्... विराट पुरुष के दिव्य यज्ञ से समस्त ब्रह्मांड, देव, वेद और ऋतुओं की उत्पत्ति का वर्णन।',
+        desc_en: 'Cosmic hymn describing the manifestation of the entire universe from the divine cosmic being (Virat Purusha).'
+      }
+    ],
+    archive_url: 'https://archive.org/details/RigVedaSamhitaSanskritHindi'
+  },
+  {
+    id: 'samaveda',
+    name_hi: 'सामवेद',
+    name_en: 'Samaveda',
+    sanskrit_name: 'सामवेदः',
+    category: 'veda',
+    classification: 'The Veda of Melodies & Chants',
+    traditional_author: 'Sage Jaimini / Vedic Udgatas',
+    total_verses_or_suktas: '1,875 Mantras (chiefly from Rigveda set to musical notes)',
+    deity: 'Soma, Agni, Indra',
+    overview_hi: 'भारतीय शास्त्रीय संगीत (गान) का मूल उद्गम। भगवान श्रीकृष्ण ने गीता (१०.२२) में कहा है—"वेदानां सामवेदोऽस्मि" (वेदों में मैं सामवेद हूँ)। इसके मंत्रों का गायन उद्गाता ऋषियों द्वारा यज्ञों में किया जाता था।',
+    overview_en: 'The foundation of Indian classical music. Lord Krishna declares in the Gita: "Among the Vedas, I am the Samaveda." Consists of lyrical chants sung during Soma rituals.',
+    key_sections: [
+      {
+        title_hi: 'पूर्वार्चिक एवं उत्तरार्चिक',
+        title_en: 'Purvarchika & Uttararchika',
+        desc_hi: 'सामवेद दो मुख्य भागों में विभक्त है। इसमें सात स्वर (सा, रे, ग, म, प, ध, नि) के आधार पर वैदिक ऋचाओं के गायन (गान) की शैलियां हैं।',
+        desc_en: 'Divided into two main sections containing the archetypal melodic notations that birthed the seven swaras of Indian music.'
+      },
+      {
+        title_hi: 'छांदोग्य उपनिषद',
+        title_en: 'Chandogya Upanishad',
+        desc_hi: 'सामवेद से संबद्ध अत्यंत महत्वपूर्ण उपनिषद, जिसमें ॐकार की महिमा, उद्गीथ उपासना और "तत्त्वमसि" महावाक्य का उपदेश है।',
+        desc_en: 'Belonging to the Samaveda, containing deep meditations on OM (Udgitha) and the supreme revelation Tat Tvam Asi.'
+      }
+    ],
+    archive_url: 'https://archive.org/details/SamaVedaSanskritHindi'
+  },
+  {
+    id: 'yajurveda',
+    name_hi: 'यजुर्वेद (शुक्ल व कृष्ण)',
+    name_en: 'Yajurveda (Shukla & Krishna)',
+    sanskrit_name: 'यजुर्वेदः',
+    category: 'veda',
+    classification: 'The Veda of Rituals, Sacrifices & Mantras',
+    traditional_author: 'Maharshi Vaishampayana / Yagnavalkya',
+    total_verses_or_suktas: '40 Chapters (Shukla/Vajasaneyi), 1,975 Mantras',
+    deity: 'Rudra, Agni, Prajapati',
+    overview_hi: 'यज्ञ और कर्मकांड का प्रधान वेद। यह दो शाखाओं में विभक्त है—शुक्ल यजुर्वेद (वाजसनेयि, याज्ञवल्क्य द्वारा सूर्य से प्राप्त विशुद्ध मंत्र) और कृष्ण यजुर्वेद (मंत्र व गद्य व्याख्या मिश्रित)। श्रीरुद्रम् और ईशावास्योपनिषद इसी के भाग हैं।',
+    overview_en: 'The Veda of liturgical action and sacrificial formulas. Divided into Shukla (White) and Krishna (Black) branches. Home to Sri Rudram and the Isha Upanishad.',
+    key_sections: [
+      {
+        title_hi: 'श्री रुद्रम् / रुद्राष्टाध्यायी (१६वां व १८वां अध्याय)',
+        title_en: 'Sri Rudram / Chamakam (Chapters 16 & 18)',
+        desc_hi: 'नमस्ते रुद्र मन्यव उतो त इषवे नमः... भगवान शिव की स्तुति का सबसे दिव्य वैदिक सूक्त, जिसमें "नमः शिवाय" पंचाक्षर मंत्र पहली बार प्रकट हुआ।',
+        desc_en: 'The supreme Vedic chant extolling Lord Shiva in His cosmic majesty, containing the primordial manifestation of the Panchakshara Mantra.'
+      },
+      {
+        title_hi: 'ईशावास्योपनिषद (४०वां अध्याय)',
+        title_en: 'Isha Upanishad (Chapter 40)',
+        desc_hi: 'ईशा वास्यमिदं सर्वं यत्किञ्च जगत्यां जगत् । तेन त्यक्तेन भुञ्जीथा मा गृधः कस्यस्विद्धनम् ॥ संसार में जो कुछ भी है, सब ईश्वर से व्याप्त है। त्यागपूर्वक भोग करो, किसी के धन की लालसा मत करो।',
+        desc_en: 'The concluding 40th chapter of Shukla Yajurveda, declaring that the entire universe is enveloped by God.'
+      },
+      {
+        title_hi: 'शांति पाठ',
+        title_en: 'Universal Shanti Path (36.17)',
+        desc_hi: 'द्यौः शान्तिरन्तरिक्षं शान्तिः पृथिवी शान्तिरापः शान्तिरोषधयः शान्तिः... समस्त ब्रह्मांड में शांति की प्रार्थना।',
+        desc_en: 'The universal peace prayer invoking divine harmony in the skies, earth, waters, plants, and trees.'
+      }
+    ],
+    archive_url: 'https://archive.org/details/YajurVedaSanskritHindiGitaPress'
+  },
+  {
+    id: 'atharvaveda',
+    name_hi: 'अथर्ववेद',
+    name_en: 'Atharvaveda',
+    sanskrit_name: 'अथर्ववेदः',
+    category: 'veda',
+    classification: 'The Veda of Daily Life, Healing & Metaphysics',
+    traditional_author: 'Sage Atharvan & Sage Angiras',
+    total_verses_or_suktas: '20 Kandas, 730 Suktas, ~6,000 Mantras',
+    deity: 'Varuna, Agni, Indra, Prithvi (Bhoomi)',
+    overview_hi: 'दैनिक जीवन, आयुर्वेद, रोग निवारण, औषधियां, राष्ट्र रक्षा, समाज व्यवस्था और उच्च ब्रह्मविद्या का वेद। प्रसिद्ध "भूमि सूक्त" (माता भूमिः पुत्रोऽहं पृथिव्याः) इसी का अनुपम रत्न है। मांडूक्य और मुंडक उपनिषद इसी से संबद्ध हैं।',
+    overview_en: 'Focuses on health, medicine (origin of Ayurveda), household prosperity, ecological reverence, and supreme metaphysics (Mandukya & Mundaka Upanishads).',
+    key_sections: [
+      {
+        title_hi: 'पृथ्वी सूक्त / भूमि सूक्त (१२.१)',
+        title_en: 'Prithvi Sukta (Hymn to Mother Earth, 12.1)',
+        desc_hi: 'माता भूमिः पुत्रोऽहं पृथिव्याः — पृथ्वी मेरी माता है और मैं इस भूमि का पुत्र हूँ। पर्यावरण संरक्षण और मातृभूमि के प्रति असीम कृतज्ञता का विश्व का प्रथम घोषणापत्र।',
+        desc_en: 'The world’s first charter of environmental consciousness and planetary reverence: "Earth is my Mother, and I am her child."'
+      },
+      {
+        title_hi: 'मांडूक्य उपनिषद',
+        title_en: 'Mandukya Upanishad',
+        desc_hi: 'केवल 12 मंत्रों में ओंकार की चार मात्राओं (अ, उ, म और अमात्र) तथा चेतना की चार अवस्थाओं (जाग्रत, स्वप्न, सुषुप्ति और तुरीय) का रहस्य।',
+        desc_en: 'Compact 12-verse masterwork deciphering OM and the four states of consciousness (Waking, Dreaming, Deep Sleep, and Turiya).'
+      }
+    ],
+    archive_url: 'https://archive.org/details/AtharvaVedaSanskritHindi'
+  },
+
+  // ==========================================
+  // THE EIGHTEEN MAHAPURANAS (अष्टादश महापुराणानि)
+  // ==========================================
+  {
+    id: 'vishnu_purana',
+    name_hi: 'विष्णु पुराण',
+    name_en: 'Vishnu Purana',
+    sanskrit_name: 'विष्णुपुराणम्',
+    category: 'purana',
+    classification: 'Sattva Purana',
+    traditional_author: 'Maharshi Parashara (Father of Sage Vyasa)',
+    total_verses_or_suktas: '6 Amsas (Parts), 126 Chapters, ~7,000 Shlokas',
+    deity: 'Lord Vishnu (Narayana)',
+    overview_hi: 'पुराणों में अत्यंत प्रामाणिक और व्यवस्थित। महर्षि पराशर द्वारा मैत्रेय को सुनाया गया। इसमें ध्रुव चरित्र, प्रह्लाद कथा, समुद्र मंथन, भरत उपाख्यान और भगवान श्रीकृष्ण के बाल्यकाल व मथुरा-द्वारका लीलाओं का विशद वर्णन है।',
+    overview_en: 'One of the most classical and authoritative Puranas, featuring the inspiring tales of Dhruva, Prahlada, the churning of the ocean, and Krishna’s avatar.',
+    key_sections: [
+      {
+        title_hi: 'भक्त प्रह्लाद एवं ध्रुव कथा',
+        title_en: 'Stories of Prahlada & Dhruva',
+        desc_hi: 'कठिनतम परिस्थितियों में भी भगवान के नाम और भक्ति पर अडिग रहने का अप्रतिम आदर्श।',
+        desc_en: 'Unshakable faith in the Divine Name triumphing over tyrannical demonic persecution.'
+      }
+    ],
+    archive_url: 'https://archive.org/details/VishnuPuranaGitaPressHindi'
+  },
+  {
+    id: 'shiva_purana',
+    name_hi: 'शिव पुराण',
+    name_en: 'Shiva Purana',
+    sanskrit_name: 'शिवपुराणम्',
+    category: 'purana',
+    classification: 'Tamas / Shaiva Purana',
+    traditional_author: 'Sage Krishna Dvaipayana Vyasa',
+    total_verses_or_suktas: '7 Samhitas, 457 Chapters, 24,000 Shlokas',
+    deity: 'Lord Shiva & Goddess Parvati',
+    overview_hi: 'भगवान शिव की लीलाओं, द्वादश ज्योतिर्लिंगों के प्राकट्य, सती-पार्वती विवाह, गणेश-कार्तिकेय जन्म, रुद्राक्ष महिमा और पार्थिव शिवलिंग पूजा का विशद वर्णन। शिव भक्ति से काल का भय समाप्त होता है।',
+    overview_en: 'Dedicated to Mahadeva, narrating the emergence of the 12 Jyotirlingas, the wedding of Shiva and Parvati, the glory of Rudraksha, and the power of holy ash.',
+    key_sections: [
+      {
+        title_hi: 'रुद्र संहिता एवं कोटिरुद्र संहिता',
+        title_en: 'Rudra Samhita & Kotirudra Samhita',
+        desc_hi: 'द्वादश ज्योतिर्लिंगों के प्राकट्य की पावन कथाएं और लिंगार्चन का फल।',
+        desc_en: 'Detailed histories of the 12 Jyotirlingas and the immense spiritual fruit of worshiping the Shiva Lingam.'
+      }
+    ],
+    archive_url: 'https://archive.org/details/ShivaPuranaGitaPressHindi'
+  },
+  {
+    id: 'bhagavata_purana',
+    name_hi: 'श्रीमद् भागवत महापुराण',
+    name_en: 'Srimad Bhagavata Purana',
+    sanskrit_name: 'श्रीमद्भागवतम्',
+    category: 'purana',
+    classification: 'Sattva / Amal Purana',
+    traditional_author: 'Maharshi Vedavyasa (Narrated by Sukadeva to King Parikshit)',
+    total_verses_or_suktas: '12 Skandhas (Cantos), 335 Chapters, 18,000 Shlokas',
+    deity: 'Lord Sri Krishna (Paramatman)',
+    overview_hi: 'पुराणों का मुकुटमणि और वेदान्त का परिपक्व फल ("निगम कल्पतरोर्गलितं फलम्")। राजा परीक्षित को तक्षक दंश से पूर्व 7 दिनों में शुकदेव जी द्वारा सुनाया गया। गजेंद्र मोक्ष, ध्रुव, प्रह्लाद, अजामिल और 10वें स्कंध में श्रीकृष्ण की संपूर्ण लीलाएं।',
+    overview_en: 'The crown jewel of Puranas and the ripe fruit of the Vedic wish-fulfilling tree, narrated over 7 days to King Parikshit, revealing pure Prema-Bhakti.',
+    key_sections: [
+      {
+        title_hi: 'गजेंद्र मोक्ष (८वां स्कंध)',
+        title_en: 'Gajendra Moksha (8th Canto)',
+        desc_hi: 'जब ग्राह ने गजराज का पैर पकड़ लिया और कोई सहारा न रहा, तब केवल भगवान नारायण की पुकार से उद्धार हुआ। संकट निवारक स्तोत्र।',
+        desc_en: 'The desperate surrender of the elephant king to Narayana when dragged into the water by a crocodile; supreme prayer in mortal crisis.'
+      },
+      {
+        title_hi: 'दशम स्कंध (श्रीकृष्ण लीला)',
+        title_en: 'Tenth Canto (Krishna Leela)',
+        desc_hi: 'भगवान श्रीकृष्ण का जन्म, बाल-लीलाएं, पूतना वध, गोवर्धन धारण, रासलीला और कंस वध।',
+        desc_en: 'The sublime pastimes of Krishna in Gokula, Vrindavan, Mathura, and Dwaraka.'
+      }
+    ],
+    archive_url: 'https://archive.org/details/ShrimadBhagavataPuranaGitaPressHindi'
+  },
+  {
+    id: 'garuda_purana',
+    name_hi: 'गरुड़ पुराण',
+    name_en: 'Garuda Purana',
+    sanskrit_name: 'गरुड़पुराणम्',
+    category: 'purana',
+    classification: 'Sattva Purana',
+    traditional_author: 'Maharshi Vedavyasa (Conversation between Vishnu and Garuda)',
+    total_verses_or_suktas: '2 Khandas (Purva & Uttara/Pretakalpa), ~19,000 Shlokas',
+    deity: 'Lord Vishnu (Narayana)',
+    overview_hi: 'भगवान विष्णु द्वारा अपने वाहन गरुड़ जी को दिया गया उपदेश। इसमें मृत्यु के उपरांत जीवात्मा की यात्रा, वैतरणी नदी, यमलोक का मार्ग, श्राद्ध-तर्पण की अनिवार्यता, और मोक्ष धर्म का गहरा आध्यात्मिक विवेचन है। श्राद्ध के दिनों में इसका पाठ अनिवार्य माना जाता है।',
+    overview_en: 'Lord Vishnu instructs Garuda on the soul’s journey after physical death, subtle anatomy, the significance of Pitru Karma (Pind Daan), and liberation.',
+    key_sections: [
+      {
+        title_hi: 'प्रेतकल्प (श्राद्ध एवं पिंडदान विज्ञान)',
+        title_en: 'Pretakalpa (The Science of Shraddha)',
+        desc_hi: 'देहत्याग के बाद 10 दिनों में सूक्ष्म शरीर का निर्माण, 12वें दिन सपिंडीकरण और 13वें दिन तेरहवीं की क्रिया का आध्यात्मिक रहस्य।',
+        desc_en: 'Explains the 13-day transition of the departed soul and how sesame, water, and rice offerings nourish the subtle body.'
+      },
+      {
+        title_hi: 'मोक्ष धर्म एवं सदाचार',
+        title_en: 'Moksha Dharma & Virtue',
+        desc_hi: 'मृत्यु को भय नहीं अपितु नए वस्त्र धारण करने की यात्रा मानकर जीवनकाल में ही क्षमा, दान और ईश्वर भक्ति की तैयारी।',
+        desc_en: 'Preparing for a peaceful departure through universal forgiveness, charitable offerings (Dasa Daan), and unbroken devotion.'
+      }
+    ],
+    archive_url: 'https://archive.org/details/GarudaPuranaGitaPressHindi'
+  },
+  {
+    id: 'markandeya_purana',
+    name_hi: 'मार्कंडेय पुराण (दुर्गा सप्तशती)',
+    name_en: 'Markandeya Purana',
+    sanskrit_name: 'मार्कण्डेयपुराणम्',
+    category: 'purana',
+    classification: 'Rajas / Shakta Purana',
+    traditional_author: 'Sage Markandeya (Conqueror of Death)',
+    total_verses_or_suktas: '137 Chapters, ~9,000 Shlokas',
+    deity: 'Maa Durga (Devi Mahatmya / Chandi)',
+    overview_hi: 'ऋषि मार्कंडेय द्वारा विरचित। इसी पुराण के 81 से 93 अध्यायों में जगद्विख्यात "श्री दुर्गा सप्तशती" (देवी महात्म्य / चंडी पाठ) समाहित है, जिसमें महिषासुर मर्दन, शुंभ-निशुंभ वध और सुरथ-समाधि की कथा है।',
+    overview_en: 'Famous for housing the revered Sri Durga Saptashati (Devi Mahatmya / 700 verses of Chandi Path) celebrating the victory of the Divine Mother over cosmic evils.',
+    key_sections: [
+      {
+        title_hi: 'दुर्गा सप्तशती (देवी महात्म्य)',
+        title_en: 'Durga Saptashati (700 Verses)',
+        desc_hi: 'मधुकैटभ वध, महिषासुर संहार और शुंभ-निशुंभ मर्दन के तीन चरित्र। नवरात्र में इसका पाठ समस्त संकटों का नाश करता है।',
+        desc_en: 'The three episodes of Devi eliminating darkness, central to all Navratri observances across India.'
+      }
+    ],
+    archive_url: 'https://archive.org/details/MarkandeyaPuranaHindiGitaPress'
+  },
+  {
+    id: 'skanda_purana',
+    name_hi: 'स्कंद पुराण',
+    name_en: 'Skanda Purana',
+    sanskrit_name: 'स्कन्दपुराणम्',
+    category: 'purana',
+    classification: 'Shaiva Purana',
+    traditional_author: 'Maharshi Vedavyasa (Extolling Lord Skanda / Kartikeya)',
+    total_verses_or_suktas: '7 Khandas (Maheshwara, Vaishnava, Brahma, Kashi, Avantika, Nagara, Prabhasa), 81,100 Shlokas (Largest Purana)',
+    deity: 'Lord Shiva, Kartikeya, and All Sacred Tirthas',
+    overview_hi: '18 पुराणों में सबसे विशाल महापुराण (81,000 से अधिक श्लोक)। इसमें भारत के समस्त तीर्थों—काशी खंड (काशी महात्म्य), अवंतिका खंड (उज्जैन), प्रभास खंड (सोमनाथ-द्वारका), और सत्यनारायण कथा (रेवा खंड) का विस्तृत वर्णन है।',
+    overview_en: 'The largest of all 18 Puranas, a magnificent spiritual geography of India describing Varanasi, Ujjain, Somnath, and the famous Satyanarayan Katha.',
+    key_sections: [
+      {
+        title_hi: 'काशी खंड',
+        title_en: 'Kashi Khanda',
+        desc_hi: 'मोक्षनगरी काशी के सभी घाटों, शिवलिंगों और विश्वनाथ मंदिर की अलौकिक महिमा।',
+        desc_en: 'The definitive encyclopedic guide to the spiritual sanctity of Varanasi.'
+      },
+      {
+        title_hi: 'सत्यनारायण व्रत कथा (रेवा खंड)',
+        title_en: 'Satyanarayan Vrata Katha (Reva Khanda)',
+        desc_hi: 'घरों में पूर्णिमा व शुभ अवसरों पर की जाने वाली भगवान सत्यनारायण की 5 अध्यायों वाली कथा।',
+        desc_en: 'The five beloved chapters of Lord Satyanarayan performed by millions on Purnima days.'
+      }
+    ],
+    archive_url: 'https://archive.org/details/SkandaPuranaCompleteHindi'
+  },
+  {
+    id: 'padma_purana',
+    name_hi: 'पद्म पुराण',
+    name_en: 'Padma Purana',
+    sanskrit_name: 'पद्मपुराणम्',
+    category: 'purana',
+    classification: 'Sattva Purana',
+    traditional_author: 'Maharshi Vedavyasa',
+    total_verses_or_suktas: '5 Khandas (Srishti, Bhumi, Svarga, Patala, Uttara), 55,000 Shlokas',
+    deity: 'Lord Vishnu, Shiva, Brahma',
+    overview_hi: 'विशालकाय महापुराण जिसमें एकादशी व्रतों की संपूर्ण महिमा, तुलसी-शालिग्राम विवाह, पुष्कर तीर्थ का महात्म्य, गंगा महिमा और श्रीमद्भगवद्गीता के सभी 18 अध्यायों के महात्म्य की कथाएं हैं।',
+    overview_en: 'The second largest Purana, expounding the glory of all 24 Ekadashis, the sacredness of Tulsi and Shaligram, and the spiritual merit of each chapter of the Gita.',
+    key_sections: [
+      {
+        title_hi: 'गीता महात्म्य',
+        title_en: 'Gita Mahatmya',
+        desc_hi: 'भगवद्गीता के प्रत्येक अध्याय के नित्य पाठ से मिलने वाले फल और उससे जुड़े प्रेरक प्रसंग।',
+        desc_en: 'Illustrative narratives demonstrating the spiritual power of chanting each chapter of the Gita.'
+      }
+    ],
+    archive_url: 'https://archive.org/details/PadmaPuranaGitaPressHindi'
+  },
+
+  // ==========================================
+  // THE TEN PRINCIPAL UPANISHADS (दशोपनिषदः)
+  // ==========================================
+  {
+    id: 'katha_upanishad',
+    name_hi: 'कठोपनिषद',
+    name_en: 'Katha Upanishad',
+    sanskrit_name: 'कठोपनिषत्',
+    category: 'upanishad',
+    classification: 'Mukhya (Principal) Upanishad',
+    traditional_author: 'Krishna Yajurveda (Katha Shakha)',
+    total_verses_or_suktas: '2 Adhyayas, 6 Vallis, 119 Mantras',
+    deity: 'Atman / Brahman (Dialogue between Nachiketa and Yamaraja)',
+    overview_hi: 'बालक नचिकेता और यमराज का अमर संवाद। यमराज नचिकेता को सांसारिक धन-वैभव के प्रलोभनों से परे अमर आत्मज्ञान प्रदान करते हैं। "उत्तिष्ठत जाग्रत प्राप्य वरान्निबोधत" (उठो, जागो और श्रेष्ठ महापुरुषों के पास जाकर ज्ञान प्राप्त करो) इसी का महावाक्य है।',
+    overview_en: 'The profound dialogue between young Nachiketa and Yama (Lord of Death). Contains Swami Vivekananda’s motto: "Arise, awake, and stop not till the goal is reached."',
+    key_sections: [
+      {
+        title_hi: 'रथ रूपक (१.३.३-४)',
+        title_en: 'The Chariot Parable',
+        desc_hi: 'आत्मानं रथिनं विद्धि शरीरं रथमेव तु... आत्मा रथी है, शरीर रथ है, बुद्धि सारथी है और मन लगाम है। इंद्रियां घोड़े हैं और विषय मार्ग।',
+        desc_en: 'Iconic analogy comparing the human being to a chariot: Atman is the passenger, body the chariot, intellect the driver, mind the reins, and senses the horses.'
+      }
+    ],
+    mahavakya: 'उत्तिष्ठत जाग्रत प्राप्य वरान्निबोधत',
+    archive_url: 'https://archive.org/details/KathaUpanishadGitaPressHindi'
+  },
+  {
+    id: 'mandukya_upanishad',
+    name_hi: 'मांडूक्य उपनिषद',
+    name_en: 'Mandukya Upanishad',
+    sanskrit_name: 'माण्डूक्योपनिषत्',
+    category: 'upanishad',
+    classification: 'Mukhya (Principal) Upanishad',
+    traditional_author: 'Atharvaveda',
+    total_verses_or_suktas: '12 Mantras',
+    deity: 'Brahman / OM (A-U-M)',
+    overview_hi: 'समस्त उपनिषदों का सार। आदि शंकराचार्य के अनुसार अकेला मांडूक्य उपनिषद ही साधक को मोक्ष दिलाने में समर्थ है। इसमें ओंकार और आत्मा के चार पादों (जाग्रत-वैश्वानर, स्वप्न-तैजस, सुषुप्ति-प्राज्ञ और तुरीय) का उद्घाटन है। महावाक्य: "अयमात्मा ब्रह्म"।',
+    overview_en: 'The shortest yet most potent Upanishad. Muktika Upanishad declares: "Mandukya alone is sufficient for a seeker to achieve liberation." Unveils OM and the Turiya state.',
+    key_sections: [
+      {
+        title_hi: 'तुरीय अवस्था (७वां मंत्र)',
+        title_en: 'The Seventh Mantra (Turiya)',
+        desc_hi: 'नान्तःप्रज्ञं न बहिष्प्रज्ञं... जो न भीतर की ओर देख रहा है, न बाहर की ओर; जो शांत, शिव और अद्वैत है—वही आत्मा है, वही जानने योग्य है।',
+        desc_en: 'Defines the pure non-dual witness consciousness beyond waking, dreaming, and deep sleep: serene, auspicious (Shantam, Shivam, Advaitam).'
+      }
+    ],
+    mahavakya: 'अयमात्मा ब्रह्म (Ayam Atma Brahma - This Self is Brahman)',
+    archive_url: 'https://archive.org/details/MandukyaUpanishadGitaPressHindi'
+  },
+  {
+    id: 'chandogya_upanishad',
+    name_hi: 'छांदोग्य उपनिषद',
+    name_en: 'Chandogya Upanishad',
+    sanskrit_name: 'छान्दोग्योपनिषत्',
+    category: 'upanishad',
+    classification: 'Mukhya (Principal) Upanishad',
+    traditional_author: 'Samaveda',
+    total_verses_or_suktas: '8 Prapathakas (Chapters)',
+    deity: 'Brahman (Udgitha / OM)',
+    overview_hi: 'सामवेद का प्रमुख उपनिषद। इसमें आरुणि ऋषि द्वारा अपने पुत्र श्वेतकेतु को वटवृक्ष के बीज और जल में घुले नमक के दृष्टांत द्वारा "तत्त्वमसि" (वह ब्रह्म तुम ही हो) महावाक्य का अत्यंत सुंदर उपदेश दिया गया है।',
+    overview_en: 'Source of the great Mahavakya "Tat Tvam Asi" (That Thou Art), imparted by Sage Uddalaka to his son Shvetaketu using simple metaphors like salt in water.',
+    key_sections: [
+      {
+        title_hi: 'तत्त्वमसि उपदेश (६वां प्रपाठक)',
+        title_en: 'The Tat Tvam Asi Teaching (Chapter 6)',
+        desc_hi: 'ऐतदात्म्यमिदं सर्वं तत्सत्यं स आत्मा तत्त्वमसि श्वेतकेतो — यह समस्त जगत उस सूक्ष्म आत्मतत्त्व से व्याप्त है, वही सत्य है, और हे श्वेतकेतु! वह तुम ही हो।',
+        desc_en: 'All that exists is permeated by the subtle essence of Being. That is the Truth, that is the Self, and That Thou Art, O Shvetaketu.'
+      }
+    ],
+    mahavakya: 'तत्त्वमसि (Tat Tvam Asi - That Thou Art)',
+    archive_url: 'https://archive.org/details/ChandogyaUpanishadGitaPressHindi'
+  },
+  {
+    id: 'brihadaranyaka_upanishad',
+    name_hi: 'बृहदारण्यक उपनिषद',
+    name_en: 'Brihadaranyaka Upanishad',
+    sanskrit_name: 'बृहदारण्यकोपनिषत्',
+    category: 'upanishad',
+    classification: 'Mukhya (Principal) Upanishad',
+    traditional_author: 'Shukla Yajurveda (Kanva & Madhyandina)',
+    total_verses_or_suktas: '6 Adhyayas (Chapters)',
+    deity: 'Nirguna Brahman',
+    overview_hi: 'आकार और ज्ञान की दृष्टि से सबसे विशाल उपनिषद। महर्षि याज्ञवल्क्य और उनकी विदुषी पत्नी मैत्रेयी का अमर संवाद। प्रसिद्ध शांति मंत्र "असतो मा सद्गमय" और महावाक्य "अहं ब्रह्मास्मि" इसी का भाग हैं।',
+    overview_en: 'The greatest forest dialogue, where Sage Yajnavalkya instructs his wife Maitreyi on the immortality of the soul. Home to "Asato Ma Sadgamaya" and "Aham Brahmasmi".',
+    key_sections: [
+      {
+        title_hi: 'पवित्र प्रार्थना (१.३.२८)',
+        title_en: 'The Universal Prayer (1.3.28)',
+        desc_hi: 'असतो मा सद्गमय । तमसो मा ज्योतिर्गमय । मृत्योर्माऽमृतं गमय ॥ ॐ शान्तिः शान्तिः शान्तिः ॥',
+        desc_en: 'Lead me from the unreal to the real, from darkness to light, from death to immortality. Om Peace, Peace, Peace.'
+      },
+      {
+        title_hi: 'याज्ञवल्क्य-मैत्रेयी संवाद',
+        title_en: 'Yajnavalkya-Maitreyi Dialogue',
+        desc_hi: 'न वा अरे पत्युः कामाय पतिः प्रियो भवति, आत्मनस्तु कामाय पतिः प्रियो भवति — संसार में जो भी हमें प्रिय लगता है, वह वास्तव में उसमें स्थित आत्मा के कारण ही प्रिय लगता है।',
+        desc_en: 'It is not for the sake of the husband or wife that they are dear, but for the sake of the Self (Atman) dwelling within that all are dear.'
+      }
+    ],
+    mahavakya: 'अहं ब्रह्मास्मि (Aham Brahmasmi - I am the Supreme Brahman)',
+    archive_url: 'https://archive.org/details/BrihadaranyakaUpanishadGitaPressHindi'
+  },
+
+  // ==========================================
+  // THE GREAT ITIHASAS (इतिहास)
+  // ==========================================
+  {
+    id: 'ramayana',
+    name_hi: 'श्रीमद् वाल्मीकीय रामायण',
+    name_en: 'Valmiki Ramayana',
+    sanskrit_name: 'श्रीमद्वाल्मीकीयरामायणम्',
+    category: 'itihasa',
+    classification: 'Adi Kavya (First Epic Poetry)',
+    traditional_author: 'Maharshi Valmiki (The Adi Kavi)',
+    total_verses_or_suktas: '7 Kandas (Bal, Ayodhya, Aranya, Kishkindha, Sundar, Yuddha, Uttara), 24,000 Shlokas',
+    deity: 'Bhagavan Sri Rama & Devi Sita',
+    overview_hi: 'विश्व का प्रथम महाकाव्य (आदिकाव्य)। इसमें मर्यादा पुरुषोत्तम भगवान श्री राम का पावन जीवन चरित, धर्म, सत्य, भ्रातृ-प्रेम, मातृ-पितृ भक्ति और रावण संहार की अमर गाथा है। गायत्री मंत्र के 24 अक्षरों से इसके 24,000 श्लोक प्रारंभ होते हैं।',
+    overview_en: 'The foundational epic of Sanatana Dharma, narrating Sri Rama’s righteousness, filial devotion, and triumph of truth over adharma in 24,000 verses.',
+    key_sections: [
+      {
+        title_hi: 'सुंदरकांड',
+        title_en: 'Sundara Kanda',
+        desc_hi: 'श्री हनुमान जी द्वारा समुद्र लांघना, लंका में माता सीता की खोज, अशोक वाटिका में सांत्वना और लंका दहन। संकटों से मुक्ति हेतु इसका पाठ सर्वोपरि है।',
+        desc_en: 'Hanuman’s heroic leap across the ocean to Lanka, discovering Sita in Ashoka Vatika; recited worldwide for overcoming insurmountable hurdles.'
+      }
+    ],
+    archive_url: 'https://archive.org/details/ValmikiRamayanaGitaPressHindi'
+  },
+  {
+    id: 'mahabharata',
+    name_hi: 'महाभारत (पंचम वेद)',
+    name_en: 'Mahabharata (The Fifth Veda)',
+    sanskrit_name: 'महाभारतम्',
+    category: 'itihasa',
+    classification: 'The Great Epic of Dharma',
+    traditional_author: 'Maharshi Krishna Dvaipayana Vedavyasa (Written by Lord Ganesha)',
+    total_verses_or_suktas: '18 Parvas, ~100,000 Shlokas (World’s Longest Epic Poem)',
+    deity: 'Lord Sri Krishna & The Pandavas',
+    overview_hi: 'संसार का सबसे विशाल महाकाव्य। "यन्नेहास्ति न तत्क्वचित्" (जो इस महाभारत में नहीं है, वह संसार में कहीं नहीं है)। कुरुक्षेत्र का महासंग्राम, धर्म-अधर्म का द्वंद्व, विदुर नीति, भीष्म पितामह का शरशय्या उपदेश, विष्णु सहस्रनाम और भगवद्गीता इसी के रत्न हैं।',
+    overview_en: 'The greatest epic ever written, containing the complete spectrum of human psychology, statecraft, righteousness, and the jewels of Vishnu Sahasranama and Bhagavad Gita.',
+    key_sections: [
+      {
+        title_hi: 'भीष्म पर्व (भगवद्गीता)',
+        title_en: 'Bhishma Parva (Bhagavad Gita)',
+        desc_hi: 'कुरुक्षेत्र के मैदान में भगवान श्रीकृष्ण द्वारा अर्जुन को दिया गया 700 श्लोकों का अमर ज्ञान।',
+        desc_en: 'The immortal song of God expounded by Krishna to Arjuna on the battlefield.'
+      },
+      {
+        title_hi: 'अनुशासन पर्व (विष्णु सहस्रनाम)',
+        title_en: 'Anushasana Parva (Vishnu Sahasranama)',
+        desc_hi: 'शरशय्या पर लेटे भीष्म पितामह द्वारा युधिष्ठिर को दिए गए भगवान विष्णु के 1000 पवित्र नामों का उद्घोष।',
+        desc_en: 'Bheeshma’s proclamation of the 1,000 holy names of Lord Vishnu while resting on the bed of arrows.'
+      }
+    ],
+    archive_url: 'https://archive.org/details/MahabharataGitaPressHindiComplete'
+  }
+];

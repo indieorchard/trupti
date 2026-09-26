@@ -61,10 +61,17 @@ export interface Deity {
   id: string;
   canonical_name: string;
   sanskrit_name: string;
-  primary_aspect: 'vaishnava' | 'shaiva' | 'shakta' | 'smartha';
+  hindi_name: string;
+  primary_aspect: 'vaishnava' | 'shaiva' | 'shakta' | 'ganapatya' | 'kaumara' | 'saurya' | 'smartha';
   consort?: string;
   vahana?: string;
   bija_mantra?: string;
+  mool_mantra?: string;
+  description_hi: string;
+  description_en: string;
+  iconography_hi: string;
+  festivals: string[];
+  key_temples: string[];
   image_url?: string;
 }
 
@@ -77,33 +84,106 @@ export interface Temple {
   latitude: number;
   longitude: number;
   deity_id: string;
-  circuit: string[];  // 'char_dham', 'jyotirlinga', 'sapta_puri'
+  deity_name: string;
+  circuit: string[];  // 'char_dham', 'jyotirlinga', 'sapta_puri', 'shakti_peetha', 'divya_desam', 'south_mahatirtha'
   significance_hi: string;
   significance_en: string;
   best_time: string;
   youtube_id?: string;
+  darshan_timings?: string;
   accessibility?: {
     wheelchair: boolean;
     vip_darshan: boolean;
     battery_car: boolean;
+    elderly_support_notes?: string;
   };
+}
+
+export interface ChantVerse {
+  verse_number: number;
+  type?: 'doha' | 'chaupai' | 'shloka' | 'stotra' | 'pauri';
+  sanskrit: string;
+  transliteration?: string;
+  meaning_hi: string;
+  meaning_en?: string;
 }
 
 export interface Mantra {
   id: string;
   name_hi: string;
   name_en: string;
-  category: 'beej' | 'stotra' | 'chalisa' | 'aarti' | 'shloka' | 'stuti';
+  category: 'beej' | 'stotra' | 'chalisa' | 'aarti' | 'shloka' | 'stuti' | 'sukta';
   deity_id?: string;
+  deity_name?: string;
   source?: string;
   text_sanskrit: string;
   text_transliteration: string;
   meaning_hi: string;
   meaning_en: string;
+  verses?: ChantVerse[];
   audio_url?: string;
+  youtube_id?: string;
   audio_duration?: number;
   recommended_count?: number;
   benefit_hi?: string;
+}
+
+export interface GitaChapter {
+  chapter_number: number;
+  title_sanskrit: string;
+  title_hi: string;
+  title_en: string;
+  shlokas_count: number;
+  summary_hi: string;
+  summary_en: string;
+  key_shloka?: {
+    shloka_number: string;
+    sanskrit: string;
+    transliteration: string;
+    meaning_hi: string;
+    meaning_en: string;
+  };
+}
+
+export interface GitaScripture {
+  id: string;
+  name_hi: string;
+  name_en: string;
+  sanskrit_name: string;
+  source_text: string;
+  narrator: string;
+  listener: string;
+  chapters_count: number;
+  total_verses?: number;
+  tradition: string; // Advaita, Vaishnava, Shaiva, etc.
+  core_philosophy_hi: string;
+  core_philosophy_en: string;
+  chapters?: GitaChapter[];
+  key_teachings_hi: string[];
+  pdf_url?: string;
+  archive_url?: string;
+}
+
+export interface VedaPurana {
+  id: string;
+  name_hi: string;
+  name_en: string;
+  sanskrit_name: string;
+  category: 'veda' | 'purana' | 'upanishad' | 'itihasa';
+  classification?: string; // Sattva/Rajas/Tamas for Puranas; Shukla/Krishna for Yajurveda; Mukhya for Upanishads
+  traditional_author?: string;
+  total_verses_or_suktas?: string;
+  deity?: string;
+  overview_hi: string;
+  overview_en: string;
+  key_sections: {
+    title_hi: string;
+    title_en: string;
+    desc_hi: string;
+    desc_en: string;
+  }[];
+  mahavakya?: string; // For Upanishads
+  archive_url?: string;
 }
 
 export interface Vrata {
@@ -111,12 +191,15 @@ export interface Vrata {
   name_hi: string;
   name_en: string;
   deity_id?: string;
+  deity_name?: string;
   frequency: string;
+  tithi_info?: string;
   fasting_rules_hi: string;
   fasting_rules_en: string;
   permitted_foods: string[];
   prohibited_foods: string[];
   significance_hi: string;
+  parana_guidelines_hi?: string;
 }
 
 export interface Kriya {
