@@ -1,9 +1,10 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/hooks/useLanguage';
 import { cn } from '@/lib/utils';
-import { RotateCcw, Volume2, VolumeX, Sparkles, Award } from 'lucide-react';
+import { ArrowLeft, RotateCcw, Volume2, VolumeX, Sparkles, Award } from 'lucide-react';
 
 const japaMantras = [
   { id: 'shiva', name_hi: 'ॐ नमः शिवाय', name_en: 'Om Namah Shivaya', deity: 'शिव' },
@@ -17,6 +18,7 @@ const japaMantras = [
 
 export default function JapaPage() {
   const { t } = useLanguage();
+  const router = useRouter();
   const [selectedMantra, setSelectedMantra] = useState(japaMantras[0]);
   const [beadCount, setBeadCount] = useState(0);
   const [malasCompleted, setMalasCompleted] = useState(0);
@@ -97,10 +99,16 @@ export default function JapaPage() {
   return (
     <div className="px-4 py-4 space-y-4">
       {/* Header Banner */}
-      <div className="card bg-gradient-to-r from-amber-50 to-orange-100 border-saffron-300">
+      <div className="card bg-gradient-to-r from-amber-50 via-cream-50 to-orange-100 border-saffron-300">
         <div className="flex items-start justify-between">
           <div className="flex items-start gap-3">
-            <span className="text-4xl">📿</span>
+            <button
+              onClick={() => router.push('/knowledge')}
+              className="p-2 rounded-xl bg-white border border-saffron-200 text-saffron-700 hover:bg-cream-100 transition-colors shadow-2xs mt-0.5"
+              aria-label={t('पीछे जाएं', 'Go back')}
+            >
+              <ArrowLeft size={20} className="stroke-[2.5]" />
+            </button>
             <div>
               <h1 className="font-heading text-2xl text-saffron-800 font-bold">
                 {t('डिजिटल जप माला (108 मणके)', 'Digital Japa Mala (108 Beads)')}

@@ -309,7 +309,8 @@
           "meaning_en": "Abandon all varieties of dharmas and simply surrender unto Me alone. I shall deliver you from all sinful reactions; do not grieve."
         }
       }
-    ]
+    ],
+    "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "ashtavakra_gita",
@@ -330,7 +331,8 @@
       "बंधन तब तक है जब तक मन कुछ चाहता है, शोक करता है, त्यागता है या पकड़ता है; जब मन सर्वथा शांत है, वही मुक्ति है।"
     ],
     "pdf_url": "https://archive.org/details/AshtavakraGitaHindiGitaPress",
-    "archive_url": "https://sanskritdocuments.org/doc_giitaa/ashtavakra.html"
+    "archive_url": "https://sanskritdocuments.org/doc_giitaa/ashtavakra.html",
+    "image_url": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "avadhuta_gita",
@@ -351,7 +353,8 @@
       "न मेरा कोई जन्म है, न मृत्यु; न मेरा कोई कर्म है, न बंधन।"
     ],
     "pdf_url": "https://archive.org/details/AvadhutaGitaGorakhpurHindi",
-    "archive_url": "https://sanskritdocuments.org/doc_giitaa/avadhuta.html"
+    "archive_url": "https://sanskritdocuments.org/doc_giitaa/avadhuta.html",
+    "image_url": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "uddhava_gita",
@@ -372,7 +375,8 @@
       "भक्तियोग ही कलियुग में सबसे सरल और श्रेष्ठ मार्ग है।"
     ],
     "pdf_url": "https://archive.org/details/UddhavaGitaGitaPressHindi",
-    "archive_url": "https://vedabase.io/en/library/sb/11/"
+    "archive_url": "https://vedabase.io/en/library/sb/11/",
+    "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "ribhu_gita",
@@ -393,7 +397,8 @@
       "सर्वं शांतं, सर्वं शून्यं, सर्वं परं ब्रह्म।"
     ],
     "pdf_url": "https://archive.org/details/RibhuGitaHindiEnglish",
-    "archive_url": "https://sanskritdocuments.org/doc_giitaa/ribhugita.html"
+    "archive_url": "https://sanskritdocuments.org/doc_giitaa/ribhugita.html",
+    "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "ishvara_gita",
@@ -414,7 +419,8 @@
       "लिंग में नित्य पूजा और पंचाक्षर मंत्र (नमः शिवाय) का जप मोक्ष का राजमार्ग है।"
     ],
     "pdf_url": "https://archive.org/details/IshvaraGitaKurmaPuranaHindi",
-    "archive_url": "https://sanskritdocuments.org/doc_giitaa/"
+    "archive_url": "https://sanskritdocuments.org/doc_giitaa/",
+    "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "ganesha_gita",
@@ -435,7 +441,8 @@
       "समत्व ही सच्चा योग है।"
     ],
     "pdf_url": "https://archive.org/details/GaneshaGitaGitaPressHindi",
-    "archive_url": "https://sanskritdocuments.org/doc_giitaa/ganeshagita.html"
+    "archive_url": "https://sanskritdocuments.org/doc_giitaa/ganeshagita.html",
+    "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "rama_gita",
@@ -456,7 +463,8 @@
       "मेरी अनन्य भक्ति करने वाले को अंत में यह परमोत्कृष्ट ज्ञान अनायास ही प्राप्त हो जाता है।"
     ],
     "pdf_url": "https://archive.org/details/RamaGitaAdhyatmaRamayanaHindi",
-    "archive_url": "https://sanskritdocuments.org/doc_giitaa/ramagita.html"
+    "archive_url": "https://sanskritdocuments.org/doc_giitaa/ramagita.html",
+    "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "devi_gita",
@@ -477,7 +485,8 @@
       "सच्ची भक्ति वह है जहाँ भक्त संसार के सब प्राणियों में मेरा ही रूप देखता है।"
     ],
     "pdf_url": "https://archive.org/details/DeviGitaGitaPressHindi",
-    "archive_url": "https://sanskritdocuments.org/doc_giitaa/devigita.html"
+    "archive_url": "https://sanskritdocuments.org/doc_giitaa/devigita.html",
+    "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "guru_gita",
@@ -498,7 +507,8 @@
       "ध्यानमूलं गुरोर्मूर्तिः पूजामूलं गुरोः पदम् | मंत्रमूलं गुरोर्वाक्यं मोक्षमूलं गुरोः कृपा ||"
     ],
     "pdf_url": "https://archive.org/details/GuruGitaGitaPressHindi",
-    "archive_url": "https://sanskritdocuments.org/doc_giitaa/gurugita.html"
+    "archive_url": "https://sanskritdocuments.org/doc_giitaa/gurugita.html",
+    "image_url": "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "brahma_gita",
@@ -518,7 +528,8 @@
       "श्रवण, मनन और निदिध्यासन ही ब्रह्मज्ञान की प्राप्ति के तीन साधन हैं।"
     ],
     "pdf_url": "https://archive.org/details/BrahmaGitaSutaSamhita",
-    "archive_url": "https://sanskritdocuments.org/doc_giitaa/"
+    "archive_url": "https://sanskritdocuments.org/doc_giitaa/",
+    "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "vyadha_gita",
@@ -539,7 +550,8 @@
       "अहिंसा, सत्य, दम और परोपकार ही सच्चे ब्राह्मणत्व के लक्षण हैं।"
     ],
     "pdf_url": "https://archive.org/details/MahabharataVanaParvaVyadhaGita",
-    "archive_url": "https://sanskritdocuments.org/doc_giitaa/"
+    "archive_url": "https://sanskritdocuments.org/doc_giitaa/",
+    "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "anu_gita",
@@ -559,7 +571,8 @@
       "प्राण और अपान का संयम ही अंतर्यात्रा की कुंजी है।"
     ],
     "pdf_url": "https://archive.org/details/AnuGitaAshvamedhikaParva",
-    "archive_url": "https://sanskritdocuments.org/doc_giitaa/"
+    "archive_url": "https://sanskritdocuments.org/doc_giitaa/",
+    "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "parashara_gita",
@@ -579,6 +592,7 @@
       "तपस्या से ही तेज और विद्या की वृद्धि होती है।"
     ],
     "pdf_url": "https://archive.org/details/ParasharaGitaShantiParva",
-    "archive_url": "https://sanskritdocuments.org/doc_giitaa/"
+    "archive_url": "https://sanskritdocuments.org/doc_giitaa/",
+    "image_url": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80"
   }
 ]

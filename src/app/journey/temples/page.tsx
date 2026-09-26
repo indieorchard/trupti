@@ -1,10 +1,14 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/hooks/useLanguage';
 import { templesData } from '@/data/temples';
+import { getTempleImage } from '@/data/imageMap';
+import SmartImage from '@/components/ui/SmartImage';
+import FavoriteButton from '@/components/ui/FavoriteButton';
 import { cn } from '@/lib/utils';
-import { Search, MapPin, Clock, Calendar, ExternalLink, Video, CheckCircle, Info } from 'lucide-react';
+import { ArrowLeft, Search, MapPin, Clock, Calendar, ExternalLink, Video, CheckCircle, Info } from 'lucide-react';
 
 const circuits = [
   { id: 'all', label_hi: 'सभी (65)', label_en: 'All (65)' },
@@ -20,6 +24,7 @@ const circuits = [
 
 export default function TemplesPage() {
   const { t } = useLanguage();
+  const router = useRouter();
   const [selectedCircuit, setSelectedCircuit] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
@@ -37,19 +42,25 @@ export default function TemplesPage() {
   });
 
   return (
-    <div className="px-4 py-4 space-y-4">
-      {/* Header Banner */}
-      <div className="card bg-gradient-to-r from-saffron-50 to-cream-100 border-saffron-200">
+    <div className="px-4 py-4 space-y-4 max-w-lg mx-auto">
+      {/* Header Banner with Explicit Back Button */}
+      <div className="card bg-gradient-to-r from-saffron-50 via-cream-50 to-orange-100 border-saffron-200">
         <div className="flex items-start gap-3">
-          <span className="text-4xl">🛕</span>
+          <button
+            onClick={() => router.push('/journey')}
+            className="p-2 rounded-xl bg-white border border-saffron-200 text-saffron-700 hover:bg-cream-100 transition-colors shadow-2xs mt-0.5"
+            aria-label={t('पीछे जाएं', 'Go back')}
+          >
+            <ArrowLeft size={20} className="stroke-[2.5]" />
+          </button>
           <div>
-            <h1 className="font-heading text-2xl text-saffron-700 font-bold">
+            <h1 className="font-heading text-2xl text-saffron-800 font-bold">
               {t('भारत के 65+ पवित्र तीर्थ एवं मंदिर', '65+ Sacred Temples of India')}
             </h1>
             <p className="text-body-hi text-text-secondary mt-1">
               {t(
-                'चार धाम, द्वादश ज्योतिर्लिंग, सप्त पुरी और शक्तिपीठ — वर्चुअल दर्शन एवं वरिष्ठ तीर्थयात्री सहायता विवरण सहित।',
-                'Char Dham, 12 Jyotirlingas, Sapta Puri & Shakti Peethas with virtual darshan and senior accessibility guide.'
+                'चार धाम, द्वादश ज्योतिर्लिंग, सप्त पुरी और शक्तिपीठ — पावन दर्शन एवं वरिष्ठ तीर्थयात्री सहायता विवरण सहित।',
+                'Char Dham, 12 Jyotirlingas, Sapta Puri & Shakti Peethas with sacred darshan and senior pilgrim guide.'
               )}
             </p>
           </div>
@@ -58,18 +69,18 @@ export default function TemplesPage() {
 
       {/* Search Bar */}
       <div className="relative">
-        <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-text-muted" size={20} />
+        <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-saffron-700" size={20} />
         <input
           type="text"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder={t('मंदिर, शहर, राज्य या देवता खोजें...', 'Search temple, city, state or deity...')}
-          className="w-full pl-12 pr-4 py-3 bg-white border border-cream-300 rounded-xl font-hindi text-body-hi focus:outline-none focus:ring-2 focus:ring-saffron-500 shadow-sm"
+          placeholder={t('मंदिर, शहर, राज्य या देवता का नाम खोजें...', 'Search temple, city, state, or deity...')}
+          className="w-full pl-12 pr-4 py-3 bg-white border border-cream-300 rounded-2xl font-hindi text-body-hi focus:outline-none focus:ring-2 focus:ring-saffron-500 shadow-xs"
         />
       </div>
 
-      {/* Circuit Filter Pills */}
-      <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-none">
+      {/* Circuit Filter Horizontal Scroll */}
+      <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none">
         {circuits.map(c => (
           <button
             key={c.id}
@@ -77,7 +88,7 @@ export default function TemplesPage() {
             className={cn(
               'px-4 py-2 rounded-full font-hindi text-sm font-semibold whitespace-nowrap transition-colors min-h-[44px]',
               selectedCircuit === c.id
-                ? 'bg-saffron-600 text-white shadow-sm'
+                ? 'bg-saffron-600 text-white shadow-xs'
                 : 'bg-white border border-cream-300 text-text-secondary hover:bg-cream-100'
             )}
           >
@@ -86,142 +97,171 @@ export default function TemplesPage() {
         ))}
       </div>
 
-      {/* Results Counter */}
-      <div className="text-sm font-hindi text-text-muted px-1">
-        {t(`कुल ${filteredTemples.length} मंदिर उपलब्ध`, `Showing ${filteredTemples.length} temples`)}
+      {/* Count Indicator */}
+      <div className="text-xs font-hindi text-text-muted px-1 flex items-center justify-between">
+        <span>{t(`कुल ${filteredTemples.length} मंदिर उपलब्ध`, `Showing ${filteredTemples.length} temples`)}</span>
+        <span>{t('⭐ स्टार करें ताकि एक क्लिक में सुलभ हो', '⭐ Star to save in 1 click')}</span>
       </div>
 
       {/* Temples List */}
       <div className="space-y-4">
-        {filteredTemples.map((temple) => (
-          <article
-            key={temple.id}
-            id={temple.id}
-            className="card hover:shadow-md transition-shadow border-cream-200"
-          >
-            {/* Header: Name, Deity, Location */}
-            <div className="flex items-start justify-between">
+        {filteredTemples.map((temple) => {
+          const imgUrl = (temple as any).image_url || getTempleImage(temple.id, temple.circuit);
+
+          return (
+            <article
+              key={temple.id}
+              id={temple.id}
+              className="card hover:shadow-md transition-shadow border-cream-200 bg-white overflow-hidden p-4 space-y-3"
+            >
+              {/* Image & Header */}
+              <div className="relative w-full h-44 sm:h-48 rounded-2xl overflow-hidden shadow-xs border border-cream-200 group">
+                <SmartImage
+                  src={imgUrl}
+                  alt={temple.name}
+                  aspectRatio="wide"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                />
+                {/* Overlay Badge for Circuit */}
+                <div className="absolute top-2.5 left-2.5 flex flex-wrap gap-1">
+                  {temple.circuit.map(cir => (
+                    <span
+                      key={cir}
+                      className="px-2 py-0.5 rounded-full text-[11px] font-bold bg-white/90 backdrop-blur-xs text-saffron-800 shadow-2xs font-hindi"
+                    >
+                      {cir === 'jyotirlinga' ? '🕉️ ज्योतिर्लिंग' : cir === 'char_dham' ? '🪷 चार धाम' : cir === 'sapta_puri' ? '✨ मोक्ष पुरी' : '🛕 महातीर्थ'}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Floating Star Button */}
+                <div className="absolute top-2.5 right-2.5 bg-white/90 backdrop-blur-xs rounded-xl shadow-xs">
+                  <FavoriteButton
+                    item={{
+                      id: temple.id,
+                      type: 'temple',
+                      title_hi: temple.name,
+                      title_en: temple.name,
+                      subtitle_hi: `${temple.city}, ${temple.state}`,
+                      subtitle_en: `${temple.city}, ${temple.state}`,
+                      url: `/journey/temples#${temple.id}`,
+                      image_url: imgUrl,
+                      badge: '🛕 तीर्थ व मंदिर'
+                    }}
+                    className="p-1.5"
+                  />
+                </div>
+              </div>
+
+              {/* Title & Location */}
               <div>
-                <h2 className="font-heading text-xl font-bold text-text-primary">
-                  {temple.name}
-                </h2>
-                {temple.sanskrit_name && (
-                  <p className="font-sanskrit text-saffron-700 text-sm mt-0.5">
-                    {temple.sanskrit_name}
-                  </p>
-                )}
+                <div className="flex items-start justify-between">
+                  <div>
+                    <h2 className="font-heading text-xl font-bold text-text-primary leading-tight">
+                      {temple.name}
+                    </h2>
+                    {temple.sanskrit_name && (
+                      <p className="font-sanskrit text-saffron-700 text-sm mt-0.5">
+                        {temple.sanskrit_name}
+                      </p>
+                    )}
+                  </div>
+                </div>
+
                 <div className="flex items-center gap-1.5 text-xs text-text-muted mt-1.5">
-                  <MapPin size={14} className="text-saffron-600" />
+                  <MapPin size={14} className="text-saffron-600 flex-shrink-0" />
                   <span>{temple.city}, {temple.state}</span>
                   <span className="mx-1">•</span>
                   <span className="font-medium text-text-secondary">🕉️ {temple.deity_name}</span>
                 </div>
               </div>
-            </div>
 
-            {/* Significance */}
-            <p className="text-body-hi text-text-secondary mt-3 leading-relaxed">
-              {t(temple.significance_hi, temple.significance_en)}
-            </p>
+              {/* Significance */}
+              <p className="text-body-hi text-text-secondary leading-relaxed">
+                {t(temple.significance_hi, temple.significance_en)}
+              </p>
 
-            {/* Timings & Best Time */}
-            <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs bg-cream-50 p-2.5 rounded-lg border border-cream-200">
-              {temple.darshan_timings && (
+              {/* Timings & Best Season */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs bg-cream-50 p-2.5 rounded-xl border border-cream-200">
+                {temple.darshan_timings && (
+                  <div className="flex items-center gap-1.5 text-text-secondary">
+                    <Clock size={14} className="text-saffron-600 flex-shrink-0" />
+                    <span><strong>{t('दर्शन समय', 'Timings')}:</strong> {temple.darshan_timings}</span>
+                  </div>
+                )}
                 <div className="flex items-center gap-1.5 text-text-secondary">
-                  <Clock size={14} className="text-saffron-600 flex-shrink-0" />
-                  <span><strong>{t('दर्शन समय', 'Timings')}:</strong> {temple.darshan_timings}</span>
+                  <Calendar size={14} className="text-saffron-600 flex-shrink-0" />
+                  <span><strong>{t('उत्तम समय', 'Best Season')}:</strong> {temple.best_time}</span>
+                </div>
+              </div>
+
+              {/* Senior Accessibility Section */}
+              {temple.accessibility && (
+                <div className="p-3 bg-amber-50/60 rounded-xl border border-amber-200 space-y-1.5">
+                  <div className="flex items-center gap-1.5 text-xs font-bold text-saffron-800">
+                    <Info size={14} />
+                    <span>{t('वरिष्ठ नागरिक एवं दिव्यांग सहायता', 'Senior & Accessibility Features')}</span>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2 text-xs">
+                    {temple.accessibility.wheelchair && (
+                      <span className="px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-800 font-medium">
+                        ♿ {t('व्हीलचेयर उपलब्ध', 'Wheelchair Available')}
+                      </span>
+                    )}
+                    {temple.accessibility.vip_darshan && (
+                      <span className="px-2 py-0.5 rounded-md bg-blue-100 text-blue-800 font-medium">
+                        🎖️ {t('वरिष्ठ विशेष कतार / VIP', 'Senior / VIP Fast Lane')}
+                      </span>
+                    )}
+                    {temple.accessibility.battery_car && (
+                      <span className="px-2 py-0.5 rounded-md bg-purple-100 text-purple-800 font-medium">
+                        🛺 {t('बैटरी कार सेवा', 'Battery Car Service')}
+                      </span>
+                    )}
+                  </div>
+
+                  {temple.accessibility.elderly_support_notes && (
+                    <p className="text-xs text-text-secondary italic pt-1 border-t border-amber-200/60">
+                      💡 {temple.accessibility.elderly_support_notes}
+                    </p>
+                  )}
                 </div>
               )}
-              <div className="flex items-center gap-1.5 text-text-secondary">
-                <Calendar size={14} className="text-saffron-600 flex-shrink-0" />
-                <span><strong>{t('उत्तम समय', 'Best Season')}:</strong> {temple.best_time}</span>
-              </div>
-            </div>
 
-            {/* Senior Accessibility Section */}
-            {temple.accessibility && (
-              <div className="mt-3 p-3 bg-amber-50/50 rounded-lg border border-amber-200">
-                <div className="flex items-center gap-1.5 text-xs font-bold text-saffron-800 mb-1.5">
-                  <Info size={14} />
-                  <span>{t('वरिष्ठ नागरिक एवं दिव्यांग सहायता', 'Senior & Accessibility Features')}</span>
-                </div>
-
-                <div className="flex flex-wrap gap-2 text-xs mb-1.5">
-                  {temple.accessibility.wheelchair && (
-                    <span className="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-medium">
-                      ♿ {t('व्हीलचेयर उपलब्ध', 'Wheelchair Available')}
-                    </span>
-                  )}
-                  {temple.accessibility.vip_darshan && (
-                    <span className="px-2 py-0.5 rounded bg-blue-100 text-blue-800 font-medium">
-                      🎖️ {t('वरिष्ठ विशेष कतार / VIP', 'Senior / VIP Fast Lane')}
-                    </span>
-                  )}
-                  {temple.accessibility.battery_car && (
-                    <span className="px-2 py-0.5 rounded bg-purple-100 text-purple-800 font-medium">
-                      🛺 {t('बैटरी कार / गोल्फ कार्ट', 'Battery Cart Available')}
-                    </span>
+              {/* Virtual Darshan Video */}
+              {temple.youtube_id && (
+                <div className="pt-2">
+                  {activeVideoId === temple.id ? (
+                    <div className="aspect-video w-full rounded-xl overflow-hidden shadow-xs border border-cream-300">
+                      <iframe
+                        className="w-full h-full"
+                        src={`https://www.youtube-nocookie.com/embed/${temple.youtube_id}?autoplay=1`}
+                        title={`Virtual Darshan of ${temple.name}`}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  ) : (
+                    <button
+                      onClick={() => setActiveVideoId(temple.id)}
+                      className="btn-secondary w-full text-sm py-2 min-h-[44px] flex items-center justify-center gap-2 border-saffron-300 bg-saffron-50/50 hover:bg-saffron-100"
+                    >
+                      <Video size={16} className="text-saffron-700" />
+                      <span>{t('वर्चुअल पावन दर्शन (वीडियो)', 'Watch Virtual Darshan')}</span>
+                    </button>
                   )}
                 </div>
-
-                {temple.accessibility.elderly_support_notes && (
-                  <p className="text-xs text-text-secondary leading-normal">
-                    {temple.accessibility.elderly_support_notes}
-                  </p>
-                )}
-              </div>
-            )}
-
-            {/* Virtual Darshan YouTube Embed */}
-            {activeVideoId === temple.id ? (
-              <div className="mt-3 aspect-video rounded-xl overflow-hidden border border-cream-300">
-                <iframe
-                  src={`https://www.youtube.com/embed/${temple.youtube_id}?autoplay=1`}
-                  title={temple.name}
-                  className="w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            ) : null}
-
-            {/* Action Buttons */}
-            <div className="mt-3.5 pt-3 border-t border-cream-200 flex flex-wrap items-center justify-between gap-2">
-              <div className="flex gap-2">
-                {temple.youtube_id && (
-                  <button
-                    onClick={() => setActiveVideoId(activeVideoId === temple.id ? null : temple.id)}
-                    className="px-3 py-1.5 rounded-lg bg-saffron-100 text-saffron-800 hover:bg-saffron-200 font-hindi text-xs font-semibold flex items-center gap-1.5 transition-colors min-h-[40px]"
-                  >
-                    <Video size={15} />
-                    <span>
-                      {activeVideoId === temple.id 
-                        ? t('वीडियो बंद करें', 'Close Video') 
-                        : t('वर्चुअल दर्शन (वीडियो)', 'Virtual Darshan')}
-                    </span>
-                  </button>
-                )}
-
-                <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${temple.latitude},${temple.longitude}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3 py-1.5 rounded-lg bg-cream-100 text-text-secondary hover:bg-cream-200 font-hindi text-xs font-semibold flex items-center gap-1.5 transition-colors min-h-[40px]"
-                >
-                  <MapPin size={15} />
-                  <span>{t('मानचित्र / मार्ग', 'Map & Route')}</span>
-                  <ExternalLink size={12} />
-                </a>
-              </div>
-            </div>
-          </article>
-        ))}
+              )}
+            </article>
+          );
+        })}
 
         {filteredTemples.length === 0 && (
           <div className="text-center py-12 card text-text-muted">
             <p className="text-3xl mb-2">🔍</p>
             <p className="text-body-hi">
-              {t('कोई मंदिर नहीं मिला। कृपया दूसरा शब्द खोजें।', 'No temples found matching your search.')}
+              {t('कोई मंदिर नहीं मिला। कृपया अन्य शब्द खोजें।', 'No temples found matching your query.')}
             </p>
           </div>
         )}

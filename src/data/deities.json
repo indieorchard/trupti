@@ -24,7 +24,8 @@
       "Somnath (Gujarat)",
       "Mahakaleshwar (Ujjain)",
       "Ramanathaswamy (Rameswaram)"
-    ]
+    ],
+    "image_url": "https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "vishnu",
@@ -51,7 +52,8 @@
       "Ranganathaswamy (Srirangam)",
       "Padmanabhaswamy (Thiruvananthapuram)",
       "Dwarkadhish (Gujarat)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Vishnu.jpg/640px-Vishnu.jpg"
   },
   {
     "id": "krishna",
@@ -78,7 +80,8 @@
       "Krishna Janmabhoomi (Mathura)",
       "Guruvayur Temple (Kerala)",
       "Udupi Sri Krishna (Karnataka)"
-    ]
+    ],
+    "image_url": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "rama",
@@ -105,7 +108,8 @@
       "Ramanathaswamy (Rameswaram)",
       "Bhadrachalam (Telangana)",
       "Kodandarama (Vontimitta)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Rama_with_bow_and_arrow.jpg/640px-Rama_with_bow_and_arrow.jpg"
   },
   {
     "id": "ganesha",
@@ -131,7 +135,8 @@
       "Kanipakam (Andhra Pradesh)",
       "Ucchi Pillayar (Tiruchirappalli)",
       "Moti Dungri (Jaipur)"
-    ]
+    ],
+    "image_url": "https://images.unsplash.com/photo-1567591974584-f1832dfbf5f2?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "hanuman",
@@ -156,7 +161,8 @@
       "Salasar Balaji (Rajasthan)",
       "Mehandipur Balaji (Rajasthan)",
       "Jakhu Temple (Shimla)"
-    ]
+    ],
+    "image_url": "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "durga",
@@ -182,7 +188,8 @@
       "Kalighat (Kolkata)",
       "Chamundeshwari (Mysuru)",
       "Jwala Ji (Himachal Pradesh)"
-    ]
+    ],
+    "image_url": "https://images.unsplash.com/photo-1603555501671-8f96b3fce8b4?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "lakshmi",
@@ -207,7 +214,8 @@
       "Mahalakshmi Mandir (Mumbai)",
       "Sripuram Golden Temple (Vellore)",
       "Ashtalakshmi Temple (Chennai)"
-    ]
+    ],
+    "image_url": "https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "saraswati",
@@ -232,7 +240,8 @@
       "Gnana Saraswati (Basar, Telangana)",
       "Koothanur Maha Saraswathi (Tamil Nadu)",
       "Sringeri Sharadamba (Karnataka)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Saraswati_Raja_Ravi_Varma.jpg/640px-Saraswati_Raja_Ravi_Varma.jpg"
   },
   {
     "id": "kali",
@@ -257,7 +266,8 @@
       "Kalighat (Kolkata)",
       "Tarapith (West Bengal)",
       "Ujjain Gadhkalika (MP)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Kali_by_Raja_Ravi_Varma.jpg/640px-Kali_by_Raja_Ravi_Varma.jpg"
   },
   {
     "id": "parvati",
@@ -283,7 +293,8 @@
       "Kamakshi Amman (Kanchipuram)",
       "Visalakshi Mandir (Varanasi)",
       "Mangala Gauri (Gaya)"
-    ]
+    ],
+    "image_url": "https://images.unsplash.com/photo-1567591974584-f1832dfbf5f2?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "kartikeya",
@@ -308,7 +319,8 @@
       "Arupadai Veedu (6 Abodes in Tamil Nadu: Palani, Tiruchendur, etc.)",
       "Kukke Subramanya (Karnataka)",
       "Batu Caves (Malaysia)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Lord_Murugan.jpg/640px-Lord_Murugan.jpg"
   },
   {
     "id": "ayyappa",
@@ -330,7 +342,8 @@
       "Sabarimala Sree Dharma Sastha Temple (Kerala)",
       "Achankovil Temple (Kerala)",
       "Kulathupuzha (Kerala)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Swami_Ayyappan.jpg/640px-Swami_Ayyappan.jpg"
   },
   {
     "id": "surya",
@@ -356,7 +369,8 @@
       "Modhera Sun Temple (Gujarat)",
       "Martand Sun Temple (Kashmir)",
       "Suryanar Kovil (Tamil Nadu)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Surya_Deity.jpg/640px-Surya_Deity.jpg"
   },
   {
     "id": "kamakhya",
@@ -378,7 +392,8 @@
     ],
     "key_temples": [
       "Kamakhya Temple (Guwahati, Assam)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Kamakhya_Temple_Guwahati.jpg/640px-Kamakhya_Temple_Guwahati.jpg"
   },
   {
     "id": "meenakshi",
@@ -399,7 +414,8 @@
     ],
     "key_temples": [
       "Meenakshi Amman Temple (Madurai, Tamil Nadu)"
-    ]
+    ],
+    "image_url": "https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "jagannath",
@@ -422,7 +438,8 @@
     ],
     "key_temples": [
       "Jagannath Temple (Puri, Odisha)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Puri_Trimurti.jpg/640px-Puri_Trimurti.jpg"
   },
   {
     "id": "venkateswara",
@@ -444,7 +461,8 @@
     ],
     "key_temples": [
       "Tirumala Venkateswara Temple (Tirupati, Andhra Pradesh)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Venkateswara_Tirupati.jpg/640px-Venkateswara_Tirupati.jpg"
   },
   {
     "id": "vithoba",
@@ -465,7 +483,8 @@
     ],
     "key_temples": [
       "Vithoba Temple (Pandharpur, Maharashtra)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vithoba_of_Pandharpur.jpg/640px-Vithoba_of_Pandharpur.jpg"
   },
   {
     "id": "dattatreya",
@@ -489,7 +508,8 @@
       "Kuravpur (Andhra Pradesh)",
       "Girnar (Gujarat)",
       "Mahur (Maharashtra)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Lord_Dattatreya.jpg/640px-Lord_Dattatreya.jpg"
   },
   {
     "id": "narasimha",
@@ -512,7 +532,8 @@
       "Ahobilam (9 Narasimha temples, Andhra Pradesh)",
       "Simhachalam (Andhra Pradesh)",
       "Yadagirigutta (Telangana)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Narasimha_killing_Hiranyakashipu.jpg/640px-Narasimha_killing_Hiranyakashipu.jpg"
   },
   {
     "id": "dhanvantari",
@@ -534,7 +555,8 @@
       "Nelluvai Dhanvantari Temple (Kerala)",
       "Dhanvantari Temple (Ranganathaswamy, Srirangam)",
       "Coimbatore Dhanvantari Temple"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Dhanvantari_holding_Amrita.jpg/640px-Dhanvantari_holding_Amrita.jpg"
   },
   {
     "id": "kaal_bhairav",
@@ -557,7 +579,8 @@
       "Kaal Bhairav Temple (Varanasi)",
       "Ujjain Kaal Bhairav (MP)",
       "Bhairavnath (Vaishno Devi)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Bhairava_painting.jpg/640px-Bhairava_painting.jpg"
   },
   {
     "id": "annapurna",
@@ -579,7 +602,8 @@
     "key_temples": [
       "Annapurna Mandir (Varanasi)",
       "Horanadu Annapoorneshwari (Karnataka)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Annapurna_Devi.jpg/640px-Annapurna_Devi.jpg"
   },
   {
     "id": "radha",
@@ -602,7 +626,8 @@
       "Radha Rani Mandir (Barsana)",
       "Prem Mandir (Vrindavan)",
       "Radhavallabh (Vrindavan)"
-    ]
+    ],
+    "image_url": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "sita",
@@ -625,7 +650,8 @@
       "Janaki Mandir (Janakpur, Nepal)",
       "Sitamarhi (Bihar)",
       "Valmiki Ashram (Bithoor)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Rama_with_bow_and_arrow.jpg/640px-Rama_with_bow_and_arrow.jpg"
   },
   {
     "id": "brahma",
@@ -647,7 +673,8 @@
     "key_temples": [
       "Brahma Mandir (Pushkar, Rajasthan)",
       "Kumbakonam Brahma Temple (Tamil Nadu)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Brahma_on_Hamsa.jpg/640px-Brahma_on_Hamsa.jpg"
   },
   {
     "id": "ganga",
@@ -672,7 +699,8 @@
       "Har Ki Pauri (Haridwar)",
       "Dashashwamedh Ghat (Varanasi)",
       "Triveni Sangam (Prayagraj)"
-    ]
+    ],
+    "image_url": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "yamuna",
@@ -696,7 +724,8 @@
       "Yamunotri (Uttarakhand)",
       "Mathura Vishram Ghat (UP)",
       "Vrindavan Keshi Ghat"
-    ]
+    ],
+    "image_url": "https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "gayatri",
@@ -718,7 +747,8 @@
     "key_temples": [
       "Shantikunj (Haridwar)",
       "Pushkar Gayatri Mandir (Rajasthan)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Gayatri_Mata.jpg/640px-Gayatri_Mata.jpg"
   },
   {
     "id": "chamundeshwari",
@@ -740,7 +770,8 @@
     ],
     "key_temples": [
       "Chamundeshwari Temple (Chamundi Hills, Mysuru, Karnataka)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Chamundeshwari_Mysore.jpg/640px-Chamundeshwari_Mysore.jpg"
   },
   {
     "id": "shani",
@@ -764,7 +795,8 @@
       "Shani Shingnapur (Maharashtra)",
       "Thirunallar Saniswaran (Puducherry)",
       "Kokilavan Dham (Mathura)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Shani_Dev.jpg/640px-Shani_Dev.jpg"
   },
   {
     "id": "tulsi",
@@ -785,7 +817,8 @@
     "key_temples": [
       "Vrindavan Tulsi Van",
       "All Vaishnava home altars across India"
-    ]
+    ],
+    "image_url": "https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=700&q=80"
   },
   {
     "id": "kubera",
@@ -807,7 +840,8 @@
     "key_temples": [
       "Kuber Mandir (Jageshwar, Uttarakhand)",
       "Dhari Devi Kuber Temple (Alaknanda)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Kubera_Statue.jpg/640px-Kubera_Statue.jpg"
   },
   {
     "id": "tripura_sundari",
@@ -830,6 +864,7 @@
       "Kamakshi Temple (Kanchipuram)",
       "Tripura Sundari (Udaipur, Tripura)",
       "Lalita Devi (Naimisharanya)"
-    ]
+    ],
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Tripura_Sundari.jpg/640px-Tripura_Sundari.jpg"
   }
 ]

@@ -7,30 +7,67 @@ import { gitasData } from '../src/data/gitas';
 import { vedasPuranasData } from '../src/data/vedas_puranas';
 import { chantsData } from '../src/data/chants';
 import { vratasData } from '../src/data/vratas';
+import { getDeityImage, getTempleImage, getChantImage, getScriptureImage } from '../src/data/imageMap';
 
 const rootDir = process.cwd();
 const dataDir = path.join(rootDir, 'src', 'data');
 const dbPath = path.join(dataDir, 'trupti.db');
 
-console.log('--- SEEDING TRUPTI KNOWLEDGE BASE & DATABASE ---');
+console.log('--- SEEDING TRUPTI KNOWLEDGE BASE & DATABASE WITH SACRED IMAGERY ---');
 console.log('Target SQLite path:', dbPath);
 
+// Enrich data with images
+const enrichedDeities = deitiesData.map(d => ({
+  ...d,
+  image_url: d.image_url || getDeityImage(d.id)
+}));
+
+const enrichedTemples = templesData.map(t => ({
+  ...t,
+  image_url: (t as any).image_url || getTempleImage(t.id, t.circuit)
+}));
+
+const enrichedChants = chantsData.map(c => ({
+  ...c,
+  image_url: (c as any).image_url || getChantImage(c.deity_id, c.category)
+}));
+
+const enrichedGitas = gitasData.map(g => ({
+  ...g,
+  image_url: (g as any).image_url || getScriptureImage(g.id)
+}));
+
+const enrichedVedas = vedasPuranasData.map(v => ({
+  ...v,
+  image_url: (v as any).image_url || getScriptureImage(v.id)
+}));
+
+const enrichedVratas = vratasData.map(vr => ({
+  ...vr,
+  image_url: (vr as any).image_url || getDeityImage(vr.deity_id)
+}));
+
 // 1. Export JSON files for zero-latency client/server import
-fs.writeFileSync(path.join(dataDir, 'deities.json'), JSON.stringify(deitiesData, null, 2), 'utf-8');
-fs.writeFileSync(path.join(dataDir, 'temples.json'), JSON.stringify(templesData, null, 2), 'utf-8');
-fs.writeFileSync(path.join(dataDir, 'gitas.json'), JSON.stringify(gitasData, null, 2), 'utf-8');
-fs.writeFileSync(path.join(dataDir, 'vedas_puranas.json'), JSON.stringify(vedasPuranasData, null, 2), 'utf-8');
-fs.writeFileSync(path.join(dataDir, 'chants.json'), JSON.stringify(chantsData, null, 2), 'utf-8');
-fs.writeFileSync(path.join(dataDir, 'vratas.json'), JSON.stringify(vratasData, null, 2), 'utf-8');
+fs.writeFileSync(path.join(dataDir, 'deities.json'), JSON.stringify(enrichedDeities, null, 2), 'utf-8');
+fs.writeFileSync(path.join(dataDir, 'temples.json'), JSON.stringify(enrichedTemples, null, 2), 'utf-8');
+fs.writeFileSync(path.join(dataDir, 'gitas.json'), JSON.stringify(enrichedGitas, null, 2), 'utf-8');
+fs.writeFileSync(path.join(dataDir, 'vedas_puranas.json'), JSON.stringify(enrichedVedas, null, 2), 'utf-8');
+fs.writeFileSync(path.join(dataDir, 'chants.json'), JSON.stringify(enrichedChants, null, 2), 'utf-8');
+fs.writeFileSync(path.join(dataDir, 'vratas.json'), JSON.stringify(enrichedVratas, null, 2), 'utf-8');
 console.log('Exported all JSON datasets successfully.');
 
 // 2. Initialize and Seed SQLite Database
-if (fs.existsSync(dbPath)) {
-  fs.unlinkSync(dbPath);
-}
-
 const db = new DatabaseSync(dbPath);
 db.exec('PRAGMA journal_mode = WAL;');
+
+db.exec(`
+  DROP TABLE IF EXISTS deities;
+  DROP TABLE IF EXISTS temples;
+  DROP TABLE IF EXISTS chants;
+  DROP TABLE IF EXISTS gitas;
+  DROP TABLE IF EXISTS vedas_puranas;
+  DROP TABLE IF EXISTS vratas;
+`);
 
 db.exec(`
   CREATE TABLE deities (
@@ -67,7 +104,8 @@ db.exec(`
     best_time TEXT NOT NULL,
     darshan_timings TEXT,
     youtube_id TEXT,
-    accessibility TEXT
+    accessibility TEXT,
+    image_url TEXT
   );
 
   CREATE TABLE chants (
@@ -85,7 +123,8 @@ db.exec(`
     recommended_count INTEGER,
     benefit_hi TEXT,
     audio_url TEXT,
-    youtube_id TEXT
+    youtube_id TEXT,
+    image_url TEXT
   );
 
   CREATE TABLE gitas (
@@ -103,7 +142,8 @@ db.exec(`
     core_philosophy_en TEXT NOT NULL,
     key_teachings TEXT NOT NULL,
     pdf_url TEXT,
-    archive_url TEXT
+    archive_url TEXT,
+    image_url TEXT
   );
 
   CREATE TABLE vedas_puranas (
@@ -119,7 +159,8 @@ db.exec(`
     overview_hi TEXT NOT NULL,
     overview_en TEXT NOT NULL,
     mahavakya TEXT,
-    archive_url TEXT
+    archive_url TEXT,
+    image_url TEXT
   );
 
   CREATE TABLE vratas (
@@ -135,7 +176,8 @@ db.exec(`
     permitted_foods TEXT NOT NULL,
     prohibited_foods TEXT NOT NULL,
     significance_hi TEXT NOT NULL,
-    parana_guidelines_hi TEXT
+    parana_guidelines_hi TEXT,
+    image_url TEXT
   );
 `);
 
@@ -144,7 +186,7 @@ const insertDeity = db.prepare(`
   INSERT INTO deities (id, canonical_name, sanskrit_name, hindi_name, primary_aspect, consort, vahana, bija_mantra, mool_mantra, description_hi, description_en, iconography_hi, festivals, key_temples, image_url)
   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
-for (const d of deitiesData) {
+for (const d of enrichedDeities) {
   insertDeity.run(
     d.id,
     d.canonical_name,
@@ -160,16 +202,16 @@ for (const d of deitiesData) {
     d.iconography_hi,
     JSON.stringify(d.festivals),
     JSON.stringify(d.key_temples),
-    d.image_url || null
+    d.image_url
   );
 }
 
 // Insert Temples
 const insertTemple = db.prepare(`
-  INSERT INTO temples (id, name, sanskrit_name, state, city, latitude, longitude, deity_id, deity_name, circuit, significance_hi, significance_en, best_time, darshan_timings, youtube_id, accessibility)
-  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  INSERT INTO temples (id, name, sanskrit_name, state, city, latitude, longitude, deity_id, deity_name, circuit, significance_hi, significance_en, best_time, darshan_timings, youtube_id, accessibility, image_url)
+  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
-for (const t of templesData) {
+for (const t of enrichedTemples) {
   insertTemple.run(
     t.id,
     t.name,
@@ -186,16 +228,17 @@ for (const t of templesData) {
     t.best_time,
     t.darshan_timings || null,
     t.youtube_id || null,
-    JSON.stringify(t.accessibility || {})
+    JSON.stringify(t.accessibility || {}),
+    t.image_url
   );
 }
 
 // Insert Chants
 const insertChant = db.prepare(`
-  INSERT INTO chants (id, name_hi, name_en, category, deity_id, deity_name, source, text_sanskrit, text_transliteration, meaning_hi, meaning_en, recommended_count, benefit_hi, audio_url, youtube_id)
-  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  INSERT INTO chants (id, name_hi, name_en, category, deity_id, deity_name, source, text_sanskrit, text_transliteration, meaning_hi, meaning_en, recommended_count, benefit_hi, audio_url, youtube_id, image_url)
+  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
-for (const c of chantsData) {
+for (const c of enrichedChants) {
   insertChant.run(
     c.id,
     c.name_hi,
@@ -211,16 +254,17 @@ for (const c of chantsData) {
     c.recommended_count || 1,
     c.benefit_hi || null,
     c.audio_url || null,
-    c.youtube_id || null
+    c.youtube_id || null,
+    c.image_url
   );
 }
 
 // Insert Gitas
 const insertGita = db.prepare(`
-  INSERT INTO gitas (id, name_hi, name_en, sanskrit_name, source_text, narrator, listener, chapters_count, total_verses, tradition, core_philosophy_hi, core_philosophy_en, key_teachings, pdf_url, archive_url)
-  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  INSERT INTO gitas (id, name_hi, name_en, sanskrit_name, source_text, narrator, listener, chapters_count, total_verses, tradition, core_philosophy_hi, core_philosophy_en, key_teachings, pdf_url, archive_url, image_url)
+  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
-for (const g of gitasData) {
+for (const g of enrichedGitas) {
   insertGita.run(
     g.id,
     g.name_hi,
@@ -236,16 +280,17 @@ for (const g of gitasData) {
     g.core_philosophy_en,
     JSON.stringify(g.key_teachings_hi),
     g.pdf_url || null,
-    g.archive_url || null
+    g.archive_url || null,
+    g.image_url
   );
 }
 
 // Insert Vedas & Puranas
 const insertVedaPurana = db.prepare(`
-  INSERT INTO vedas_puranas (id, name_hi, name_en, sanskrit_name, category, classification, traditional_author, total_verses_or_suktas, deity, overview_hi, overview_en, mahavakya, archive_url)
-  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  INSERT INTO vedas_puranas (id, name_hi, name_en, sanskrit_name, category, classification, traditional_author, total_verses_or_suktas, deity, overview_hi, overview_en, mahavakya, archive_url, image_url)
+  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
-for (const v of vedasPuranasData) {
+for (const v of enrichedVedas) {
   insertVedaPurana.run(
     v.id,
     v.name_hi,
@@ -259,16 +304,17 @@ for (const v of vedasPuranasData) {
     v.overview_hi,
     v.overview_en,
     v.mahavakya || null,
-    v.archive_url || null
+    v.archive_url || null,
+    v.image_url
   );
 }
 
 // Insert Vratas
 const insertVrata = db.prepare(`
-  INSERT INTO vratas (id, name_hi, name_en, deity_id, deity_name, frequency, tithi_info, fasting_rules_hi, fasting_rules_en, permitted_foods, prohibited_foods, significance_hi, parana_guidelines_hi)
-  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  INSERT INTO vratas (id, name_hi, name_en, deity_id, deity_name, frequency, tithi_info, fasting_rules_hi, fasting_rules_en, permitted_foods, prohibited_foods, significance_hi, parana_guidelines_hi, image_url)
+  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
-for (const vr of vratasData) {
+for (const vr of enrichedVratas) {
   insertVrata.run(
     vr.id,
     vr.name_hi,
@@ -282,7 +328,8 @@ for (const vr of vratasData) {
     JSON.stringify(vr.permitted_foods),
     JSON.stringify(vr.prohibited_foods),
     vr.significance_hi,
-    vr.parana_guidelines_hi || null
+    vr.parana_guidelines_hi || null,
+    vr.image_url
   );
 }
 
@@ -294,13 +341,13 @@ const countGitas = db.prepare('SELECT COUNT(*) as c FROM gitas').get() as { c: n
 const countVedas = db.prepare('SELECT COUNT(*) as c FROM vedas_puranas').get() as { c: number };
 const countVratas = db.prepare('SELECT COUNT(*) as c FROM vratas').get() as { c: number };
 
-console.log('--- SEEDING COMPLETE ---');
+console.log('--- SEEDING COMPLETE WITH IMAGES ---');
 console.log(`Deities count: ${countDeities.c} (Requirement: 30+ -> ${countDeities.c >= 30 ? 'PASS' : 'FAIL'})`);
 console.log(`Temples count: ${countTemples.c} (Requirement: 60+ -> ${countTemples.c >= 60 ? 'PASS' : 'FAIL'})`);
 console.log(`Chants/Mantras count: ${countChants.c} (Requirement: 50+ -> ${countChants.c >= 20 ? 'PASS' : 'FAIL'})`);
 console.log(`Gitas count: ${countGitas.c}`);
 console.log(`Vedas, Puranas & Upanishads count: ${countVedas.c}`);
 console.log(`Vratas count: ${countVratas.c}`);
-console.log(`Database file size: ${(fs.statSync(dbPath).size / 1024).toFixed(2)} KB (Well within 50GB limit)`);
+console.log(`Database file size: ${(fs.statSync(dbPath).size / 1024).toFixed(2)} KB`);
 
 db.close();
