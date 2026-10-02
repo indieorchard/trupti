@@ -294,7 +294,7 @@
       "Visalakshi Mandir (Varanasi)",
       "Mangala Gauri (Gaya)"
     ],
-    "image_url": "https://images.unsplash.com/photo-1567591974584-f1832dfbf5f2?auto=format&fit=crop&w=700&q=80"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Siva-parvati-by-raja-ravi-varma.jpg/400px-Siva-parvati-by-raja-ravi-varma.jpg"
   },
   {
     "id": "kartikeya",
@@ -393,7 +393,7 @@
     "key_temples": [
       "Kamakhya Temple (Guwahati, Assam)"
     ],
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Kamakhya_Temple_Guwahati.jpg/640px-Kamakhya_Temple_Guwahati.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Kamakhya_Devi.png/400px-Kamakhya_Devi.png"
   },
   {
     "id": "meenakshi",
@@ -415,7 +415,7 @@
     "key_temples": [
       "Meenakshi Amman Temple (Madurai, Tamil Nadu)"
     ],
-    "image_url": "https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=700&q=80"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Statue_of_Meenakshi.jpg/400px-Statue_of_Meenakshi.jpg"
   },
   {
     "id": "jagannath",
@@ -627,7 +627,7 @@
       "Prem Mandir (Vrindavan)",
       "Radhavallabh (Vrindavan)"
     ],
-    "image_url": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=700&q=80"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Radha_in_the_Moonlight.jpg/400px-Radha_in_the_Moonlight.jpg"
   },
   {
     "id": "sita",
@@ -651,7 +651,7 @@
       "Sitamarhi (Bihar)",
       "Valmiki Ashram (Bithoor)"
     ],
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Rama_with_bow_and_arrow.jpg/640px-Rama_with_bow_and_arrow.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sita_Bhumipravesh.jpg/400px-Sita_Bhumipravesh.jpg"
   },
   {
     "id": "brahma",
@@ -700,7 +700,7 @@
       "Dashashwamedh Ghat (Varanasi)",
       "Triveni Sangam (Prayagraj)"
     ],
-    "image_url": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=700&q=80"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Ravi_Varma-Descent_of_Ganga.jpg/400px-Ravi_Varma-Descent_of_Ganga.jpg"
   },
   {
     "id": "yamuna",
@@ -725,7 +725,7 @@
       "Mathura Vishram Ghat (UP)",
       "Vrindavan Keshi Ghat"
     ],
-    "image_url": "https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=700&q=80"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Yamuna_with_her_mount_tortoise.jpg/400px-Yamuna_with_her_mount_tortoise.jpg"
   },
   {
     "id": "gayatri",

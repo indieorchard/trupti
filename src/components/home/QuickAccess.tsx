@@ -31,7 +31,7 @@ export default function QuickAccess() {
       </div>
 
       {/* 4x2 Compact Grid (8 Cards in One Fold) */}
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         {quickGridItems.map((item) => (
           <Link
             key={item.href}
@@ -46,7 +46,7 @@ export default function QuickAccess() {
             <span className="text-2xl sm:text-3xl mb-1 filter drop-shadow-xs transform group-hover:scale-110 transition-transform">
               {item.emoji}
             </span>
-            <span className="font-hindi text-[11px] sm:text-xs font-bold text-text-primary leading-tight line-clamp-1 w-full px-0.5">
+            <span className="font-hindi text-[11px] sm:text-xs font-bold text-text-primary leading-tight line-clamp-2 w-full px-0.5">
               {t(item.label_hi, item.label_en)}
             </span>
           </Link>

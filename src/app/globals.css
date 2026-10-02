@@ -63,15 +63,45 @@
 html {
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
+  font-size: calc(16px * var(--font-scale));
 }
 
 body {
   background-color: var(--color-cream-50);
   color: var(--color-text-primary);
   font-family: var(--font-hindi);
-  font-size: calc(1rem * var(--font-scale));
+  /* font-size now inherits from html's scaled value */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* ================================================
+   Typography Utilities — Senior-First Sizes
+   (Used across 20+ files, must be defined here)
+   ================================================ */
+@utility text-body-hi {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+@utility text-body-en {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+@utility text-heading-hi {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+@utility text-heading-en {
+  font-size: 1.375rem;
+  line-height: 1.4;
+}
+@utility text-shloka {
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+@utility text-large-hi {
+  font-size: 1.75rem;
+  line-height: 1.4;
 }
 
 /* Ensure Devanagari ligatures render correctly */

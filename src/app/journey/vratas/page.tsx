@@ -43,7 +43,7 @@ export default function VratasPage() {
               key={v.id}
               onClick={() => setSelectedVrataId(v.id)}
               className={cn(
-                'px-4 py-2 rounded-xl font-hindi text-sm font-semibold whitespace-nowrap transition-colors min-h-[44px]',
+                'px-4 py-2 rounded-xl font-hindi text-sm font-semibold whitespace-nowrap transition-colors min-h-[48px]',
                 selectedVrataId === v.id
                   ? 'bg-indigo-700 text-white shadow-sm'
                   : 'bg-white border border-cream-300 text-text-secondary hover:bg-cream-100'

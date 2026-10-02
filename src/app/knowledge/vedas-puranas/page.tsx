@@ -1,14 +1,13 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { vedasPuranasData } from '@/data/vedas_puranas';
 import { getScriptureImage } from '@/data/imageMap';
 import SmartImage from '@/components/ui/SmartImage';
 import FavoriteButton from '@/components/ui/FavoriteButton';
 import { cn } from '@/lib/utils';
-import { ArrowLeft, BookOpen, ExternalLink, Bookmark, Sparkles } from 'lucide-react';
+import { BookOpen, ExternalLink, Bookmark, Sparkles } from 'lucide-react';
 
 const categories = [
   { id: 'all', label_hi: 'सभी शास्त्र', label_en: 'All Scriptures' },
@@ -20,8 +19,16 @@ const categories = [
 
 export default function VedasPuranasPage() {
   const { t } = useLanguage();
-  const router = useRouter();
   const [selectedCategory, setSelectedCategory] = useState('all');
+
+  useEffect(() => {
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+      setTimeout(() => {
+        document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 200);
+    }
+  }, []);
 
   const filteredItems = vedasPuranasData.filter(item => 
     selectedCategory === 'all' || item.category === selectedCategory
@@ -29,16 +36,9 @@ export default function VedasPuranasPage() {
 
   return (
     <div className="px-4 py-4 space-y-4 max-w-lg mx-auto">
-      {/* Header Banner with Explicit Back Button */}
+      {/* Header Banner */}
       <div className="card bg-gradient-to-r from-amber-50 via-cream-50 to-orange-100 border-saffron-300">
         <div className="flex items-start gap-3">
-          <button
-            onClick={() => router.push('/knowledge')}
-            className="p-2 rounded-xl bg-white border border-saffron-200 text-saffron-700 hover:bg-cream-100 transition-colors shadow-2xs mt-0.5"
-            aria-label={t('पीछे जाएं', 'Go back')}
-          >
-            <ArrowLeft size={20} className="stroke-[2.5]" />
-          </button>
           <div>
             <h1 className="font-heading text-2xl text-saffron-800 font-bold">
               {t('वेद, पुराण, उपनिषद एवं इतिहास', 'Vedas, Puranas, Upanishads & Epics')}
@@ -60,7 +60,7 @@ export default function VedasPuranasPage() {
             key={c.id}
             onClick={() => setSelectedCategory(c.id)}
             className={cn(
-              'px-4 py-2 rounded-full font-hindi text-sm font-semibold whitespace-nowrap transition-colors min-h-[44px]',
+              'px-4 py-2 rounded-full font-hindi text-sm font-semibold whitespace-nowrap transition-colors min-h-[48px]',
               selectedCategory === c.id
                 ? 'bg-saffron-600 text-white shadow-xs'
                 : 'bg-white border border-cream-300 text-text-secondary hover:bg-cream-100'
@@ -186,7 +186,7 @@ export default function VedasPuranasPage() {
                   <div className="space-y-2">
                     {item.key_sections.map((sec, i) => (
                       <div key={i} className="p-2.5 bg-cream-50/70 rounded-xl border border-cream-200">
-                        <h4 className="font-hindi text-base font-bold text-saffron-800">
+                        <h4 className="font-heading text-base font-bold text-saffron-800">
                           {t(sec.title_hi, sec.title_en)}
                         </h4>
                         <p className="text-body-hi text-text-secondary mt-1">

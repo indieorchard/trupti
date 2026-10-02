@@ -58,7 +58,7 @@ export default function Header({
             <button
               onClick={handleBack}
               className={cn(
-                'min-h-[44px] min-w-[44px] flex items-center gap-1.5',
+                'min-h-[48px] min-w-[48px] flex items-center gap-1.5',
                 'text-saffron-700 font-hindi font-bold text-body-hi',
                 'rounded-xl active:bg-cream-200 hover:bg-cream-100 transition-colors px-2.5 py-1'
               )}
@@ -85,7 +85,7 @@ export default function Header({
           <Link
             href="/search"
             className={cn(
-              'min-h-[42px] min-w-[42px] p-2 rounded-xl flex items-center justify-center transition-colors',
+              'min-h-[48px] min-w-[48px] p-2 rounded-xl flex items-center justify-center transition-colors',
               pathname === '/search'
                 ? 'bg-saffron-600 text-white shadow-sm'
                 : 'bg-cream-100 text-text-secondary hover:bg-cream-200 border border-cream-300'
@@ -100,7 +100,7 @@ export default function Header({
           <Link
             href="/favorites"
             className={cn(
-              'relative min-h-[42px] min-w-[42px] p-2 rounded-xl flex items-center justify-center transition-colors',
+              'relative min-h-[48px] min-w-[48px] p-2 rounded-xl flex items-center justify-center transition-colors',
               pathname === '/favorites'
                 ? 'bg-amber-500 text-white shadow-sm'
                 : 'bg-cream-100 text-amber-700 hover:bg-cream-200 border border-cream-300'
@@ -121,36 +121,47 @@ export default function Header({
 
           {/* Font Scaler */}
           {showFontScaler && (
-            <div
-              className="flex items-center bg-cream-100 rounded-lg border border-cream-300 p-0.5"
-              role="group"
-              aria-label={t('फ़ॉन्ट आकार', 'Font size')}
-            >
-              {scales.map((s, i) => (
-                <button
-                  key={s.label}
-                  onClick={() => setScale(i)}
-                  className={cn(
-                    'min-w-[34px] min-h-[34px] flex items-center justify-center',
-                    'font-hindi text-xs font-bold transition-all rounded-md',
-                    i === scaleIndex
-                      ? 'bg-saffron-600 text-white shadow-xs'
-                      : 'text-text-secondary hover:bg-cream-200'
-                  )}
-                  aria-label={`Font size ${s.label}`}
-                  aria-pressed={i === scaleIndex}
-                >
-                  {s.label}
-                </button>
-              ))}
-            </div>
+            <>
+              {/* Mobile font toggle — single cycle button */}
+              <button
+                className="sm:hidden min-h-[48px] min-w-[48px] flex items-center justify-center bg-cream-100 border border-cream-300 rounded-xl font-hindi text-xs font-bold transition-colors active:bg-cream-200"
+                onClick={() => setScale((scaleIndex + 1) % scales.length)}
+                aria-label={t('फ़ॉन्ट आकार बदलें', 'Change font size')}
+              >
+                {scales[scaleIndex].label}
+              </button>
+
+              <div
+                className="hidden sm:flex items-center bg-cream-100 rounded-lg border border-cream-300 p-0.5"
+                role="group"
+                aria-label={t('फ़ॉन्ट आकार', 'Font size')}
+              >
+                {scales.map((s, i) => (
+                  <button
+                    key={s.label}
+                    onClick={() => setScale(i)}
+                    className={cn(
+                      'min-w-[48px] min-h-[48px] flex items-center justify-center',
+                      'font-hindi text-xs font-bold transition-all rounded-md',
+                      i === scaleIndex
+                        ? 'bg-saffron-600 text-white shadow-xs'
+                        : 'text-text-secondary hover:bg-cream-200'
+                    )}
+                    aria-label={`Font size ${s.label}`}
+                    aria-pressed={i === scaleIndex}
+                  >
+                    {s.label}
+                  </button>
+                ))}
+              </div>
+            </>
           )}
 
           {/* Language Toggle */}
           <button
             onClick={toggleLanguage}
             className={cn(
-              'min-h-[40px] px-2.5',
+              'min-h-[48px] min-w-[48px] px-2.5',
               'bg-cream-100 border border-cream-300 rounded-xl',
               'font-hindi text-xs font-bold text-text-primary',
               'active:bg-cream-200 hover:bg-cream-200 transition-colors'

@@ -2,17 +2,15 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/hooks/useLanguage';
 import SmartImage from '@/components/ui/SmartImage';
 import FavoriteButton from '@/components/ui/FavoriteButton';
 import { cn } from '@/lib/utils';
-import { Search, ArrowLeft, X, Sparkles, Clock, Mic, MicOff, TrendingUp, Compass, BookOpen } from 'lucide-react';
+import { Search, X, Sparkles, Clock, Mic, MicOff, TrendingUp, Compass, BookOpen } from 'lucide-react';
 import { SearchResultItem } from '@/lib/db';
 
 export default function SearchPage() {
   const { t, lang } = useLanguage();
-  const router = useRouter();
 
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<SearchResultItem[]>([]);
@@ -213,16 +211,8 @@ export default function SearchPage() {
 
   return (
     <div className="px-4 py-3 space-y-4 max-w-lg mx-auto">
-      {/* Top Search Input Box with Back button */}
+      {/* Top Search Input Box */}
       <div className="flex items-center gap-2">
-        <button
-          onClick={() => router.push('/')}
-          className="min-h-[46px] min-w-[46px] flex items-center justify-center rounded-xl bg-white border border-cream-300 text-saffron-700 hover:bg-cream-100 transition-colors shadow-xs"
-          aria-label={t('पीछे जाएं', 'Go Back')}
-        >
-          <ArrowLeft size={22} className="stroke-[2.5]" />
-        </button>
-
         <div className="relative flex-1">
           <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-saffron-700" size={20} />
           <input
@@ -241,7 +231,7 @@ export default function SearchPage() {
             {query ? (
               <button
                 onClick={() => setQuery('')}
-                className="p-1.5 text-text-muted hover:text-text-primary rounded-full transition-colors"
+                className="p-1.5 text-text-muted hover:text-text-primary rounded-full transition-colors min-h-[48px] min-w-[48px] flex items-center justify-center"
                 aria-label={t('साफ़ करें', 'Clear')}
               >
                 <X size={18} />
@@ -252,7 +242,7 @@ export default function SearchPage() {
             <button
               onClick={handleVoiceSearch}
               className={cn(
-                'p-2 rounded-xl transition-all',
+                'p-2 rounded-xl transition-all min-h-[48px] min-w-[48px] flex items-center justify-center',
                 isListening
                   ? 'bg-sacred-vermillion text-white animate-pulse'
                   : 'text-saffron-700 hover:bg-cream-200'
@@ -420,7 +410,7 @@ export default function SearchPage() {
             <h2 className="font-heading text-base font-bold text-text-primary px-1">
               {t('लोकप्रिय आध्यात्मिक संग्रह', 'Popular Sacred Libraries')}
             </h2>
-            <div className="grid grid-cols-2 gap-2.5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               <Link
                 href="/knowledge/vrat-sangrah"
                 className="card p-3.5 flex items-center gap-3 bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200 hover:shadow-md transition-all group"

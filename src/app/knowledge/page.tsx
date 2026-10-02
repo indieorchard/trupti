@@ -2,8 +2,6 @@
 
 import { useLanguage } from '@/hooks/useLanguage';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { ArrowLeft } from 'lucide-react';
 
 const categories = [
   {
@@ -82,20 +80,12 @@ const categories = [
 
 export default function KnowledgePage() {
   const { t } = useLanguage();
-  const router = useRouter();
 
   return (
     <div className="px-4 py-4 space-y-4 max-w-lg mx-auto">
-      {/* Header Banner with Explicit Back Button */}
+      {/* Header Banner */}
       <div className="card bg-gradient-to-r from-amber-50 via-cream-50 to-orange-100 border-saffron-300">
         <div className="flex items-start gap-3">
-          <button
-            onClick={() => router.push('/')}
-            className="p-2 rounded-xl bg-white border border-saffron-200 text-saffron-700 hover:bg-cream-100 transition-colors shadow-2xs mt-0.5"
-            aria-label={t('पीछे जाएं', 'Go back')}
-          >
-            <ArrowLeft size={20} className="stroke-[2.5]" />
-          </button>
           <div>
             <h2 className="font-heading text-large-hi text-saffron-900 font-bold">
               {t('ज्ञान भंडार', 'Knowledge Treasury')}
@@ -118,10 +108,10 @@ export default function KnowledgePage() {
                 {cat.emoji}
               </span>
               <div className="flex-1 min-w-0">
-                <h3 className="font-heading text-heading-hi text-text-primary font-bold truncate">
+                <h3 className="font-heading text-heading-hi text-text-primary font-bold line-clamp-2">
                   {t(cat.title_hi, cat.title_en)}
                 </h3>
-                <p className="text-sm text-saffron-700 font-medium mt-0.5 truncate">
+                <p className="text-sm text-saffron-700 font-medium mt-0.5 line-clamp-2">
                   {t(cat.count_hi, cat.count_en)}
                 </p>
               </div>

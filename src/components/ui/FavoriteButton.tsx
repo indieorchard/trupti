@@ -30,7 +30,7 @@ export default function FavoriteButton({
         toggleFavorite(item);
       }}
       className={cn(
-        'p-2 rounded-xl transition-all flex items-center gap-1.5 min-h-[44px] min-w-[44px] justify-center',
+        'p-2 rounded-xl transition-all flex items-center gap-1.5 min-h-[48px] min-w-[48px] justify-center',
         active
           ? 'bg-amber-100/90 text-amber-700 hover:bg-amber-200 shadow-sm border border-amber-300'
           : 'bg-white/80 hover:bg-cream-100 text-text-muted hover:text-amber-600 border border-cream-200',

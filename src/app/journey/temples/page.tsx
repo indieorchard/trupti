@@ -1,14 +1,13 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { templesData } from '@/data/temples';
 import { getTempleImage } from '@/data/imageMap';
 import SmartImage from '@/components/ui/SmartImage';
 import FavoriteButton from '@/components/ui/FavoriteButton';
 import { cn } from '@/lib/utils';
-import { ArrowLeft, Search, MapPin, Clock, Calendar, ExternalLink, Video, CheckCircle, Info } from 'lucide-react';
+import { Search, MapPin, Clock, Calendar, ExternalLink, Video, CheckCircle, Info } from 'lucide-react';
 
 const circuits = [
   { id: 'all', label_hi: 'सभी (65)', label_en: 'All (65)' },
@@ -24,10 +23,18 @@ const circuits = [
 
 export default function TemplesPage() {
   const { t } = useLanguage();
-  const router = useRouter();
   const [selectedCircuit, setSelectedCircuit] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
+
+  useEffect(() => {
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+      setTimeout(() => {
+        document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 200);
+    }
+  }, []);
 
   const filteredTemples = templesData.filter(temple => {
     const matchesCircuit = selectedCircuit === 'all' || temple.circuit.includes(selectedCircuit);
@@ -43,16 +50,9 @@ export default function TemplesPage() {
 
   return (
     <div className="px-4 py-4 space-y-4 max-w-lg mx-auto">
-      {/* Header Banner with Explicit Back Button */}
+      {/* Header Banner */}
       <div className="card bg-gradient-to-r from-saffron-50 via-cream-50 to-orange-100 border-saffron-200">
         <div className="flex items-start gap-3">
-          <button
-            onClick={() => router.push('/journey')}
-            className="p-2 rounded-xl bg-white border border-saffron-200 text-saffron-700 hover:bg-cream-100 transition-colors shadow-2xs mt-0.5"
-            aria-label={t('पीछे जाएं', 'Go back')}
-          >
-            <ArrowLeft size={20} className="stroke-[2.5]" />
-          </button>
           <div>
             <h1 className="font-heading text-2xl text-saffron-800 font-bold">
               {t('भारत के 65+ पवित्र तीर्थ एवं मंदिर', '65+ Sacred Temples of India')}
@@ -86,7 +86,7 @@ export default function TemplesPage() {
             key={c.id}
             onClick={() => setSelectedCircuit(c.id)}
             className={cn(
-              'px-4 py-2 rounded-full font-hindi text-sm font-semibold whitespace-nowrap transition-colors min-h-[44px]',
+              'px-4 py-2 rounded-full font-hindi text-sm font-semibold whitespace-nowrap transition-colors min-h-[48px]',
               selectedCircuit === c.id
                 ? 'bg-saffron-600 text-white shadow-xs'
                 : 'bg-white border border-cream-300 text-text-secondary hover:bg-cream-100'

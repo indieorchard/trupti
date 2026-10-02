@@ -1,37 +1,38 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { chantsData } from '@/data/chants';
 import { getChantImage } from '@/data/imageMap';
 import SmartImage from '@/components/ui/SmartImage';
 import FavoriteButton from '@/components/ui/FavoriteButton';
 import { cn } from '@/lib/utils';
-import { ArrowLeft, Play, Pause, Bell, Shield, Sparkles } from 'lucide-react';
+import { Play, Pause, Bell, Shield, Sparkles } from 'lucide-react';
 
 export default function StotraPage() {
   const { t } = useLanguage();
-  const router = useRouter();
   const stotras = chantsData.filter(c => c.category === 'stotra' || c.category === 'shloka' || c.category === 'sukta');
   const [selectedStotraId, setSelectedStotraId] = useState(stotras[0]?.id || 'shiva_tandava_stotra');
   const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+      const matchedItem = stotras.find(item => item.id === hash);
+      if (matchedItem) {
+        setSelectedStotraId(hash);
+      }
+    }
+  }, [stotras]);
 
   const currentStotra = stotras.find(s => s.id === selectedStotraId) || stotras[0];
   const deityImg = currentStotra ? getChantImage(currentStotra.deity_id, currentStotra.category) : '';
 
   return (
     <div className="px-4 py-4 space-y-4 max-w-lg mx-auto">
-      {/* Header Banner with Explicit Back Button */}
+      {/* Header Banner */}
       <div className="card bg-gradient-to-r from-purple-50 via-cream-50 to-amber-100 border-saffron-300">
         <div className="flex items-start gap-3">
-          <button
-            onClick={() => router.push('/knowledge')}
-            className="p-2 rounded-xl bg-white border border-saffron-200 text-saffron-700 hover:bg-cream-100 transition-colors shadow-2xs mt-0.5"
-            aria-label={t('पीछे जाएं', 'Go back')}
-          >
-            <ArrowLeft size={20} className="stroke-[2.5]" />
-          </button>
           <div>
             <h1 className="font-heading text-2xl text-saffron-800 font-bold">
               {t('दिव्य स्तोत्र एवं मंत्र भंडार (20+ स्तोत्र)', 'Sacred Stotras & Mantras (20+ Stotras)')}
@@ -60,7 +61,7 @@ export default function StotraPage() {
                 setIsPlaying(false);
               }}
               className={cn(
-                'px-4 py-2 rounded-full font-hindi text-sm font-semibold whitespace-nowrap transition-colors min-h-[44px]',
+                'px-4 py-2 rounded-full font-hindi text-sm font-semibold whitespace-nowrap transition-colors min-h-[48px]',
                 selectedStotraId === s.id
                   ? 'bg-saffron-600 text-white shadow-xs'
                   : 'bg-white border border-cream-300 text-text-secondary hover:bg-cream-100'

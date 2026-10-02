@@ -2,12 +2,11 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import { useFavorites, FavoriteItem } from '@/hooks/useFavorites';
 import { useLanguage } from '@/hooks/useLanguage';
 import SmartImage from '@/components/ui/SmartImage';
 import { cn } from '@/lib/utils';
-import { Star, ArrowLeft, Trash2, ExternalLink, Sparkles, BookOpen, Compass } from 'lucide-react';
+import { Star, Trash2, ExternalLink, Sparkles, BookOpen, Compass } from 'lucide-react';
 
 const categoryTabs = [
   { id: 'all', label_hi: 'सभी पसंदीदा', label_en: 'All Starred', emoji: '⭐' },
@@ -22,7 +21,6 @@ const categoryTabs = [
 export default function FavoritesPage() {
   const { favorites, removeFavorite, favoritesCount, isLoaded } = useFavorites();
   const { t } = useLanguage();
-  const router = useRouter();
   const [selectedTab, setSelectedTab] = useState<string>('all');
 
   const matchesCategory = (item: FavoriteItem, tab: string) => {
@@ -40,16 +38,9 @@ export default function FavoritesPage() {
 
   return (
     <div className="px-4 py-4 space-y-4 max-w-lg mx-auto">
-      {/* Header Banner with Explicit Back button */}
+      {/* Header Banner */}
       <div className="card bg-gradient-to-r from-amber-50 via-cream-50 to-orange-100 border-amber-300">
         <div className="flex items-start gap-3">
-          <button
-            onClick={() => router.push('/')}
-            className="p-2 rounded-xl bg-white border border-amber-300 text-saffron-700 hover:bg-cream-100 transition-colors shadow-2xs mt-0.5"
-            aria-label={t('पीछे जाएं', 'Go back')}
-          >
-            <ArrowLeft size={20} className="stroke-[2.5]" />
-          </button>
           <div className="flex-1">
             <h1 className="font-heading text-2xl font-bold text-saffron-900 flex items-center gap-2">
               <Star className="fill-amber-500 text-amber-600" size={24} />
@@ -74,7 +65,7 @@ export default function FavoritesPage() {
               key={tab.id}
               onClick={() => setSelectedTab(tab.id)}
               className={cn(
-                'px-4 py-2 rounded-full font-hindi text-sm font-semibold whitespace-nowrap transition-colors min-h-[44px]',
+                'px-4 py-2 rounded-full font-hindi text-sm font-semibold whitespace-nowrap transition-colors min-h-[48px]',
                 selectedTab === tab.id
                   ? 'bg-amber-600 text-white shadow-xs'
                   : 'bg-white border border-cream-300 text-text-secondary hover:bg-cream-100'
@@ -113,11 +104,11 @@ export default function FavoritesPage() {
                       {item.badge}
                     </span>
                   )}
-                  <h3 className="font-heading text-lg font-bold text-text-primary truncate">
+                  <h3 className="font-heading text-lg font-bold text-text-primary line-clamp-2">
                     {t(item.title_hi, item.title_en)}
                   </h3>
                   {(item.subtitle || item.subtitle_hi) && (
-                    <p className="text-xs text-text-secondary truncate mt-0.5 font-hindi">
+                    <p className="text-xs text-text-secondary line-clamp-2 mt-0.5 font-hindi">
                       {item.subtitle || item.subtitle_hi}
                     </p>
                   )}
@@ -128,7 +119,7 @@ export default function FavoritesPage() {
               <div className="flex items-center gap-1 flex-shrink-0">
                 <Link
                   href={item.url}
-                  className="p-2.5 rounded-xl bg-cream-100 hover:bg-cream-200 text-saffron-700 transition-colors"
+                  className="p-2.5 rounded-xl bg-cream-100 hover:bg-cream-200 text-saffron-700 transition-colors min-h-[48px] min-w-[48px] flex items-center justify-center"
                   aria-label={t('खोलें', 'Open')}
                 >
                   <ExternalLink size={18} />
@@ -136,7 +127,7 @@ export default function FavoritesPage() {
 
                 <button
                   onClick={() => removeFavorite(item.id)}
-                  className="p-2.5 rounded-xl text-text-muted hover:text-sacred-vermillion hover:bg-red-50 transition-colors"
+                  className="p-2.5 rounded-xl text-text-muted hover:text-sacred-vermillion hover:bg-red-50 transition-colors min-h-[48px] min-w-[48px] flex items-center justify-center"
                   title={t('पसंदीदा से हटाएं', 'Remove')}
                   aria-label={t('पसंदीदा से हटाएं', 'Remove')}
                 >

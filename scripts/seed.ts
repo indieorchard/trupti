@@ -344,7 +344,7 @@ const countVratas = db.prepare('SELECT COUNT(*) as c FROM vratas').get() as { c:
 console.log('--- SEEDING COMPLETE WITH IMAGES ---');
 console.log(`Deities count: ${countDeities.c} (Requirement: 30+ -> ${countDeities.c >= 30 ? 'PASS' : 'FAIL'})`);
 console.log(`Temples count: ${countTemples.c} (Requirement: 60+ -> ${countTemples.c >= 60 ? 'PASS' : 'FAIL'})`);
-console.log(`Chants/Mantras count: ${countChants.c} (Requirement: 50+ -> ${countChants.c >= 20 ? 'PASS' : 'FAIL'})`);
+console.log(`Chants/Mantras count: ${countChants.c} (Requirement: 50+ -> ${countChants.c >= 50 ? 'PASS' : 'FAIL'})`);
 console.log(`Gitas count: ${countGitas.c}`);
 console.log(`Vedas, Puranas & Upanishads count: ${countVedas.c}`);
 console.log(`Vratas count: ${countVratas.c}`);

@@ -1,37 +1,38 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { chantsData } from '@/data/chants';
 import { getChantImage } from '@/data/imageMap';
 import SmartImage from '@/components/ui/SmartImage';
 import FavoriteButton from '@/components/ui/FavoriteButton';
 import { cn } from '@/lib/utils';
-import { ArrowLeft, Play, Pause, Volume2, Shield } from 'lucide-react';
+import { Play, Pause, Volume2, Shield } from 'lucide-react';
 
 export default function ChalisaPage() {
   const { t } = useLanguage();
-  const router = useRouter();
   const chalisas = chantsData.filter(c => c.category === 'chalisa' || c.id === 'bajrang_baan');
   const [selectedChalisaId, setSelectedChalisaId] = useState(chalisas[0]?.id || 'hanuman_chalisa');
   const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+      const matchedItem = chalisas.find(item => item.id === hash);
+      if (matchedItem) {
+        setSelectedChalisaId(hash);
+      }
+    }
+  }, [chalisas]);
 
   const currentChalisa = chalisas.find(c => c.id === selectedChalisaId) || chalisas[0];
   const deityImg = currentChalisa ? getChantImage(currentChalisa.deity_id, 'chalisa') : '';
 
   return (
     <div className="px-4 py-4 space-y-4 max-w-lg mx-auto">
-      {/* Header Banner with Explicit Back Button */}
+      {/* Header Banner */}
       <div className="card bg-gradient-to-r from-orange-50 via-cream-50 to-amber-100 border-saffron-300">
         <div className="flex items-start gap-3">
-          <button
-            onClick={() => router.push('/knowledge')}
-            className="p-2 rounded-xl bg-white border border-saffron-200 text-saffron-700 hover:bg-cream-100 transition-colors shadow-2xs mt-0.5"
-            aria-label={t('पीछे जाएं', 'Go back')}
-          >
-            <ArrowLeft size={20} className="stroke-[2.5]" />
-          </button>
           <div>
             <h1 className="font-heading text-2xl text-saffron-800 font-bold">
               {t('चालीसा संग्रह (श्री हनुमान चालीसा आदि)', 'Chalisa Collection')}
@@ -60,7 +61,7 @@ export default function ChalisaPage() {
                 setIsPlaying(false);
               }}
               className={cn(
-                'px-4 py-2 rounded-full font-hindi text-sm font-semibold whitespace-nowrap transition-colors min-h-[44px]',
+                'px-4 py-2 rounded-full font-hindi text-sm font-semibold whitespace-nowrap transition-colors min-h-[48px]',
                 selectedChalisaId === c.id
                   ? 'bg-saffron-600 text-white shadow-xs'
                   : 'bg-white border border-cream-300 text-text-secondary hover:bg-cream-100'

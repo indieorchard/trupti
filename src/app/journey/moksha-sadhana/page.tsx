@@ -158,7 +158,7 @@ export default function MokshaSadhanaPage() {
 
       {/* Three Phases Overview */}
       <div className="space-y-2">
-        <h2 className="text-xs font-bold text-text-muted uppercase tracking-wider px-1">
+        <h2 className="font-heading text-xs font-bold text-text-muted uppercase tracking-wider px-1">
           {t('साधना के तीन सोपान', 'Three Progressive Phases')}
         </h2>
         {phases.map(p => (

@@ -72,7 +72,7 @@ export default function AntimaYatraPage() {
             'Before the final hour, release all accumulated grudges, resentments, and debts of pride:'
           )}
         </p>
-        <div className="p-3 bg-purple-50 rounded-xl border border-purple-200 text-purple-950 font-medium font-hindi text-body-hi leading-relaxed text-center">
+        <div className="p-3 bg-purple-50 rounded-xl border border-purple-200 text-purple-950 font-medium font-sanskrit text-body-hi leading-relaxed text-center">
           "खामेमि सव्वे जीवा, सव्वे जीवा खमंतु मे ।<br />
           मित्ती मे सव्वभूएसु, वेरं मज्झं न केणइ ॥"<br />
           <span className="text-xs text-text-muted mt-1 block">

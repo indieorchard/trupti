@@ -1,15 +1,14 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/hooks/useLanguage';
 import { deitiesData } from '@/data/deities';
 import { getDeityImage } from '@/data/imageMap';
 import SmartImage from '@/components/ui/SmartImage';
 import FavoriteButton from '@/components/ui/FavoriteButton';
 import { cn } from '@/lib/utils';
-import { ArrowLeft, Search, Sparkles, Shield, Compass } from 'lucide-react';
+import { Search, Sparkles, Shield, Compass } from 'lucide-react';
 
 const aspects = [
   { id: 'all', label_hi: 'सभी (35)', label_en: 'All (35)' },
@@ -24,9 +23,17 @@ const aspects = [
 
 export default function DeitiesPage() {
   const { t } = useLanguage();
-  const router = useRouter();
   const [selectedAspect, setSelectedAspect] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
+
+  useEffect(() => {
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+      setTimeout(() => {
+        document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 200);
+    }
+  }, []);
 
   const filteredDeities = deitiesData.filter(d => {
     const matchesAspect = selectedAspect === 'all' || d.primary_aspect === selectedAspect;
@@ -40,16 +47,9 @@ export default function DeitiesPage() {
 
   return (
     <div className="px-4 py-4 space-y-4 max-w-lg mx-auto">
-      {/* Header Banner with Explicit Back Button */}
+      {/* Header Banner */}
       <div className="card bg-gradient-to-r from-saffron-50 via-cream-50 to-orange-100 border-saffron-200">
         <div className="flex items-start gap-3">
-          <button
-            onClick={() => router.push('/knowledge')}
-            className="p-2 rounded-xl bg-white border border-saffron-200 text-saffron-700 hover:bg-cream-100 transition-colors shadow-2xs mt-0.5"
-            aria-label={t('पीछे जाएं', 'Go back')}
-          >
-            <ArrowLeft size={20} className="stroke-[2.5]" />
-          </button>
           <div>
             <h1 className="font-heading text-2xl text-saffron-800 font-bold">
               {t('भारत के 35+ प्रमुख देवी-देवता', '35+ Sacred Deities of India')}
@@ -83,7 +83,7 @@ export default function DeitiesPage() {
             key={a.id}
             onClick={() => setSelectedAspect(a.id)}
             className={cn(
-              'px-4 py-2 rounded-full font-hindi text-sm font-semibold whitespace-nowrap transition-colors min-h-[44px]',
+              'px-4 py-2 rounded-full font-hindi text-sm font-semibold whitespace-nowrap transition-colors min-h-[48px]',
               selectedAspect === a.id
                 ? 'bg-saffron-600 text-white shadow-xs'
                 : 'bg-white border border-cream-300 text-text-secondary hover:bg-cream-100'

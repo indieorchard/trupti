@@ -200,6 +200,15 @@ export interface Vrata {
   prohibited_foods: string[];
   significance_hi: string;
   parana_guidelines_hi?: string;
+  image_url?: string;
+  // Extended diet rules for Vrat Sangrah detail view
+  diet_rules?: {
+    permitted_hi: string[];
+    prohibited_hi: string[];
+    water_rule_hi: string;
+    elderly_guideline_hi: string;
+    parana_timing_hi: string;
+  };
 }
 
 export interface Kriya {

@@ -1,20 +1,29 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { gitasData } from '@/data/gitas';
 import { getScriptureImage } from '@/data/imageMap';
 import SmartImage from '@/components/ui/SmartImage';
 import FavoriteButton from '@/components/ui/FavoriteButton';
 import { cn } from '@/lib/utils';
-import { ArrowLeft, BookOpen, ExternalLink, ChevronRight, CheckCircle2, Bookmark } from 'lucide-react';
+import { BookOpen, ExternalLink, ChevronRight, CheckCircle2, Bookmark } from 'lucide-react';
 
 export default function GitaPage() {
   const { t } = useLanguage();
-  const router = useRouter();
   const [selectedGitaId, setSelectedGitaId] = useState('bhagavad_gita');
   const [selectedChapterNumber, setSelectedChapterNumber] = useState(1);
+
+  useEffect(() => {
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+      const matchedItem = gitasData.find(item => item.id === hash);
+      if (matchedItem) {
+        setSelectedGitaId(hash);
+        setSelectedChapterNumber(1);
+      }
+    }
+  }, []);
 
   const selectedGita = gitasData.find(g => g.id === selectedGitaId) || gitasData[0];
   const bhagavadGita = gitasData.find(g => g.id === 'bhagavad_gita')!;
@@ -23,16 +32,9 @@ export default function GitaPage() {
 
   return (
     <div className="px-4 py-4 space-y-4 max-w-lg mx-auto">
-      {/* Header Banner with Explicit Back Button */}
+      {/* Header Banner */}
       <div className="card bg-gradient-to-r from-amber-50 via-cream-50 to-saffron-100 border-saffron-300">
         <div className="flex items-start gap-3">
-          <button
-            onClick={() => router.push('/knowledge')}
-            className="p-2 rounded-xl bg-white border border-saffron-200 text-saffron-700 hover:bg-cream-100 transition-colors shadow-2xs mt-0.5"
-            aria-label={t('पीछे जाएं', 'Go back')}
-          >
-            <ArrowLeft size={20} className="stroke-[2.5]" />
-          </button>
           <div>
             <h1 className="font-heading text-2xl text-saffron-800 font-bold">
               {t('गीता महाभंडार — 14+ पवित्र गीताएं', 'Gita Treasury — 14+ Sacred Gitas')}
@@ -61,7 +63,7 @@ export default function GitaPage() {
                 setSelectedChapterNumber(1);
               }}
               className={cn(
-                'px-4 py-2 rounded-full font-hindi text-sm font-semibold whitespace-nowrap transition-colors min-h-[44px]',
+                'px-4 py-2 rounded-full font-hindi text-sm font-semibold whitespace-nowrap transition-colors min-h-[48px]',
                 selectedGitaId === g.id
                   ? 'bg-saffron-600 text-white shadow-xs'
                   : 'bg-white border border-cream-300 text-text-secondary hover:bg-cream-100'
@@ -193,7 +195,7 @@ export default function GitaPage() {
                 key={ch.chapter_number}
                 onClick={() => setSelectedChapterNumber(ch.chapter_number)}
                 className={cn(
-                  'min-w-[40px] h-[40px] rounded-xl flex items-center justify-center font-hindi text-sm font-bold transition-colors',
+                  'min-w-[48px] h-[48px] rounded-xl flex items-center justify-center font-hindi text-sm font-bold transition-colors',
                   selectedChapterNumber === ch.chapter_number
                     ? 'bg-saffron-600 text-white shadow-xs'
                     : 'bg-cream-100 text-text-secondary hover:bg-cream-200 border border-cream-300'

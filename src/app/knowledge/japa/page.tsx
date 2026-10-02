@@ -1,10 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/hooks/useLanguage';
 import { cn } from '@/lib/utils';
-import { ArrowLeft, RotateCcw, Volume2, VolumeX, Sparkles, Award } from 'lucide-react';
+import { RotateCcw, Volume2, VolumeX, Sparkles, Award } from 'lucide-react';
 
 const japaMantras = [
   { id: 'shiva', name_hi: 'ॐ नमः शिवाय', name_en: 'Om Namah Shivaya', deity: 'शिव' },
@@ -18,7 +17,6 @@ const japaMantras = [
 
 export default function JapaPage() {
   const { t } = useLanguage();
-  const router = useRouter();
   const [selectedMantra, setSelectedMantra] = useState(japaMantras[0]);
   const [beadCount, setBeadCount] = useState(0);
   const [malasCompleted, setMalasCompleted] = useState(0);
@@ -102,13 +100,6 @@ export default function JapaPage() {
       <div className="card bg-gradient-to-r from-amber-50 via-cream-50 to-orange-100 border-saffron-300">
         <div className="flex items-start justify-between">
           <div className="flex items-start gap-3">
-            <button
-              onClick={() => router.push('/knowledge')}
-              className="p-2 rounded-xl bg-white border border-saffron-200 text-saffron-700 hover:bg-cream-100 transition-colors shadow-2xs mt-0.5"
-              aria-label={t('पीछे जाएं', 'Go back')}
-            >
-              <ArrowLeft size={20} className="stroke-[2.5]" />
-            </button>
             <div>
               <h1 className="font-heading text-2xl text-saffron-800 font-bold">
                 {t('डिजिटल जप माला (108 मणके)', 'Digital Japa Mala (108 Beads)')}
@@ -140,7 +131,7 @@ export default function JapaPage() {
             const m = japaMantras.find(x => x.id === e.target.value);
             if (m) setSelectedMantra(m);
           }}
-          className="w-full p-3.5 bg-cream-50 border border-cream-300 rounded-xl font-hindi text-body-hi font-medium focus:ring-2 focus:ring-saffron-500 min-h-[52px]"
+          className="w-full p-3.5 bg-cream-50 border border-cream-300 rounded-xl font-sanskrit text-body-hi font-medium focus:ring-2 focus:ring-saffron-500 min-h-[52px]"
         >
           {japaMantras.map(m => (
             <option key={m.id} value={m.id}>
