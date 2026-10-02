@@ -77,8 +77,8 @@ export default function GitaPage() {
 
       {/* Selected Gita Details Card with Visual Image */}
       <article id={selectedGita.id} className="card border-saffron-200 bg-white p-4 space-y-3.5 shadow-sm">
-        <div className="flex items-start gap-3.5 pb-2 border-b border-cream-200">
-          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden flex-shrink-0 shadow-xs border border-cream-200">
+        <div className="flex items-start gap-3 pb-2 border-b border-cream-200">
+          <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden flex-shrink-0 shadow-xs border border-cream-200">
             <SmartImage
               src={gitaImg}
               alt={selectedGita.name_hi}
@@ -88,7 +88,7 @@ export default function GitaPage() {
           </div>
 
           <div className="flex-1 min-w-0">
-            <div className="flex items-start justify-between gap-1">
+            <div className="flex items-start justify-between gap-2">
               <div>
                 <span className="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-100 text-amber-900 mb-1">
                   {selectedGita.tradition}
@@ -113,7 +113,7 @@ export default function GitaPage() {
                   image_url: gitaImg,
                   badge: '📖 गीता शास्त्र'
                 }}
-                className="p-1.5"
+                className="p-1.5 flex-shrink-0"
               />
             </div>
 

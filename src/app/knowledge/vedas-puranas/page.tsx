@@ -84,8 +84,8 @@ export default function VedasPuranasPage() {
               className="card hover:shadow-md transition-shadow border-cream-200 bg-white p-4 space-y-3.5 shadow-sm"
             >
               {/* Header with Visual Image, Title & Favorite Button */}
-              <div className="flex items-start gap-3.5 pb-2 border-b border-cream-200">
-                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden flex-shrink-0 shadow-xs border border-cream-200">
+              <div className="flex items-start gap-3 pb-2 border-b border-cream-200">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden flex-shrink-0 shadow-xs border border-cream-200">
                   <SmartImage
                     src={imgUrl}
                     alt={item.name_hi}
@@ -95,7 +95,7 @@ export default function VedasPuranasPage() {
                 </div>
 
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-start justify-between gap-1">
+                  <div className="flex items-start justify-between gap-2">
                     <div>
                       <span className="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-saffron-100 text-saffron-800 mb-1">
                         {item.category.toUpperCase()} • {item.classification || ''}
@@ -120,7 +120,7 @@ export default function VedasPuranasPage() {
                         image_url: imgUrl,
                         badge: badgeText
                       }}
-                      className="p-1.5"
+                      className="p-1.5 flex-shrink-0"
                     />
                   </div>
 

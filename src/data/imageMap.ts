@@ -69,7 +69,7 @@ export const TEMPLE_IMAGES: Record<string, string> = {
   kalighat: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Kali_by_Raja_Ravi_Varma.jpg/640px-Kali_by_Raja_Ravi_Varma.jpg',
   kolhapur_mahalakshmi: 'https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=700&q=80',
   chamundeshwari_temple: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Chamundeshwari_Mysore.jpg/640px-Chamundeshwari_Mysore.jpg',
-  meenakshi_temple: 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=700&q=80',
+  meenakshi_temple: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Statue_of_Meenakshi.jpg/400px-Statue_of_Meenakshi.jpg',
   tirupati_balaji: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Tirupati_temple.jpg/640px-Tirupati_temple.jpg',
   guruvayur: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Guruvayur_Sree_Krishna_Temple.jpg/400px-Guruvayur_Sree_Krishna_Temple.jpg',
   padmanabhaswamy: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Padmanabhaswamy_Temple.jpg/640px-Padmanabhaswamy_Temple.jpg',

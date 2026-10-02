@@ -122,12 +122,12 @@ export default function TemplesPage() {
                   aspectRatio="wide"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                 />
-                {/* Overlay Badge for Circuit */}
-                <div className="absolute top-2.5 left-2.5 flex flex-wrap gap-1">
+                {/* Overlay Badge for Circuit — stack vertically to avoid overlap */}
+                <div className="absolute top-2 left-2 flex flex-col gap-1 max-w-[60%]">
                   {temple.circuit.map(cir => (
                     <span
                       key={cir}
-                      className="px-2 py-0.5 rounded-full text-[11px] font-bold bg-white/90 backdrop-blur-xs text-saffron-800 shadow-2xs font-hindi"
+                      className="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold bg-white/90 backdrop-blur-sm text-saffron-800 shadow-sm font-hindi leading-snug"
                     >
                       {cir === 'jyotirlinga' ? '🕉️ ज्योतिर्लिंग' : cir === 'char_dham' ? '🪷 चार धाम' : cir === 'sapta_puri' ? '✨ मोक्ष पुरी' : '🛕 महातीर्थ'}
                     </span>
@@ -135,7 +135,7 @@ export default function TemplesPage() {
                 </div>
 
                 {/* Floating Star Button */}
-                <div className="absolute top-2.5 right-2.5 bg-white/90 backdrop-blur-xs rounded-xl shadow-xs">
+                <div className="absolute top-2 right-2 bg-white/90 backdrop-blur-sm rounded-xl shadow-sm">
                   <FavoriteButton
                     item={{
                       id: temple.id,
@@ -154,25 +154,23 @@ export default function TemplesPage() {
               </div>
 
               {/* Title & Location */}
-              <div>
-                <div className="flex items-start justify-between">
-                  <div>
-                    <h2 className="font-heading text-xl font-bold text-text-primary leading-tight">
-                      {temple.name}
-                    </h2>
-                    {temple.sanskrit_name && (
-                      <p className="font-sanskrit text-saffron-700 text-sm mt-0.5">
-                        {temple.sanskrit_name}
-                      </p>
-                    )}
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-1.5 text-xs text-text-muted mt-1.5">
-                  <MapPin size={14} className="text-saffron-600 flex-shrink-0" />
-                  <span>{temple.city}, {temple.state}</span>
-                  <span className="mx-1">•</span>
-                  <span className="font-medium text-text-secondary">🕉️ {temple.deity_name}</span>
+              <div className="space-y-1 pt-1">
+                <h2 className="font-heading text-lg font-bold text-text-primary leading-snug">
+                  {temple.name}
+                </h2>
+                {temple.sanskrit_name && (
+                  <p className="font-sanskrit text-saffron-700 text-sm">
+                    {temple.sanskrit_name}
+                  </p>
+                )}
+                <div className="flex flex-col gap-0.5 text-xs text-text-muted mt-1">
+                  <span className="flex items-center gap-1">
+                    <MapPin size={13} className="text-saffron-600 flex-shrink-0" />
+                    {temple.city}, {temple.state}
+                  </span>
+                  <span className="flex items-center gap-1 font-medium text-text-secondary">
+                    🕉️ {temple.deity_name}
+                  </span>
                 </div>
               </div>
 

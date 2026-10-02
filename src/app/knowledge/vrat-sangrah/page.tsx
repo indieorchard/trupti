@@ -76,8 +76,8 @@ export default function VratSangrahPage() {
       {activeVrat && activeVrat.diet_rules && (
         <article id={activeVrat.id} className="card border-indigo-200 bg-white space-y-4 shadow-sm p-4">
           {/* Header with Visual Deity Image, Title & Favorite Button */}
-          <div className="flex items-start gap-3.5 pb-3 border-b border-cream-200">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden flex-shrink-0 shadow-xs border border-cream-200">
+          <div className="flex items-start gap-3 pb-3 border-b border-cream-200">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden flex-shrink-0 shadow-xs border border-cream-200">
               <SmartImage
                 src={deityImg}
                 alt={activeVrat.deity_name || activeVrat.name_hi}
@@ -87,7 +87,7 @@ export default function VratSangrahPage() {
             </div>
 
             <div className="flex-1 min-w-0">
-              <div className="flex items-start justify-between gap-1">
+              <div className="flex items-start justify-between gap-2">
                 <div>
                   <span className="inline-block text-[11px] font-bold bg-indigo-100 text-indigo-900 px-2.5 py-0.5 rounded-full mb-1">
                     🕉️ {activeVrat.deity_name} • {activeVrat.frequency}
@@ -112,7 +112,7 @@ export default function VratSangrahPage() {
                     image_url: deityImg,
                     badge: '🗓️ व्रत संग्रह'
                   }}
-                  className="p-1.5"
+                  className="p-1.5 flex-shrink-0"
                 />
               </div>
             </div>

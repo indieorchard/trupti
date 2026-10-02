@@ -106,8 +106,8 @@ export default function DeitiesPage() {
               className="card hover:shadow-md transition-shadow border-cream-200 bg-white overflow-hidden p-4 space-y-3"
             >
               {/* Header with Visual Image, Title & Favorite Button */}
-              <div className="flex items-start gap-3.5">
-                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden flex-shrink-0 shadow-xs border border-cream-200">
+              <div className="flex items-start gap-3">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden flex-shrink-0 shadow-xs border border-cream-200">
                   <SmartImage
                     src={imgUrl}
                     alt={deity.hindi_name}
@@ -117,15 +117,15 @@ export default function DeitiesPage() {
                 </div>
 
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-start justify-between gap-1">
-                    <div>
-                      <span className="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-saffron-100 text-saffron-800 uppercase tracking-wider mb-1 font-hindi">
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="min-w-0">
+                      <span className="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold bg-saffron-100 text-saffron-800 uppercase tracking-wider mb-1 font-hindi">
                         {deity.primary_aspect}
                       </span>
-                      <h2 className="font-heading text-xl font-bold text-text-primary leading-tight">
+                      <h2 className="font-heading text-lg font-bold text-text-primary leading-snug">
                         {deity.hindi_name}
                       </h2>
-                      <p className="text-xs font-sanskrit text-saffron-700 mt-0.5 truncate">
+                      <p className="text-xs font-sanskrit text-saffron-700 mt-0.5 line-clamp-2">
                         {deity.sanskrit_name} • {deity.canonical_name}
                       </p>
                     </div>
@@ -142,7 +142,7 @@ export default function DeitiesPage() {
                         image_url: imgUrl,
                         badge: '🕉️ देवता'
                       }}
-                      className="p-1.5"
+                      className="p-1.5 flex-shrink-0"
                     />
                   </div>
                 </div>
