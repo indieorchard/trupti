@@ -87,10 +87,10 @@ export default function KnowledgePage() {
       <div className="card bg-gradient-to-r from-amber-50 via-cream-50 to-orange-100 border-saffron-300">
         <div className="flex items-start gap-3">
           <div>
-            <h2 className="font-heading text-large-hi text-saffron-900 font-bold">
+            <h2 className="font-hindi text-large-hi text-saffron-900 font-bold">
               {t('ज्ञान भंडार', 'Knowledge Treasury')}
             </h2>
-            <p className="text-body-hi text-text-secondary mt-1">
+            <p className="text-base text-text-secondary mt-1">
               {t(
                 'सनातन धर्म के व्रत, देवी-देवता, वेद, पुराण, गीताएं, स्तोत्र एवं आरतियां — सब एक सुव्यवस्थित स्थान पर।',
                 'Vratas, deities, Vedas, Puranas, Gitas, stotras & aartis — beautifully organized in one place.'
@@ -108,14 +108,14 @@ export default function KnowledgePage() {
                 {cat.emoji}
               </span>
               <div className="flex-1 min-w-0">
-                <h3 className="font-heading text-heading-hi text-text-primary font-bold line-clamp-2">
+                <h3 className="font-hindi text-lg text-text-primary font-bold line-clamp-2">
                   {t(cat.title_hi, cat.title_en)}
                 </h3>
                 <p className="text-sm text-saffron-700 font-medium mt-0.5 line-clamp-2">
                   {t(cat.count_hi, cat.count_en)}
                 </p>
               </div>
-              <span className="text-saffron-600 text-2xl flex-shrink-0 group-hover:translate-x-1 transition-transform" aria-hidden="true">
+              <span className="text-saffron-600 text-lg flex-shrink-0 group-hover:translate-x-1 transition-transform" aria-hidden="true">
                 →
               </span>
             </article>

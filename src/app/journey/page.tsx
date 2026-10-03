@@ -62,10 +62,10 @@ export default function JourneyPage() {
   return (
     <div className="px-4 py-4 space-y-4">
       <div className="mb-2">
-        <h2 className="font-heading text-large-hi text-text-primary font-bold">
+        <h2 className="font-hindi text-large-hi text-text-primary font-bold">
           {t('आपकी आध्यात्मिक यात्रा', 'Your Spiritual Journey')}
         </h2>
-        <p className="text-body-hi text-text-secondary mt-1">
+        <p className="text-base text-text-secondary mt-1">
           {t(
             'अपनी गति से, अपने मार्ग पर — एक कदम एक दिन',
             'At your pace, on your path — one step, one day'
@@ -81,14 +81,14 @@ export default function JourneyPage() {
             <div className="flex items-start gap-4">
               <span className="text-4xl flex-shrink-0">{card.emoji}</span>
               <div className="flex-1">
-                <h3 className="font-heading text-heading-hi text-text-primary font-bold">
+                <h3 className="font-hindi text-lg text-text-primary font-bold">
                   {t(card.title_hi, card.title_en)}
                 </h3>
-                <p className="text-body-hi text-text-secondary mt-1">
+                <p className="text-base text-text-secondary mt-1">
                   {t(card.subtitle_hi, card.subtitle_en)}
                 </p>
               </div>
-              <span className="text-saffron-600 text-2xl flex-shrink-0 mt-1" aria-hidden="true">
+              <span className="text-saffron-600 text-lg flex-shrink-0 mt-1" aria-hidden="true">
                 →
               </span>
             </div>

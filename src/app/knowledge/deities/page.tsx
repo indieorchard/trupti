@@ -1,14 +1,13 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { useLanguage } from '@/hooks/useLanguage';
 import { deitiesData } from '@/data/deities';
 import { getDeityImage } from '@/data/imageMap';
 import SmartImage from '@/components/ui/SmartImage';
 import FavoriteButton from '@/components/ui/FavoriteButton';
 import { cn } from '@/lib/utils';
-import { Search, Sparkles, Shield, Compass } from 'lucide-react';
+import { Search } from 'lucide-react';
 
 const aspects = [
   { id: 'all', label_hi: 'सभी (35)', label_en: 'All (35)' },
@@ -16,8 +15,8 @@ const aspects = [
   { id: 'shaiva', label_hi: 'शैव', label_en: 'Shaiva' },
   { id: 'shakta', label_hi: 'शाक्त (देवी)', label_en: 'Shakta (Devi)' },
   { id: 'ganapatya', label_hi: 'गाणपत्य', label_en: 'Ganapatya' },
-  { id: 'kaumara', label_hi: 'कौमार (मुरुगन)', label_en: 'Kaumara' },
-  { id: 'saurya', label_hi: 'सौर (सूर्य/शनि)', label_en: 'Saurya' },
+  { id: 'kaumara', label_hi: 'कौमार', label_en: 'Kaumara' },
+  { id: 'saurya', label_hi: 'सौर', label_en: 'Saurya' },
   { id: 'smartha', label_hi: 'स्मार्त / अन्य', label_en: 'Smartha / Others' },
 ];
 
@@ -47,46 +46,42 @@ export default function DeitiesPage() {
 
   return (
     <div className="px-4 py-4 space-y-4 max-w-lg mx-auto">
-      {/* Header Banner */}
-      <div className="card bg-gradient-to-r from-saffron-50 via-cream-50 to-orange-100 border-saffron-200">
-        <div className="flex items-start gap-3">
-          <div>
-            <h1 className="font-heading text-2xl text-saffron-800 font-bold">
-              {t('भारत के 35+ प्रमुख देवी-देवता', '35+ Sacred Deities of India')}
-            </h1>
-            <p className="text-body-hi text-text-secondary mt-1">
-              {t(
-                'शैव, वैष्णव, शाक्त, सौर एवं समस्त सनातन परंपराओं के अधिष्ठाता देव, उनके मंत्र और पावन स्वरूप।',
-                'Presiding deities across Shaiva, Vaishnava, Shakta, and Vedic traditions with divine forms and mantras.'
-              )}
-            </p>
-          </div>
-        </div>
+      {/* Page Title */}
+      <div className="card bg-gradient-to-r from-saffron-50 to-orange-50 border-saffron-200">
+        <h1 className="font-hindi text-lg font-bold text-saffron-800">
+          {t('भारत के 35+ प्रमुख देवी-देवता', '35+ Sacred Deities of India')}
+        </h1>
+        <p className="font-hindi text-base text-text-secondary mt-1">
+          {t(
+            'शैव, वैष्णव, शाक्त एवं सनातन परंपराओं के अधिष्ठाता देव।',
+            'Presiding deities across all Sanatana traditions.'
+          )}
+        </p>
       </div>
 
-      {/* Search Input */}
+      {/* Search */}
       <div className="relative">
         <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-saffron-700" size={20} />
         <input
           type="text"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder={t('देवता या देवी का नाम खोजें...', 'Search deity by name...')}
-          className="w-full pl-12 pr-4 py-3 bg-white border border-cream-300 rounded-2xl font-hindi text-body-hi focus:outline-none focus:ring-2 focus:ring-saffron-500 shadow-xs"
+          placeholder={t('देवता का नाम खोजें...', 'Search deity...')}
+          className="w-full pl-12 pr-4 py-3 bg-white border border-cream-300 rounded-2xl font-hindi text-base focus:outline-none focus:ring-2 focus:ring-saffron-500"
         />
       </div>
 
-      {/* Aspect Filter Pills */}
+      {/* Filter Pills */}
       <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none">
         {aspects.map(a => (
           <button
             key={a.id}
             onClick={() => setSelectedAspect(a.id)}
             className={cn(
-              'px-4 py-2 rounded-full font-hindi text-sm font-semibold whitespace-nowrap transition-colors min-h-[48px]',
+              'px-4 py-2 rounded-full font-hindi text-base font-semibold whitespace-nowrap min-h-[48px]',
               selectedAspect === a.id
-                ? 'bg-saffron-600 text-white shadow-xs'
-                : 'bg-white border border-cream-300 text-text-secondary hover:bg-cream-100'
+                ? 'bg-saffron-600 text-white'
+                : 'bg-white border border-cream-300 text-text-secondary'
             )}
           >
             {t(a.label_hi, a.label_en)}
@@ -94,7 +89,7 @@ export default function DeitiesPage() {
         ))}
       </div>
 
-      {/* Deities Grid */}
+      {/* Deity Cards */}
       <div className="space-y-4">
         {filteredDeities.map((deity) => {
           const imgUrl = deity.image_url || getDeityImage(deity.id);
@@ -103,33 +98,29 @@ export default function DeitiesPage() {
             <article
               key={deity.id}
               id={deity.id}
-              className="card hover:shadow-md transition-shadow border-cream-200 bg-white overflow-hidden p-4 space-y-3"
+              className="card border-cream-200 bg-white p-4 space-y-3"
             >
-              {/* Header with Visual Image, Title & Favorite Button */}
+              {/* Row: Image + Name + Star */}
               <div className="flex items-start gap-3">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden flex-shrink-0 shadow-xs border border-cream-200">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-lg overflow-hidden flex-shrink-0 border border-cream-200">
                   <SmartImage
                     src={imgUrl}
                     alt={deity.hindi_name}
                     aspectRatio="square"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform"
+                    className="w-full h-full object-cover"
                   />
                 </div>
 
                 <div className="flex-1 min-w-0">
                   <div className="flex items-start justify-between gap-2">
                     <div className="min-w-0">
-                      <span className="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold bg-saffron-100 text-saffron-800 uppercase tracking-wider mb-1 font-hindi">
-                        {deity.primary_aspect}
-                      </span>
-                      <h2 className="font-heading text-lg font-bold text-text-primary leading-snug">
+                      <h2 className="font-hindi text-lg font-bold text-text-primary leading-snug">
                         {deity.hindi_name}
                       </h2>
-                      <p className="text-xs font-sanskrit text-saffron-700 mt-0.5 line-clamp-2">
+                      <p className="font-hindi text-base text-text-muted">
                         {deity.sanskrit_name} • {deity.canonical_name}
                       </p>
                     </div>
-
                     <FavoriteButton
                       item={{
                         id: deity.id,
@@ -149,36 +140,36 @@ export default function DeitiesPage() {
               </div>
 
               {/* Description */}
-              <p className="text-body-hi text-text-secondary leading-relaxed">
+              <p className="font-hindi text-base text-text-secondary leading-relaxed">
                 {t(deity.description_hi, deity.description_en)}
               </p>
 
-              {/* Mool Mantra Highlight */}
+              {/* Mool Mantra */}
               {deity.mool_mantra && (
                 <div className="p-3 bg-amber-50/70 rounded-xl border-l-4 border-saffron-600">
-                  <span className="text-xs font-bold text-saffron-900 block mb-0.5">
+                  <span className="font-hindi text-base font-bold text-saffron-900 block mb-0.5">
                     📿 {t('मूल मंत्र', 'Mool Mantra')}:
                   </span>
-                  <p className="font-sanskrit text-base text-saffron-900 font-medium">
+                  <p className="font-hindi text-base text-saffron-900 font-medium">
                     {deity.mool_mantra}
                   </p>
                 </div>
               )}
 
               {/* Iconography */}
-              <div className="text-xs text-text-secondary">
+              <p className="font-hindi text-base text-text-secondary">
                 <strong>{t('दिव्य स्वरूप', 'Iconography')}:</strong> {deity.iconography_hi}
-              </div>
+              </p>
 
-              {/* Attributes & Vahana */}
-              <div className="flex flex-wrap gap-2 text-xs text-text-muted">
+              {/* Attributes */}
+              <div className="flex flex-col gap-1 font-hindi text-base text-text-muted">
                 {deity.consort && <span>🌸 {t('शक्ति / अर्धांगिनी', 'Consort')}: {deity.consort}</span>}
                 {deity.vahana && <span>🐾 {t('वाहन', 'Vahana')}: {deity.vahana}</span>}
               </div>
 
               {/* Key Temples */}
               {deity.key_temples.length > 0 && (
-                <div className="pt-2.5 border-t border-cream-200 text-xs text-text-secondary">
+                <div className="pt-2 border-t border-cream-200 font-hindi text-base text-text-secondary">
                   <span className="font-semibold text-saffron-700">🛕 {t('प्रमुख तीर्थ', 'Prime Shrines')}: </span>
                   {deity.key_temples.join(', ')}
                 </div>
@@ -190,8 +181,8 @@ export default function DeitiesPage() {
         {filteredDeities.length === 0 && (
           <div className="text-center py-12 card text-text-muted">
             <p className="text-3xl mb-2">🔍</p>
-            <p className="text-body-hi">
-              {t('कोई देवता नहीं मिला। कृपया अन्य शब्द खोजें।', 'No deities found matching your query.')}
+            <p className="font-hindi text-base">
+              {t('कोई देवता नहीं मिला।', 'No deities found.')}
             </p>
           </div>
         )}

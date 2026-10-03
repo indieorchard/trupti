@@ -36,10 +36,10 @@ export default function VratSangrahPage() {
       <div className="card bg-gradient-to-r from-blue-50 via-cream-50 to-indigo-100 border-indigo-200">
         <div className="flex items-start gap-3">
           <div className="flex-1">
-            <h1 className="font-heading text-2xl text-indigo-950 font-bold">
+            <h1 className="font-hindi text-lg text-indigo-950 font-bold">
               {t('व्रत संग्रह एवं आहार परामर्श', 'Vrat Sangrah & Diet Considerations')}
             </h1>
-            <p className="text-body-hi text-text-secondary mt-1">
+            <p className="text-base text-text-secondary mt-1">
               {t(
                 'सनातन धर्म के प्रमुख व्रत, पूजा विधि, ग्राह्य-वर्जित फलाहार एवं वरिष्ठ नागरिकों (60+) हेतु स्वास्थ्य-रक्षा नियम।',
                 'Major Hindu fasts, puja rituals, permitted/prohibited diets, and senior-friendly fasting exemptions.'
@@ -89,10 +89,10 @@ export default function VratSangrahPage() {
             <div className="flex-1 min-w-0">
               <div className="flex items-start justify-between gap-2">
                 <div>
-                  <span className="inline-block text-[11px] font-bold bg-indigo-100 text-indigo-900 px-2.5 py-0.5 rounded-full mb-1">
+                  <span className="inline-block text-sm font-bold bg-indigo-100 text-indigo-900 px-2.5 py-0.5 rounded-full mb-1">
                     🕉️ {activeVrat.deity_name} • {activeVrat.frequency}
                   </span>
-                  <h2 className="font-heading text-xl sm:text-2xl font-bold text-text-primary leading-tight">
+                  <h2 className="font-hindi text-lg sm:text-lg font-bold text-text-primary leading-tight">
                     {t(activeVrat.name_hi, activeVrat.name_en)}
                   </h2>
                   <p className="text-xs text-text-muted mt-0.5 font-hindi truncate">
@@ -123,7 +123,7 @@ export default function VratSangrahPage() {
             <h3 className="text-xs font-bold text-indigo-900 uppercase tracking-wider mb-1">
               ✨ {t('व्रत का महत्व एवं फलश्रुति', 'Spiritual Significance')}
             </h3>
-            <p className="text-body-hi text-text-secondary leading-relaxed">
+            <p className="text-base text-text-secondary leading-relaxed">
               {t(activeVrat.significance_hi, activeVrat.significance_hi)}
             </p>
           </div>
@@ -131,8 +131,8 @@ export default function VratSangrahPage() {
           {/* SECTION: RECOMMENDED DIET CONSIDERATIONS (आहार परामर्श) */}
           <section className="space-y-3 pt-1">
             <div className="flex items-center gap-2">
-              <span className="text-xl">🥗</span>
-              <h3 className="font-heading text-lg font-bold text-indigo-950">
+              <span className="text-lg">🥗</span>
+              <h3 className="font-hindi text-lg font-bold text-indigo-950">
                 {t('आहार परामर्श एवं उपवास नियम', 'Dietary Guidelines & Rules')}
               </h3>
             </div>
@@ -174,7 +174,7 @@ export default function VratSangrahPage() {
 
             {/* Water / Hydration Guideline */}
             <div className="p-3 bg-blue-50/70 rounded-xl border border-blue-200 flex items-start gap-2.5">
-              <span className="text-xl">💧</span>
+              <span className="text-lg">💧</span>
               <div className="text-xs sm:text-sm text-text-secondary">
                 <strong className="text-blue-900 font-hindi">{t('जल एवं पेय नियम', 'Hydration Rule')}: </strong>
                 <span>{activeVrat.diet_rules.water_rule_hi}</span>
@@ -190,7 +190,7 @@ export default function VratSangrahPage() {
               <p className="text-xs sm:text-sm text-text-secondary leading-relaxed font-hindi">
                 {activeVrat.diet_rules.elderly_guideline_hi}
               </p>
-              <div className="p-2 bg-white/70 rounded-lg text-[11px] text-amber-900/90 italic font-hindi">
+              <div className="p-2 bg-white/70 rounded-lg text-sm text-amber-900/90 italic font-hindi">
                 📖 <em>{t('स्मृति वचन: "शरीरमाद्यं खलु धर्मसाधनम्" — शरीर की रक्षा धर्म का प्रथम साधन है। अस्वस्थता में प्राण रक्षा सर्वोपरि है।', 'Scriptural principle: The physical body is the foremost instrument of Dharma. Health preservation takes precedence.')}</em>
               </div>
             </div>

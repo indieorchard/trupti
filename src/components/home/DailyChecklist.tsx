@@ -132,7 +132,7 @@ export default function DailyChecklist({ prahar }: { prahar: Prahar }) {
   return (
     <section aria-label={t('दैनिक साधना', 'Daily Sadhana')}>
       <div className="flex items-center justify-between mb-3">
-        <h3 className="font-heading text-lg text-saffron-600 font-bold">
+        <h3 className="font-hindi text-lg text-saffron-600 font-bold">
           ✅ {t('दैनिक क्रियाएं', 'Daily Kriyas')}
         </h3>
         <span className="text-sm text-text-muted bg-cream-100 px-3 py-1 rounded-full">
@@ -186,7 +186,7 @@ export default function DailyChecklist({ prahar }: { prahar: Prahar }) {
               {/* Content */}
               <div className="flex-1 min-w-0">
                 <p className={cn(
-                  'text-body-hi font-medium',
+                  'text-base font-medium',
                   isDone && 'line-through text-text-muted'
                 )}>
                   <span className="mr-2">{item.emoji}</span>

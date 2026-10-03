@@ -34,10 +34,10 @@ export default function StotraPage() {
       <div className="card bg-gradient-to-r from-purple-50 via-cream-50 to-amber-100 border-saffron-300">
         <div className="flex items-start gap-3">
           <div>
-            <h1 className="font-heading text-2xl text-saffron-800 font-bold">
+            <h1 className="font-hindi text-lg text-saffron-800 font-bold">
               {t('दिव्य स्तोत्र एवं मंत्र भंडार (20+ स्तोत्र)', 'Sacred Stotras & Mantras (20+ Stotras)')}
             </h1>
-            <p className="text-body-hi text-text-secondary mt-1">
+            <p className="text-base text-text-secondary mt-1">
               {t(
                 'शिव तांडव, महिषासुर मर्दिनी, आदित्य हृदय, विष्णु सहस्रनाम, कनकधारा, कालभैरवाष्टकम् आदि सिद्ध स्तोत्र।',
                 'Shiva Tandava, Mahishasura Mardini, Aditya Hridaya, Vishnu Sahasranama, and Kanakadhara Stotras.'
@@ -90,10 +90,10 @@ export default function StotraPage() {
             <div className="flex-1 min-w-0">
               <div className="flex items-start justify-between gap-2">
                 <div>
-                  <span className="inline-block text-[11px] font-bold bg-purple-100 text-purple-900 px-2.5 py-0.5 rounded-full mb-1">
+                  <span className="inline-block text-sm font-bold bg-purple-100 text-purple-900 px-2.5 py-0.5 rounded-full mb-1">
                     🕉️ {currentStotra.deity_name}
                   </span>
-                  <h2 className="font-heading text-xl sm:text-2xl font-bold text-text-primary leading-tight">
+                  <h2 className="font-hindi text-lg sm:text-lg font-bold text-text-primary leading-tight">
                     {t(currentStotra.name_hi, currentStotra.name_en)}
                   </h2>
                   {currentStotra.source && (
@@ -161,13 +161,13 @@ export default function StotraPage() {
 
           {/* Full Stotra Text */}
           <div className="p-4 sm:p-5 bg-cream-50 rounded-2xl border border-cream-200">
-            <pre className="font-sanskrit text-shloka text-text-primary whitespace-pre-wrap leading-loose font-medium text-center">
+            <pre className="font-hindi text-shloka text-text-primary whitespace-pre-wrap leading-loose font-medium text-center">
               {currentStotra.text_sanskrit}
             </pre>
           </div>
 
           {/* Meaning / English Summary */}
-          <div className="p-3 bg-cream-100 rounded-xl text-body-hi text-text-secondary border border-cream-300">
+          <div className="p-3 bg-cream-100 rounded-xl text-base text-text-secondary border border-cream-300">
             <strong className="text-saffron-800">📖 {t('भावार्थ', 'Meaning')}: </strong>
             {t(currentStotra.meaning_hi, currentStotra.meaning_en)}
           </div>

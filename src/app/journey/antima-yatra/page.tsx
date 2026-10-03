@@ -28,10 +28,10 @@ export default function AntimaYatraPage() {
         <div className="flex items-start gap-3">
           <span className="text-4xl">🕊️</span>
           <div>
-            <h1 className="font-heading text-2xl text-purple-900 font-bold">
+            <h1 className="font-hindi text-lg text-purple-900 font-bold">
               {t('अंतिम यात्रा — शांतिपूर्ण तैयारी एवं गरिमा', 'Antima Yatra — Peaceful Transition')}
             </h1>
-            <p className="text-body-hi text-text-secondary mt-1">
+            <p className="text-base text-text-secondary mt-1">
               {t(
                 'सनातन शास्त्रों (गरुड़ पुराण व गीता) के अनुसार मृत्यु भय नहीं अपितु नए वस्त्र धारण करने की यात्रा है।',
                 'Scriptural guidance for peaceful transition, universal forgiveness, Dasa Daan, and family rites.'
@@ -43,14 +43,14 @@ export default function AntimaYatraPage() {
 
       {/* Gita Wisdom Quote */}
       <div className="p-4 bg-cream-100 rounded-xl border border-cream-300 text-center space-y-2">
-        <p className="font-sanskrit text-shloka text-saffron-950 font-bold leading-relaxed">
+        <p className="font-hindi text-shloka text-saffron-950 font-bold leading-relaxed">
           वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि ।<br />
           तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही ॥
         </p>
         <p className="text-xs text-text-muted italic">
           (श्रीमद्भगवद्गीता २.२२)
         </p>
-        <p className="text-body-hi text-text-secondary">
+        <p className="text-base text-text-secondary">
           {t(
             'जैसे मनुष्य पुराने वस्त्रों को त्यागकर नए वस्त्र धारण करता है, वैसे ही जीवात्मा पुराने शरीर को छोड़कर नए शरीर को प्राप्त होती है।',
             'Just as a person sheds worn-out garments and puts on new ones, the soul casts off old bodies and enters into new ones.'
@@ -62,17 +62,17 @@ export default function AntimaYatraPage() {
       <section className="card border-purple-200 space-y-2.5">
         <div className="flex items-center gap-2">
           <Heart className="text-purple-700" size={20} />
-          <h2 className="font-heading text-xl font-bold text-text-primary">
+          <h2 className="font-hindi text-lg font-bold text-text-primary">
             {t('१. सार्वभौमिक क्षमापना (हृदय की मुक्ति)', '1. Universal Forgiveness (Kshamapana)')}
           </h2>
         </div>
-        <p className="text-body-hi text-text-secondary leading-relaxed">
+        <p className="text-base text-text-secondary leading-relaxed">
           {t(
             'देह त्याग से पूर्व मन में किसी के प्रति भी क्रोध, ईर्ष्या, वैर या गिला-शिकवा नहीं रहना चाहिए। दोनों हाथ जोड़कर मन ही मन कहें:',
             'Before the final hour, release all accumulated grudges, resentments, and debts of pride:'
           )}
         </p>
-        <div className="p-3 bg-purple-50 rounded-xl border border-purple-200 text-purple-950 font-medium font-sanskrit text-body-hi leading-relaxed text-center">
+        <div className="p-3 bg-purple-50 rounded-xl border border-purple-200 text-purple-950 font-medium font-hindi text-base leading-relaxed text-center">
           "खामेमि सव्वे जीवा, सव्वे जीवा खमंतु मे ।<br />
           मित्ती मे सव्वभूएसु, वेरं मज्झं न केणइ ॥"<br />
           <span className="text-xs text-text-muted mt-1 block">
@@ -85,7 +85,7 @@ export default function AntimaYatraPage() {
       <section className="card border-cream-200 space-y-3">
         <div className="flex items-center gap-2">
           <Shield className="text-saffron-600" size={20} />
-          <h2 className="font-heading text-xl font-bold text-text-primary">
+          <h2 className="font-hindi text-lg font-bold text-text-primary">
             {t('२. गरुड़ पुराणोक्त दस महादान', '2. Dasa Daan (Ten Sacred Offerings)')}
           </h2>
         </div>
@@ -110,11 +110,11 @@ export default function AntimaYatraPage() {
       <section className="card border-blue-200 space-y-2.5">
         <div className="flex items-center gap-2">
           <BookOpen className="text-blue-700" size={20} />
-          <h2 className="font-heading text-xl font-bold text-text-primary">
+          <h2 className="font-hindi text-lg font-bold text-text-primary">
             {t('३. अंतिम समय में परिवार हेतु निर्देश', '3. Sacred Rites for Family at Final Moments')}
           </h2>
         </div>
-        <ul className="space-y-2 text-body-hi text-text-secondary">
+        <ul className="space-y-2 text-base text-text-secondary">
           <li className="flex items-start gap-2">
             <span className="text-blue-600 font-bold">•</span>
             <span><strong>तुलसी दल एवं गंगाजल:</strong> अंत समय में मुख में तुलसी दल और पवित्र गंगाजल की कुछ बूंदें अर्पित करें।</span>

@@ -43,15 +43,15 @@ export default function HomePage() {
         <div className="flex items-start justify-between">
           <div>
             <p className="text-4xl mb-2" aria-hidden="true">{praharInfo.emoji}</p>
-            <h2 className="font-heading text-heading-hi text-text-primary font-bold">
+            <h2 className="font-hindi text-lg text-text-primary font-bold">
               {t(praharInfo.greeting_hi, praharInfo.greeting_en)}
             </h2>
-            <p className="text-body-hi text-text-secondary mt-1">
+            <p className="text-base text-text-secondary mt-1">
               {t(praharInfo.guidance_hi, praharInfo.guidance_en)}
             </p>
           </div>
           <div className="text-right">
-            <p className="text-2xl font-body font-bold text-saffron-700">
+            <p className="text-lg font-hindi font-bold text-saffron-700">
               {currentTime}
             </p>
           </div>

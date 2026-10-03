@@ -17,10 +17,10 @@ export default function JourneyProgress() {
           <div className="flex items-center gap-4">
             <span className="text-4xl">🪷</span>
             <div className="flex-1">
-              <h3 className="font-heading text-lg text-saffron-700 font-bold">
+              <h3 className="font-hindi text-lg text-saffron-700 font-bold">
                 {t('90-दिवसीय मोक्ष साधना', '90-Day Moksha Sadhana')}
               </h3>
-              <p className="text-body-hi text-text-secondary mt-1">
+              <p className="text-base text-text-secondary mt-1">
                 {t(
                   'अपनी आध्यात्मिक यात्रा शुरू करें →',
                   'Begin your spiritual journey →'
@@ -40,7 +40,7 @@ export default function JourneyProgress() {
     <Link href="/journey" className="block">
       <section className="card">
         <div className="flex items-center justify-between mb-2">
-          <h3 className="font-heading text-lg text-saffron-600 font-bold">
+          <h3 className="font-hindi text-lg text-saffron-600 font-bold">
             🪷 {t('मोक्ष साधना', 'Moksha Sadhana')}
           </h3>
           <span className="text-sm text-text-muted">

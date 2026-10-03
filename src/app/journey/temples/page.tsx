@@ -54,10 +54,10 @@ export default function TemplesPage() {
       <div className="card bg-gradient-to-r from-saffron-50 via-cream-50 to-orange-100 border-saffron-200">
         <div className="flex items-start gap-3">
           <div>
-            <h1 className="font-heading text-2xl text-saffron-800 font-bold">
+            <h1 className="font-hindi text-lg text-saffron-800 font-bold">
               {t('भारत के 65+ पवित्र तीर्थ एवं मंदिर', '65+ Sacred Temples of India')}
             </h1>
-            <p className="text-body-hi text-text-secondary mt-1">
+            <p className="text-base text-text-secondary mt-1">
               {t(
                 'चार धाम, द्वादश ज्योतिर्लिंग, सप्त पुरी और शक्तिपीठ — पावन दर्शन एवं वरिष्ठ तीर्थयात्री सहायता विवरण सहित।',
                 'Char Dham, 12 Jyotirlingas, Sapta Puri & Shakti Peethas with sacred darshan and senior pilgrim guide.'
@@ -75,7 +75,7 @@ export default function TemplesPage() {
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           placeholder={t('मंदिर, शहर, राज्य या देवता का नाम खोजें...', 'Search temple, city, state, or deity...')}
-          className="w-full pl-12 pr-4 py-3 bg-white border border-cream-300 rounded-2xl font-hindi text-body-hi focus:outline-none focus:ring-2 focus:ring-saffron-500 shadow-xs"
+          className="w-full pl-12 pr-4 py-3 bg-white border border-cream-300 rounded-2xl font-hindi text-base focus:outline-none focus:ring-2 focus:ring-saffron-500 shadow-xs"
         />
       </div>
 
@@ -127,7 +127,7 @@ export default function TemplesPage() {
                   {temple.circuit.map(cir => (
                     <span
                       key={cir}
-                      className="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold bg-white/90 backdrop-blur-sm text-saffron-800 shadow-sm font-hindi leading-snug"
+                      className="inline-block px-2 py-0.5 rounded-full text-sm font-bold bg-white/90 backdrop-blur-sm text-saffron-800 shadow-sm font-hindi leading-snug"
                     >
                       {cir === 'jyotirlinga' ? '🕉️ ज्योतिर्लिंग' : cir === 'char_dham' ? '🪷 चार धाम' : cir === 'sapta_puri' ? '✨ मोक्ष पुरी' : '🛕 महातीर्थ'}
                     </span>
@@ -155,11 +155,11 @@ export default function TemplesPage() {
 
               {/* Title & Location */}
               <div className="space-y-1 pt-1">
-                <h2 className="font-heading text-lg font-bold text-text-primary leading-snug">
+                <h2 className="font-hindi text-lg font-bold text-text-primary leading-snug">
                   {temple.name}
                 </h2>
                 {temple.sanskrit_name && (
-                  <p className="font-sanskrit text-saffron-700 text-sm">
+                  <p className="font-hindi text-saffron-700 text-sm">
                     {temple.sanskrit_name}
                   </p>
                 )}
@@ -175,7 +175,7 @@ export default function TemplesPage() {
               </div>
 
               {/* Significance */}
-              <p className="text-body-hi text-text-secondary leading-relaxed">
+              <p className="text-base text-text-secondary leading-relaxed">
                 {t(temple.significance_hi, temple.significance_en)}
               </p>
 
@@ -258,7 +258,7 @@ export default function TemplesPage() {
         {filteredTemples.length === 0 && (
           <div className="text-center py-12 card text-text-muted">
             <p className="text-3xl mb-2">🔍</p>
-            <p className="text-body-hi">
+            <p className="text-base">
               {t('कोई मंदिर नहीं मिला। कृपया अन्य शब्द खोजें।', 'No temples found matching your query.')}
             </p>
           </div>

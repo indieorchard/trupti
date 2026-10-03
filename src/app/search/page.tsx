@@ -224,7 +224,7 @@ export default function SearchPage() {
               if (e.key === 'Enter') saveRecentSearch(query);
             }}
             placeholder={t('देवता, तीर्थ, मंत्र, गीता या व्रत खोजें...', 'Search deity, temple, mantra, gita...')}
-            className="w-full pl-11 pr-20 py-3 bg-white border-2 border-saffron-300 focus:border-saffron-600 rounded-2xl font-hindi text-body-hi text-text-primary focus:outline-none shadow-sm transition-all"
+            className="w-full pl-11 pr-20 py-3 bg-white border-2 border-saffron-300 focus:border-saffron-600 rounded-2xl font-hindi text-base text-text-primary focus:outline-none shadow-sm transition-all"
           />
 
           <div className="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-1">
@@ -260,12 +260,12 @@ export default function SearchPage() {
       {aiGuidance && (
         <section className="p-3.5 bg-gradient-to-r from-amber-50 via-cream-50 to-orange-50 border border-saffron-300 rounded-2xl shadow-xs animate-in fade-in duration-200">
           <div className="flex items-center gap-2 mb-1.5">
-            <span className="text-xl">✨</span>
+            <span className="text-lg">✨</span>
             <span className="text-xs font-bold text-saffron-800 uppercase tracking-wider font-hindi">
               {t('तृप्ति वैदिक मार्गदर्शन', 'Trupti Vedic Guidance')}
             </span>
           </div>
-          <p className="font-hindi text-body-hi text-text-primary leading-relaxed">
+          <p className="font-hindi text-base text-text-primary leading-relaxed">
             {t(aiGuidance.hi, aiGuidance.en)}
           </p>
         </section>
@@ -302,10 +302,10 @@ export default function SearchPage() {
                     />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <span className="inline-block text-[11px] font-bold text-saffron-700 bg-saffron-50 px-2 py-0.5 rounded-md mb-1 font-hindi">
+                    <span className="inline-block text-sm font-bold text-saffron-700 bg-saffron-50 px-2 py-0.5 rounded-md mb-1 font-hindi">
                       {item.badge}
                     </span>
-                    <h3 className="font-heading text-lg font-bold text-text-primary truncate">
+                    <h3 className="font-hindi text-lg font-bold text-text-primary truncate">
                       {item.title}
                     </h3>
                     <p className="text-xs text-text-secondary truncate mt-0.5 font-hindi">
@@ -336,7 +336,7 @@ export default function SearchPage() {
             {!isLoading && results.length === 0 && (
               <div className="card text-center py-12 text-text-muted space-y-2">
                 <span className="text-4xl block">🔍</span>
-                <p className="font-heading text-lg text-text-primary">
+                <p className="font-hindi text-lg text-text-primary">
                   {t('कोई परिणाम नहीं मिला', 'No results found')}
                 </p>
                 <p className="text-sm font-hindi">
@@ -356,7 +356,7 @@ export default function SearchPage() {
           <section className="space-y-2.5">
             <div className="flex items-center gap-1.5 px-1">
               <TrendingUp size={18} className="text-saffron-600" />
-              <h2 className="font-heading text-base font-bold text-text-primary">
+              <h2 className="font-hindi text-base font-bold text-text-primary">
                 {t('आज के पंचांग अनुसार प्रचलित (ट्रेंडिंग)', 'Trending According to Today\'s Panchang')}
               </h2>
             </div>
@@ -379,7 +379,7 @@ export default function SearchPage() {
               <div className="flex items-center justify-between px-1">
                 <div className="flex items-center gap-1.5">
                   <Clock size={16} className="text-text-muted" />
-                  <h2 className="font-heading text-base font-bold text-text-primary">
+                  <h2 className="font-hindi text-base font-bold text-text-primary">
                     {t('हाल की खोजें (Recent Searches)', 'Recent Searches')}
                   </h2>
                 </div>
@@ -407,7 +407,7 @@ export default function SearchPage() {
 
           {/* Quick Discover Collections */}
           <section className="space-y-2.5">
-            <h2 className="font-heading text-base font-bold text-text-primary px-1">
+            <h2 className="font-hindi text-base font-bold text-text-primary px-1">
               {t('लोकप्रिय आध्यात्मिक संग्रह', 'Popular Sacred Libraries')}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
@@ -415,12 +415,12 @@ export default function SearchPage() {
                 href="/knowledge/vrat-sangrah"
                 className="card p-3.5 flex items-center gap-3 bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200 hover:shadow-md transition-all group"
               >
-                <span className="text-2xl group-hover:scale-110 transition-transform">🗓️</span>
+                <span className="text-lg group-hover:scale-110 transition-transform">🗓️</span>
                 <div>
-                  <h3 className="font-heading text-sm font-bold text-text-primary">
+                  <h3 className="font-hindi text-sm font-bold text-text-primary">
                     {t('व्रत संग्रह', 'Vrat Sangrah')}
                   </h3>
-                  <p className="text-[11px] text-text-muted font-hindi">
+                  <p className="text-sm text-text-muted font-hindi">
                     {t('आहार नियम व पारण', 'Diet & Parana Rules')}
                   </p>
                 </div>
@@ -430,12 +430,12 @@ export default function SearchPage() {
                 href="/knowledge/aarti"
                 className="card p-3.5 flex items-center gap-3 bg-gradient-to-br from-red-50 to-amber-50 border-red-200 hover:shadow-md transition-all group"
               >
-                <span className="text-2xl group-hover:scale-110 transition-transform">🪔</span>
+                <span className="text-lg group-hover:scale-110 transition-transform">🪔</span>
                 <div>
-                  <h3 className="font-heading text-sm font-bold text-text-primary">
+                  <h3 className="font-hindi text-sm font-bold text-text-primary">
                     {t('आरती संग्रह', 'Aarti Sangrah')}
                   </h3>
-                  <p className="text-[11px] text-text-muted font-hindi">
+                  <p className="text-sm text-text-muted font-hindi">
                     {t('15+ संपूर्ण आरतियां', '15+ Sacred Aartis')}
                   </p>
                 </div>
@@ -445,12 +445,12 @@ export default function SearchPage() {
                 href="/journey/temples"
                 className="card p-3.5 flex items-center gap-3 bg-gradient-to-br from-orange-50 to-amber-50 border-orange-200 hover:shadow-md transition-all group"
               >
-                <span className="text-2xl group-hover:scale-110 transition-transform">🛕</span>
+                <span className="text-lg group-hover:scale-110 transition-transform">🛕</span>
                 <div>
-                  <h3 className="font-heading text-sm font-bold text-text-primary">
+                  <h3 className="font-hindi text-sm font-bold text-text-primary">
                     {t('तीर्थ व मंदिर', 'Temples & Pilgrimage')}
                   </h3>
-                  <p className="text-[11px] text-text-muted font-hindi">
+                  <p className="text-sm text-text-muted font-hindi">
                     {t('65+ पावन धाम', '65+ Holy Shrines')}
                   </p>
                 </div>
@@ -460,12 +460,12 @@ export default function SearchPage() {
                 href="/knowledge/gita"
                 className="card p-3.5 flex items-center gap-3 bg-gradient-to-br from-amber-50 to-yellow-50 border-amber-200 hover:shadow-md transition-all group"
               >
-                <span className="text-2xl group-hover:scale-110 transition-transform">📖</span>
+                <span className="text-lg group-hover:scale-110 transition-transform">📖</span>
                 <div>
-                  <h3 className="font-heading text-sm font-bold text-text-primary">
+                  <h3 className="font-hindi text-sm font-bold text-text-primary">
                     {t('गीता भंडार', 'Gita Treasury')}
                   </h3>
-                  <p className="text-[11px] text-text-muted font-hindi">
+                  <p className="text-sm text-text-muted font-hindi">
                     {t('14+ पवित्र गीताएं', '14+ Sacred Gitas')}
                   </p>
                 </div>

@@ -34,10 +34,10 @@ export default function ChalisaPage() {
       <div className="card bg-gradient-to-r from-orange-50 via-cream-50 to-amber-100 border-saffron-300">
         <div className="flex items-start gap-3">
           <div>
-            <h1 className="font-heading text-2xl text-saffron-800 font-bold">
+            <h1 className="font-hindi text-lg text-saffron-800 font-bold">
               {t('चालीसा संग्रह (श्री हनुमान चालीसा आदि)', 'Chalisa Collection')}
             </h1>
-            <p className="text-body-hi text-text-secondary mt-1">
+            <p className="text-base text-text-secondary mt-1">
               {t(
                 'श्री हनुमान चालीसा (संपूर्ण दोहा व 40 चौपाई), शिव, दुर्गा, गणेश, कृष्ण, राम, लक्ष्मी, सरस्वती एवं शनि चालीसा।',
                 'Complete 40-verse Chalisas of Hanuman, Shiva, Durga, Ganesha, Krishna, Rama, Lakshmi, Saraswati, and Shani.'
@@ -90,10 +90,10 @@ export default function ChalisaPage() {
             <div className="flex-1 min-w-0">
               <div className="flex items-start justify-between gap-2">
                 <div>
-                  <span className="inline-block text-[11px] font-bold bg-amber-100 text-amber-900 px-2.5 py-0.5 rounded-full mb-1">
+                  <span className="inline-block text-sm font-bold bg-amber-100 text-amber-900 px-2.5 py-0.5 rounded-full mb-1">
                     🕉️ {currentChalisa.deity_name}
                   </span>
-                  <h2 className="font-heading text-xl sm:text-2xl font-bold text-text-primary leading-tight">
+                  <h2 className="font-hindi text-lg sm:text-lg font-bold text-text-primary leading-tight">
                     {t(currentChalisa.name_hi, currentChalisa.name_en)}
                   </h2>
                   {currentChalisa.source && (
@@ -161,13 +161,13 @@ export default function ChalisaPage() {
 
           {/* Full Chalisa Text */}
           <div className="p-4 sm:p-5 bg-cream-50 rounded-2xl border border-cream-200">
-            <pre className="font-sanskrit text-shloka text-text-primary whitespace-pre-wrap leading-loose font-medium">
+            <pre className="font-hindi text-shloka text-text-primary whitespace-pre-wrap leading-loose font-medium">
               {currentChalisa.text_sanskrit}
             </pre>
           </div>
 
           {/* Meaning / English Summary */}
-          <div className="p-3 bg-cream-100 rounded-xl text-body-hi text-text-secondary border border-cream-300">
+          <div className="p-3 bg-cream-100 rounded-xl text-base text-text-secondary border border-cream-300">
             <strong className="text-saffron-800">📖 {t('सार', 'Essence')}: </strong>
             {t(currentChalisa.meaning_hi, currentChalisa.meaning_en)}
           </div>

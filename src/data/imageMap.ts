@@ -1,18 +1,24 @@
 // =================================================================
-// TRUPTI SACRED VISUAL ASSETS & CDN IMAGE REPOSITORY
-// High-resolution, curated imagery for Deities, Temples, & Scriptures
-// Optimized for mobile with graceful fallback handling
+// TRUPTI SACRED VISUAL ASSETS — WIKIMEDIA COMMONS ONLY
+// All images sourced from Wikimedia Commons (public domain / CC)
+// No stock photos. Every deity, temple, and scripture uses
+// authentic paintings, temple photos, or manuscript scans.
 // =================================================================
 
+// Default fallback: Shiva Nataraja bronze from Met Museum
+const DEFAULT_DEITY = 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg/400px-Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg';
+const DEFAULT_TEMPLE = 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Badrinath_temple.jpg/400px-Badrinath_temple.jpg';
+const DEFAULT_SCRIPTURE = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bhagavad_Gita%2C_a_19th_century_manuscript.jpg/400px-Bhagavad_Gita%2C_a_19th_century_manuscript.jpg';
+
 export const DEITY_IMAGES: Record<string, string> = {
-  shiva: 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=700&q=80',
+  shiva: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg/400px-Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg',
   vishnu: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Vishnu.jpg/640px-Vishnu.jpg',
-  krishna: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=700&q=80',
+  krishna: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Yashoda_with_Krishna%2C_Raja_Ravi_Varma.jpg/400px-Yashoda_with_Krishna%2C_Raja_Ravi_Varma.jpg',
   rama: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Rama_with_bow_and_arrow.jpg/640px-Rama_with_bow_and_arrow.jpg',
-  ganesha: 'https://images.unsplash.com/photo-1567591974584-f1832dfbf5f2?auto=format&fit=crop&w=700&q=80',
-  hanuman: 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=700&q=80',
-  durga: 'https://images.unsplash.com/photo-1603555501671-8f96b3fce8b4?auto=format&fit=crop&w=700&q=80',
-  lakshmi: 'https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=700&q=80',
+  ganesha: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Ganapati1.jpg/400px-Ganapati1.jpg',
+  hanuman: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Hanuman_painting_c1920.jpg/400px-Hanuman_painting_c1920.jpg',
+  durga: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Durga_by_Raja_Ravi_Varma.jpg/400px-Durga_by_Raja_Ravi_Varma.jpg',
+  lakshmi: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Raja_Ravi_Varma_-_Goddess_Lakshmi%2C_1896.jpg/400px-Raja_Ravi_Varma_-_Goddess_Lakshmi%2C_1896.jpg',
   saraswati: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Saraswati_Raja_Ravi_Varma.jpg/640px-Saraswati_Raja_Ravi_Varma.jpg',
   kali: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Kali_by_Raja_Ravi_Varma.jpg/640px-Kali_by_Raja_Ravi_Varma.jpg',
   parvati: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Siva-parvati-by-raja-ravi-varma.jpg/400px-Siva-parvati-by-raja-ravi-varma.jpg',
@@ -37,37 +43,37 @@ export const DEITY_IMAGES: Record<string, string> = {
   gayatri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Gayatri_Mata.jpg/640px-Gayatri_Mata.jpg',
   chamundeshwari: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Chamundeshwari_Mysore.jpg/640px-Chamundeshwari_Mysore.jpg',
   shani: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Shani_Dev.jpg/640px-Shani_Dev.jpg',
-  tulsi: 'https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=700&q=80',
+  tulsi: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Tulsi_plant_2.jpg/400px-Tulsi_plant_2.jpg',
   kubera: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Kubera_Statue.jpg/640px-Kubera_Statue.jpg',
   tripura_sundari: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Tripura_Sundari.jpg/640px-Tripura_Sundari.jpg'
 };
 
 export const TEMPLE_IMAGES: Record<string, string> = {
-  badrinath: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=700&q=80',
+  badrinath: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Badrinath_temple.jpg/400px-Badrinath_temple.jpg',
   puri_jagannath: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Jagannatha_Temple_Puri.jpg/640px-Jagannatha_Temple_Puri.jpg',
   dwarkadhish: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Dwarakadheesh_Temple.jpg/640px-Dwarakadheesh_Temple.jpg',
   rameswaram: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Ramanathaswamy_Temple_Corridor.jpg/640px-Ramanathaswamy_Temple_Corridor.jpg',
-  kedarnath: 'https://images.unsplash.com/photo-1605649487212-47bdab064df8?auto=format&fit=crop&w=700&q=80',
-  gangotri: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=700&q=80',
-  yamunotri: 'https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=700&q=80',
+  kedarnath: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kedarnath_Temple_in_Rainy_season.jpg/400px-Kedarnath_Temple_in_Rainy_season.jpg',
+  gangotri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Gangotri_temple.jpg/400px-Gangotri_temple.jpg',
+  yamunotri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Yamunotri_Temple.jpg/400px-Yamunotri_Temple.jpg',
   somnath: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Somnath_mandir.jpg/640px-Somnath_mandir.jpg',
   mallikarjuna: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Srisailam_Temple.jpg/640px-Srisailam_Temple.jpg',
   mahakaleshwar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Mahakaleshwar_Temple_Ujjain.jpg/640px-Mahakaleshwar_Temple_Ujjain.jpg',
   omkareshwar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Omkareshwar_temple.jpg/640px-Omkareshwar_temple.jpg',
   bhimashankar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Bhimashankar_temple.jpg/640px-Bhimashankar_temple.jpg',
-  kashi_vishwanath: 'https://images.unsplash.com/photo-1571536802807-30451e3955d8?auto=format&fit=crop&w=700&q=80',
+  kashi_vishwanath: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Kashi_Vishwanath.jpg/400px-Kashi_Vishwanath.jpg',
   trimbakeshwar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Trimbakeshwar_Temple.jpg/640px-Trimbakeshwar_Temple.jpg',
   baidyanath: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Baidyanath_Temple_Deoghar.jpg/640px-Baidyanath_Temple_Deoghar.jpg',
   nageshwar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Nageshwar_Jyotirlinga.jpg/640px-Nageshwar_Jyotirlinga.jpg',
   grishneshwar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Grishneshwar_Temple.jpg/640px-Grishneshwar_Temple.jpg',
   ram_mandir_ayodhya: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Ram_Mandir_Ayodhya_2024.jpg/640px-Ram_Mandir_Ayodhya_2024.jpg',
   krishna_janmabhoomi: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Mathura_Temple-Mathura-India0002.JPG/400px-Mathura_Temple-Mathura-India0002.JPG',
-  har_ki_pauri: 'https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=700&q=80',
+  har_ki_pauri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Har_Ki_Pauri%2C_Haridwar.jpg/400px-Har_Ki_Pauri%2C_Haridwar.jpg',
   kanchi_kamakshi: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Kamakshi_Amman_Temple.jpg/640px-Kamakshi_Amman_Temple.jpg',
-  vaishno_devi: 'https://images.unsplash.com/photo-1603555501671-8f96b3fce8b4?auto=format&fit=crop&w=700&q=80',
+  vaishno_devi: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Vaishno_Devi_Temple.jpg/400px-Vaishno_Devi_Temple.jpg',
   kamakhya_temple: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Kamakhya_Temple_Guwahati.jpg/640px-Kamakhya_Temple_Guwahati.jpg',
   kalighat: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Kali_by_Raja_Ravi_Varma.jpg/640px-Kali_by_Raja_Ravi_Varma.jpg',
-  kolhapur_mahalakshmi: 'https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=700&q=80',
+  kolhapur_mahalakshmi: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Mahalakshmi_temple%2C_Kolhapur.jpg/400px-Mahalakshmi_temple%2C_Kolhapur.jpg',
   chamundeshwari_temple: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Chamundeshwari_Mysore.jpg/640px-Chamundeshwari_Mysore.jpg',
   meenakshi_temple: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Statue_of_Meenakshi.jpg/400px-Statue_of_Meenakshi.jpg',
   tirupati_balaji: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Tirupati_temple.jpg/640px-Tirupati_temple.jpg',
@@ -86,17 +92,17 @@ export const TEMPLE_IMAGES: Record<string, string> = {
   khatushyamji: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Khatushyamji.jpg/400px-Khatushyamji.jpg',
   bankey_bihari: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Bankebihari_temple_main_gate_Vrindavan.JPG/400px-Bankebihari_temple_main_gate_Vrindavan.JPG',
   prem_mandir: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Prem_mandir_Vrindavan.JPG/400px-Prem_mandir_Vrindavan.JPG',
-  sankat_mochan_varanasi: 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=700&q=80',
+  sankat_mochan_varanasi: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Sankat_mochan_temple_3.JPG/400px-Sankat_mochan_temple_3.JPG',
   vishnupad_gaya: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Vishnu.jpg/640px-Vishnu.jpg',
   dakshineswar_kali: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Dakshineswar_Temple.jpg/640px-Dakshineswar_Temple.jpg',
   lingaraj_temple: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Lingaraj_Temple_Bhubaneswar.jpg/640px-Lingaraj_Temple_Bhubaneswar.jpg',
-  konark_sun_temple: 'https://images.unsplash.com/photo-1600100397608-f010e4256606?auto=format&fit=crop&w=700&q=80',
-  akshardham_delhi: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=700&q=80',
+  konark_sun_temple: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Konark_Sun_Temple.jpg/400px-Konark_Sun_Temple.jpg',
+  akshardham_delhi: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Akshardham_Delhi.jpg/400px-Akshardham_Delhi.jpg',
   tungnath: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Tungnath_temple.jpg/400px-Tungnath_temple.jpg'
 };
 
 export const SCRIPTURE_IMAGES: Record<string, string> = {
-  bhagavad_gita: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80',
+  bhagavad_gita: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bhagavad_Gita%2C_a_19th_century_manuscript.jpg/400px-Bhagavad_Gita%2C_a_19th_century_manuscript.jpg',
   ashtavakra_gita: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ashtavakra.jpg/400px-Ashtavakra.jpg',
   avadhuta_gita: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Lord_Dattatreya.jpg/640px-Lord_Dattatreya.jpg',
   uddhav_gita: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Uddhava_the_messenger_of_Krishna.jpg/400px-Uddhava_the_messenger_of_Krishna.jpg',
@@ -106,7 +112,7 @@ export const SCRIPTURE_IMAGES: Record<string, string> = {
   samaveda: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/1672_CE_manuscript_copy%2C_10th_century_BCE_Samaveda_Kauthuma_Samhita_Veyagana%2C_Schoyen_Collection_Norway.jpg/400px-1672_CE_manuscript_copy%2C_10th_century_BCE_Samaveda_Kauthuma_Samhita_Veyagana%2C_Schoyen_Collection_Norway.jpg',
   atharvaveda: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Atharva-Veda_samhita_page_471_illustration.png/400px-Atharva-Veda_samhita_page_471_illustration.png',
   garuda_purana: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Manuscript_of_Garuda_Purana%2C_Sanskrit_language%2C_Newar_script%2C_1712_CE.jpg/400px-Manuscript_of_Garuda_Purana%2C_Sanskrit_language%2C_Newar_script%2C_1712_CE.jpg',
-  shiva_purana: 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=700&q=80',
+  shiva_purana: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/The_Creation_of_the_Cosmic_Ocean_and_the_Elements_%28detail%29%2C_folio_3_from_the_Shiva_Purana%2C_c._1828.jpg/400px-The_Creation_of_the_Cosmic_Ocean_and_the_Elements_%28detail%29%2C_folio_3_from_the_Shiva_Purana%2C_c._1828.jpg',
   vishnu_purana: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Vishnu.jpg/640px-Vishnu.jpg',
   srimad_bhagavatam: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Bhagavata_Purana_manuscript%2C_18_century.jpg/400px-Bhagavata_Purana_manuscript%2C_18_century.jpg'
 };
@@ -115,8 +121,8 @@ export const SCRIPTURE_IMAGES: Record<string, string> = {
  * Resolves the primary image URL for any deity
  */
 export function getDeityImage(deityId?: string): string {
-  if (!deityId) return 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=700&q=80';
-  return DEITY_IMAGES[deityId.toLowerCase()] || 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=700&q=80';
+  if (!deityId) return DEFAULT_DEITY;
+  return DEITY_IMAGES[deityId.toLowerCase()] || DEFAULT_DEITY;
 }
 
 /**
@@ -124,13 +130,7 @@ export function getDeityImage(deityId?: string): string {
  */
 export function getTempleImage(templeId: string, circuit?: string[]): string {
   if (TEMPLE_IMAGES[templeId]) return TEMPLE_IMAGES[templeId];
-  if (circuit?.includes('jyotirlinga')) {
-    return 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=700&q=80';
-  }
-  if (circuit?.includes('char_dham')) {
-    return 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=700&q=80';
-  }
-  return 'https://images.unsplash.com/photo-1571536802807-30451e3955d8?auto=format&fit=crop&w=700&q=80';
+  return DEFAULT_TEMPLE;
 }
 
 /**
@@ -140,15 +140,12 @@ export function getChantImage(deityId?: string, category?: string): string {
   if (deityId && DEITY_IMAGES[deityId.toLowerCase()]) {
     return DEITY_IMAGES[deityId.toLowerCase()];
   }
-  if (category === 'aarti') {
-    return 'https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=700&q=80'; // Sacred Aarti
-  }
-  return 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=700&q=80';
+  return DEFAULT_DEITY;
 }
 
 /**
  * Resolves image for any scripture
  */
 export function getScriptureImage(scriptureId: string): string {
-  return SCRIPTURE_IMAGES[scriptureId] || 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80';
+  return SCRIPTURE_IMAGES[scriptureId] || DEFAULT_SCRIPTURE;
 }

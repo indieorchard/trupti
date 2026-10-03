@@ -19,10 +19,10 @@ export default function VratasPage() {
         <div className="flex items-start gap-3">
           <span className="text-4xl">🗓️</span>
           <div>
-            <h1 className="font-heading text-2xl text-indigo-900 font-bold">
+            <h1 className="font-hindi text-lg text-indigo-900 font-bold">
               {t('सनातन व्रत कैलेंडर एवं पारण विधि', 'Vrata Calendar & Fasting Rules')}
             </h1>
-            <p className="text-body-hi text-text-secondary mt-1">
+            <p className="text-base text-text-secondary mt-1">
               {t(
                 'एकादशी, प्रदोष, मासिक शिवरात्रि, नवरात्रि एवं पितृपक्ष श्राद्ध के नियम, ग्राह्य-अग्राह्य आहार एवं पारण समय।',
                 'Comprehensive fasting guidelines, permitted foods, and parana rules for Ekadashi, Pradosha, and Navratri.'
@@ -62,7 +62,7 @@ export default function VratasPage() {
             <span className="text-xs font-bold bg-indigo-100 text-indigo-900 px-2.5 py-0.5 rounded-full">
               🕉️ {selectedVrata.deity_name} • {selectedVrata.frequency}
             </span>
-            <h2 className="font-heading text-2xl font-bold text-text-primary mt-1">
+            <h2 className="font-hindi text-lg font-bold text-text-primary mt-1">
               {t(selectedVrata.name_hi, selectedVrata.name_en)}
             </h2>
             {selectedVrata.tithi_info && (
@@ -77,7 +77,7 @@ export default function VratasPage() {
             <h3 className="text-xs font-bold text-indigo-900 uppercase tracking-wider mb-1">
               ✨ {t('व्रत का महत्व एवं फल', 'Significance & Spiritual Fruit')}
             </h3>
-            <p className="text-body-hi text-text-secondary leading-relaxed">
+            <p className="text-base text-text-secondary leading-relaxed">
               {selectedVrata.significance_hi}
             </p>
           </div>
@@ -87,7 +87,7 @@ export default function VratasPage() {
             <h3 className="text-xs font-bold text-text-muted uppercase tracking-wider">
               📜 {t('उपवास विधि एवं नियम', 'Fasting Rules')}
             </h3>
-            <p className="text-body-hi text-text-secondary leading-relaxed">
+            <p className="text-base text-text-secondary leading-relaxed">
               {t(selectedVrata.fasting_rules_hi, selectedVrata.fasting_rules_en)}
             </p>
           </div>

@@ -42,12 +42,12 @@ export default function FavoritesPage() {
       <div className="card bg-gradient-to-r from-amber-50 via-cream-50 to-orange-100 border-amber-300">
         <div className="flex items-start gap-3">
           <div className="flex-1">
-            <h1 className="font-heading text-2xl font-bold text-saffron-900 flex items-center gap-2">
+            <h1 className="font-hindi text-lg font-bold text-saffron-900 flex items-center gap-2">
               <Star className="fill-amber-500 text-amber-600" size={24} />
               <span>{t('मेरे पसंदीदा (Starred)', 'My Starred Items')}</span>
               <span className="text-sm font-normal text-text-muted">({favoritesCount})</span>
             </h1>
-            <p className="text-body-hi text-text-secondary mt-1">
+            <p className="text-base text-text-secondary mt-1">
               {t(
                 'आपके द्वारा संचित सभी इष्ट देव, मंदिर, मंत्र, पाठ एवं व्रत — एक स्पर्श में सुलभ।',
                 'All your bookmarked deities, temples, aartis, gitas and vratas — 1 tap away.'
@@ -100,11 +100,11 @@ export default function FavoritesPage() {
                 </div>
                 <div className="flex-1 min-w-0">
                   {item.badge && (
-                    <span className="inline-block text-[11px] font-bold text-saffron-700 bg-saffron-50 px-2 py-0.5 rounded-md mb-1 font-hindi">
+                    <span className="inline-block text-sm font-bold text-saffron-700 bg-saffron-50 px-2 py-0.5 rounded-md mb-1 font-hindi">
                       {item.badge}
                     </span>
                   )}
-                  <h3 className="font-heading text-lg font-bold text-text-primary line-clamp-2">
+                  <h3 className="font-hindi text-lg font-bold text-text-primary line-clamp-2">
                     {t(item.title_hi, item.title_en)}
                   </h3>
                   {(item.subtitle || item.subtitle_hi) && (
@@ -146,10 +146,10 @@ export default function FavoritesPage() {
             <Star className="text-amber-600" size={32} />
           </div>
           <div>
-            <h3 className="font-heading text-xl font-bold text-text-primary">
+            <h3 className="font-hindi text-lg font-bold text-text-primary">
               {t('अभी कोई पसंदीदा आइटम नहीं है', 'No Starred Items Yet')}
             </h3>
-            <p className="text-body-hi text-text-secondary mt-1 max-w-sm mx-auto">
+            <p className="text-base text-text-secondary mt-1 max-w-sm mx-auto">
               {t(
                 'किसी भी देवता, मंदिर, आरती, गीता या व्रत के पास बने ⭐ स्टार पर स्पर्श कर उसे यहाँ सुरक्षित करें।',
                 'Tap the ⭐ Star button on any deity, temple, aarti, gita, or vrata to save it here for 1-click access.'
@@ -178,7 +178,7 @@ export default function FavoritesPage() {
       {isLoaded && favoritesCount > 0 && filteredFavorites.length === 0 && (
         <div className="card text-center py-10 text-text-muted">
           <p className="text-3xl mb-2">🔍</p>
-          <p className="text-body-hi">
+          <p className="text-base">
             {t('इस श्रेणी में कोई पसंदीदा आइटम नहीं है।', 'No starred items in this category.')}
           </p>
         </div>

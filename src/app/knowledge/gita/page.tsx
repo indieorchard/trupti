@@ -36,10 +36,10 @@ export default function GitaPage() {
       <div className="card bg-gradient-to-r from-amber-50 via-cream-50 to-saffron-100 border-saffron-300">
         <div className="flex items-start gap-3">
           <div>
-            <h1 className="font-heading text-2xl text-saffron-800 font-bold">
+            <h1 className="font-hindi text-lg text-saffron-800 font-bold">
               {t('गीता महाभंडार — 14+ पवित्र गीताएं', 'Gita Treasury — 14+ Sacred Gitas')}
             </h1>
-            <p className="text-body-hi text-text-secondary mt-1">
+            <p className="text-base text-text-secondary mt-1">
               {t(
                 'श्रीमद्भगवद्गीता के समस्त 18 अध्यायों के सार व प्रमुख श्लोकों सहित अष्टावक्र, अवधूत, उद्धव, ऋभु, गुरु गीता आदि का संपूर्ण अध्ययन।',
                 'Complete 18-chapter Bhagavad Gita study alongside Ashtavakra, Avadhuta, Uddhava, Ribhu, and Guru Gitas.'
@@ -90,13 +90,13 @@ export default function GitaPage() {
           <div className="flex-1 min-w-0">
             <div className="flex items-start justify-between gap-2">
               <div>
-                <span className="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-100 text-amber-900 mb-1">
+                <span className="inline-block px-2.5 py-0.5 rounded-full text-sm font-bold bg-amber-100 text-amber-900 mb-1">
                   {selectedGita.tradition}
                 </span>
-                <h2 className="font-heading text-xl sm:text-2xl font-bold text-text-primary leading-tight">
+                <h2 className="font-hindi text-lg sm:text-lg font-bold text-text-primary leading-tight">
                   {t(selectedGita.name_hi, selectedGita.name_en)}
                 </h2>
-                <p className="font-sanskrit text-saffron-700 text-xs sm:text-sm truncate">
+                <p className="font-hindi text-saffron-700 text-xs sm:text-sm truncate">
                   {selectedGita.sanskrit_name}
                 </p>
               </div>
@@ -153,7 +153,7 @@ export default function GitaPage() {
           <h3 className="text-sm font-bold text-saffron-800">
             🪷 {t('मूल दर्शन एवं सार', 'Core Philosophy & Essence')}
           </h3>
-          <p className="text-body-hi text-text-secondary mt-1 leading-relaxed">
+          <p className="text-base text-text-secondary mt-1 leading-relaxed">
             {t(selectedGita.core_philosophy_hi, selectedGita.core_philosophy_en)}
           </p>
         </div>
@@ -164,7 +164,7 @@ export default function GitaPage() {
             <h3 className="text-xs font-bold text-text-muted uppercase tracking-wider mb-2">
               ✨ {t('प्रमुख दिव्य शिक्षाएं', 'Key Divine Teachings')}
             </h3>
-            <ul className="space-y-1.5 text-body-hi text-text-secondary">
+            <ul className="space-y-1.5 text-base text-text-secondary">
               {selectedGita.key_teachings_hi.map((teaching, i) => (
                 <li key={i} className="flex items-start gap-2">
                   <span className="text-saffron-600 font-bold">•</span>
@@ -180,7 +180,7 @@ export default function GitaPage() {
       {selectedGita.chapters && selectedGita.chapters.length > 0 && (
         <section className="card space-y-3 p-4">
           <div className="flex items-center justify-between">
-            <h3 className="font-heading text-lg font-bold text-saffron-800">
+            <h3 className="font-hindi text-lg font-bold text-saffron-800">
               📜 {t('अध्याय वार अध्ययन', 'Chapter-wise Study')}
             </h3>
             <span className="text-xs text-text-muted font-hindi">
@@ -215,15 +215,15 @@ export default function GitaPage() {
                   {t(`अध्याय ${currentChapter.chapter_number}`, `Chapter ${currentChapter.chapter_number}`)}
                   {` • ${currentChapter.shlokas_count} ${t('श्लोक', 'Shlokas')}`}
                 </span>
-                <h4 className="font-heading text-xl font-bold text-text-primary mt-0.5">
+                <h4 className="font-hindi text-lg font-bold text-text-primary mt-0.5">
                   {t(currentChapter.title_hi, currentChapter.title_en)}
                 </h4>
-                <p className="font-sanskrit text-saffron-800 text-xs sm:text-sm">
+                <p className="font-hindi text-saffron-800 text-xs sm:text-sm">
                   {currentChapter.title_sanskrit}
                 </p>
               </div>
 
-              <p className="text-body-hi text-text-secondary leading-relaxed">
+              <p className="text-base text-text-secondary leading-relaxed">
                 {t(currentChapter.summary_hi, currentChapter.summary_en)}
               </p>
 
@@ -234,13 +234,13 @@ export default function GitaPage() {
                     <span>🌟 {t('अध्याय का महाश्लोक', 'Key Shloka')}</span>
                     <span>{currentChapter.key_shloka.shloka_number}</span>
                   </div>
-                  <pre className="font-sanskrit text-shloka text-center text-text-primary whitespace-pre-wrap leading-relaxed font-medium">
+                  <pre className="font-hindi text-shloka text-center text-text-primary whitespace-pre-wrap leading-relaxed font-medium">
                     {currentChapter.key_shloka.sanskrit}
                   </pre>
                   <p className="text-xs font-hindi text-text-secondary italic text-center">
                     {currentChapter.key_shloka.transliteration}
                   </p>
-                  <div className="pt-2 border-t border-cream-200 text-body-hi text-text-secondary">
+                  <div className="pt-2 border-t border-cream-200 text-base text-text-secondary">
                     <strong className="text-saffron-800">{t('हिंदी अर्थ', 'Meaning')}: </strong>
                     {t(currentChapter.key_shloka.meaning_hi, currentChapter.key_shloka.meaning_en)}
                   </div>

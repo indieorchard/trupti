@@ -29,11 +29,11 @@ export default function PanchangStrip() {
       className="card"
       aria-label={t('आज का पंचांग', 'Today\'s Panchang')}
     >
-      <h3 className="font-heading text-lg text-saffron-600 font-bold mb-3">
+      <h3 className="font-hindi text-lg text-saffron-600 font-bold mb-3">
         📅 {t('आज का पंचांग', 'Today\'s Panchang')}
       </h3>
 
-      <div className="grid grid-cols-2 gap-3 text-body-hi">
+      <div className="grid grid-cols-2 gap-3 text-base">
         <div>
           <span className="text-text-muted text-sm">{t('तिथि', 'Tithi')}</span>
           <p className="font-semibold">{t(p.tithi_hi, p.tithi_en)}</p>
@@ -60,7 +60,7 @@ export default function PanchangStrip() {
 
       {p.vratas.length > 0 && (
         <div className="mt-3 pt-3 border-t border-cream-200">
-          <span className="text-sacred-vermillion font-semibold text-body-hi">
+          <span className="text-sacred-vermillion font-semibold text-base">
             📿 {t('व्रत', 'Vrat')}: {p.vratas.join(', ')}
           </span>
         </div>

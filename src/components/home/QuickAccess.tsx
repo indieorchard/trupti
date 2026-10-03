@@ -21,11 +21,11 @@ export default function QuickAccess() {
   return (
     <section aria-label={t('शीघ्र पहुँच — 8 प्रमुख द्वार', 'Quick Access — 8 Gateways')} className="space-y-2">
       <div className="flex items-center justify-between px-1">
-        <h3 className="font-heading text-base font-bold text-saffron-800 flex items-center gap-1.5">
+        <h3 className="font-hindi text-base font-bold text-saffron-800 flex items-center gap-1.5">
           <span>⚡</span>
           <span>{t('शीघ्र पहुँच (8 मुख्य साधन)', 'Quick Access (8 Core Hubs)')}</span>
         </h3>
-        <span className="text-[11px] text-text-muted font-hindi">
+        <span className="text-sm text-text-muted font-hindi">
           {t('एक स्पर्श में दर्शन', '1-Tap Access')}
         </span>
       </div>
@@ -43,10 +43,10 @@ export default function QuickAccess() {
               item.color
             )}
           >
-            <span className="text-2xl sm:text-3xl mb-1 filter drop-shadow-xs transform group-hover:scale-110 transition-transform">
+            <span className="text-lg sm:text-3xl mb-1 filter drop-shadow-xs transform group-hover:scale-110 transition-transform">
               {item.emoji}
             </span>
-            <span className="font-hindi text-[11px] sm:text-xs font-bold text-text-primary leading-tight line-clamp-2 w-full px-0.5">
+            <span className="font-hindi text-sm sm:text-xs font-bold text-text-primary leading-tight line-clamp-2 w-full px-0.5">
               {t(item.label_hi, item.label_en)}
             </span>
           </Link>

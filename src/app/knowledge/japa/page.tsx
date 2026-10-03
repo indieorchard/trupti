@@ -101,10 +101,10 @@ export default function JapaPage() {
         <div className="flex items-start justify-between">
           <div className="flex items-start gap-3">
             <div>
-              <h1 className="font-heading text-2xl text-saffron-800 font-bold">
+              <h1 className="font-hindi text-lg text-saffron-800 font-bold">
                 {t('डिजिटल जप माला (108 मणके)', 'Digital Japa Mala (108 Beads)')}
               </h1>
-              <p className="text-body-hi text-text-secondary mt-1">
+              <p className="text-base text-text-secondary mt-1">
                 {t('शांत मन से अपनी दैनिक नाम साधना संपन्न करें।', 'Count your daily mantra repetitions with mindfulness.')}
               </p>
             </div>
@@ -131,7 +131,7 @@ export default function JapaPage() {
             const m = japaMantras.find(x => x.id === e.target.value);
             if (m) setSelectedMantra(m);
           }}
-          className="w-full p-3.5 bg-cream-50 border border-cream-300 rounded-xl font-sanskrit text-body-hi font-medium focus:ring-2 focus:ring-saffron-500 min-h-[52px]"
+          className="w-full p-3.5 bg-cream-50 border border-cream-300 rounded-xl font-hindi text-base font-medium focus:ring-2 focus:ring-saffron-500 min-h-[52px]"
         >
           {japaMantras.map(m => (
             <option key={m.id} value={m.id}>
@@ -145,7 +145,7 @@ export default function JapaPage() {
       <div className="card border-saffron-300 bg-gradient-to-b from-white to-cream-50 text-center py-6 px-4 space-y-4 shadow-sm">
         {/* Active Mantra Banner */}
         <div className="p-3 bg-amber-50 rounded-xl border border-amber-200">
-          <p className="font-sanskrit text-2xl font-bold text-saffron-950 leading-relaxed">
+          <p className="font-hindi text-lg font-bold text-saffron-950 leading-relaxed">
             {selectedMantra.name_hi}
           </p>
         </div>
@@ -178,7 +178,7 @@ export default function JapaPage() {
 
           {/* Central Counter Display */}
           <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-            <span className="text-5xl font-heading font-black text-saffron-800">
+            <span className="text-5xl font-hindi font-black text-saffron-800">
               {beadCount}
             </span>
             <span className="text-sm font-hindi font-medium text-text-muted mt-1">
@@ -193,7 +193,7 @@ export default function JapaPage() {
         {/* Large Senior-First Tap Button */}
         <button
           onClick={handleBeadTap}
-          className="w-full py-5 bg-gradient-to-r from-saffron-600 to-saffron-700 active:scale-[0.98] text-white rounded-2xl shadow-lg font-hindi text-2xl font-bold transition-all flex items-center justify-center gap-3 min-h-[72px]"
+          className="w-full py-5 bg-gradient-to-r from-saffron-600 to-saffron-700 active:scale-[0.98] text-white rounded-2xl shadow-lg font-hindi text-lg font-bold transition-all flex items-center justify-center gap-3 min-h-[72px]"
           aria-label={t('एक जप गिनें (टैप करें)', 'Count one repetition (Tap)')}
         >
           <span>📿</span>
@@ -204,11 +204,11 @@ export default function JapaPage() {
         <div className="grid grid-cols-2 gap-3 pt-2">
           <div className="p-3 bg-white rounded-xl border border-cream-200 text-left">
             <span className="text-xs text-text-muted block">{t('पूर्ण मालाएँ', 'Completed Malas')}</span>
-            <p className="text-2xl font-bold text-saffron-800">{malasCompleted}</p>
+            <p className="text-lg font-bold text-saffron-800">{malasCompleted}</p>
           </div>
           <div className="p-3 bg-white rounded-xl border border-cream-200 text-left">
             <span className="text-xs text-text-muted block">{t('कुल कुल जप संख्या', 'Total Chants')}</span>
-            <p className="text-2xl font-bold text-saffron-800">{totalJapa}</p>
+            <p className="text-lg font-bold text-saffron-800">{totalJapa}</p>
           </div>
         </div>
 

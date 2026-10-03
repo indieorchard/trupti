@@ -40,10 +40,10 @@ export default function VedasPuranasPage() {
       <div className="card bg-gradient-to-r from-amber-50 via-cream-50 to-orange-100 border-saffron-300">
         <div className="flex items-start gap-3">
           <div>
-            <h1 className="font-heading text-2xl text-saffron-800 font-bold">
+            <h1 className="font-hindi text-lg text-saffron-800 font-bold">
               {t('वेद, पुराण, उपनिषद एवं इतिहास', 'Vedas, Puranas, Upanishads & Epics')}
             </h1>
-            <p className="text-body-hi text-text-secondary mt-1">
+            <p className="text-base text-text-secondary mt-1">
               {t(
                 'सनातन धर्म के अनादि मूल ग्रंथ — चारों वेद, 18 महापुराणों के मुख्य अंश, दशोपनिषद एवं आदिकाव्य रामायण व महाभारत।',
                 'The eternal source texts of Sanatana Dharma: 4 Vedas, Mahapuranas, Mukhya Upanishads, and the Great Epics.'
@@ -97,13 +97,13 @@ export default function VedasPuranasPage() {
                 <div className="flex-1 min-w-0">
                   <div className="flex items-start justify-between gap-2">
                     <div>
-                      <span className="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-saffron-100 text-saffron-800 mb-1">
+                      <span className="inline-block px-2.5 py-0.5 rounded-full text-sm font-bold uppercase tracking-wider bg-saffron-100 text-saffron-800 mb-1">
                         {item.category.toUpperCase()} • {item.classification || ''}
                       </span>
-                      <h2 className="font-heading text-xl sm:text-2xl font-bold text-text-primary leading-tight">
+                      <h2 className="font-hindi text-lg sm:text-lg font-bold text-text-primary leading-tight">
                         {t(item.name_hi, item.name_en)}
                       </h2>
-                      <p className="font-sanskrit text-saffron-700 text-xs sm:text-sm truncate">
+                      <p className="font-hindi text-saffron-700 text-xs sm:text-sm truncate">
                         {item.sanskrit_name}
                       </p>
                     </div>
@@ -161,7 +161,7 @@ export default function VedasPuranasPage() {
               </div>
 
               {/* Overview */}
-              <p className="text-body-hi text-text-secondary leading-relaxed">
+              <p className="text-base text-text-secondary leading-relaxed">
                 {t(item.overview_hi, item.overview_en)}
               </p>
 
@@ -171,7 +171,7 @@ export default function VedasPuranasPage() {
                   <span className="text-xs font-bold text-saffron-800 uppercase block mb-0.5">
                     ✨ {t('महावाक्य', 'Great Upanishadic Statement')}:
                   </span>
-                  <p className="font-sanskrit text-lg font-bold text-saffron-950">
+                  <p className="font-hindi text-lg font-bold text-saffron-950">
                     {item.mahavakya}
                   </p>
                 </div>
@@ -186,10 +186,10 @@ export default function VedasPuranasPage() {
                   <div className="space-y-2">
                     {item.key_sections.map((sec, i) => (
                       <div key={i} className="p-2.5 bg-cream-50/70 rounded-xl border border-cream-200">
-                        <h4 className="font-heading text-base font-bold text-saffron-800">
+                        <h4 className="font-hindi text-base font-bold text-saffron-800">
                           {t(sec.title_hi, sec.title_en)}
                         </h4>
-                        <p className="text-body-hi text-text-secondary mt-1">
+                        <p className="text-base text-text-secondary mt-1">
                           {t(sec.desc_hi, sec.desc_en)}
                         </p>
                       </div>

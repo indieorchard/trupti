@@ -59,7 +59,7 @@ export default function Header({
               onClick={handleBack}
               className={cn(
                 'min-h-[48px] min-w-[48px] flex items-center gap-1.5',
-                'text-saffron-700 font-hindi font-bold text-body-hi',
+                'text-saffron-700 font-hindi font-bold text-base',
                 'rounded-xl active:bg-cream-200 hover:bg-cream-100 transition-colors px-2.5 py-1'
               )}
               aria-label={t('पीछे जाएं', 'Go back')}
@@ -69,10 +69,10 @@ export default function Header({
             </button>
           ) : (
             <Link href="/" className="flex items-center gap-1.5 group">
-              <span className="text-2xl filter drop-shadow-sm group-hover:scale-110 transition-transform">
+              <span className="text-lg filter drop-shadow-sm group-hover:scale-110 transition-transform">
                 🪷
               </span>
-              <h1 className="font-heading text-2xl text-saffron-700 font-bold tracking-tight">
+              <h1 className="font-hindi text-lg text-saffron-700 font-bold tracking-tight">
                 {t(title_hi, title_en)}
               </h1>
             </Link>
@@ -113,7 +113,7 @@ export default function Header({
               className={favoritesCount > 0 ? 'fill-amber-500 text-amber-600' : ''}
             />
             {favoritesCount > 0 && (
-              <span className="absolute -top-1 -right-1 bg-saffron-600 text-white text-[10px] font-bold rounded-full h-4 min-w-[16px] px-1 flex items-center justify-center shadow-sm">
+              <span className="absolute -top-1 -right-1 bg-saffron-600 text-white text-sm font-bold rounded-full h-4 min-w-[16px] px-1 flex items-center justify-center shadow-sm">
                 {favoritesCount}
               </span>
             )}

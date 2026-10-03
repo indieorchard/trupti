@@ -125,10 +125,10 @@ export default function MokshaSadhanaPage() {
         <div className="flex items-start gap-3">
           <span className="text-4xl">🪷</span>
           <div>
-            <h1 className="font-heading text-2xl text-saffron-800 font-bold">
+            <h1 className="font-hindi text-lg text-saffron-800 font-bold">
               {t('90-दिवसीय मोक्ष साधना', '90-Day Moksha Sadhana')}
             </h1>
-            <p className="text-body-hi text-text-secondary mt-1">
+            <p className="text-base text-text-secondary mt-1">
               {t(
                 'जीवन के अंतिम पड़ाव में वानप्रस्थ एवं आत्म-कल्याण हेतु 3 चरणों का अनुक्रमिक शास्त्रोक्त मार्ग।',
                 'A 3-phase scriptural blueprint for senior life-enrichment, peace, and spiritual completion.'
@@ -158,7 +158,7 @@ export default function MokshaSadhanaPage() {
 
       {/* Three Phases Overview */}
       <div className="space-y-2">
-        <h2 className="font-heading text-xs font-bold text-text-muted uppercase tracking-wider px-1">
+        <h2 className="font-hindi text-xs font-bold text-text-muted uppercase tracking-wider px-1">
           {t('साधना के तीन सोपान', 'Three Progressive Phases')}
         </h2>
         {phases.map(p => (
@@ -166,7 +166,7 @@ export default function MokshaSadhanaPage() {
             key={p.phase}
             className={cn('card border-l-4 p-3.5', p.color)}
           >
-            <h3 className="font-heading text-lg font-bold text-text-primary">
+            <h3 className="font-hindi text-lg font-bold text-text-primary">
               {t(p.name_hi, p.name_en)}
             </h3>
             <p className="text-xs text-text-secondary mt-1 leading-normal">
@@ -179,7 +179,7 @@ export default function MokshaSadhanaPage() {
       {/* Day Selector Quick Nav */}
       <div className="card space-y-3 border-cream-200">
         <div className="flex items-center justify-between">
-          <h3 className="font-heading text-lg font-bold text-saffron-800">
+          <h3 className="font-hindi text-lg font-bold text-saffron-800">
             📅 {t(`दिन ${currentDay} की साधना`, `Day ${currentDay} Sadhana`)}
           </h3>
           <button
@@ -201,10 +201,10 @@ export default function MokshaSadhanaPage() {
           <span className="text-xs font-bold text-saffron-800 uppercase block mb-1">
             🌟 {t('आज का दिव्य सूत्र', 'Today\'s Core Theme')}:
           </span>
-          <p className="font-heading text-lg font-bold text-saffron-950">
+          <p className="font-hindi text-lg font-bold text-saffron-950">
             {activeDayData.title_hi}
           </p>
-          <p className="text-body-hi text-text-secondary mt-1">
+          <p className="text-base text-text-secondary mt-1">
             {activeDayData.theme_hi}
           </p>
         </div>
@@ -214,7 +214,7 @@ export default function MokshaSadhanaPage() {
           <span className="text-xs font-bold text-text-muted uppercase block">
             ✅ {t('आज की क्रियाएं', 'Prescribed Daily Kriyas')}:
           </span>
-          <ul className="space-y-1 text-body-hi text-text-secondary">
+          <ul className="space-y-1 text-base text-text-secondary">
             {activeDayData.kriyas_hi.map((k, i) => (
               <li key={i} className="flex items-start gap-2 p-2 bg-cream-50 rounded-lg">
                 <span className="text-saffron-600 font-bold">{i + 1}.</span>
