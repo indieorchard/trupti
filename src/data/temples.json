@@ -24,7 +24,7 @@
       "battery_car": false,
       "elderly_support_notes": "Helicopter services available from Dehradun/Phata; palanquin (doli) and pony services readily accessible."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Badrinath_temple.jpg/400px-Badrinath_temple.jpg"
+    "image_url": "/images/temples/badrinath.jpg"
   },
   {
     "id": "puri_jagannath",
@@ -50,7 +50,7 @@
       "battery_car": true,
       "elderly_support_notes": "Battery cars run from Grand Road. Special Senior citizen assistance counters managed by temple police."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Jagannatha_Temple_Puri.jpg/640px-Jagannatha_Temple_Puri.jpg"
+    "image_url": "/images/temples/puri_jagannath.jpg"
   },
   {
     "id": "dwarkadhish",
@@ -77,7 +77,7 @@
       "battery_car": true,
       "elderly_support_notes": "Wheelchair access via Swarg Dwar ramp. Elevators installed for elderly pilgrims to view main sanctum."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Dwarakadheesh_Temple.jpg/640px-Dwarakadheesh_Temple.jpg"
+    "image_url": "/images/temples/dwarkadhish.jpg"
   },
   {
     "id": "rameswaram",
@@ -105,7 +105,7 @@
       "battery_car": true,
       "elderly_support_notes": "Special senior citizen line for direct sanctum darshan; motorized wheelchairs available at main gate."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Ramanathaswamy_Temple_Corridor.jpg/640px-Ramanathaswamy_Temple_Corridor.jpg"
+    "image_url": "/images/temples/rameswaram.jpg"
   },
   {
     "id": "kedarnath",
@@ -132,7 +132,7 @@
       "battery_car": false,
       "elderly_support_notes": "Helicopter booking highly recommended for seniors; Kandi and Palki (doli) services available from Gaurikund."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kedarnath_Temple_in_Rainy_season.jpg/400px-Kedarnath_Temple_in_Rainy_season.jpg"
+    "image_url": "/images/temples/kedarnath.jpg"
   },
   {
     "id": "gangotri",
@@ -158,7 +158,7 @@
       "battery_car": false,
       "elderly_support_notes": "Vehicles reach near the temple complex; minimal walking required compared to Kedarnath/Yamunotri."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Gangotri_temple.jpg/400px-Gangotri_temple.jpg"
+    "image_url": "/images/temples/gangotri.jpg"
   },
   {
     "id": "yamunotri",
@@ -184,7 +184,7 @@
       "battery_car": false,
       "elderly_support_notes": "6 km trek from Janki Chatti; palanquins (doli) and ponies strongly advised for elderly pilgrims."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Yamunotri_Temple.jpg/400px-Yamunotri_Temple.jpg"
+    "image_url": "/images/temples/yamunotri.jpg"
   },
   {
     "id": "somnath",
@@ -210,7 +210,7 @@
       "battery_car": true,
       "elderly_support_notes": "Fully paved rampways, free wheelchairs, battery buggies from car parking to temple entrance."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Somnath_mandir.jpg/640px-Somnath_mandir.jpg"
+    "image_url": "/images/temples/somnath.jpg"
   },
   {
     "id": "mallikarjuna",
@@ -238,7 +238,7 @@
       "battery_car": true,
       "elderly_support_notes": "Dedicated \"Senior Citizen Darshan Queue\" with minimal waiting; elevator facility available near temple trust office."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Srisailam_Temple.jpg/640px-Srisailam_Temple.jpg"
+    "image_url": "/images/temples/mallikarjuna.jpg"
   },
   {
     "id": "mahakaleshwar",
@@ -265,7 +265,7 @@
       "battery_car": true,
       "elderly_support_notes": "Mahakal Lok corridor provides battery cars; special ramp lane into sanctum for senior citizens."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Mahakaleshwar_Temple_Ujjain.jpg/640px-Mahakaleshwar_Temple_Ujjain.jpg"
+    "image_url": "/images/temples/mahakaleshwar.jpg"
   },
   {
     "id": "omkareshwar",
@@ -291,7 +291,7 @@
       "battery_car": false,
       "elderly_support_notes": "Suspension bridge (Jhula Pul) connects island with lift service; boats also available across Narmada."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Omkareshwar_temple.jpg/640px-Omkareshwar_temple.jpg"
+    "image_url": "/images/temples/omkareshwar.jpg"
   },
   {
     "id": "bhimashankar",
@@ -317,7 +317,7 @@
       "battery_car": false,
       "elderly_support_notes": "Ramps leading down to the temple; local doli service available for pilgrims unable to climb stairs."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Bhimashankar_temple.jpg/640px-Bhimashankar_temple.jpg"
+    "image_url": "/images/temples/bhimashankar.jpg"
   },
   {
     "id": "kashi_vishwanath",
@@ -344,7 +344,7 @@
       "battery_car": true,
       "elderly_support_notes": "Kashi Vishwanath Corridor is fully wheelchair-friendly with escalators, elevators, and battery cars from Ghat to Temple."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Kashi_Vishwanath.jpg/400px-Kashi_Vishwanath.jpg"
+    "image_url": "/images/temples/kashi_vishwanath.jpg"
   },
   {
     "id": "trimbakeshwar",
@@ -370,7 +370,7 @@
       "battery_car": false,
       "elderly_support_notes": "Special senior citizen lane; wheelchair assistance available at east gate entry."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Trimbakeshwar_Temple.jpg/640px-Trimbakeshwar_Temple.jpg"
+    "image_url": "/images/temples/trimbakeshwar.jpg"
   },
   {
     "id": "baidyanath",
@@ -397,7 +397,7 @@
       "battery_car": false,
       "elderly_support_notes": "VIP Pass (Sheeghra Darshanam) available online and on-counter to bypass general rush."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Baidyanath_Temple_Deoghar.jpg/640px-Baidyanath_Temple_Deoghar.jpg"
+    "image_url": "/images/temples/baidyanath.jpg"
   },
   {
     "id": "nageshwar",
@@ -423,7 +423,7 @@
       "battery_car": false,
       "elderly_support_notes": "Spacious flat ground with no major steps; wheelchair access directly into the sanctum hall."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Nageshwar_Jyotirlinga.jpg/640px-Nageshwar_Jyotirlinga.jpg"
+    "image_url": "/images/temples/nageshwar.jpg"
   },
   {
     "id": "grishneshwar",
@@ -449,7 +449,7 @@
       "battery_car": false,
       "elderly_support_notes": "Ramps available; peaceful temple ambiance with gentle queues on weekdays."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Grishneshwar_Temple.jpg/640px-Grishneshwar_Temple.jpg"
+    "image_url": "/images/temples/grishneshwar.jpg"
   },
   {
     "id": "ram_mandir_ayodhya",
@@ -475,7 +475,7 @@
       "battery_car": true,
       "elderly_support_notes": "Ramps, electric wheelchairs, golf carts, and senior-only special queue assist elderly devotees from the outer gate."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Ram_Mandir_Ayodhya_2024.jpg/640px-Ram_Mandir_Ayodhya_2024.jpg"
+    "image_url": "/images/temples/ram_mandir_ayodhya.jpg"
   },
   {
     "id": "krishna_janmabhoomi",
@@ -501,7 +501,7 @@
       "battery_car": true,
       "elderly_support_notes": "Battery rickshaws connect Mathura Junction to Janmabhoomi; wheelchair facility at entry gate."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Mathura_Temple-Mathura-India0002.JPG/400px-Mathura_Temple-Mathura-India0002.JPG"
+    "image_url": "/images/temples/krishna_janmabhoomi.jpg"
   },
   {
     "id": "har_ki_pauri",
@@ -527,7 +527,7 @@
       "battery_car": true,
       "elderly_support_notes": "Ramps available leading to ghats; elderly sitting enclosures provided during the evening Ganga Aarti."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Har_Ki_Pauri%2C_Haridwar.jpg/400px-Har_Ki_Pauri%2C_Haridwar.jpg"
+    "image_url": "/images/temples/har_ki_pauri.jpg"
   },
   {
     "id": "kanchi_kamakshi",
@@ -555,7 +555,7 @@
       "battery_car": false,
       "elderly_support_notes": "Wheelchairs available at the temple entrance; minimal steps inside temple praharam."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Kamakshi_Amman_Temple.jpg/640px-Kamakshi_Amman_Temple.jpg"
+    "image_url": "/images/temples/kanchi_kamakshi.jpg"
   },
   {
     "id": "vaishno_devi",
@@ -581,7 +581,7 @@
       "battery_car": true,
       "elderly_support_notes": "Battery cars from Ardhkuwari to Bhawan; helicopter service from Katra to Sanjichhat; ropeway from Bhawan to Bhairon Ghati."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Vaishno_Devi_Temple.jpg/400px-Vaishno_Devi_Temple.jpg"
+    "image_url": "/images/temples/vaishno_devi.jpg"
   },
   {
     "id": "kamakhya_temple",
@@ -607,7 +607,7 @@
       "battery_car": false,
       "elderly_support_notes": "VIP defence/senior passes available; stairs have railing support; palanquins available at hilltop parking."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Kamakhya_Temple_Guwahati.jpg/640px-Kamakhya_Temple_Guwahati.jpg"
+    "image_url": "/images/temples/kamakhya_temple.jpg"
   },
   {
     "id": "kalighat",
@@ -633,7 +633,7 @@
       "battery_car": false,
       "elderly_support_notes": "Senior citizen gate access to avoid crowd pushing; assisted wheelchair passage."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Kali_by_Raja_Ravi_Varma.jpg/640px-Kali_by_Raja_Ravi_Varma.jpg"
+    "image_url": "/images/temples/kalighat.jpg"
   },
   {
     "id": "kolhapur_mahalakshmi",
@@ -659,7 +659,7 @@
       "battery_car": false,
       "elderly_support_notes": "Level entrances, dedicated queue for senior citizens, and wheelchair support at Mahadwar."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Mahalakshmi_temple%2C_Kolhapur.jpg/400px-Mahalakshmi_temple%2C_Kolhapur.jpg"
+    "image_url": "/images/temples/kolhapur_mahalakshmi.jpg"
   },
   {
     "id": "chamundeshwari_temple",
@@ -686,7 +686,7 @@
       "battery_car": false,
       "elderly_support_notes": "Road goes straight to hilltop; rampway from car park into temple; special Senior Citizen queue tickets."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Chamundeshwari_Mysore.jpg/640px-Chamundeshwari_Mysore.jpg"
+    "image_url": "/images/temples/chamundeshwari_temple.jpg"
   },
   {
     "id": "meenakshi_temple",
@@ -713,7 +713,7 @@
       "battery_car": true,
       "elderly_support_notes": "Battery cars from outer gate to eastern tower; free wheelchairs and assistants provided inside."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Statue_of_Meenakshi.jpg/400px-Statue_of_Meenakshi.jpg"
+    "image_url": "/images/temples/meenakshi_temple.jpg"
   },
   {
     "id": "tirupati_balaji",
@@ -740,7 +740,7 @@
       "battery_car": true,
       "elderly_support_notes": "Dedicated Senior Citizen / Physically Challenged quota with separate air-conditioned waiting hall and direct express darshan."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Tirupati_temple.jpg/640px-Tirupati_temple.jpg"
+    "image_url": "/images/temples/tirupati_balaji.jpg"
   },
   {
     "id": "guruvayur",
@@ -766,7 +766,7 @@
       "battery_car": false,
       "elderly_support_notes": "Exclusive early morning senior citizen queue (Senior Citizens Darshan) from 4:30 AM to 6:00 AM."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Guruvayur_Sree_Krishna_Temple.jpg/400px-Guruvayur_Sree_Krishna_Temple.jpg"
+    "image_url": "/images/temples/guruvayur.jpg"
   },
   {
     "id": "padmanabhaswamy",
@@ -793,7 +793,7 @@
       "battery_car": false,
       "elderly_support_notes": "Dedicated Senior Citizen line at North Gate; free wheelchair assistance provided by Travancore Devaswom Board."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Padmanabhaswamy_Temple.jpg/640px-Padmanabhaswamy_Temple.jpg"
+    "image_url": "/images/temples/padmanabhaswamy.jpg"
   },
   {
     "id": "sabarimala",
@@ -819,7 +819,7 @@
       "battery_car": false,
       "elderly_support_notes": "Tractor transport and traditional Doli (palanquin carried by four bearers) available from Pamba for elderly pilgrims."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Swami_Ayyappan.jpg/640px-Swami_Ayyappan.jpg"
+    "image_url": "/images/temples/sabarimala.jpg"
   },
   {
     "id": "srirangam",
@@ -846,7 +846,7 @@
       "battery_car": true,
       "elderly_support_notes": "Battery cars navigate outer praharams; ramp pathways into sanctum enclosure; special Senior tickets available."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Srirangam_Gopuram.jpg/640px-Srirangam_Gopuram.jpg"
+    "image_url": "/images/temples/srirangam.jpg"
   },
   {
     "id": "brihadisvara",
@@ -872,7 +872,7 @@
       "battery_car": false,
       "elderly_support_notes": "Paved courtyards with minimal steps; smooth ramp entrance for wheelchairs."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Brihadisvara_Temple_Thanjavur.jpg/640px-Brihadisvara_Temple_Thanjavur.jpg"
+    "image_url": "/images/temples/brihadisvara.jpg"
   },
   {
     "id": "chidambaram",
@@ -898,7 +898,7 @@
       "battery_car": false,
       "elderly_support_notes": "Wheelchair friendly flat stone courtyards; Dikshithar priests assist elderly devotees directly."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Nataraja_temple%2CChidambaram%2CTamil_Nadu.jpg/400px-Nataraja_temple%2CChidambaram%2CTamil_Nadu.jpg"
+    "image_url": "/images/temples/chidambaram.jpg"
   },
   {
     "id": "tiruvannamalai",
@@ -924,7 +924,7 @@
       "battery_car": false,
       "elderly_support_notes": "Ramps through the main gopurams; battery car services operational for Girivalam circuit."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Badrinath_temple.jpg/400px-Badrinath_temple.jpg"
+    "image_url": "/images/temples/badrinath.jpg"
   },
   {
     "id": "kukke_subramanya",
@@ -950,7 +950,7 @@
       "battery_car": false,
       "elderly_support_notes": "Seating arrangements for elderly performing Ashlesha Bali; wheelchair ramp into the inner quadrangle."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Badrinath_temple.jpg/400px-Badrinath_temple.jpg"
+    "image_url": "/images/temples/badrinath.jpg"
   },
   {
     "id": "murudeshwar",
@@ -976,7 +976,7 @@
       "battery_car": false,
       "elderly_support_notes": "Elevator inside the 20-storey Rajagopuram allows senior citizens to view Arabian Sea and the statue effortlessly."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Badrinath_temple.jpg/400px-Badrinath_temple.jpg"
+    "image_url": "/images/temples/badrinath.jpg"
   },
   {
     "id": "udupi_krishna",
@@ -1002,7 +1002,7 @@
       "battery_car": false,
       "elderly_support_notes": "Direct darshan lane for senior citizens and pregnant women through Kanaka Kindi."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Badrinath_temple.jpg/400px-Badrinath_temple.jpg"
+    "image_url": "/images/temples/badrinath.jpg"
   },
   {
     "id": "sringeri_sharada",
@@ -1028,7 +1028,7 @@
       "battery_car": false,
       "elderly_support_notes": "Serene riverside atmosphere; wheelchair accessible pathways connecting Sharadamba and Vidyashankara temples."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Badrinath_temple.jpg/400px-Badrinath_temple.jpg"
+    "image_url": "/images/temples/badrinath.jpg"
   },
   {
     "id": "siddhivinayak",
@@ -1054,7 +1054,7 @@
       "battery_car": false,
       "elderly_support_notes": "Dedicated Senior Citizen line at Gate 4; lifts and wheelchairs provided by the temple trust."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Siddhivinayak_Temple_Mumbai.jpg/640px-Siddhivinayak_Temple_Mumbai.jpg"
+    "image_url": "/images/temples/siddhivinayak.jpg"
   },
   {
     "id": "shirdi_sai",
@@ -1080,7 +1080,7 @@
       "battery_car": true,
       "elderly_support_notes": "Free online and offline Senior Citizen pass for direct entry; wheelchairs and golf carts available in complex."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Samadhi_Mandir_of_Shirdi_Sai_Baba.jpg/400px-Samadhi_Mandir_of_Shirdi_Sai_Baba.jpg"
+    "image_url": "/images/temples/shirdi_sai.jpg"
   },
   {
     "id": "pandharpur_vithoba",
@@ -1106,7 +1106,7 @@
       "battery_car": false,
       "elderly_support_notes": "Separate \"Mukh Darshan\" queue for senior citizens who cannot stand in long Charan Sparsh lines."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vithoba_of_Pandharpur.jpg/640px-Vithoba_of_Pandharpur.jpg"
+    "image_url": "/images/temples/pandharpur_vithoba.jpg"
   },
   {
     "id": "shani_shingnapur",
@@ -1132,7 +1132,7 @@
       "battery_car": true,
       "elderly_support_notes": "Battery cars from parking to sanctum; flat platform accessible by wheelchair for elderly darshan."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Shani_Dev.jpg/640px-Shani_Dev.jpg"
+    "image_url": "/images/temples/shani_shingnapur.jpg"
   },
   {
     "id": "nathdwara_shrinathji",
@@ -1158,7 +1158,7 @@
       "battery_car": false,
       "elderly_support_notes": "Senior citizen entry token available at temple office to avoid crowding during short 30-minute Jhanki openings."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Gateway_To_Temple%2C_Nathdwara.jpg/400px-Gateway_To_Temple%2C_Nathdwara.jpg"
+    "image_url": "/images/temples/nathdwara_shrinathji.jpg"
   },
   {
     "id": "pushkar_brahma",
@@ -1184,7 +1184,7 @@
       "battery_car": false,
       "elderly_support_notes": "Ramps available for lower courtyard; handrails installed on the short flight of stairs leading to inner sanctum."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Brahma_on_Hamsa.jpg/640px-Brahma_on_Hamsa.jpg"
+    "image_url": "/images/temples/pushkar_brahma.jpg"
   },
   {
     "id": "khatushyamji",
@@ -1210,7 +1210,7 @@
       "battery_car": true,
       "elderly_support_notes": "Newly renovated covered zig-zag pathway with carpeted floors, mist fans, and separate elderly exit gate."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Khatushyamji.jpg/400px-Khatushyamji.jpg"
+    "image_url": "/images/temples/khatushyamji.jpg"
   },
   {
     "id": "bankey_bihari",
@@ -1236,7 +1236,7 @@
       "battery_car": true,
       "elderly_support_notes": "E-rickshaws bring pilgrims near VIP alley; early morning Mangala/Shringar darshan recommended to avoid narrow lane rush."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Bankebihari_temple_main_gate_Vrindavan.JPG/400px-Bankebihari_temple_main_gate_Vrindavan.JPG"
+    "image_url": "/images/temples/bankey_bihari.jpg"
   },
   {
     "id": "prem_mandir",
@@ -1262,7 +1262,7 @@
       "battery_car": true,
       "elderly_support_notes": "Extremely senior-friendly; expansive paved grounds, free battery carts, escalators, and elevator inside main temple."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Prem_mandir_Vrindavan.JPG/400px-Prem_mandir_Vrindavan.JPG"
+    "image_url": "/images/temples/prem_mandir.jpg"
   },
   {
     "id": "sankat_mochan_varanasi",
@@ -1288,7 +1288,7 @@
       "battery_car": false,
       "elderly_support_notes": "Shaded courtyard, peaceful benches, wheelchair ramp entrance from rear gate."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Sankat_mochan_temple_3.JPG/400px-Sankat_mochan_temple_3.JPG"
+    "image_url": "/images/temples/sankat_mochan_varanasi.jpg"
   },
   {
     "id": "vishnupad_gaya",
@@ -1314,7 +1314,7 @@
       "battery_car": false,
       "elderly_support_notes": "Wheelchair assistance provided by local Panda committees for senior citizens performing Shraddha rituals."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Vishnu.jpg/640px-Vishnu.jpg"
+    "image_url": "/images/temples/vishnupad_gaya.jpg"
   },
   {
     "id": "dakshineswar_kali",
@@ -1340,7 +1340,7 @@
       "battery_car": true,
       "elderly_support_notes": "Paved ramps from ghats; battery rickshaws from parking; wheelchair paths along the 12 Shiva temples."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Dakshineswar_Temple.jpg/640px-Dakshineswar_Temple.jpg"
+    "image_url": "/images/temples/dakshineswar_kali.jpg"
   },
   {
     "id": "lingaraj_temple",
@@ -1366,7 +1366,7 @@
       "battery_car": false,
       "elderly_support_notes": "Spacious stone courtyard with shaded corridors; assistance available for elderly entering main sanctum."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Lingaraj_Temple_Bhubaneswar.jpg/640px-Lingaraj_Temple_Bhubaneswar.jpg"
+    "image_url": "/images/temples/lingaraj_temple.jpg"
   },
   {
     "id": "konark_sun_temple",
@@ -1392,7 +1392,7 @@
       "battery_car": true,
       "elderly_support_notes": "ASI provides wooden ramps and free manual wheelchairs for senior citizens around monument boundary."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Konark_Sun_Temple.jpg/400px-Konark_Sun_Temple.jpg"
+    "image_url": "/images/temples/konark_sun_temple.jpg"
   },
   {
     "id": "tarapith",
@@ -1419,7 +1419,7 @@
       "battery_car": false,
       "elderly_support_notes": "VIP entry gate helps bypass regular serpentine queues; wheelchairs permitted up to main verandah."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Badrinath_temple.jpg/400px-Badrinath_temple.jpg"
+    "image_url": "/images/temples/badrinath.jpg"
   },
   {
     "id": "akshardham_delhi",
@@ -1445,7 +1445,7 @@
       "battery_car": true,
       "elderly_support_notes": "Extremely senior-friendly; free wheelchairs, motorized golf carts, and smooth ramps across all halls."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Akshardham_Delhi.jpg/400px-Akshardham_Delhi.jpg"
+    "image_url": "/images/temples/akshardham_delhi.jpg"
   },
   {
     "id": "durgiana_amritsar",
@@ -1471,7 +1471,7 @@
       "battery_car": false,
       "elderly_support_notes": "Bridge across the lake is wide and flat; wheelchairs available at front deori."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Badrinath_temple.jpg/400px-Badrinath_temple.jpg"
+    "image_url": "/images/temples/badrinath.jpg"
   },
   {
     "id": "neelkanth_mahadev",
@@ -1497,7 +1497,7 @@
       "battery_car": false,
       "elderly_support_notes": "Vehicles go up to the entrance gate; rampways facilitate elder access to sanctum."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Badrinath_temple.jpg/400px-Badrinath_temple.jpg"
+    "image_url": "/images/temples/badrinath.jpg"
   },
   {
     "id": "jwala_ji",
@@ -1524,7 +1524,7 @@
       "battery_car": false,
       "elderly_support_notes": "Paved walkways and gentle ramps; porter and palanquin support available from lower bazaar."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Badrinath_temple.jpg/400px-Badrinath_temple.jpg"
+    "image_url": "/images/temples/badrinath.jpg"
   },
   {
     "id": "naina_devi",
@@ -1551,7 +1551,7 @@
       "battery_car": false,
       "elderly_support_notes": "Modern cable car (ropeway) carries elderly directly to temple entrance within 5 minutes."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Badrinath_temple.jpg/400px-Badrinath_temple.jpg"
+    "image_url": "/images/temples/badrinath.jpg"
   },
   {
     "id": "ambaji_temple",
@@ -1578,7 +1578,7 @@
       "battery_car": true,
       "elderly_support_notes": "Ropeway at Gabbar Hill; golf carts within Ambaji temple precinct; wheelchair assistance at entry."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Badrinath_temple.jpg/400px-Badrinath_temple.jpg"
+    "image_url": "/images/temples/badrinath.jpg"
   },
   {
     "id": "sripuram_golden_temple",
@@ -1604,7 +1604,7 @@
       "battery_car": true,
       "elderly_support_notes": "Free battery-operated vehicles convey elderly throughout the entire star-shaped walking path."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Badrinath_temple.jpg/400px-Badrinath_temple.jpg"
+    "image_url": "/images/temples/badrinath.jpg"
   },
   {
     "id": "palani_murugan",
@@ -1630,7 +1630,7 @@
       "battery_car": false,
       "elderly_support_notes": "Modern winch train and ropeway transport elderly pilgrims directly to hilltop temple in minutes."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Badrinath_temple.jpg/400px-Badrinath_temple.jpg"
+    "image_url": "/images/temples/badrinath.jpg"
   },
   {
     "id": "tungnath",
@@ -1656,7 +1656,7 @@
       "battery_car": false,
       "elderly_support_notes": "3.5 km paved trek from Chopta; pony/horse services readily available for elderly travelers."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Tungnath_temple.jpg/400px-Tungnath_temple.jpg"
+    "image_url": "/images/temples/tungnath.jpg"
   },
   {
     "id": "biraja_devi",
@@ -1683,7 +1683,7 @@
       "battery_car": false,
       "elderly_support_notes": "Flat temple grounds; seating arrangements available near Nabhi Gaya for elderly performing rituals."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Badrinath_temple.jpg/400px-Badrinath_temple.jpg"
+    "image_url": "/images/temples/badrinath.jpg"
   },
   {
     "id": "ranakpur_surya",
@@ -1709,6 +1709,6 @@
       "battery_car": false,
       "elderly_support_notes": "Smooth marble ramps and accessible corridors throughout."
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Badrinath_temple.jpg/400px-Badrinath_temple.jpg"
+    "image_url": "/images/temples/badrinath.jpg"
   }
 ]

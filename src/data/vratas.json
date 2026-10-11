@@ -40,7 +40,7 @@
       "elderly_guideline_hi": "६० वर्ष से अधिक उम्र, मधुमेह या बीपी की नियमित दवा लेने वाले वरिष्ठ साधकों हेतु शास्त्रोक्त नियम (\"असमर्थे अनुकल्पः\"): वे जल, नीम्बू पानी, नारियल जल अथवा दूध का सेवन कर सजल व्रत कर सकते हैं। प्राण रक्षा सर्वोपरि धर्म है।",
       "parana_timing_hi": "द्वादशी के सूर्योदय पश्चात, ब्राह्मण को जल से भरा कलश दान कर शीतल जल से व्रत खोलें।"
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Vishnu.jpg/640px-Vishnu.jpg"
+    "image_url": "/images/deities/vishnu.jpg"
   },
   {
     "id": "pradosha_vrata",
@@ -85,7 +85,7 @@
       "elderly_guideline_hi": "दोपहर में हल्का फलाहार (दूध व सेब) लें। सूर्यास्त के समय शिवजी का अभिषेक कर सात्विक फलाहार ग्रहण करें।",
       "parana_timing_hi": "प्रदोष काल में शिव पूजा और आरती संपन्न करने के तुरंत पश्चात फलाहार से व्रत खोलें।"
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg/400px-Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg"
+    "image_url": "/images/deities/shiva.jpg"
   },
   {
     "id": "somvar_vrata",
@@ -126,7 +126,7 @@
       "elderly_guideline_hi": "वरिष्ठ नागरिक दोनों समय फल, दूध और मखाना ले सकते हैं। दवाएं समय पर अवश्य लें।",
       "parana_timing_hi": "सायंकाल शिव दीप दर्शन और आरती के बाद बिना नमक अथवा सेंधा नमक युक्त भोजन ग्रहण करें।"
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg/400px-Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg"
+    "image_url": "/images/deities/shiva.jpg"
   },
   {
     "id": "masik_shivaratri",
@@ -168,7 +168,7 @@
       "elderly_guideline_hi": "चारों पहर जागरण बुजुर्गों के लिए अनिवार्य नहीं है। प्रथम पहर (शाम 6 से 9 बजे) की पूजा कर हल्का फलाहार लेकर विश्राम करें।",
       "parana_timing_hi": "अगले दिन प्रातः सूर्योदय के बाद और चतुर्दशी तिथि समाप्त होने से पूर्व स्नान कर पारण करें।"
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg/400px-Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg"
+    "image_url": "/images/deities/shiva.jpg"
   },
   {
     "id": "satyanarayan_purnima",
@@ -209,7 +209,7 @@
       "elderly_guideline_hi": "दोपहर में फलाहार लें, शाम को सत्यनारायण कथा सुनते समय चरणामृत व पंजीरी ग्रहण कर व्रत पूर्ण करें।",
       "parana_timing_hi": "कथा श्रवण व आरती के पश्चात पंजीरी प्रसाद लेकर भोजन करें।"
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Vishnu.jpg/640px-Vishnu.jpg"
+    "image_url": "/images/deities/vishnu.jpg"
   },
   {
     "id": "navratri_vrata",
@@ -261,7 +261,7 @@
       "elderly_guideline_hi": "नौ दिन लगातार निर्जल या कठिन उपवास न करें। दोनों समय सात्विक फलाहार (दूध, फल, साबूदाना खिचड़ी) ग्रहण करें। दवाएं बिना बाधा लें।",
       "parana_timing_hi": "दशमी तिथि को कन्या पूजन (कंजिका) कराने के पश्चात हलवा-पूड़ी-चने का प्रसाद ग्रहण कर पारण करें।"
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Durga_by_Raja_Ravi_Varma.jpg/400px-Durga_by_Raja_Ravi_Varma.jpg"
+    "image_url": "/images/deities/durga.jpg"
   },
   {
     "id": "karwa_chauth",
@@ -293,7 +293,7 @@
       "elderly_guideline_hi": "गर्भवती, अस्वस्थ अथवा बुजुर्ग सुहागिनों हेतु सरगी के बाद जल, दूध या चाय लेने की शास्त्र सम्मत छूट है। स्वास्थ्य संकट में उपवास न रखें।",
       "parana_timing_hi": "रात्रि में चंद्रदेव को अर्घ्य देकर, पति के हाथों जल और मिष्ठान्न ग्रहण कर पारण करें।"
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Siva-parvati-by-raja-ravi-varma.jpg/400px-Siva-parvati-by-raja-ravi-varma.jpg"
+    "image_url": "/images/deities/parvati.jpg"
   },
   {
     "id": "pitru_paksha_shraddha",
@@ -322,7 +322,7 @@
     ],
     "significance_hi": "पितृ ऋण से मुक्ति, पूर्वजों की आत्मा को शांति, वंश वृद्धि, और पारिवारिक सुख-समृद्धि।",
     "parana_guidelines_hi": "ब्राह्मणों और पंचबलि को भोजन कराने के पश्चात परिवार भोजन करे।",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Vishnu.jpg/640px-Vishnu.jpg"
+    "image_url": "/images/deities/vishnu.jpg"
   },
   {
     "id": "chhath_puja",
@@ -361,7 +361,7 @@
       "elderly_guideline_hi": "बुजुर्ग व्रती यदि ३६ घंटे निर्जल नहीं रह सकते तो वे केवल सूर्य अर्घ्य सेवा में सम्मिलित हों अथवा सजल उपवास रखें।",
       "parana_timing_hi": "सप्तमी के प्रातःकाल उदीयमान सूर्य को अर्घ्य देने के पश्चात ठेकुआ प्रसाद और अदरक-जल से पारण।"
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Surya_Deity.jpg/640px-Surya_Deity.jpg"
+    "image_url": "/images/deities/surya.jpg"
   },
   {
     "id": "brihaspativar_vrata",
@@ -398,7 +398,7 @@
       "elderly_guideline_hi": "बिना नमक के एक समय भोजन में चने की दाल और रोटी ले सकते हैं।",
       "parana_timing_hi": "सायंकाल दीप दर्शन व आरती के बाद पारण करें।"
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Vishnu.jpg/640px-Vishnu.jpg"
+    "image_url": "/images/deities/vishnu.jpg"
   },
   {
     "id": "santoshi_mata",
@@ -438,6 +438,6 @@
       "elderly_guideline_hi": "खट्टी चीजें न खाएं, शेष सात्विक भोजन एक समय ले सकते हैं।",
       "parana_timing_hi": "१६ शुक्रवार पूर्ण होने पर उद्यापन में ८ बालकों को भोजन कराकर व्रत खोलें।"
     },
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Durga_by_Raja_Ravi_Varma.jpg/400px-Durga_by_Raja_Ravi_Varma.jpg"
+    "image_url": "/images/deities/durga.jpg"
   }
 ]

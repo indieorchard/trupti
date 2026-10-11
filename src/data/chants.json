@@ -15,7 +15,7 @@
     "benefit_hi": "बुद्धि की निर्मलता, स्मरण शक्ति की वृद्धि, मानसिक शांति और आत्मिक प्रकाश की प्राप्ति।",
     "audio_url": "https://archive.org/download/GayatriMantra108Times/GayatriMantra108Times.mp3",
     "youtube_id": "K8fW7Vv0b9k",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Gayatri_Mata.jpg/640px-Gayatri_Mata.jpg"
+    "image_url": "/images/deities/gayatri.jpg"
   },
   {
     "id": "maha_mrityunjaya_mantra",
@@ -33,7 +33,7 @@
     "benefit_hi": "अकाल मृत्यु से रक्षा, गंभीर रोगों से मुक्ति, भय का नाश और शारीरिक-मानसिक स्वास्थ्य।",
     "audio_url": "https://archive.org/download/MahamrityunjayaMantra108Times/MahamrityunjayaMantra108Times.mp3",
     "youtube_id": "c8_X4m7Q2wA",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg/400px-Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg"
+    "image_url": "/images/deities/shiva.jpg"
   },
   {
     "id": "shanti_path",
@@ -50,7 +50,7 @@
     "recommended_count": 1,
     "benefit_hi": "पर्यावरण और मन में परम शांति, मानसिक तनाव व अनिद्रा का निवारण।",
     "youtube_id": "W6_Y4r9X0cE",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Vishnu.jpg/640px-Vishnu.jpg"
+    "image_url": "/images/deities/vishnu.jpg"
   },
   {
     "id": "hare_krishna_mahamantra",
@@ -67,7 +67,7 @@
     "recommended_count": 108,
     "benefit_hi": "कलियुग में समस्त पापों से मुक्ति, चित्त के दर्पण की निर्मलता और दिव्य आनंद।",
     "youtube_id": "K8_R7w2M9aC",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Yashoda_with_Krishna%2C_Raja_Ravi_Varma.jpg/400px-Yashoda_with_Krishna%2C_Raja_Ravi_Varma.jpg"
+    "image_url": "/images/deities/krishna.jpg"
   },
   {
     "id": "om_namah_shivaya",
@@ -84,7 +84,7 @@
     "recommended_count": 108,
     "benefit_hi": "अहंकार का शमन, प्राणों में स्थिरता, भय मुक्ति और मोक्ष प्राप्ति।",
     "youtube_id": "P9c4u_X_G9k",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg/400px-Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg"
+    "image_url": "/images/deities/shiva.jpg"
   },
   {
     "id": "om_namo_narayanaya",
@@ -101,7 +101,7 @@
     "recommended_count": 108,
     "benefit_hi": "वैकुंठ की प्राप्ति, पारिवारिक सुख-शांति, दरिद्रता का नाश।",
     "youtube_id": "CgV7VqJ8_lU",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Vishnu.jpg/640px-Vishnu.jpg"
+    "image_url": "/images/deities/vishnu.jpg"
   },
   {
     "id": "om_namo_bhagavate_vasudevaya",
@@ -118,7 +118,7 @@
     "recommended_count": 108,
     "benefit_hi": "ध्रुव जी को नारद जी द्वारा प्रदत्त मोक्षप्रद सिद्ध मंत्र।",
     "youtube_id": "7v-m8aW9T0E",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Yashoda_with_Krishna%2C_Raja_Ravi_Varma.jpg/400px-Yashoda_with_Krishna%2C_Raja_Ravi_Varma.jpg"
+    "image_url": "/images/deities/krishna.jpg"
   },
   {
     "id": "vakratunda_mahakaya",
@@ -135,7 +135,7 @@
     "recommended_count": 3,
     "benefit_hi": "दिन की शुरुआत और शुभ कार्यों के प्रारंभ में समस्त विघ्नों का शमन।",
     "youtube_id": "P9_M4k7W2bA",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Ganapati1.jpg/400px-Ganapati1.jpg"
+    "image_url": "/images/deities/ganesha.jpg"
   },
   {
     "id": "hanuman_chalisa",
@@ -153,7 +153,7 @@
     "benefit_hi": "समस्त संकटों से मुक्ति, आत्मबल, आरोग्य और श्री राम की कृपा।",
     "audio_url": "https://archive.org/download/HanumanChalisaGulshanKumar/HanumanChalisaGulshanKumar.mp3",
     "youtube_id": "AETFvQonfV8",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Hanuman_painting_c1920.jpg/400px-Hanuman_painting_c1920.jpg"
+    "image_url": "/images/deities/hanuman.jpg"
   },
   {
     "id": "shiv_chalisa",
@@ -170,7 +170,7 @@
     "recommended_count": 1,
     "benefit_hi": "मानसिक शांति, सावन सोमवार व्रत में पाठ, शिव कृपा।",
     "youtube_id": "Q5_T7k_Z9aM",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg/400px-Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg"
+    "image_url": "/images/deities/shiva.jpg"
   },
   {
     "id": "durga_chalisa",
@@ -187,7 +187,7 @@
     "recommended_count": 1,
     "benefit_hi": "भयमुक्ति, पारिवारिक सुख, नवरात्र में नित्य पाठ।",
     "youtube_id": "d9_V7w2Q4aK",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Durga_by_Raja_Ravi_Varma.jpg/400px-Durga_by_Raja_Ravi_Varma.jpg"
+    "image_url": "/images/deities/durga.jpg"
   },
   {
     "id": "ganesh_chalisa",
@@ -204,7 +204,7 @@
     "recommended_count": 1,
     "benefit_hi": "विद्या, बुद्धि, व्यापार में सफलता और विघ्न निवारण।",
     "youtube_id": "P9_M4k7W2bA",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Ganapati1.jpg/400px-Ganapati1.jpg"
+    "image_url": "/images/deities/ganesha.jpg"
   },
   {
     "id": "krishna_chalisa",
@@ -221,7 +221,7 @@
     "recommended_count": 1,
     "benefit_hi": "संतान सुख, प्रेम भाव, कृष्ण जन्मोत्सव पर पाठ।",
     "youtube_id": "c8_X4m7Q2wB",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Yashoda_with_Krishna%2C_Raja_Ravi_Varma.jpg/400px-Yashoda_with_Krishna%2C_Raja_Ravi_Varma.jpg"
+    "image_url": "/images/deities/krishna.jpg"
   },
   {
     "id": "ram_chalisa",
@@ -238,7 +238,7 @@
     "recommended_count": 1,
     "benefit_hi": "धर्मनिष्ठा, पारिवारिक शांति, राम नवमी पर पाठ।",
     "youtube_id": "aG9_W7k3Q8k",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Rama_with_bow_and_arrow.jpg/640px-Rama_with_bow_and_arrow.jpg"
+    "image_url": "/images/deities/rama.jpg"
   },
   {
     "id": "lakshmi_chalisa",
@@ -255,7 +255,7 @@
     "recommended_count": 1,
     "benefit_hi": "दीपावली, शुक्रवार व्रत, आर्थिक संकट निवारण।",
     "youtube_id": "k7_Y9w4M0bC",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Raja_Ravi_Varma_-_Goddess_Lakshmi%2C_1896.jpg/400px-Raja_Ravi_Varma_-_Goddess_Lakshmi%2C_1896.jpg"
+    "image_url": "/images/deities/lakshmi.jpg"
   },
   {
     "id": "saraswati_chalisa",
@@ -272,7 +272,7 @@
     "recommended_count": 1,
     "benefit_hi": "परीक्षा में सफलता, एकाग्रता, वसंत पंचमी पर पाठ।",
     "youtube_id": "L7_W8k3N0aP",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Saraswati_Raja_Ravi_Varma.jpg/640px-Saraswati_Raja_Ravi_Varma.jpg"
+    "image_url": "/images/deities/saraswati.jpg"
   },
   {
     "id": "shani_chalisa",
@@ -289,7 +289,7 @@
     "recommended_count": 1,
     "benefit_hi": "शनिवार संध्या पीपल के नीचे दीपक जलाकर पाठ करने से शनि पीड़ा शांत होती है।",
     "youtube_id": "N9_X7k3W1bM",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Shani_Dev.jpg/640px-Shani_Dev.jpg"
+    "image_url": "/images/deities/shani.jpg"
   },
   {
     "id": "gayatri_chalisa",
@@ -306,7 +306,7 @@
     "recommended_count": 1,
     "benefit_hi": "प्रातःकाल संध्यावंदन के पश्चात पाठ।",
     "youtube_id": "K8fW7Vv0b9k",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Gayatri_Mata.jpg/640px-Gayatri_Mata.jpg"
+    "image_url": "/images/deities/gayatri.jpg"
   },
   {
     "id": "shiva_tandava_stotra",
@@ -323,7 +323,7 @@
     "recommended_count": 1,
     "benefit_hi": "आत्मबल, वाणी में ओज, भय का नाश, शिव साक्षात्कार।",
     "youtube_id": "jV57Vb-Nq8A",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg/400px-Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg"
+    "image_url": "/images/deities/shiva.jpg"
   },
   {
     "id": "mahishasura_mardini_stotra",
@@ -340,7 +340,7 @@
     "recommended_count": 1,
     "benefit_hi": "शत्रु पराजय, अवसाद व दुर्बलता का नाश, विजय प्राप्ति।",
     "youtube_id": "N8_Y7w3Q1aA",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Durga_by_Raja_Ravi_Varma.jpg/400px-Durga_by_Raja_Ravi_Varma.jpg"
+    "image_url": "/images/deities/durga.jpg"
   },
   {
     "id": "aditya_hridaya_stotra",
@@ -357,7 +357,7 @@
     "recommended_count": 1,
     "benefit_hi": "हृदय रोग निवारण, आत्मविश्वास में वृद्धि, समस्त शत्रुओं और रोगों पर विजय।",
     "youtube_id": "Konark_Sun_T7",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Surya_Deity.jpg/640px-Surya_Deity.jpg"
+    "image_url": "/images/deities/surya.jpg"
   },
   {
     "id": "vishnu_sahasranama",
@@ -374,7 +374,7 @@
     "recommended_count": 1,
     "benefit_hi": "ग्रह दोष शांति, असाध्य रोगों का शमन, मन की एकाग्रता और मोक्ष।",
     "youtube_id": "X7_N9k2M1aA",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Vishnu.jpg/640px-Vishnu.jpg"
+    "image_url": "/images/deities/vishnu.jpg"
   },
   {
     "id": "lingashtakam",
@@ -391,7 +391,7 @@
     "recommended_count": 1,
     "benefit_hi": "शिवलिंग अभिषेक के समय पाठ, पापों का क्षय, मानसिक शांति।",
     "youtube_id": "b6V-4kM8vT0",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg/400px-Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg"
+    "image_url": "/images/deities/shiva.jpg"
   },
   {
     "id": "bilvashtakam",
@@ -408,7 +408,7 @@
     "recommended_count": 1,
     "benefit_hi": "शिवजी को बेलपत्र चढ़ाते समय पाठ करने से अनंत कोटि यज्ञों का फल।",
     "youtube_id": "V7w9q_L1n-s",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg/400px-Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg"
+    "image_url": "/images/deities/shiva.jpg"
   },
   {
     "id": "rudrashtakam",
@@ -425,7 +425,7 @@
     "recommended_count": 1,
     "benefit_hi": "महादेव की विशेष कृपा, सावन में नित्य पाठ, शनि पीड़ा शांति।",
     "youtube_id": "kQ7uG_F_B4M",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg/400px-Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg"
+    "image_url": "/images/deities/shiva.jpg"
   },
   {
     "id": "madhurashtakam",
@@ -442,7 +442,7 @@
     "recommended_count": 1,
     "benefit_hi": "भगवान के प्रति अनन्य प्रेम, मन की प्रसन्नता, तनाव मुक्ति।",
     "youtube_id": "c8_X4m7Q2wB",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Yashoda_with_Krishna%2C_Raja_Ravi_Varma.jpg/400px-Yashoda_with_Krishna%2C_Raja_Ravi_Varma.jpg"
+    "image_url": "/images/deities/krishna.jpg"
   },
   {
     "id": "achyutashtakam",
@@ -459,7 +459,7 @@
     "recommended_count": 1,
     "benefit_hi": "प्रातःकाल पाठ करने से चित्त प्रसन्न होता है और समस्त संताप मिटते हैं।",
     "youtube_id": "K8_R7w2M9aC",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Yashoda_with_Krishna%2C_Raja_Ravi_Varma.jpg/400px-Yashoda_with_Krishna%2C_Raja_Ravi_Varma.jpg"
+    "image_url": "/images/deities/krishna.jpg"
   },
   {
     "id": "kanakadhara_stotra",
@@ -476,7 +476,7 @@
     "recommended_count": 1,
     "benefit_hi": "ऋण मुक्ति, दरिद्रता का नाश, व्यापार व गृह में समृद्धि।",
     "youtube_id": "k7_Y9w4M0bC",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Raja_Ravi_Varma_-_Goddess_Lakshmi%2C_1896.jpg/400px-Raja_Ravi_Varma_-_Goddess_Lakshmi%2C_1896.jpg"
+    "image_url": "/images/deities/lakshmi.jpg"
   },
   {
     "id": "kaal_bhairav_ashtakam",
@@ -493,7 +493,7 @@
     "recommended_count": 1,
     "benefit_hi": "भय, प्रेतबाधा और शत्रुओं से मुक्ति; काशी यात्रा के समय अनिवार्य पाठ।",
     "youtube_id": "Q5_T7k_Z9aM",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Bhairava_painting.jpg/640px-Bhairava_painting.jpg"
+    "image_url": "/images/deities/kaal_bhairav.jpg"
   },
   {
     "id": "sankata_nashana_ganesha",
@@ -510,7 +510,7 @@
     "recommended_count": 3,
     "benefit_hi": "विद्यार्थियों को विद्या, धनार्थियों को धन और पुत्रार्थियों को सुयोग्य संतान।",
     "youtube_id": "P9_M4k7W2bA",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Ganapati1.jpg/400px-Ganapati1.jpg"
+    "image_url": "/images/deities/ganesha.jpg"
   },
   {
     "id": "ganesha_pancharatnam",
@@ -527,7 +527,7 @@
     "recommended_count": 1,
     "benefit_hi": "आरोग्य, दीर्घायु और कार्य सिद्धि।",
     "youtube_id": "P9_M4k7W2bA",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Ganapati1.jpg/400px-Ganapati1.jpg"
+    "image_url": "/images/deities/ganesha.jpg"
   },
   {
     "id": "ganesha_atharvashirsha",
@@ -544,7 +544,7 @@
     "recommended_count": 1,
     "benefit_hi": "संकष्टी चतुर्थी पर दुर्वा चढ़ाकर 21 बार पाठ करने से समस्त कामनाओं की सिद्धि।",
     "youtube_id": "P9_M4k7W2bA",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Ganapati1.jpg/400px-Ganapati1.jpg"
+    "image_url": "/images/deities/ganesha.jpg"
   },
   {
     "id": "rama_raksha_stotra",
@@ -561,7 +561,7 @@
     "recommended_count": 1,
     "benefit_hi": "रोग, संकट, नजर दोष और शत्रुभय से अभेद्य सुरक्षा।",
     "youtube_id": "aG9_W7k3Q8k",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Rama_with_bow_and_arrow.jpg/640px-Rama_with_bow_and_arrow.jpg"
+    "image_url": "/images/deities/rama.jpg"
   },
   {
     "id": "lakshmi_ashtakam",
@@ -578,7 +578,7 @@
     "recommended_count": 1,
     "benefit_hi": "शुक्रवार को पाठ करने से घर में महालक्ष्मी का स्थाई वास।",
     "youtube_id": "k7_Y9w4M0bC",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Raja_Ravi_Varma_-_Goddess_Lakshmi%2C_1896.jpg/400px-Raja_Ravi_Varma_-_Goddess_Lakshmi%2C_1896.jpg"
+    "image_url": "/images/deities/lakshmi.jpg"
   },
   {
     "id": "saraswati_vandana",
@@ -595,7 +595,7 @@
     "recommended_count": 1,
     "benefit_hi": "विद्या, कला, संगीत और स्मरण शक्ति की सिद्धि।",
     "youtube_id": "L7_W8k3N0aP",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Saraswati_Raja_Ravi_Varma.jpg/640px-Saraswati_Raja_Ravi_Varma.jpg"
+    "image_url": "/images/deities/saraswati.jpg"
   },
   {
     "id": "aarti_kunj_bihari_ki",
@@ -612,7 +612,7 @@
     "recommended_count": 1,
     "benefit_hi": "सायंकाल दीपक जलाकर आरती करने से घर में सुख-शांति और आनंद।",
     "youtube_id": "T7_M9w3K0aC",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Yashoda_with_Krishna%2C_Raja_Ravi_Varma.jpg/400px-Yashoda_with_Krishna%2C_Raja_Ravi_Varma.jpg"
+    "image_url": "/images/deities/krishna.jpg"
   },
   {
     "id": "om_jai_jagdish_hare",
@@ -629,7 +629,7 @@
     "recommended_count": 1,
     "benefit_hi": "समस्त विघ्नों और दुःखों का क्षण भर में निवारण, गृह शांति।",
     "youtube_id": "7v-m8aW9T0E",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Vishnu.jpg/640px-Vishnu.jpg"
+    "image_url": "/images/deities/vishnu.jpg"
   },
   {
     "id": "jai_ganesh_deva",
@@ -646,7 +646,7 @@
     "recommended_count": 1,
     "benefit_hi": "किसी भी पूजा और अनुष्ठान के प्रारंभ में की जाने वाली अनिवार्य आरती।",
     "youtube_id": "P9_M4k7W2bA",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Ganapati1.jpg/400px-Ganapati1.jpg"
+    "image_url": "/images/deities/ganesha.jpg"
   },
   {
     "id": "om_jai_shiv_omkara",
@@ -663,7 +663,7 @@
     "recommended_count": 1,
     "benefit_hi": "प्रदोष काल और सोमवार को करने से शिवलोक की प्राप्ति।",
     "youtube_id": "kQ7uG_F_B4M",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg/400px-Shiva_as_Lord_of_the_Dance_%28Nataraja%29.jpg"
+    "image_url": "/images/deities/shiva.jpg"
   },
   {
     "id": "aarti_kije_hanuman_lala_ki",
@@ -680,7 +680,7 @@
     "recommended_count": 1,
     "benefit_hi": "मंगलवार और शनिवार को संध्या आरती, भूत-प्रेत और रोग-दोष से मुक्ति।",
     "youtube_id": "AETFvQonfV8",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Hanuman_painting_c1920.jpg/400px-Hanuman_painting_c1920.jpg"
+    "image_url": "/images/deities/hanuman.jpg"
   },
   {
     "id": "ambe_tu_hai_jagdambe_kali",
@@ -697,7 +697,7 @@
     "recommended_count": 1,
     "benefit_hi": "नवरात्र में घट स्थापना व आरती पर नित्य गान।",
     "youtube_id": "d9_V7w2Q4aK",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Durga_by_Raja_Ravi_Varma.jpg/400px-Durga_by_Raja_Ravi_Varma.jpg"
+    "image_url": "/images/deities/durga.jpg"
   },
   {
     "id": "om_jai_lakshmi_mata",
@@ -714,7 +714,7 @@
     "recommended_count": 1,
     "benefit_hi": "दीपावली पूजन और शुक्रवार संध्या आरती।",
     "youtube_id": "k7_Y9w4M0bC",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Raja_Ravi_Varma_-_Goddess_Lakshmi%2C_1896.jpg/400px-Raja_Ravi_Varma_-_Goddess_Lakshmi%2C_1896.jpg"
+    "image_url": "/images/deities/lakshmi.jpg"
   },
   {
     "id": "shri_ramachandra_kripalu",
@@ -731,7 +731,7 @@
     "recommended_count": 1,
     "benefit_hi": "राम नवमी, संध्या समय और रामायण पाठ के समापन पर गाने से परम शांति की प्राप्ति।",
     "youtube_id": "aG9_W7k3Q8k",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Rama_with_bow_and_arrow.jpg/640px-Rama_with_bow_and_arrow.jpg"
+    "image_url": "/images/deities/rama.jpg"
   },
   {
     "id": "ganga_aarti",
@@ -748,7 +748,7 @@
     "recommended_count": 1,
     "benefit_hi": "जन्म-जन्मांतर के पापों का शमन, गंगा दर्शन का फल।",
     "youtube_id": "W6_Y4r9X0cE",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Ravi_Varma-Descent_of_Ganga.jpg/400px-Ravi_Varma-Descent_of_Ganga.jpg"
+    "image_url": "/images/deities/ganga.jpg"
   },
   {
     "id": "satyanarayan_aarti",
@@ -765,7 +765,7 @@
     "recommended_count": 1,
     "benefit_hi": "कथा की पूर्णता और भगवान का आशीर्वाद।",
     "youtube_id": "7v-m8aW9T0E",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Vishnu.jpg/640px-Vishnu.jpg"
+    "image_url": "/images/deities/vishnu.jpg"
   },
   {
     "id": "shani_aarti",
@@ -782,7 +782,7 @@
     "recommended_count": 1,
     "benefit_hi": "साढ़ेसाती और ढैय्या की शांति।",
     "youtube_id": "N9_X7k3W1bM",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Shani_Dev.jpg/640px-Shani_Dev.jpg"
+    "image_url": "/images/deities/shani.jpg"
   },
   {
     "id": "saraswati_aarti",
@@ -799,7 +799,7 @@
     "recommended_count": 1,
     "benefit_hi": "वसंत पंचमी और नित्य प्रातः पूजन।",
     "youtube_id": "L7_W8k3N0aP",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Saraswati_Raja_Ravi_Varma.jpg/640px-Saraswati_Raja_Ravi_Varma.jpg"
+    "image_url": "/images/deities/saraswati.jpg"
   },
   {
     "id": "sai_aarti",
@@ -816,7 +816,7 @@
     "recommended_count": 1,
     "benefit_hi": "श्रद्धा और सबूरी की भावना, गुरुवार को विशेष फल।",
     "youtube_id": "T8_R9w4M1aK",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Lord_Dattatreya.jpg/640px-Lord_Dattatreya.jpg"
+    "image_url": "/images/deities/dattatreya.jpg"
   },
   {
     "id": "tulsi_aarti",
@@ -833,7 +833,7 @@
     "recommended_count": 1,
     "benefit_hi": "गृह में वास्तु दोष निवारण, सकारात्मक ऊर्जा, कार्तिक मास में विशेष फल।",
     "youtube_id": "c8_X4m7Q2wB",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Tulsi_plant_2.jpg/400px-Tulsi_plant_2.jpg"
+    "image_url": "/images/deities/tulsi.jpg"
   },
   {
     "id": "surya_aarti",
@@ -850,6 +850,6 @@
     "recommended_count": 1,
     "benefit_hi": "रविवार को अर्घ्यदान के पश्चात पाठ से नेत्र व चर्म रोग दूर होते हैं।",
     "youtube_id": "Konark_Sun_T7",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Surya_Deity.jpg/640px-Surya_Deity.jpg"
+    "image_url": "/images/deities/surya.jpg"
   }
 ]

@@ -32,7 +32,7 @@
       }
     ],
     "archive_url": "https://archive.org/details/RigVedaSamhitaSanskritHindi",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Rigveda_MS2097.jpg/400px-Rigveda_MS2097.jpg"
+    "image_url": "/images/scriptures/rigveda.jpg"
   },
   {
     "id": "samaveda",
@@ -61,7 +61,7 @@
       }
     ],
     "archive_url": "https://archive.org/details/SamaVedaSanskritHindi",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/1672_CE_manuscript_copy%2C_10th_century_BCE_Samaveda_Kauthuma_Samhita_Veyagana%2C_Schoyen_Collection_Norway.jpg/400px-1672_CE_manuscript_copy%2C_10th_century_BCE_Samaveda_Kauthuma_Samhita_Veyagana%2C_Schoyen_Collection_Norway.jpg"
+    "image_url": "/images/scriptures/samaveda.jpg"
   },
   {
     "id": "yajurveda",
@@ -96,7 +96,7 @@
       }
     ],
     "archive_url": "https://archive.org/details/YajurVedaSanskritHindiGitaPress",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/18th-century_Yajurveda_manuscript_folio%2C_page_1%2C_Raghunath_temple_Jammu_archives.jpg/400px-18th-century_Yajurveda_manuscript_folio%2C_page_1%2C_Raghunath_temple_Jammu_archives.jpg"
+    "image_url": "/images/scriptures/yajurveda.jpg"
   },
   {
     "id": "atharvaveda",
@@ -125,7 +125,7 @@
       }
     ],
     "archive_url": "https://archive.org/details/AtharvaVedaSanskritHindi",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Atharva-Veda_samhita_page_471_illustration.png/400px-Atharva-Veda_samhita_page_471_illustration.png"
+    "image_url": "/images/scriptures/atharvaveda.jpg"
   },
   {
     "id": "vishnu_purana",
@@ -148,7 +148,7 @@
       }
     ],
     "archive_url": "https://archive.org/details/VishnuPuranaGitaPressHindi",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Vishnu.jpg/640px-Vishnu.jpg"
+    "image_url": "/images/scriptures/vishnu_purana.jpg"
   },
   {
     "id": "shiva_purana",
@@ -171,7 +171,7 @@
       }
     ],
     "archive_url": "https://archive.org/details/ShivaPuranaGitaPressHindi",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/The_Creation_of_the_Cosmic_Ocean_and_the_Elements_%28detail%29%2C_folio_3_from_the_Shiva_Purana%2C_c._1828.jpg/400px-The_Creation_of_the_Cosmic_Ocean_and_the_Elements_%28detail%29%2C_folio_3_from_the_Shiva_Purana%2C_c._1828.jpg"
+    "image_url": "/images/scriptures/shiva_purana.jpg"
   },
   {
     "id": "bhagavata_purana",
@@ -200,7 +200,7 @@
       }
     ],
     "archive_url": "https://archive.org/details/ShrimadBhagavataPuranaGitaPressHindi",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bhagavad_Gita%2C_a_19th_century_manuscript.jpg/400px-Bhagavad_Gita%2C_a_19th_century_manuscript.jpg"
+    "image_url": "/images/scriptures/bhagavad_gita.jpg"
   },
   {
     "id": "garuda_purana",
@@ -229,7 +229,7 @@
       }
     ],
     "archive_url": "https://archive.org/details/GarudaPuranaGitaPressHindi",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Manuscript_of_Garuda_Purana%2C_Sanskrit_language%2C_Newar_script%2C_1712_CE.jpg/400px-Manuscript_of_Garuda_Purana%2C_Sanskrit_language%2C_Newar_script%2C_1712_CE.jpg"
+    "image_url": "/images/scriptures/garuda_purana.jpg"
   },
   {
     "id": "markandeya_purana",
@@ -252,7 +252,7 @@
       }
     ],
     "archive_url": "https://archive.org/details/MarkandeyaPuranaHindiGitaPress",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bhagavad_Gita%2C_a_19th_century_manuscript.jpg/400px-Bhagavad_Gita%2C_a_19th_century_manuscript.jpg"
+    "image_url": "/images/scriptures/bhagavad_gita.jpg"
   },
   {
     "id": "skanda_purana",
@@ -281,7 +281,7 @@
       }
     ],
     "archive_url": "https://archive.org/details/SkandaPuranaCompleteHindi",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bhagavad_Gita%2C_a_19th_century_manuscript.jpg/400px-Bhagavad_Gita%2C_a_19th_century_manuscript.jpg"
+    "image_url": "/images/scriptures/bhagavad_gita.jpg"
   },
   {
     "id": "padma_purana",
@@ -304,7 +304,7 @@
       }
     ],
     "archive_url": "https://archive.org/details/PadmaPuranaGitaPressHindi",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bhagavad_Gita%2C_a_19th_century_manuscript.jpg/400px-Bhagavad_Gita%2C_a_19th_century_manuscript.jpg"
+    "image_url": "/images/scriptures/bhagavad_gita.jpg"
   },
   {
     "id": "katha_upanishad",
@@ -328,7 +328,7 @@
     ],
     "mahavakya": "उत्तिष्ठत जाग्रत प्राप्य वरान्निबोधत",
     "archive_url": "https://archive.org/details/KathaUpanishadGitaPressHindi",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bhagavad_Gita%2C_a_19th_century_manuscript.jpg/400px-Bhagavad_Gita%2C_a_19th_century_manuscript.jpg"
+    "image_url": "/images/scriptures/bhagavad_gita.jpg"
   },
   {
     "id": "mandukya_upanishad",
@@ -352,7 +352,7 @@
     ],
     "mahavakya": "अयमात्मा ब्रह्म (Ayam Atma Brahma - This Self is Brahman)",
     "archive_url": "https://archive.org/details/MandukyaUpanishadGitaPressHindi",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bhagavad_Gita%2C_a_19th_century_manuscript.jpg/400px-Bhagavad_Gita%2C_a_19th_century_manuscript.jpg"
+    "image_url": "/images/scriptures/bhagavad_gita.jpg"
   },
   {
     "id": "chandogya_upanishad",
@@ -376,7 +376,7 @@
     ],
     "mahavakya": "तत्त्वमसि (Tat Tvam Asi - That Thou Art)",
     "archive_url": "https://archive.org/details/ChandogyaUpanishadGitaPressHindi",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bhagavad_Gita%2C_a_19th_century_manuscript.jpg/400px-Bhagavad_Gita%2C_a_19th_century_manuscript.jpg"
+    "image_url": "/images/scriptures/bhagavad_gita.jpg"
   },
   {
     "id": "brihadaranyaka_upanishad",
@@ -406,7 +406,7 @@
     ],
     "mahavakya": "अहं ब्रह्मास्मि (Aham Brahmasmi - I am the Supreme Brahman)",
     "archive_url": "https://archive.org/details/BrihadaranyakaUpanishadGitaPressHindi",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bhagavad_Gita%2C_a_19th_century_manuscript.jpg/400px-Bhagavad_Gita%2C_a_19th_century_manuscript.jpg"
+    "image_url": "/images/scriptures/bhagavad_gita.jpg"
   },
   {
     "id": "ramayana",
@@ -429,7 +429,7 @@
       }
     ],
     "archive_url": "https://archive.org/details/ValmikiRamayanaGitaPressHindi",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bhagavad_Gita%2C_a_19th_century_manuscript.jpg/400px-Bhagavad_Gita%2C_a_19th_century_manuscript.jpg"
+    "image_url": "/images/scriptures/bhagavad_gita.jpg"
   },
   {
     "id": "mahabharata",
@@ -458,6 +458,6 @@
       }
     ],
     "archive_url": "https://archive.org/details/MahabharataGitaPressHindiComplete",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bhagavad_Gita%2C_a_19th_century_manuscript.jpg/400px-Bhagavad_Gita%2C_a_19th_century_manuscript.jpg"
+    "image_url": "/images/scriptures/bhagavad_gita.jpg"
   }
 ]
