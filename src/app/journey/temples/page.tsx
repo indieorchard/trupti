@@ -114,114 +114,124 @@ export default function TemplesPage() {
               id={temple.id}
               className="card hover:shadow-md transition-shadow border-cream-200 bg-white overflow-hidden p-4 space-y-3"
             >
-              {/* Image & Header */}
-              <div className="relative w-full h-44 sm:h-48 rounded-2xl overflow-hidden shadow-xs border border-cream-200 group">
+              {/* Temple Image — clean, no overlays */}
+              <div className="w-full h-44 sm:h-48 rounded-xl overflow-hidden border border-cream-200">
                 <SmartImage
                   src={imgUrl}
                   alt={temple.name}
                   aspectRatio="wide"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                  className="w-full h-full object-cover"
                 />
-                {/* Overlay Badge for Circuit — stack vertically to avoid overlap */}
-                <div className="absolute top-2 left-2 flex flex-col gap-1 max-w-[60%]">
-                  {temple.circuit.map(cir => (
-                    <span
-                      key={cir}
-                      className="inline-block px-2 py-0.5 rounded-full text-sm font-bold bg-white/90 backdrop-blur-sm text-saffron-800 shadow-sm font-hindi leading-snug"
-                    >
-                      {cir === 'jyotirlinga' ? '🕉️ ज्योतिर्लिंग' : cir === 'char_dham' ? '🪷 चार धाम' : cir === 'sapta_puri' ? '✨ मोक्ष पुरी' : '🛕 महातीर्थ'}
-                    </span>
-                  ))}
-                </div>
-
-                {/* Floating Star Button */}
-                <div className="absolute top-2 right-2 bg-white/90 backdrop-blur-sm rounded-xl shadow-sm">
-                  <FavoriteButton
-                    item={{
-                      id: temple.id,
-                      type: 'temple',
-                      title_hi: temple.name,
-                      title_en: temple.name,
-                      subtitle_hi: `${temple.city}, ${temple.state}`,
-                      subtitle_en: `${temple.city}, ${temple.state}`,
-                      url: `/journey/temples#${temple.id}`,
-                      image_url: imgUrl,
-                      badge: '🛕 तीर्थ व मंदिर'
-                    }}
-                    className="p-1.5"
-                  />
-                </div>
               </div>
 
-              {/* Title & Location */}
-              <div className="space-y-1 pt-1">
-                <h2 className="font-hindi text-lg font-bold text-text-primary leading-snug">
-                  {temple.name}
-                </h2>
-                {temple.sanskrit_name && (
-                  <p className="font-hindi text-saffron-700 text-sm">
-                    {temple.sanskrit_name}
-                  </p>
-                )}
-                <div className="flex flex-col gap-0.5 text-xs text-text-muted mt-1">
-                  <span className="flex items-center gap-1">
-                    <MapPin size={13} className="text-saffron-600 flex-shrink-0" />
-                    {temple.city}, {temple.state}
+              {/* Circuit badges — below image, never overlapping */}
+              <div className="flex flex-wrap gap-1.5">
+                {temple.circuit.map(cir => (
+                  <span
+                    key={cir}
+                    className="px-2 py-0.5 rounded-full text-sm font-bold bg-saffron-50 text-saffron-800 border border-saffron-200 font-hindi"
+                  >
+                    {cir === 'jyotirlinga' ? '🕉️ ज्योतिर्लिंग' : cir === 'char_dham' ? '🪷 चार धाम' : cir === 'sapta_puri' ? '✨ मोक्ष पुरी' : '🛕 महातीर्थ'}
                   </span>
-                  <span className="flex items-center gap-1 font-medium text-text-secondary">
-                    🕉️ {temple.deity_name}
-                  </span>
+                ))}
+              </div>
+
+              {/* Title + Star — side by side */}
+              <div className="flex items-start justify-between gap-2">
+                <div className="min-w-0 flex-1">
+                  <h2 className="font-hindi text-lg font-bold text-text-primary leading-snug">
+                    {temple.name}
+                  </h2>
+                  {temple.sanskrit_name && (
+                    <p className="font-hindi text-base text-saffron-700">
+                      {temple.sanskrit_name}
+                    </p>
+                  )}
                 </div>
+                <FavoriteButton
+                  item={{
+                    id: temple.id,
+                    type: 'temple',
+                    title_hi: temple.name,
+                    title_en: temple.name,
+                    subtitle_hi: `${temple.city}, ${temple.state}`,
+                    subtitle_en: `${temple.city}, ${temple.state}`,
+                    url: `/journey/temples#${temple.id}`,
+                    image_url: imgUrl,
+                    badge: '🛕 तीर्थ व मंदिर'
+                  }}
+                  className="p-1.5 flex-shrink-0"
+                />
+              </div>
+
+              {/* Location & Deity — stacked, no collision */}
+              <div className="flex flex-col gap-0.5 font-hindi text-base text-text-muted">
+                <span className="flex items-center gap-1">
+                  <MapPin size={14} className="text-saffron-600 flex-shrink-0" />
+                  {temple.city}, {temple.state}
+                </span>
+                <span className="flex items-center gap-1 font-medium text-text-secondary">
+                  🕉️ {t(temple.deity_name_hi || temple.deity_name, temple.deity_name)}
+                </span>
               </div>
 
               {/* Significance */}
-              <p className="text-base text-text-secondary leading-relaxed">
+              <p className="font-hindi text-base text-text-secondary leading-relaxed">
                 {t(temple.significance_hi, temple.significance_en)}
               </p>
 
               {/* Timings & Best Season */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs bg-cream-50 p-2.5 rounded-xl border border-cream-200">
+              <div className="space-y-2 font-hindi text-base bg-cream-50 p-3 rounded-xl border border-cream-200">
                 {temple.darshan_timings && (
-                  <div className="flex items-center gap-1.5 text-text-secondary">
-                    <Clock size={14} className="text-saffron-600 flex-shrink-0" />
-                    <span><strong>{t('दर्शन समय', 'Timings')}:</strong> {temple.darshan_timings}</span>
+                  <div className="flex items-start gap-2 text-text-secondary">
+                    <Clock size={16} className="text-saffron-600 flex-shrink-0 mt-0.5" />
+                    <span>
+                      <strong>{t('दर्शन समय', 'Timings')}:</strong>{' '}
+                      {temple.darshan_timings}
+                    </span>
                   </div>
                 )}
-                <div className="flex items-center gap-1.5 text-text-secondary">
-                  <Calendar size={14} className="text-saffron-600 flex-shrink-0" />
-                  <span><strong>{t('उत्तम समय', 'Best Season')}:</strong> {temple.best_time}</span>
+                <div className="flex items-start gap-2 text-text-secondary">
+                  <Calendar size={16} className="text-saffron-600 flex-shrink-0 mt-0.5" />
+                  <span>
+                    <strong>{t('उत्तम समय', 'Best Season')}:</strong>{' '}
+                    {t(temple.best_time_hi || temple.best_time, temple.best_time)}
+                  </span>
                 </div>
               </div>
 
               {/* Senior Accessibility Section */}
               {temple.accessibility && (
-                <div className="p-3 bg-amber-50/60 rounded-xl border border-amber-200 space-y-1.5">
-                  <div className="flex items-center gap-1.5 text-xs font-bold text-saffron-800">
-                    <Info size={14} />
+                <div className="p-3 bg-amber-50/60 rounded-xl border border-amber-200 space-y-2">
+                  <div className="flex items-center gap-1.5 font-hindi text-base font-bold text-saffron-800">
+                    <Info size={16} />
                     <span>{t('वरिष्ठ नागरिक एवं दिव्यांग सहायता', 'Senior & Accessibility Features')}</span>
                   </div>
 
-                  <div className="flex flex-wrap gap-2 text-xs">
+                  <div className="flex flex-col gap-1.5 font-hindi text-base">
                     {temple.accessibility.wheelchair && (
-                      <span className="px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-800 font-medium">
+                      <span className="px-2 py-1 rounded-lg bg-emerald-100 text-emerald-800 font-medium">
                         ♿ {t('व्हीलचेयर उपलब्ध', 'Wheelchair Available')}
                       </span>
                     )}
                     {temple.accessibility.vip_darshan && (
-                      <span className="px-2 py-0.5 rounded-md bg-blue-100 text-blue-800 font-medium">
+                      <span className="px-2 py-1 rounded-lg bg-blue-100 text-blue-800 font-medium">
                         🎖️ {t('वरिष्ठ विशेष कतार / VIP', 'Senior / VIP Fast Lane')}
                       </span>
                     )}
                     {temple.accessibility.battery_car && (
-                      <span className="px-2 py-0.5 rounded-md bg-purple-100 text-purple-800 font-medium">
+                      <span className="px-2 py-1 rounded-lg bg-purple-100 text-purple-800 font-medium">
                         🛺 {t('बैटरी कार सेवा', 'Battery Car Service')}
                       </span>
                     )}
                   </div>
 
                   {temple.accessibility.elderly_support_notes && (
-                    <p className="text-xs text-text-secondary italic pt-1 border-t border-amber-200/60">
-                      💡 {temple.accessibility.elderly_support_notes}
+                    <p className="font-hindi text-base text-text-secondary italic pt-1.5 border-t border-amber-200/60">
+                      💡 {t(
+                        temple.accessibility.elderly_support_notes_hi || temple.accessibility.elderly_support_notes,
+                        temple.accessibility.elderly_support_notes
+                      )}
                     </p>
                   )}
                 </div>
@@ -229,9 +239,9 @@ export default function TemplesPage() {
 
               {/* Virtual Darshan Video */}
               {temple.youtube_id && (
-                <div className="pt-2">
+                <div className="pt-1">
                   {activeVideoId === temple.id ? (
-                    <div className="aspect-video w-full rounded-xl overflow-hidden shadow-xs border border-cream-300">
+                    <div className="aspect-video w-full rounded-xl overflow-hidden border border-cream-300">
                       <iframe
                         className="w-full h-full"
                         src={`https://www.youtube-nocookie.com/embed/${temple.youtube_id}?autoplay=1`}
@@ -243,9 +253,9 @@ export default function TemplesPage() {
                   ) : (
                     <button
                       onClick={() => setActiveVideoId(temple.id)}
-                      className="btn-secondary w-full text-sm py-2 min-h-[44px] flex items-center justify-center gap-2 border-saffron-300 bg-saffron-50/50 hover:bg-saffron-100"
+                      className="btn-secondary w-full font-hindi text-base py-3 min-h-[48px] flex items-center justify-center gap-2 border-saffron-300 bg-saffron-50/50"
                     >
-                      <Video size={16} className="text-saffron-700" />
+                      <Video size={18} className="text-saffron-700" />
                       <span>{t('वर्चुअल पावन दर्शन (वीडियो)', 'Watch Virtual Darshan')}</span>
                     </button>
                   )}

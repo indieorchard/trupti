@@ -14,17 +14,20 @@ export const templesData: Temple[] = [
     longitude: 79.4912,
     deity_id: 'vishnu',
     deity_name: 'Lord Badri Vishal (Vishnu)',
+    deity_name_hi: 'भगवान बद्री विशाल (विष्णु)',
     circuit: ['char_dham', 'chota_char_dham'],
     significance_hi: 'अलकनंदा तट पर नर-नारायण पर्वत के मध्य स्थित वैकुंठ धाम। यहाँ बदरी विशाल के दर्शन मात्र से पुनर्जन्म के चक्र से मुक्ति मिलती है। ब्रह्म कपाल पर पितरों के तर्पण का सर्वोच्च महत्व है।',
     significance_en: 'The foremost Vishnu shrine among the Char Dham, nestled in Garhwal Himalayas. Sacred Brahma Kapal site here liberates departed ancestors forever.',
     best_time: 'May to October (closed in winter)',
+    best_time_hi: 'मई से अक्टूबर (शीतकाल में बंद)',
     darshan_timings: '04:30 AM - 01:00 PM, 04:00 PM - 09:00 PM',
     youtube_id: 'CgV7VqJ8_lU',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Helicopter services available from Dehradun/Phata; palanquin (doli) and pony services readily accessible.'
+      elderly_support_notes: 'Helicopter services available from Dehradun/Phata; palanquin (doli) and pony services readily accessible.',
+      elderly_support_notes_hi: 'देहरादून/फाटा से हेलीकॉप्टर सेवा उपलब्ध; पालकी (डोली) एवं घोड़ा सेवा सुलभ।',
     }
   },
   {
@@ -37,17 +40,20 @@ export const templesData: Temple[] = [
     longitude: 85.8179,
     deity_id: 'jagannath',
     deity_name: 'Lord Jagannath, Balabhadra & Subhadra',
+    deity_name_hi: 'भगवान जगन्नाथ, बलभद्र एवं सुभद्रा',
     circuit: ['char_dham'],
     significance_hi: 'चार धामों में पूर्वी धाम, श्री पुरुषोत्तम क्षेत्र। यहाँ भगवान दारुब्रह्म रूप में विराजते हैं। यहाँ का महाप्रसाद कभी दूषित नहीं होता और मोक्ष प्रदान करता है।',
     significance_en: 'The Eastern Char Dham on the Bay of Bengal, abode of Daru Brahma Jagannatha. World-famous for Rath Yatra and sanctified Mahaprasad.',
     best_time: 'October to March; Rath Yatra (June/July)',
+    best_time_hi: 'अक्टूबर से मार्च; रथ यात्रा (जून/जुलाई)',
     darshan_timings: '05:30 AM - 09:30 PM (varies on festivals)',
     youtube_id: '7v-m8aW9T0E',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Battery cars run from Grand Road. Special Senior citizen assistance counters managed by temple police.'
+      elderly_support_notes: 'Battery cars run from Grand Road. Special Senior citizen assistance counters managed by temple police.',
+      elderly_support_notes_hi: 'ग्रैंड रोड से बैटरी कार सेवा। मंदिर पुलिस द्वारा वरिष्ठ नागरिक सहायता काउंटर।',
     }
   },
   {
@@ -60,17 +66,20 @@ export const templesData: Temple[] = [
     longitude: 68.9678,
     deity_id: 'krishna',
     deity_name: 'Lord Dwarkadhish (Krishna)',
+    deity_name_hi: 'भगवान द्वारकाधीश (कृष्ण)',
     circuit: ['char_dham', 'sapta_puri'],
     significance_hi: 'गोमती संगम पर स्थित पश्चिमी चार धाम व सप्त पुरियों में मोक्ष पुरी। 52 गज की ध्वजा वाला 2500 वर्ष पुराना भव्य जगत मंदिर।',
     significance_en: 'Western Char Dham and one of the Sapta Puris, ancient kingdom of Lord Krishna on the Arabian Sea coast.',
     best_time: 'October to March',
+    best_time_hi: 'अक्टूबर से मार्च',
     darshan_timings: '06:30 AM - 01:00 PM, 05:00 PM - 09:30 PM',
     youtube_id: '8vMsqmKqR40',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Wheelchair access via Swarg Dwar ramp. Elevators installed for elderly pilgrims to view main sanctum.'
+      elderly_support_notes: 'Wheelchair access via Swarg Dwar ramp. Elevators installed for elderly pilgrims to view main sanctum.',
+      elderly_support_notes_hi: 'स्वर्ग द्वार रैंप से व्हीलचेयर पहुँच। वरिष्ठ तीर्थयात्रियों हेतु लिफ्ट सुविधा।',
     }
   },
   {
@@ -83,17 +92,20 @@ export const templesData: Temple[] = [
     longitude: 79.3174,
     deity_id: 'shiva',
     deity_name: 'Lord Ramanathaswamy (Jyotirlinga)',
+    deity_name_hi: 'भगवान रामनाथस्वामी (ज्योतिर्लिंग)',
     circuit: ['char_dham', 'jyotirlinga', 'south_mahatirtha'],
     significance_hi: 'दक्षिणी चार धाम और द्वादश ज्योतिर्लिंग। भगवान श्री राम ने लंका विजय के पश्चात ब्रह्महत्या दोष निवारण हेतु यहाँ बालू से शिवलिंग स्थापित कर पूजा की थी। 22 पवित्र कुंडों का स्नान मोक्षप्रद है।',
     significance_en: 'Southern Char Dham and Jyotirlinga sanctified by Sri Rama. Famous for its magnificent 1000-pillar corridor and 22 holy water tirthas.',
     best_time: 'October to April',
+    best_time_hi: 'अक्टूबर से अप्रैल',
     darshan_timings: '05:00 AM - 01:00 PM, 03:00 PM - 09:00 PM',
     youtube_id: 'k6p_T9uD2rA',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Special senior citizen line for direct sanctum darshan; motorized wheelchairs available at main gate.'
+      elderly_support_notes: 'Special senior citizen line for direct sanctum darshan; motorized wheelchairs available at main gate.',
+      elderly_support_notes_hi: 'वरिष्ठ नागरिकों हेतु विशेष गर्भगृह दर्शन कतार; मुख्य द्वार पर मोटराइज़्ड व्हीलचेयर उपलब्ध।',
     }
   },
   {
@@ -106,17 +118,20 @@ export const templesData: Temple[] = [
     longitude: 79.0669,
     deity_id: 'shiva',
     deity_name: 'Lord Kedarnath (Jyotirlinga)',
+    deity_name_hi: 'भगवान केदारनाथ (ज्योतिर्लिंग)',
     circuit: ['chota_char_dham', 'jyotirlinga'],
     significance_hi: 'मंदाकिनी नदी तट पर हिमालय की गोद में स्थित द्वादश ज्योतिर्लिंगों में सर्वोच्च ज्योतिर्लिंग। पांडवों द्वारा स्थापित त्रिकोणीय स्वयंभू शिवलिंग।',
     significance_en: 'The highest among the 12 Jyotirlingas, perched at 3,584m in the Himalayas along the Mandakini river.',
     best_time: 'May to October (Akshaya Tritiya to Bhai Dooj)',
+    best_time_hi: 'मई से अक्टूबर (अक्षय तृतीया से भाई दूज)',
     darshan_timings: '04:00 AM - 03:00 PM, 05:00 PM - 09:00 PM',
     youtube_id: 'aT6q21c_M80',
     accessibility: {
       wheelchair: false,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Helicopter booking highly recommended for seniors; Kandi and Palki (doli) services available from Gaurikund.'
+      elderly_support_notes: 'Helicopter booking highly recommended for seniors; Kandi and Palki (doli) services available from Gaurikund.',
+      elderly_support_notes_hi: 'वरिष्ठ नागरिकों के लिए हेलीकॉप्टर बुकिंग अनुशंसित; गौरीकुंड से कंडी एवं पालकी सेवा उपलब्ध।',
     }
   },
   {
@@ -129,17 +144,20 @@ export const templesData: Temple[] = [
     longitude: 78.9398,
     deity_id: 'ganga',
     deity_name: 'Goddess Ganga',
+    deity_name_hi: 'माता गंगा',
     circuit: ['chota_char_dham'],
     significance_hi: 'भागीरथी नदी के उद्गम के निकट माँ गंगा का पावन मंदिर। जहाँ राजा भगीरथ ने पूर्वजों के उद्धार हेतु घोर तपस्या की थी।',
     significance_en: 'The sacred abode where the river Ganga touched earth, surrounded by deodar forests in the higher Garhwal hills.',
     best_time: 'May to October',
+    best_time_hi: 'मई से अक्टूबर',
     darshan_timings: '06:15 AM - 02:00 PM, 03:00 PM - 09:30 PM',
     youtube_id: 'DkVz4kL9wR4',
     accessibility: {
       wheelchair: true,
       vip_darshan: false,
       battery_car: false,
-      elderly_support_notes: 'Vehicles reach near the temple complex; minimal walking required compared to Kedarnath/Yamunotri.'
+      elderly_support_notes: 'Vehicles reach near the temple complex; minimal walking required compared to Kedarnath/Yamunotri.',
+      elderly_support_notes_hi: 'वाहन मंदिर परिसर के निकट पहुँचते हैं; केदारनाथ/यमुनोत्री की तुलना में न्यूनतम पैदल चलना।',
     }
   },
   {
@@ -152,17 +170,20 @@ export const templesData: Temple[] = [
     longitude: 78.4600,
     deity_id: 'yamuna',
     deity_name: 'Goddess Yamuna',
+    deity_name_hi: 'माता यमुना',
     circuit: ['chota_char_dham'],
     significance_hi: 'सूर्यपुत्री माँ यमुना का पावन उद्गम तीर्थ। निकट स्थित सूर्यकुंड के गर्म जल में चावल पकाकर प्रसाद ग्रहण किया जाता है।',
     significance_en: 'First stop of Chota Char Dham, source of holy river Yamuna with natural thermal springs like Surya Kund.',
     best_time: 'May to October',
+    best_time_hi: 'मई से अक्टूबर',
     darshan_timings: '06:00 AM - 08:00 PM',
     youtube_id: 'M9jQw3_u2vE',
     accessibility: {
       wheelchair: false,
       vip_darshan: false,
       battery_car: false,
-      elderly_support_notes: '6 km trek from Janki Chatti; palanquins (doli) and ponies strongly advised for elderly pilgrims.'
+      elderly_support_notes: '6 km trek from Janki Chatti; palanquins (doli) and ponies strongly advised for elderly pilgrims.',
+      elderly_support_notes_hi: 'जानकी चट्टी से 6 किमी पैदल; वरिष्ठ तीर्थयात्रियों हेतु पालकी एवं टट्टू अनुशंसित।',
     }
   },
 
@@ -179,17 +200,20 @@ export const templesData: Temple[] = [
     longitude: 70.4012,
     deity_id: 'shiva',
     deity_name: 'Lord Somnath (First Jyotirlinga)',
+    deity_name_hi: 'भगवान सोमनाथ (प्रथम ज्योतिर्लिंग)',
     circuit: ['jyotirlinga'],
     significance_hi: 'द्वादश ज्योतिर्लिंगों में प्रथम ज्योतिर्लिंग। चंद्रदेव ने दक्ष प्रजापति के शाप से मुक्ति पाने हेतु यहाँ शिवजी की आराधना की थी। त्रिवेणी संगम पर स्थित।',
     significance_en: 'The first among the 12 Jyotirlingas on the coast of Saurashtra, built where Chandra (Moon) was cured of his curse.',
     best_time: 'September to March',
+    best_time_hi: 'सितंबर से मार्च',
     darshan_timings: '06:00 AM - 10:00 PM; Sound & Light show at 8 PM',
     youtube_id: 'jV57Vb-Nq8A',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Fully paved rampways, free wheelchairs, battery buggies from car parking to temple entrance.'
+      elderly_support_notes: 'Fully paved rampways, free wheelchairs, battery buggies from car parking to temple entrance.',
+      elderly_support_notes_hi: 'पूर्ण पक्की रैंपवे, निःशुल्क व्हीलचेयर, कार पार्किंग से मंदिर प्रवेश तक बैटरी बग्गी।',
     }
   },
   {
@@ -202,17 +226,20 @@ export const templesData: Temple[] = [
     longitude: 78.8682,
     deity_id: 'shiva',
     deity_name: 'Lord Mallikarjuna & Goddess Bhramaramba',
+    deity_name_hi: 'भगवान मल्लिकार्जुन एवं माता भ्रमराम्बा',
     circuit: ['jyotirlinga', 'shakti_peetha', 'south_mahatirtha'],
     significance_hi: 'कृष्णा नदी तट पर श्रीशैल पर्वत पर स्थित दुर्लभ ज्योतिर्लिंग जहाँ शिव और शक्ति (भ्रामराम्बा शक्तिपीठ) दोनों एक साथ विद्यमान हैं।',
     significance_en: 'Unique holy site housing both a Jyotirlinga and a Maha Shakti Peetha on the Srisailam mountain overlooking the Krishna river.',
     best_time: 'October to February',
+    best_time_hi: 'अक्टूबर से फरवरी',
     darshan_timings: '04:30 AM - 03:30 PM, 06:00 PM - 10:00 PM',
     youtube_id: 'W9xN_X9Y0K8',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Dedicated "Senior Citizen Darshan Queue" with minimal waiting; elevator facility available near temple trust office.'
+      elderly_support_notes: 'Dedicated "Senior Citizen Darshan Queue" with minimal waiting; elevator facility available near temple trust office.',
+      elderly_support_notes_hi: 'न्यूनतम प्रतीक्षा के साथ समर्पित वरिष्ठ नागरिक दर्शन कतार; मंदिर ट्रस्ट कार्यालय के पास लिफ्ट।',
     }
   },
   {
@@ -225,17 +252,20 @@ export const templesData: Temple[] = [
     longitude: 75.7682,
     deity_id: 'shiva',
     deity_name: 'Lord Mahakaleshwar (Dakshinabhimukhi)',
+    deity_name_hi: 'भगवान महाकालेश्वर (दक्षिणाभिमुखी)',
     circuit: ['jyotirlinga', 'sapta_puri'],
     significance_hi: 'दक्षिणमुखी एकमात्र ज्योतिर्लिंग। कालों के काल महाकाल, उज्जैन के महाराजाधिराज। प्रसिद्ध भस्म आरती प्रातःकाल श्मशान भस्म अथवा कंडे की भस्म से संपन्न होती है।',
     significance_en: 'The only south-facing (Dakshinabhimukhi) Jyotirlinga, master of time and mortality. Renowned for its early morning sacred Bhasma Aarti.',
     best_time: 'October to March',
+    best_time_hi: 'अक्टूबर से मार्च',
     darshan_timings: '04:00 AM (Bhasma Aarti) - 11:00 PM',
     youtube_id: 'kQ7uG_F_B4M',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Mahakal Lok corridor provides battery cars; special ramp lane into sanctum for senior citizens.'
+      elderly_support_notes: 'Mahakal Lok corridor provides battery cars; special ramp lane into sanctum for senior citizens.',
+      elderly_support_notes_hi: 'महाकाल लोक गलियारे में बैटरी कार; वरिष्ठ नागरिकों हेतु गर्भगृह तक विशेष रैंप।',
     }
   },
   {
@@ -248,17 +278,20 @@ export const templesData: Temple[] = [
     longitude: 76.1517,
     deity_id: 'shiva',
     deity_name: 'Lord Omkareshwar & Mamleshwar',
+    deity_name_hi: 'भगवान ओंकारेश्वर एवं ममलेश्वर',
     circuit: ['jyotirlinga'],
     significance_hi: 'पवित्र नर्मदा नदी के मध्य ॐ आकार के मांधाता द्वीप पर स्थित ज्योतिर्लिंग। ओंकारेश्वर और ममलेश्वर के संयुक्त दर्शन से पूर्ण फल प्राप्त होता है।',
     significance_en: 'Situated on Mandhata island naturally shaped like the Pranava symbol "OM" in the sacred Narmada river.',
     best_time: 'October to March',
+    best_time_hi: 'अक्टूबर से मार्च',
     darshan_timings: '05:00 AM - 09:30 PM',
     youtube_id: 'P9c4u_X_G9k',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Suspension bridge (Jhula Pul) connects island with lift service; boats also available across Narmada.'
+      elderly_support_notes: 'Suspension bridge (Jhula Pul) connects island with lift service; boats also available across Narmada.',
+      elderly_support_notes_hi: 'झूला पुल द्वीप को लिफ्ट सेवा से जोड़ता है; नर्मदा पार नाव भी उपलब्ध।',
     }
   },
   {
@@ -271,17 +304,20 @@ export const templesData: Temple[] = [
     longitude: 73.5358,
     deity_id: 'shiva',
     deity_name: 'Lord Bhimashankar',
+    deity_name_hi: 'भगवान भीमाशंकर',
     circuit: ['jyotirlinga'],
     significance_hi: 'भीमा नदी के उद्गम पर सह्याद्रि की पर्वतमालाओं में स्थित। भगवान शिव ने कुंभकर्ण के पुत्र भीमासुर का संहार कर यहाँ विश्राम किया था।',
     significance_en: 'Perched in the Sahyadri mountains where the Bhima river originates, marking Shiva’s victory over the demon Bhima.',
     best_time: 'October to February; Shravan month',
+    best_time_hi: 'अक्टूबर से फरवरी; श्रावण मास',
     darshan_timings: '04:30 AM - 09:30 PM',
     youtube_id: 'n_4g7N8X9aA',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Ramps leading down to the temple; local doli service available for pilgrims unable to climb stairs.'
+      elderly_support_notes: 'Ramps leading down to the temple; local doli service available for pilgrims unable to climb stairs.',
+      elderly_support_notes_hi: 'मंदिर तक रैंप; सीढ़ियाँ न चढ़ सकने वाले तीर्थयात्रियों हेतु स्थानीय डोली सेवा।',
     }
   },
   {
@@ -294,17 +330,20 @@ export const templesData: Temple[] = [
     longitude: 83.0107,
     deity_id: 'shiva',
     deity_name: 'Lord Vishwanath (Kashi Ke Nath)',
+    deity_name_hi: 'भगवान विश्वनाथ (काशी के नाथ)',
     circuit: ['jyotirlinga', 'sapta_puri'],
     significance_hi: 'तीर्थराज काशी के अधिपति। शिवजी के त्रिशूल पर बसी मोक्षनगरी। यहाँ देहत्याग करने वाले के कान में भगवान शिव तारक मंत्र देकर मुक्ति प्रदान करते हैं। नवनिर्मित भव्य विश्वनाथ धाम कॉरिडोर।',
     significance_en: 'The supreme spiritual heart of Sanatana Dharma on the Ganges. Lord Shiva imparts the liberating Taraka Mantra to all who depart here.',
     best_time: 'October to March; Dev Deepawali',
+    best_time_hi: 'अक्टूबर से मार्च; देव दीपावली',
     darshan_timings: '03:00 AM (Mangala Aarti) - 11:00 PM',
     youtube_id: 'Q5_T7k_Z9aM',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Kashi Vishwanath Corridor is fully wheelchair-friendly with escalators, elevators, and battery cars from Ghat to Temple.'
+      elderly_support_notes: 'Kashi Vishwanath Corridor is fully wheelchair-friendly with escalators, elevators, and battery cars from Ghat to Temple.',
+      elderly_support_notes_hi: 'काशी विश्वनाथ कॉरिडोर पूर्णतः व्हीलचेयर-मित्र; घाट से मंदिर तक एस्केलेटर, लिफ्ट एवं बैटरी कार।',
     }
   },
   {
@@ -317,17 +356,20 @@ export const templesData: Temple[] = [
     longitude: 73.5307,
     deity_id: 'shiva',
     deity_name: 'Lord Trimbakeshwar (Trimurti Lingam)',
+    deity_name_hi: 'भगवान त्र्यम्बकेश्वर (त्रिमूर्ति लिंगम)',
     circuit: ['jyotirlinga'],
     significance_hi: 'गोदावरी के पावन उद्गम ब्रह्मगिरि पर्वत के पास। इस ज्योतिर्लिंग के तीन मुख ब्रह्मा, विष्णु और महेश के प्रतीक हैं। नारायण नागबली व कालसर्प दोष निवारण का सर्वोच्च केंद्र।',
     significance_en: 'Unique Jyotirlinga with three faces representing Brahma, Vishnu, and Rudra, and origin of river Godavari. Foremost for ancestral Pitru rites.',
     best_time: 'October to March; Kumbh Mela',
+    best_time_hi: 'अक्टूबर से मार्च; कुम्भ मेला',
     darshan_timings: '05:30 AM - 09:00 PM',
     youtube_id: 'V7w9q_L1n-s',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Special senior citizen lane; wheelchair assistance available at east gate entry.'
+      elderly_support_notes: 'Special senior citizen lane; wheelchair assistance available at east gate entry.',
+      elderly_support_notes_hi: 'विशेष वरिष्ठ नागरिक लेन; पूर्वी द्वार पर व्हीलचेयर सहायता उपलब्ध।',
     }
   },
   {
@@ -340,17 +382,20 @@ export const templesData: Temple[] = [
     longitude: 86.7001,
     deity_id: 'shiva',
     deity_name: 'Lord Baidyanath (Vaidyanatha)',
+    deity_name_hi: 'भगवान बैद्यनाथ (वैद्यनाथ)',
     circuit: ['jyotirlinga', 'shakti_peetha'],
     significance_hi: 'आरोग्य प्रदाता वैद्यनाथ। लंकापति रावण द्वारा शिवजी को लंका ले जाते समय स्थापित स्वयंभू शिवलिंग। यहाँ माँ पार्वती का शक्तिपीठ (हृदय पीठ) भी स्थित है।',
     significance_en: 'The divine healer (Vaidya) Jyotirlinga in Santhal Parganas, where Ravana placed the sacred lingam during his journey to Lanka.',
     best_time: 'October to March; Shravan Mela (Kanwar Yatra)',
+    best_time_hi: 'अक्टूबर से मार्च; श्रावण मेला (कांवड़ यात्रा)',
     darshan_timings: '04:00 AM - 03:30 PM, 06:00 PM - 09:00 PM',
     youtube_id: 'L9mX4b_N2kA',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'VIP Pass (Sheeghra Darshanam) available online and on-counter to bypass general rush.'
+      elderly_support_notes: 'VIP Pass (Sheeghra Darshanam) available online and on-counter to bypass general rush.',
+      elderly_support_notes_hi: 'VIP पास (शीघ्र दर्शनम) ऑनलाइन एवं काउंटर पर उपलब्ध।',
     }
   },
   {
@@ -363,17 +408,20 @@ export const templesData: Temple[] = [
     longitude: 69.0536,
     deity_id: 'shiva',
     deity_name: 'Lord Nageshwar (Protector from Poisons)',
+    deity_name_hi: 'भगवान नागेश्वर (विष से रक्षक)',
     circuit: ['jyotirlinga'],
     significance_hi: 'दारुकावन में स्थित नागेश्वर ज्योतिर्लिंग। समस्त सर्प दोषों व विषैली व्याधियों से रक्षा करने वाले देव। मंदिर प्रांगण में 85 फीट ऊंची शिव प्रतिमा विद्यमान है।',
     significance_en: 'Situated between Dwarka and Bet Dwarka in Daarukavanam, protects devotees from all planetary poison and fear.',
     best_time: 'October to March',
+    best_time_hi: 'अक्टूबर से मार्च',
     darshan_timings: '06:00 AM - 12:30 PM, 05:00 PM - 09:30 PM',
     youtube_id: 'T7m-9kL0e4c',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Spacious flat ground with no major steps; wheelchair access directly into the sanctum hall.'
+      elderly_support_notes: 'Spacious flat ground with no major steps; wheelchair access directly into the sanctum hall.',
+      elderly_support_notes_hi: 'बिना बड़ी सीढ़ियों के विशाल समतल; गर्भगृह हॉल तक सीधी व्हीलचेयर पहुँच।',
     }
   },
   {
@@ -386,17 +434,20 @@ export const templesData: Temple[] = [
     longitude: 75.1714,
     deity_id: 'shiva',
     deity_name: 'Lord Grishneshwar (12th Jyotirlinga)',
+    deity_name_hi: 'भगवान घृष्णेश्वर (12वाँ ज्योतिर्लिंग)',
     circuit: ['jyotirlinga'],
     significance_hi: 'द्वादश ज्योतिर्लिंगों में अंतिम (12वां) ज्योतिर्लिंग। एलोरा की गुफाओं के निकट। भक्त घृष्णा की सच्ची भक्ति से प्रसन्न होकर प्रकट हुए करुणा के सागर।',
     significance_en: 'The 12th and concluding Jyotirlinga near Ellora Caves, celebrated for Shiva’s mercy to his devoted follower Ghushma.',
     best_time: 'October to March',
+    best_time_hi: 'अक्टूबर से मार्च',
     darshan_timings: '05:30 AM - 09:30 PM',
     youtube_id: 'b6V-4kM8vT0',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Ramps available; peaceful temple ambiance with gentle queues on weekdays.'
+      elderly_support_notes: 'Ramps available; peaceful temple ambiance with gentle queues on weekdays.',
+      elderly_support_notes_hi: 'रैंप उपलब्ध; कार्यदिवसों पर शांत मंदिर वातावरण एवं सौम्य कतारें।',
     }
   },
 
@@ -413,17 +464,20 @@ export const templesData: Temple[] = [
     longitude: 82.1998,
     deity_id: 'rama',
     deity_name: 'Bhagavan Sri Ram Lalla Sarkar',
+    deity_name_hi: 'भगवान श्री राम लला सरकार',
     circuit: ['sapta_puri'],
     significance_hi: 'सप्त पुरियों में प्रथम मोक्षदायिनी पुरी अयोध्या में प्रभु श्री राम का भव्य नव-निर्मित जन्मस्थान मंदिर। सरयू स्नान और रामलला दर्शन से परम शांति की प्राप्ति होती है।',
     significance_en: 'The prime Moksha Puri, holy birthplace of Sri Rama on the banks of Sarayu, newly consecrated with magnificent Nagara architecture.',
     best_time: 'October to March; Ram Navami & Diwali',
+    best_time_hi: 'अक्टूबर से मार्च; रामनवमी एवं दीपावली',
     darshan_timings: '06:30 AM - 12:00 PM, 02:00 PM - 10:00 PM',
     youtube_id: 'aG9_W7k3Q8k',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Ramps, electric wheelchairs, golf carts, and senior-only special queue assist elderly devotees from the outer gate.'
+      elderly_support_notes: 'Ramps, electric wheelchairs, golf carts, and senior-only special queue assist elderly devotees from the outer gate.',
+      elderly_support_notes_hi: 'बाहरी द्वार से रैंप, विद्युत व्हीलचेयर, गोल्फ कार्ट एवं वरिष्ठ-विशेष कतार।',
     }
   },
   {
@@ -436,17 +490,20 @@ export const templesData: Temple[] = [
     longitude: 77.6698,
     deity_id: 'krishna',
     deity_name: 'Lord Sri Krishna (Bal Gopal)',
+    deity_name_hi: 'भगवान श्री कृष्ण (बाल गोपाल)',
     circuit: ['sapta_puri'],
     significance_hi: 'सप्त पुरियों में मथुरा पुरी। द्वापर युग में कंस के कारागार में भगवान श्रीकृष्ण का प्राकट्य स्थल। यमुनाजी का पावन सानिध्य और विश्राम घाट।',
     significance_en: 'One of the Sapta Puris, the holy prison cell where Bhagavan Krishna incarnated at midnight in the Dvapara Yuga.',
     best_time: 'October to March; Janmashtami & Holi',
+    best_time_hi: 'अक्टूबर से मार्च; जन्माष्टमी एवं होली',
     darshan_timings: '05:00 AM - 12:00 PM, 04:00 PM - 09:30 PM',
     youtube_id: 'c8_X4m7Q2wA',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Battery rickshaws connect Mathura Junction to Janmabhoomi; wheelchair facility at entry gate.'
+      elderly_support_notes: 'Battery rickshaws connect Mathura Junction to Janmabhoomi; wheelchair facility at entry gate.',
+      elderly_support_notes_hi: 'मथुरा जंक्शन से जन्मभूमि तक बैटरी रिक्शा; प्रवेश द्वार पर व्हीलचेयर सुविधा।',
     }
   },
   {
@@ -459,17 +516,20 @@ export const templesData: Temple[] = [
     longitude: 78.1706,
     deity_id: 'ganga',
     deity_name: 'Goddess Ganga & Lord Vishnu (Charan Paduka)',
+    deity_name_hi: 'माता गंगा एवं भगवान विष्णु (चरण पादुका)',
     circuit: ['sapta_puri'],
     significance_hi: 'सप्त पुरियों में माया पुरी। जहाँ गंगाजी पर्वतों से उतरकर पहली बार मैदानी भाग में प्रवेश करती हैं। भगवान विष्णु के चरणचिह्न (हर की पौड़ी) पर संध्या गंगा आरती का अलौकिक दृश्य।',
     significance_en: 'Known as Maya Puri in scriptures, gateway to the Himalayas where Mother Ganga blesses the plains. Renowned for its world-famous evening Ganga Aarti.',
     best_time: 'All year round; Kumbh Mela and Kartik Purnima',
+    best_time_hi: 'वर्षभर; कुम्भ मेला एवं कार्तिक पूर्णिमा',
     darshan_timings: 'Open 24 hours; Evening Ganga Aarti at Sunset (~6:30 PM)',
     youtube_id: 'W6_Y4r9X0cE',
     accessibility: {
       wheelchair: true,
       vip_darshan: false,
       battery_car: true,
-      elderly_support_notes: 'Ramps available leading to ghats; elderly sitting enclosures provided during the evening Ganga Aarti.'
+      elderly_support_notes: 'Ramps available leading to ghats; elderly sitting enclosures provided during the evening Ganga Aarti.',
+      elderly_support_notes_hi: 'घाटों तक रैंप; संध्या गंगा आरती के दौरान वरिष्ठ नागरिकों हेतु बैठने की व्यवस्था।',
     }
   },
   {
@@ -482,17 +542,20 @@ export const templesData: Temple[] = [
     longitude: 79.7037,
     deity_id: 'tripura_sundari',
     deity_name: 'Goddess Kamakshi (Lalitha Maha Tripura Sundari)',
+    deity_name_hi: 'माता कामाक्षी (ललिता महा त्रिपुर सुंदरी)',
     circuit: ['sapta_puri', 'shakti_peetha', 'south_mahatirtha'],
     significance_hi: 'सप्त पुरियों में कांची पुरी (दक्षिण की एकमात्र मोक्षपुरी)। आदि शंकराचार्य द्वारा स्थापित श्री चक्र पर विराजित ललिता महात्रिपुर सुंदरी।',
     significance_en: 'The sole southern Moksha Puri, where Goddess Kamakshi sits in Padmasana before the consecrated Sri Chakra installed by Adi Shankara.',
     best_time: 'October to March',
+    best_time_hi: 'अक्टूबर से मार्च',
     darshan_timings: '05:30 AM - 12:30 PM, 04:00 PM - 08:30 PM',
     youtube_id: 'M7v8w9_K0nA',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Wheelchairs available at the temple entrance; minimal steps inside temple praharam.'
+      elderly_support_notes: 'Wheelchairs available at the temple entrance; minimal steps inside temple praharam.',
+      elderly_support_notes_hi: 'मंदिर प्रवेश पर व्हीलचेयर उपलब्ध; मंदिर प्राकार में न्यूनतम सीढ़ियाँ।',
     }
   },
 
@@ -509,17 +572,20 @@ export const templesData: Temple[] = [
     longitude: 74.9490,
     deity_id: 'durga',
     deity_name: 'Maha Kali, Maha Lakshmi & Maha Saraswati (Pindis)',
+    deity_name_hi: 'महा काली, महा लक्ष्मी एवं महा सरस्वती (पिंडी)',
     circuit: ['shakti_peetha'],
     significance_hi: 'त्रिकूटा पर्वत पर प्राकृतिक गुफा में स्थित महाकाली, महालक्ष्मी और महासरस्वती की तीन स्वयंभू पावन पिण्डियां। "चलो बुलावा आया है, माता ने बुलाया है।"',
     significance_en: 'Sacred mountain cave shrine of the three holy Pindis representing Kali, Lakshmi, and Saraswati on Mount Trikuta.',
     best_time: 'March to November; Navratri',
+    best_time_hi: 'मार्च से नवंबर; नवरात्रि',
     darshan_timings: '05:00 AM - 12:00 PM, 04:00 PM - 10:00 PM',
     youtube_id: 'N8_Y7w3Q1aA',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Battery cars from Ardhkuwari to Bhawan; helicopter service from Katra to Sanjichhat; ropeway from Bhawan to Bhairon Ghati.'
+      elderly_support_notes: 'Battery cars from Ardhkuwari to Bhawan; helicopter service from Katra to Sanjichhat; ropeway from Bhawan to Bhairon Ghati.',
+      elderly_support_notes_hi: 'अर्धकुमारी से भवन तक बैटरी कार; कटरा से सांझीछत तक हेलीकॉप्टर; भवन से भैरों घाटी तक रोपवे।',
     }
   },
   {
@@ -532,17 +598,20 @@ export const templesData: Temple[] = [
     longitude: 91.7058,
     deity_id: 'kamakhya',
     deity_name: 'Goddess Kamakhya (Yoni Peetha)',
+    deity_name_hi: 'माता कामाख्या (योनि पीठ)',
     circuit: ['shakti_peetha'],
     significance_hi: '51 शक्तिपीठों में सिरमौर महापीठ। नीलांचल पर्वत पर सती की योनि गिरी थी। यहाँ कोई विग्रह नहीं अपितु प्राकृतिक जलस्रोत युक्त प्रस्तर योनि की पूजा होती है। अंबुवाची मेला विश्वविख्यात है।',
     significance_en: 'The crown of all 51 Shakti Peethas, celebrating the creative power of Mother Nature on Nilachal Hill in Assam.',
     best_time: 'October to April; Ambubachi Mela (June)',
+    best_time_hi: 'अक्टूबर से अप्रैल; अम्बुबाची मेला (जून)',
     darshan_timings: '05:30 AM - 01:00 PM, 02:30 PM - 05:30 PM',
     youtube_id: 'd9_V7w2Q4aK',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'VIP defence/senior passes available; stairs have railing support; palanquins available at hilltop parking.'
+      elderly_support_notes: 'VIP defence/senior passes available; stairs have railing support; palanquins available at hilltop parking.',
+      elderly_support_notes_hi: 'VIP/वरिष्ठ पास उपलब्ध; सीढ़ियों पर रेलिंग; पहाड़ी पार्किंग पर पालकी उपलब्ध।',
     }
   },
   {
@@ -555,17 +624,20 @@ export const templesData: Temple[] = [
     longitude: 88.3426,
     deity_id: 'kali',
     deity_name: 'Maa Kali (Muktakeshi)',
+    deity_name_hi: 'माँ काली (मुक्तकेशी)',
     circuit: ['shakti_peetha'],
     significance_hi: 'आदि गंगा के तट पर 51 शक्तिपीठों में प्रधान पीठ, जहाँ सती के दाएं पैर की चार उंगलियां गिरी थीं। स्वर्ण जड़ित त्रि-नेत्र और स्वर्ण जिह्वा युक्त भव्य काली विग्रह।',
     significance_en: 'One of the most famous Shakti Peethas on the banks of Adi Ganga in Kolkata, where Sati’s right toes fell.',
     best_time: 'October to March; Kali Puja / Diwali',
+    best_time_hi: 'अक्टूबर से मार्च; काली पूजा / दीपावली',
     darshan_timings: '05:00 AM - 02:00 PM, 05:00 PM - 10:30 PM',
     youtube_id: 'H7_R9w2Q0aM',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Senior citizen gate access to avoid crowd pushing; assisted wheelchair passage.'
+      elderly_support_notes: 'Senior citizen gate access to avoid crowd pushing; assisted wheelchair passage.',
+      elderly_support_notes_hi: 'भीड़ से बचने हेतु वरिष्ठ नागरिक द्वार; सहायक व्हीलचेयर मार्ग।',
     }
   },
   {
@@ -578,17 +650,20 @@ export const templesData: Temple[] = [
     longitude: 74.2235,
     deity_id: 'lakshmi',
     deity_name: 'Goddess Mahalakshmi (Ambabai)',
+    deity_name_hi: 'माता महालक्ष्मी (अम्बाबाई)',
     circuit: ['shakti_peetha'],
     significance_hi: 'करवीर पीठ, जहाँ भगवान विष्णु की शक्ति महालक्ष्मी सदैव निवास करती हैं। वर्ष में दो बार किरणोत्सव होता है जब सूर्य की किरणें सीधे देवी के चरणों, हृदय और मुख पर पड़ती हैं।',
     significance_en: 'The supreme Karveer Shakti Peetha in Maharashtra, known for Kiranotsav when sunlight directly bathes the gemstone idol.',
     best_time: 'October to March; Kiranotsav (Jan/Nov)',
+    best_time_hi: 'अक्टूबर से मार्च; किरणोत्सव (जनवरी/नवंबर)',
     darshan_timings: '05:00 AM - 10:00 PM',
     youtube_id: 'k7_Y9w4M0bC',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Level entrances, dedicated queue for senior citizens, and wheelchair support at Mahadwar.'
+      elderly_support_notes: 'Level entrances, dedicated queue for senior citizens, and wheelchair support at Mahadwar.',
+      elderly_support_notes_hi: 'समतल प्रवेश, वरिष्ठ नागरिकों हेतु समर्पित कतार, महाद्वार पर व्हीलचेयर सहायता।',
     }
   },
   {
@@ -601,17 +676,20 @@ export const templesData: Temple[] = [
     longitude: 76.6713,
     deity_id: 'chamundeshwari',
     deity_name: 'Goddess Chamundeshwari',
+    deity_name_hi: 'माता चामुण्डेश्वरी',
     circuit: ['shakti_peetha', 'south_mahatirtha'],
     significance_hi: 'मैसूर की चामुंडी पहाड़ी पर महिषासुरमर्दिनी का अष्टभुज स्वर्ण विग्रह। मैसूर दशहरा महोत्सव का मुख्य केंद्र।',
     significance_en: 'Enshrined atop Chamundi Hills overlooking Mysuru, dedicated to the slayer of demon Mahishasura; central to Mysuru Dasara.',
     best_time: 'September to March; Mysuru Dasara',
+    best_time_hi: 'सितंबर से मार्च; मैसूरु दशहरा',
     darshan_timings: '07:30 AM - 02:00 PM, 03:30 PM - 06:00 PM, 07:30 PM - 09:00 PM',
     youtube_id: 'J7_M9w3K0aN',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Road goes straight to hilltop; rampway from car park into temple; special Senior Citizen queue tickets.'
+      elderly_support_notes: 'Road goes straight to hilltop; rampway from car park into temple; special Senior Citizen queue tickets.',
+      elderly_support_notes_hi: 'सड़क सीधे पहाड़ी तक; कार पार्क से मंदिर तक रैंप; वरिष्ठ नागरिक विशेष कतार टिकट।',
     }
   },
   {
@@ -624,17 +702,20 @@ export const templesData: Temple[] = [
     longitude: 78.1193,
     deity_id: 'meenakshi',
     deity_name: 'Goddess Meenakshi & Lord Sundareswarar',
+    deity_name_hi: 'माता मीनाक्षी एवं भगवान सुंदरेश्वर',
     circuit: ['shakti_peetha', 'south_mahatirtha'],
     significance_hi: 'वैगई नदी के तट पर 14 भव्य गोपुरमों और 1000 स्तंभों वाले मंडप से सुसज्जित द्रविड़ स्थापत्य कला का अद्भुत चमत्कार। यहाँ पहले देवी मीनाक्षी और फिर शिवजी के दर्शन की परंपरा है।',
     significance_en: 'A marvel of Dravidian architecture with 14 soaring Gopurams and a thousand-pillar hall on the Vaigai river in Madurai.',
     best_time: 'October to March; Chithirai Festival',
+    best_time_hi: 'अक्टूबर से मार्च; चित्तिरै उत्सव',
     darshan_timings: '05:00 AM - 12:30 PM, 04:00 PM - 10:00 PM',
     youtube_id: 'y8_W7m3K9aM',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Battery cars from outer gate to eastern tower; free wheelchairs and assistants provided inside.'
+      elderly_support_notes: 'Battery cars from outer gate to eastern tower; free wheelchairs and assistants provided inside.',
+      elderly_support_notes_hi: 'बाहरी द्वार से पूर्वी गोपुरम तक बैटरी कार; अंदर निःशुल्क व्हीलचेयर एवं सहायक।',
     }
   },
 
@@ -651,17 +732,20 @@ export const templesData: Temple[] = [
     longitude: 79.3472,
     deity_id: 'venkateswara',
     deity_name: 'Lord Venkateswara (Balaji)',
+    deity_name_hi: 'भगवान वेंकटेश्वर (बालाजी)',
     circuit: ['south_mahatirtha', 'divya_desam'],
     significance_hi: 'सप्तगिरि (शेषाचलम) पर विराजमान कलियुग के प्रत्यक्ष देव भगवान तिरुपति बालाजी। विश्व का सर्वाधिक दर्शनार्थी तीर्थ। "गोविंदा गोविंदा" के जयघोष से पापनाश होता है। प्रसिद्ध तिरुपति लड्डू प्रसादम।',
     significance_en: 'The world-renowned Kaliyuga shrine of Lord Venkateswara atop the Seven Hills in Tirumala, celebrated for divine grace and Tirupati Laddu.',
     best_time: 'September to March; Brahmotsavam',
+    best_time_hi: 'सितंबर से मार्च; ब्रह्मोत्सवम',
     darshan_timings: 'Open ~20 hours daily depending on Sevas',
     youtube_id: 'F9_X7k3W1bM',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Dedicated Senior Citizen / Physically Challenged quota with separate air-conditioned waiting hall and direct express darshan.'
+      elderly_support_notes: 'Dedicated Senior Citizen / Physically Challenged quota with separate air-conditioned waiting hall and direct express darshan.',
+      elderly_support_notes_hi: 'वातानुकूलित प्रतीक्षालय एवं सीधे एक्सप्रेस दर्शन के साथ वरिष्ठ नागरिक/दिव्यांग कोटा।',
     }
   },
   {
@@ -674,17 +758,20 @@ export const templesData: Temple[] = [
     longitude: 76.0398,
     deity_id: 'krishna',
     deity_name: 'Guruvayurappan (Unnikrishnan)',
+    deity_name_hi: 'गुरुवायूरप्पन (उन्नीकृष्णन)',
     circuit: ['south_mahatirtha'],
     significance_hi: 'दक्षिण का द्वारका — "भूलोक वैकुंठम"। गुरु (बृहस्पति) और वायुदेव द्वारा प्रतिष्ठित भगवान बालकृष्ण का पावन विग्रह। नारायणियम की रचना स्थली।',
     significance_en: 'Known as Bhuloka Vaikuntham (Heaven on Earth), where child Krishna is worshipped as Guruvayurappan, installed by Guru and Vayu.',
     best_time: 'October to March',
+    best_time_hi: 'अक्टूबर से मार्च',
     darshan_timings: '03:00 AM - 12:30 PM, 04:30 PM - 09:15 PM',
     youtube_id: 'K8_R7w2M9aC',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Exclusive early morning senior citizen queue (Senior Citizens Darshan) from 4:30 AM to 6:00 AM.'
+      elderly_support_notes: 'Exclusive early morning senior citizen queue (Senior Citizens Darshan) from 4:30 AM to 6:00 AM.',
+      elderly_support_notes_hi: 'सुबह 4:30 से 6:00 बजे तक विशेष वरिष्ठ नागरिक प्रातःकालीन दर्शन कतार।',
     }
   },
   {
@@ -697,17 +784,20 @@ export const templesData: Temple[] = [
     longitude: 76.9436,
     deity_id: 'vishnu',
     deity_name: 'Lord Padmanabha in Ananthasayanam',
+    deity_name_hi: 'भगवान पद्मनाभ (अनन्तशयनम)',
     circuit: ['south_mahatirtha', 'divya_desam'],
     significance_hi: 'अनंत शय्या (शेषनाग) पर योगनिद्रा में विश्राम करते भगवान विष्णु का 18 फीट लंबा दिव्य विग्रह। तीन द्वारों से दर्शन (मुख, नाभि-कमल, चरण)। विश्व के सबसे धनी मंदिरों में अग्रणी।',
     significance_en: 'Iconic temple where Lord Vishnu reclines on Anantha in Yogic sleep, viewed through three doors (Face, Navel Lotus, and Feet).',
     best_time: 'October to March; Alpashy / Painkuni festival',
+    best_time_hi: 'अक्टूबर से मार्च; अल्पशी / पंगुनि उत्सव',
     darshan_timings: '03:30 AM - 12:00 PM, 05:00 PM - 08:30 PM (Strict traditional dress code: Mundu/Dhoti required)',
     youtube_id: 'M9_X4k8W1aN',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Dedicated Senior Citizen line at North Gate; free wheelchair assistance provided by Travancore Devaswom Board.'
+      elderly_support_notes: 'Dedicated Senior Citizen line at North Gate; free wheelchair assistance provided by Travancore Devaswom Board.',
+      elderly_support_notes_hi: 'उत्तरी द्वार पर वरिष्ठ नागरिक कतार; त्रावणकोर देवस्वम बोर्ड द्वारा निःशुल्क व्हीलचेयर सहायता।',
     }
   },
   {
@@ -720,17 +810,20 @@ export const templesData: Temple[] = [
     longitude: 77.0817,
     deity_id: 'ayyappa',
     deity_name: 'Lord Ayyappa (Swamiye Saranam Ayyappa)',
+    deity_name_hi: 'भगवान अय्यप्पा (स्वामिये शरणम अय्यप्पा)',
     circuit: ['south_mahatirtha'],
     significance_hi: 'सह्याद्रि के 18 पहाड़ों के मध्य स्थित 18 पवित्र सोपानों (पदिनिट्टम पदी) वाला अय्यप्पा धाम। 41 दिन के कठोर मंडल व्रत के पश्चात इरुमुडी सिर पर रखकर दर्शन किए जाते हैं। मकरविलक्कु दर्शन।',
     significance_en: 'Hilltop shrine in Western Ghats reached by climbing 18 sacred gold-clad steps, known for 41-day Brahmacharya vrata and Makaravilakku.',
     best_time: 'Mid-November to Mid-January (Mandala season); Vishu (April)',
+    best_time_hi: 'मध्य नवंबर से मध्य जनवरी (मंडल काल); विषु (अप्रैल)',
     darshan_timings: '03:00 AM - 01:00 PM, 03:00 PM - 11:00 PM',
     youtube_id: 'Q8_M7k2W9bK',
     accessibility: {
       wheelchair: false,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Tractor transport and traditional Doli (palanquin carried by four bearers) available from Pamba for elderly pilgrims.'
+      elderly_support_notes: 'Tractor transport and traditional Doli (palanquin carried by four bearers) available from Pamba for elderly pilgrims.',
+      elderly_support_notes_hi: 'पम्पा से वरिष्ठ तीर्थयात्रियों हेतु ट्रैक्टर एवं पारंपरिक डोली (चार कहारों की पालकी) उपलब्ध।',
     }
   },
   {
@@ -743,17 +836,20 @@ export const templesData: Temple[] = [
     longitude: 78.6901,
     deity_id: 'vishnu',
     deity_name: 'Lord Ranganatha (Adisesha Sayanam)',
+    deity_name_hi: 'भगवान रंगनाथ (आदिशेष शयनम)',
     circuit: ['south_mahatirtha', 'divya_desam'],
     significance_hi: '108 दिव्य देशमों में प्रथम व प्रमुख। विश्व का सबसे बड़ा क्रियाशील हिंदू मंदिर परिसर (156 एकड़), 21 भव्य गोपुरम। कावेरी नदी के द्वीप पर शेषशायी विष्णु का विग्रह।',
     significance_en: 'The foremost of all 108 Divya Desams and the largest active temple complex in the world (156 acres), on an island in the Kaveri river.',
     best_time: 'November to March; Vaikuntha Ekadashi',
+    best_time_hi: 'नवंबर से मार्च; वैकुंठ एकादशी',
     darshan_timings: '06:00 AM - 01:00 PM, 03:30 PM - 09:00 PM',
     youtube_id: 'X7_N9k2M1aA',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Battery cars navigate outer praharams; ramp pathways into sanctum enclosure; special Senior tickets available.'
+      elderly_support_notes: 'Battery cars navigate outer praharams; ramp pathways into sanctum enclosure; special Senior tickets available.',
+      elderly_support_notes_hi: 'बाहरी प्राकारों में बैटरी कार; गर्भगृह तक रैंप; वरिष्ठ विशेष टिकट उपलब्ध।',
     }
   },
   {
@@ -766,17 +862,20 @@ export const templesData: Temple[] = [
     longitude: 79.1318,
     deity_id: 'shiva',
     deity_name: 'Lord Shiva (Brihadeeswara)',
+    deity_name_hi: 'भगवान शिव (बृहदीश्वर)',
     circuit: ['south_mahatirtha'],
     significance_hi: 'चोल सम्राट राजराज प्रथम द्वारा 1010 ईस्वी में निर्मित यूनेस्को विश्व धरोहर। 216 फीट ऊंचा विमान जिसके शिखर पर 80 टन का अखंड ग्रेनाइट पत्थर रखा है। विशाल नंदी विग्रह।',
     significance_en: 'UNESCO World Heritage site built in 1010 CE by Raja Raja Chola I, featuring a 216-ft Vimana crowned by an 80-tonne monolithic dome.',
     best_time: 'October to March; Maha Shivaratri',
+    best_time_hi: 'अक्टूबर से मार्च; महाशिवरात्रि',
     darshan_timings: '06:00 AM - 12:30 PM, 04:00 PM - 08:30 PM',
     youtube_id: 'b8_R7m3K9aM',
     accessibility: {
       wheelchair: true,
       vip_darshan: false,
       battery_car: false,
-      elderly_support_notes: 'Paved courtyards with minimal steps; smooth ramp entrance for wheelchairs.'
+      elderly_support_notes: 'Paved courtyards with minimal steps; smooth ramp entrance for wheelchairs.',
+      elderly_support_notes_hi: 'न्यूनतम सीढ़ियों वाले पक्के प्रांगण; व्हीलचेयर हेतु सुगम रैंप प्रवेश।',
     }
   },
   {
@@ -789,17 +888,20 @@ export const templesData: Temple[] = [
     longitude: 79.6934,
     deity_id: 'shiva',
     deity_name: 'Lord Nataraja (Ananda Tandava) & Chidambara Rahasya',
+    deity_name_hi: 'भगवान नटराज (आनंद तांडव) एवं चिदम्बर रहस्य',
     circuit: ['south_mahatirtha'],
     significance_hi: 'पंचभूत स्थलों में आकाश तत्त्व का प्रतिनिधित्व करने वाला महातीर्थ। यहाँ भगवान शिव आनंद तांडव मुद्रा में नटराज रूप में विराजते हैं। "चिदंबर रहस्य" (शून्य/निराकार ब्रह्म) का पावन स्थल।',
     significance_en: 'Represents the Akasha (Ether) element among the Pancha Bhoota Stalas, honoring Nataraja in his cosmic dance of bliss.',
     best_time: 'October to March; Natyanjali Dance Festival',
+    best_time_hi: 'अक्टूबर से मार्च; नाट्यांजलि नृत्य उत्सव',
     darshan_timings: '06:00 AM - 12:00 PM, 05:00 PM - 10:00 PM',
     youtube_id: 'N7_W9k3M0aP',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Wheelchair friendly flat stone courtyards; Dikshithar priests assist elderly devotees directly.'
+      elderly_support_notes: 'Wheelchair friendly flat stone courtyards; Dikshithar priests assist elderly devotees directly.',
+      elderly_support_notes_hi: 'व्हीलचेयर-मित्र समतल पत्थर प्रांगण; दीक्षितार पुजारी वरिष्ठ भक्तों की सीधे सहायता करते हैं।',
     }
   },
   {
@@ -812,17 +914,20 @@ export const templesData: Temple[] = [
     longitude: 79.0677,
     deity_id: 'shiva',
     deity_name: 'Lord Arunachaleswarar (Agni Tattva Lingam)',
+    deity_name_hi: 'भगवान अरुणाचलेश्वर (अग्नि तत्व लिंगम)',
     circuit: ['south_mahatirtha'],
     significance_hi: 'पंचभूत स्थलों में अग्नि तत्त्व का ज्योतिर्लिंग। स्वयं पवित्र अरुणाचल पर्वत शिव रूप माना जाता है। रमण महर्षि की तपोभूमि। कार्तिक दीपम पर पर्वत शिखर पर महादीप प्रज्वलित होता है।',
     significance_en: 'Pancha Bhoota Stala of the Fire (Agni) element at the foot of Mount Arunachala, sanctified by Bhagavan Ramana Maharshi.',
     best_time: 'October to March; Karthigai Deepam',
+    best_time_hi: 'अक्टूबर से मार्च; कार्तिगै दीपम',
     darshan_timings: '05:30 AM - 12:30 PM, 03:30 PM - 09:30 PM',
     youtube_id: 'P8_M7k3W9bA',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Ramps through the main gopurams; battery car services operational for Girivalam circuit.'
+      elderly_support_notes: 'Ramps through the main gopurams; battery car services operational for Girivalam circuit.',
+      elderly_support_notes_hi: 'मुख्य गोपुरमों से रैंप; गिरिवलम परिक्रमा हेतु बैटरी कार सेवा।',
     }
   },
   {
@@ -835,17 +940,20 @@ export const templesData: Temple[] = [
     longitude: 75.6159,
     deity_id: 'kartikeya',
     deity_name: 'Lord Kartikeya (Subrahmanya)',
+    deity_name_hi: 'भगवान कार्तिकेय (सुब्रह्मण्य)',
     circuit: ['south_mahatirtha'],
     significance_hi: 'पश्चिमी घाटों की कुमार पर्वत तलहटी में स्थित। सर्प दोष, कालसर्प दोष और पितृ दोष निवारण (सर्प संस्कार व आश्लेषा बलि) का भारत का सबसे प्रमुख तीर्थ। वासुकी नाग ने यहाँ शरण ली थी।',
     significance_en: 'Foremost shrine for Sarpa Dosha and Ashlesha Bali pujas in Karnataka, where Lord Subrahmanya sheltered the divine serpent Vasuki.',
     best_time: 'September to March; Skanda Sashti',
+    best_time_hi: 'सितंबर से मार्च; स्कंद षष्ठी',
     darshan_timings: '06:00 AM - 01:30 PM, 03:30 PM - 08:30 PM',
     youtube_id: 'V9_X4k7W0bM',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Seating arrangements for elderly performing Ashlesha Bali; wheelchair ramp into the inner quadrangle.'
+      elderly_support_notes: 'Seating arrangements for elderly performing Ashlesha Bali; wheelchair ramp into the inner quadrangle.',
+      elderly_support_notes_hi: 'आश्लेषा बलि करने वाले वरिष्ठ नागरिकों हेतु बैठने की व्यवस्था; आंतरिक प्रांगण तक व्हीलचेयर रैंप।',
     }
   },
   {
@@ -857,18 +965,21 @@ export const templesData: Temple[] = [
     latitude: 14.0942,
     longitude: 74.4849,
     deity_id: 'shiva',
-    deity_name: 'Lord Shiva & World’s 2nd Tallest Shiva Statue',
+    deity_name: 'Lord Shiva & World\'s 2nd Tallest Shiva Statue',
+    deity_name_hi: 'भगवान शिव एवं विश्व की दूसरी सबसे ऊँची शिव प्रतिमा',
     circuit: ['south_mahatirtha'],
     significance_hi: 'अरब सागर के तट पर कंडुका पहाड़ी पर स्थित। 123 फीट ऊंची विशाल शिव प्रतिमा और 249 फीट ऊंचा 20 मंजिला राजा गोपुरम, जिसमें शीर्ष तक जाने के लिए लिफ्ट लगी है।',
     significance_en: 'Coastal temple on the Arabian Sea famous for its 123-ft colossal Shiva statue and a 20-storey Gopuram equipped with a high-speed elevator.',
     best_time: 'October to March',
+    best_time_hi: 'अक्टूबर से मार्च',
     darshan_timings: '06:00 AM - 01:00 PM, 03:00 PM - 08:30 PM',
     youtube_id: 'c7_Y8m2K9aN',
     accessibility: {
       wheelchair: true,
       vip_darshan: false,
       battery_car: false,
-      elderly_support_notes: 'Elevator inside the 20-storey Rajagopuram allows senior citizens to view Arabian Sea and the statue effortlessly.'
+      elderly_support_notes: 'Elevator inside the 20-storey Rajagopuram allows senior citizens to view Arabian Sea and the statue effortlessly.',
+      elderly_support_notes_hi: '20 मंजिला राजगोपुरम में लिफ्ट; वरिष्ठ नागरिक सहजता से अरब सागर एवं प्रतिमा देख सकते हैं।',
     }
   },
   {
@@ -881,17 +992,20 @@ export const templesData: Temple[] = [
     longitude: 74.7516,
     deity_id: 'krishna',
     deity_name: 'Lord Balakrishna (Navagraha Kindi)',
+    deity_name_hi: 'भगवान बालकृष्ण (नवग्रह किंडी)',
     circuit: ['south_mahatirtha'],
     significance_hi: 'जगद्गुरु माध्वाचार्य द्वारा 13वीं शताब्दी में स्थापित। भक्त कनकदास की भक्ति से मुड़कर पश्चिम की ओर देखने वाले बालकृष्ण। 9 छेदों वाली कनकन किंडी (खिड़की) से दर्शन।',
     significance_en: 'Founded by Madhvacharya in the 13th century, famous for viewing child Krishna through the nine-hole silver window (Kanakana Kindi).',
     best_time: 'October to March; Paryaya Festival',
+    best_time_hi: 'अक्टूबर से मार्च; पर्याय उत्सव',
     darshan_timings: '05:00 AM - 09:00 PM',
     youtube_id: 'd8_R9w3K0aM',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Direct darshan lane for senior citizens and pregnant women through Kanaka Kindi.'
+      elderly_support_notes: 'Direct darshan lane for senior citizens and pregnant women through Kanaka Kindi.',
+      elderly_support_notes_hi: 'कनक किंडी से वरिष्ठ नागरिकों एवं गर्भवती महिलाओं हेतु सीधा दर्शन मार्ग।',
     }
   },
   {
@@ -904,17 +1018,20 @@ export const templesData: Temple[] = [
     longitude: 75.2558,
     deity_id: 'saraswati',
     deity_name: 'Goddess Sharadamba & Sri Vidyashankara',
+    deity_name_hi: 'माता शारदाम्बा एवं श्री विद्याशंकर',
     circuit: ['south_mahatirtha'],
     significance_hi: 'तुंगा नदी के तट पर आदि शंकराचार्य द्वारा स्थापित प्रथम आम्नाय पीठ (दक्षिणाम्नाय)। ज्ञान की देवी माँ शारदा का स्वर्ण विग्रह और 12 राशि स्तंभों वाला अद्भुत विद्याशंकर मंदिर।',
     significance_en: 'The first monastery established by Adi Shankaracharya on the Tunga river, renowned for the golden idol of Sharadamba.',
     best_time: 'October to March; Navratri',
+    best_time_hi: 'अक्टूबर से मार्च; नवरात्रि',
     darshan_timings: '06:00 AM - 02:00 PM, 05:00 PM - 09:00 PM',
     youtube_id: 'L7_W8k3N0aP',
     accessibility: {
       wheelchair: true,
       vip_darshan: false,
       battery_car: false,
-      elderly_support_notes: 'Serene riverside atmosphere; wheelchair accessible pathways connecting Sharadamba and Vidyashankara temples.'
+      elderly_support_notes: 'Serene riverside atmosphere; wheelchair accessible pathways connecting Sharadamba and Vidyashankara temples.',
+      elderly_support_notes_hi: 'शांत नदी तटीय वातावरण; शारदाम्बा एवं विद्याशंकर मंदिरों को जोड़ने वाले व्हीलचेयर-सुलभ मार्ग।',
     }
   },
 
@@ -931,17 +1048,20 @@ export const templesData: Temple[] = [
     longitude: 72.8304,
     deity_id: 'ganesha',
     deity_name: 'Lord Siddhivinayak (Right-Trunk Ganesha)',
+    deity_name_hi: 'भगवान सिद्धिविनायक (दक्षिण मुखी गणेश)',
     circuit: ['west_india'],
     significance_hi: 'दाहिनी ओर सूंड वाले स्वयंभू गणेश जी (सिद्धिविनायक)। मनोकामना पूर्ति का सर्वोच्च केंद्र। स्वर्ण मंडित गर्भगृह में रिद्धि-सिद्धि के साथ विराजमान।',
     significance_en: 'The prime Ganesha temple of Mumbai with the rare right-curved trunk idol flanked by goddesses Riddhi and Siddhi.',
     best_time: 'All year round; Tuesdays and Angaraki Chaturthi',
+    best_time_hi: 'वर्षभर; मंगलवार एवं अंगारकी चतुर्थी',
     darshan_timings: '05:30 AM - 10:00 PM',
     youtube_id: 'P9_M4k7W2bA',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Dedicated Senior Citizen line at Gate 4; lifts and wheelchairs provided by the temple trust.'
+      elderly_support_notes: 'Dedicated Senior Citizen line at Gate 4; lifts and wheelchairs provided by the temple trust.',
+      elderly_support_notes_hi: 'गेट 4 पर वरिष्ठ नागरिक कतार; मंदिर ट्रस्ट द्वारा लिफ्ट एवं व्हीलचेयर।',
     }
   },
   {
@@ -954,17 +1074,20 @@ export const templesData: Temple[] = [
     longitude: 74.4764,
     deity_id: 'dattatreya',
     deity_name: 'Shri Sai Baba (Samadhi)',
+    deity_name_hi: 'श्री साईं बाबा (समाधि)',
     circuit: ['west_india'],
     significance_hi: 'संत शिरोमणि श्री साई बाबा की पावन समाधि, द्वारकामाई, चावड़ी और अखंड धुनी। "श्रद्धा और सबुरी" का अमर संदेश।',
     significance_en: 'The holy samadhi of Sri Sai Baba of Shirdi, celebrated for universal oneness, compassion, and miracle-granting faith.',
     best_time: 'September to March; Guru Purnima',
+    best_time_hi: 'सितंबर से मार्च; गुरु पूर्णिमा',
     darshan_timings: '04:00 AM (Kakad Aarti) - 11:15 PM (Shej Aarti)',
     youtube_id: 'T8_R9w4M1aK',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Free online and offline Senior Citizen pass for direct entry; wheelchairs and golf carts available in complex.'
+      elderly_support_notes: 'Free online and offline Senior Citizen pass for direct entry; wheelchairs and golf carts available in complex.',
+      elderly_support_notes_hi: 'सीधे प्रवेश हेतु निःशुल्क ऑनलाइन/ऑफलाइन वरिष्ठ नागरिक पास; परिसर में व्हीलचेयर एवं गोल्फ कार्ट।',
     }
   },
   {
@@ -977,17 +1100,20 @@ export const templesData: Temple[] = [
     longitude: 75.3283,
     deity_id: 'vithoba',
     deity_name: 'Lord Vitthala (Vithoba) & Rakhumai',
+    deity_name_hi: 'भगवान विठ्ठल (विठोबा) एवं रखुमाई',
     circuit: ['west_india'],
     significance_hi: 'चंद्रभागा नदी तट पर वारकरी संप्रदाय का प्राण। भक्त पुंडलीक की भक्ति के वशीभूत ईंट पर खड़े विठोबा। यहाँ भक्त सीधे प्रभु के चरणों में मस्तक रखकर चरणस्पर्श कर सकते हैं।',
     significance_en: 'The heart of Maharashtra’s Varkari tradition on the Chandrabhaga river, where devotees touch their heads directly to the Lord’s feet.',
     best_time: 'Ashadhi Ekadashi; Kartiki Ekadashi; October to March',
+    best_time_hi: 'आषाढ़ी एकादशी; कार्तिकी एकादशी; अक्टूबर से मार्च',
     darshan_timings: '04:00 AM - 11:00 PM',
     youtube_id: 'W8_M7k2N0bA',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Separate "Mukh Darshan" queue for senior citizens who cannot stand in long Charan Sparsh lines.'
+      elderly_support_notes: 'Separate "Mukh Darshan" queue for senior citizens who cannot stand in long Charan Sparsh lines.',
+      elderly_support_notes_hi: 'लंबी चरण स्पर्श कतार में न खड़े हो सकने वाले वरिष्ठ नागरिकों हेतु अलग मुख दर्शन कतार।',
     }
   },
   {
@@ -1000,17 +1126,20 @@ export const templesData: Temple[] = [
     longitude: 74.8219,
     deity_id: 'shani',
     deity_name: 'Lord Shani Deva (Swayambhu Black Stone)',
+    deity_name_hi: 'भगवान शनि देव (स्वयंभू काला पत्थर)',
     circuit: ['west_india'],
     significance_hi: 'खुले आकाश के नीचे चबूतरे पर स्थापित भगवान शनिदेव का 5.5 फीट लंबा काला पाषाण विग्रह। इस पूरे गांव के घरों में दरवाजे-ताले नहीं होते, क्योंकि शनिदेव स्वयं रक्षा करते हैं।',
     significance_en: 'Unique open-air black stone shrine of Lord Shani in a village with doorless houses guarded by the Lord himself.',
     best_time: 'All year round; Shani Amavasya & Saturdays',
+    best_time_hi: 'वर्षभर; शनि अमावस्या एवं शनिवार',
     darshan_timings: 'Open 24 hours daily',
     youtube_id: 'N9_X7k3W1bM',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Battery cars from parking to sanctum; flat platform accessible by wheelchair for elderly darshan.'
+      elderly_support_notes: 'Battery cars from parking to sanctum; flat platform accessible by wheelchair for elderly darshan.',
+      elderly_support_notes_hi: 'पार्किंग से गर्भगृह तक बैटरी कार; वरिष्ठ दर्शन हेतु व्हीलचेयर-सुलभ समतल मंच।',
     }
   },
   {
@@ -1023,17 +1152,20 @@ export const templesData: Temple[] = [
     longitude: 73.8219,
     deity_id: 'krishna',
     deity_name: 'Lord Shrinathji (Govardhannath)',
+    deity_name_hi: 'भगवान श्रीनाथजी (गोवर्धननाथ)',
     circuit: ['north_india'],
     significance_hi: 'पुष्टिमार्ग वल्लभाचार्य संप्रदाय का प्रधान केंद्र। 7 वर्ष के बालकृष्ण द्वारा गोवर्धन पर्वत अपनी कनिष्ठा उंगली पर उठाए हुए स्वरूप का विग्रह। दिन के आठ प्रहर के दर्शन (मंगला से शयन तक)।',
     significance_en: 'The supreme shrine of Pushtimarg Vaishnavism in Rajasthan, worshipping 7-year-old Krishna lifting Mount Govardhana.',
     best_time: 'September to March; Annakut / Diwali',
+    best_time_hi: 'सितंबर से मार्च; अन्नकूट / दीपावली',
     darshan_timings: 'Divided into 8 Jhankis (Mangala 5:30 AM to Shayan 7:30 PM)',
     youtube_id: 'c8_X4m7Q2wB',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Senior citizen entry token available at temple office to avoid crowding during short 30-minute Jhanki openings.'
+      elderly_support_notes: 'Senior citizen entry token available at temple office to avoid crowding during short 30-minute Jhanki openings.',
+      elderly_support_notes_hi: '30 मिनट की झांकी खुलने के समय भीड़ से बचने हेतु मंदिर कार्यालय में वरिष्ठ नागरिक टोकन।',
     }
   },
   {
@@ -1046,17 +1178,20 @@ export const templesData: Temple[] = [
     longitude: 74.5511,
     deity_id: 'brahma',
     deity_name: 'Lord Brahma & Gayatri',
+    deity_name_hi: 'भगवान ब्रह्मा एवं गायत्री',
     circuit: ['north_india'],
     significance_hi: 'संसार में भगवान ब्रह्मा का अत्यंत दुर्लभ व सबसे प्रमुख मंदिर। पुष्कर सरोवर के तट पर जहाँ ब्रह्माजी के हाथ से कमल का पुष्प गिरा था। कार्तिक पूर्णिमा पर यहाँ स्नान व दर्शन का अनंत फल है।',
     significance_en: 'One of the very few existing temples dedicated to Creator Brahma, situated on the sacred Pushkar lake.',
     best_time: 'October to March; Pushkar Fair (Kartik Purnima)',
+    best_time_hi: 'अक्टूबर से मार्च; पुष्कर मेला (कार्तिक पूर्णिमा)',
     darshan_timings: '06:30 AM - 01:30 PM, 03:00 PM - 08:30 PM',
     youtube_id: 'K7_R9w2M9aM',
     accessibility: {
       wheelchair: true,
       vip_darshan: false,
       battery_car: false,
-      elderly_support_notes: 'Ramps available for lower courtyard; handrails installed on the short flight of stairs leading to inner sanctum.'
+      elderly_support_notes: 'Ramps available for lower courtyard; handrails installed on the short flight of stairs leading to inner sanctum.',
+      elderly_support_notes_hi: 'निचले प्रांगण हेतु रैंप; गर्भगृह तक की छोटी सीढ़ियों पर हैंडरेल।',
     }
   },
   {
@@ -1069,17 +1204,20 @@ export const templesData: Temple[] = [
     longitude: 75.3056,
     deity_id: 'krishna',
     deity_name: 'Barbarika / Shyam Baba (Sheesh Ke Daani)',
+    deity_name_hi: 'बर्बरीक / श्याम बाबा (शीश के दानी)',
     circuit: ['north_india'],
     significance_hi: 'महाभारत के वीर बर्बरीक, जिन्होंने श्री कृष्ण को अपना शीश दान कर दिया था। भगवान कृष्ण ने उन्हें कलियुग में अपने नाम "श्याम" से पूजे जाने का वरदान दिया। "हारे का सहारा, बाबा श्याम हमारा।"',
     significance_en: 'Celebrated as "Sheesh Ke Daani", Barbarika’s severed head is worshipped as Krishna himself, answering prayers of the distressed.',
     best_time: 'October to March; Phalgun Mela',
+    best_time_hi: 'अक्टूबर से मार्च; फाल्गुन मेला',
     darshan_timings: '05:30 AM - 01:00 PM, 05:00 PM - 10:00 PM',
     youtube_id: 'b6_W7m3K9aA',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Newly renovated covered zig-zag pathway with carpeted floors, mist fans, and separate elderly exit gate.'
+      elderly_support_notes: 'Newly renovated covered zig-zag pathway with carpeted floors, mist fans, and separate elderly exit gate.',
+      elderly_support_notes_hi: 'नवीनीकृत ढका ज़िगज़ैग मार्ग; कालीन फर्श, मिस्ट पंखे एवं वरिष्ठ नागरिक विशेष निकास द्वार।',
     }
   },
 
@@ -1096,17 +1234,20 @@ export const templesData: Temple[] = [
     longitude: 77.7011,
     deity_id: 'krishna',
     deity_name: 'Lord Bankey Bihari (Tribhanga Krishna)',
+    deity_name_hi: 'भगवान बांके बिहारी (त्रिभंग कृष्ण)',
     circuit: ['north_india'],
     significance_hi: 'स्वामी हरिदास जी की संगीत साधना से प्रकट त्रिभंग मुद्रा वाले बाँके बिहारी जी। यहाँ घंटी-शंख नहीं बजता और विग्रह के सामने बार-बार पर्दा डाला जाता है ताकि भक्त और भगवान की नजरें बंध न जाएं।',
     significance_en: 'Manifested by Saint Swami Haridas through divine music, child-like Krishna is adored here with intermittent curtain darshans.',
     best_time: 'October to March; Janmashtami, Holi & Radhashtami',
+    best_time_hi: 'अक्टूबर से मार्च; जन्माष्टमी, होली एवं राधाष्टमी',
     darshan_timings: 'Winter: 07:45 AM - 12:00 PM, 05:30 PM - 09:30 PM',
     youtube_id: 'T7_M9w3K0aC',
     accessibility: {
       wheelchair: false,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'E-rickshaws bring pilgrims near VIP alley; early morning Mangala/Shringar darshan recommended to avoid narrow lane rush.'
+      elderly_support_notes: 'E-rickshaws bring pilgrims near VIP alley; early morning Mangala/Shringar darshan recommended to avoid narrow lane rush.',
+      elderly_support_notes_hi: 'ई-रिक्शा VIP गली तक; भीड़ से बचने हेतु प्रातःकालीन मंगला/श्रृंगार दर्शन अनुशंसित।',
     }
   },
   {
@@ -1119,17 +1260,20 @@ export const templesData: Temple[] = [
     longitude: 77.6743,
     deity_id: 'krishna',
     deity_name: 'Radha Krishna & Sita Rama',
+    deity_name_hi: 'राधा कृष्ण एवं सीता राम',
     circuit: ['north_india'],
     significance_hi: 'जगद्गुरु कृपालु जी महाराज द्वारा निर्मित श्वेत इटैलियन संगमरमर का भव्य मंदिर। शाम के समय रंग-बिरंगी रोशनी और संगीतमय फव्वारे से कृष्ण-लीलाओं का सजीव चित्रण।',
     significance_en: 'Magnificent white Italian marble temple complex in Vrindavan showcasing the eternal pastimes of Sri Radha Krishna.',
     best_time: 'October to March',
+    best_time_hi: 'अक्टूबर से मार्च',
     darshan_timings: '05:30 AM - 12:00 PM, 04:30 PM - 08:30 PM; Musical fountain at 7:30 PM',
     youtube_id: 'V8_M7k2N0bK',
     accessibility: {
       wheelchair: true,
       vip_darshan: false,
       battery_car: true,
-      elderly_support_notes: 'Extremely senior-friendly; expansive paved grounds, free battery carts, escalators, and elevator inside main temple.'
+      elderly_support_notes: 'Extremely senior-friendly; expansive paved grounds, free battery carts, escalators, and elevator inside main temple.',
+      elderly_support_notes_hi: 'अत्यंत वरिष्ठ-मित्र; विशाल पक्के मैदान, निःशुल्क बैटरी कार्ट, एस्केलेटर एवं मुख्य मंदिर में लिफ्ट।',
     }
   },
   {
@@ -1142,17 +1286,20 @@ export const templesData: Temple[] = [
     longitude: 82.9984,
     deity_id: 'hanuman',
     deity_name: 'Lord Sankat Mochan Hanuman',
+    deity_name_hi: 'भगवान संकट मोचन हनुमान',
     circuit: ['north_india'],
     significance_hi: 'गोस्वामी तुलसीदास जी द्वारा स्थापित जहाँ उन्हें हनुमान जी के साक्षात दर्शन हुए थे। यहाँ हनुमान जी अपने प्रभु श्री राम के हृदय की ओर दृष्टि लगाए खड़े हैं। संकट मोचन हनुमानाष्टक का गान।',
     significance_en: 'Founded by Goswami Tulsidas at the spot where Hanuman appeared to him, revered for dispelling severe life crises and planetary afflictions.',
     best_time: 'All year round; Tuesdays and Saturdays',
+    best_time_hi: 'वर्षभर; मंगलवार एवं शनिवार',
     darshan_timings: '05:00 AM - 10:00 PM',
     youtube_id: 'L9_X4k7W0bC',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Shaded courtyard, peaceful benches, wheelchair ramp entrance from rear gate.'
+      elderly_support_notes: 'Shaded courtyard, peaceful benches, wheelchair ramp entrance from rear gate.',
+      elderly_support_notes_hi: 'छायादार प्रांगण, शांत बेंच, पिछले द्वार से व्हीलचेयर रैंप प्रवेश।',
     }
   },
   {
@@ -1165,17 +1312,20 @@ export const templesData: Temple[] = [
     longitude: 85.0069,
     deity_id: 'vishnu',
     deity_name: 'Lord Vishnu (40 cm footprint on rock)',
+    deity_name_hi: 'भगवान विष्णु (शिला पर 40 सेमी चरण चिह्न)',
     circuit: ['north_india'],
     significance_hi: 'फल्गु नदी के तट पर ठोस बेसाल्ट चट्टान पर भगवान विष्णु के 40 सेमी लंबे पदचिह्न। पितृपक्ष में पूर्वजों के पिंडदान और मोक्ष का समस्त भारत में सबसे सर्वोच्च तीर्थ।',
     significance_en: 'Houses the 40-cm footprint of Lord Vishnu embedded in solid rock on the banks of Falgu, the supreme destination for Pitru Pind Daan.',
     best_time: 'September to February; Pitru Paksha',
+    best_time_hi: 'सितंबर से फरवरी; पितृ पक्ष',
     darshan_timings: '06:00 AM - 09:00 PM',
     youtube_id: 'b8_R7m3K9aK',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Wheelchair assistance provided by local Panda committees for senior citizens performing Shraddha rituals.'
+      elderly_support_notes: 'Wheelchair assistance provided by local Panda committees for senior citizens performing Shraddha rituals.',
+      elderly_support_notes_hi: 'श्राद्ध कर्म करने वाले वरिष्ठ नागरिकों हेतु स्थानीय पंडा समिति द्वारा व्हीलचेयर सहायता।',
     }
   },
   {
@@ -1188,17 +1338,20 @@ export const templesData: Temple[] = [
     longitude: 88.3576,
     deity_id: 'kali',
     deity_name: 'Maa Bhavatarini (Kali)',
+    deity_name_hi: 'माँ भवतारिणी (काली)',
     circuit: ['east_india'],
     significance_hi: 'रानी रासमणि द्वारा 1855 में निर्मित, जहाँ युगपुरुष श्री रामकृष्ण परमहंस ने माँ भवतारिणी के साक्षात दर्शन किए थे। 12 शिव मंदिर और राधाकांत मंदिर से युक्त नवरत्न स्थापत्य।',
     significance_en: 'Built on the Hooghly in 1855, sanctified by the divine vision of Sri Ramakrishna Paramahamsa worshipping Mother Bhavatarini.',
     best_time: 'October to March; Kali Puja',
+    best_time_hi: 'अक्टूबर से मार्च; काली पूजा',
     darshan_timings: '06:00 AM - 12:30 PM, 03:30 PM - 09:00 PM',
     youtube_id: 'J7_M9w3K0aM',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Paved ramps from ghats; battery rickshaws from parking; wheelchair paths along the 12 Shiva temples.'
+      elderly_support_notes: 'Paved ramps from ghats; battery rickshaws from parking; wheelchair paths along the 12 Shiva temples.',
+      elderly_support_notes_hi: 'घाटों से पक्के रैंप; पार्किंग से बैटरी रिक्शा; 12 शिव मंदिरों के साथ व्हीलचेयर मार्ग।',
     }
   },
   {
@@ -1211,17 +1364,20 @@ export const templesData: Temple[] = [
     longitude: 85.8338,
     deity_id: 'shiva',
     deity_name: 'Lord Harihara (Shiva-Vishnu combined)',
+    deity_name_hi: 'भगवान हरिहर (शिव-विष्णु संयुक्त)',
     circuit: ['east_india'],
     significance_hi: '11वीं शताब्दी का कलिंग स्थापत्य का सर्वोच्च शिखर। यहाँ भगवान शिव और विष्णु "हरिहर" रूप में एक साथ पूजे जाते हैं। पावन बिंदुसागर सरोवर के निकट।',
     significance_en: 'The crown of Kalinga architecture in Bhubaneswar, where Shiva and Vishnu are uniquely worshipped together as Harihara.',
     best_time: 'October to March; Shivaratri (Rukuna Rath Yatra)',
+    best_time_hi: 'अक्टूबर से मार्च; शिवरात्रि (रुकुण रथ यात्रा)',
     darshan_timings: '06:00 AM - 09:00 PM',
     youtube_id: 'N8_Y7w3Q1bC',
     accessibility: {
       wheelchair: true,
       vip_darshan: false,
       battery_car: false,
-      elderly_support_notes: 'Spacious stone courtyard with shaded corridors; assistance available for elderly entering main sanctum.'
+      elderly_support_notes: 'Spacious stone courtyard with shaded corridors; assistance available for elderly entering main sanctum.',
+      elderly_support_notes_hi: 'छायादार गलियारों वाला विशाल पत्थर प्रांगण; गर्भगृह प्रवेश हेतु वरिष्ठ सहायता।',
     }
   },
   {
@@ -1234,17 +1390,20 @@ export const templesData: Temple[] = [
     longitude: 86.0945,
     deity_id: 'surya',
     deity_name: 'Lord Surya (Sun God chariot)',
+    deity_name_hi: 'भगवान सूर्य देव (रथ)',
     circuit: ['east_india'],
     significance_hi: '13वीं शताब्दी में राजा नरसिंहदेव प्रथम द्वारा निर्मित यूनेस्को विश्व धरोहर। 24 विशाल रथ के पहियों और 7 घोड़ों द्वारा खींचे जाते सूर्यदेव के पावन रथ रूपी मंदिर।',
     significance_en: '13th-century UNESCO World Heritage monumental chariot temple with 24 intricately carved stone wheels representing cosmic time.',
     best_time: 'October to March; Konark Dance Festival (December)',
+    best_time_hi: 'अक्टूबर से मार्च; कोणार्क नृत्य उत्सव (दिसंबर)',
     darshan_timings: '06:00 AM - 08:00 PM; Light & Sound show evening',
     youtube_id: 'M9_X4k8W1aK',
     accessibility: {
       wheelchair: true,
       vip_darshan: false,
       battery_car: true,
-      elderly_support_notes: 'ASI provides wooden ramps and free manual wheelchairs for senior citizens around monument boundary.'
+      elderly_support_notes: 'ASI provides wooden ramps and free manual wheelchairs for senior citizens around monument boundary.',
+      elderly_support_notes_hi: 'ASI द्वारा स्मारक परिसर में वरिष्ठ नागरिकों हेतु लकड़ी के रैंप एवं निःशुल्क व्हीलचेयर।',
     }
   },
   {
@@ -1257,17 +1416,20 @@ export const templesData: Temple[] = [
     longitude: 87.7981,
     deity_id: 'kali',
     deity_name: 'Maa Tara (Tantric Mahavidya)',
+    deity_name_hi: 'माँ तारा (तांत्रिक महाविद्या)',
     circuit: ['east_india', 'shakti_peetha'],
     significance_hi: 'द्वारका नदी तट पर महाश्मशान के निकट स्थित 10 महाविद्याओं में माँ तारा का शक्तिपीठ। सती के नेत्रों की पुतली (तारा) गिरी थी। संत बामाखेपा की पावन साधना स्थली।',
     significance_en: 'Renowned Tantric temple dedicated to second Mahavidya Maa Tara, immortalized by saint Bamakhepa adjacent to the cremation grounds.',
     best_time: 'October to March',
+    best_time_hi: 'अक्टूबर से मार्च',
     darshan_timings: '06:00 AM - 08:30 PM',
     youtube_id: 'd9_V7w2Q4aM',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'VIP entry gate helps bypass regular serpentine queues; wheelchairs permitted up to main verandah.'
+      elderly_support_notes: 'VIP entry gate helps bypass regular serpentine queues; wheelchairs permitted up to main verandah.',
+      elderly_support_notes_hi: 'VIP प्रवेश द्वार से सामान्य कतार को बायपास; मुख्य बरामदे तक व्हीलचेयर अनुमत।',
     }
   },
   {
@@ -1280,17 +1442,20 @@ export const templesData: Temple[] = [
     longitude: 77.2773,
     deity_id: 'vishnu',
     deity_name: 'Bhagwan Swaminarayan',
+    deity_name_hi: 'भगवान स्वामीनारायण',
     circuit: ['north_india'],
     significance_hi: 'यमुना तट पर 100 एकड़ में फैला भारतीय स्थापत्य, संस्कृति और सनातन मूल्यों का भव्य महामंदिर। गुलाबी बलुआ पत्थर और सफेद संगमरमर से निर्मित।',
     significance_en: 'World-famous spiritual and cultural campus celebrating 10,000 years of Indian art, spirituality, and architecture.',
     best_time: 'October to March',
+    best_time_hi: 'अक्टूबर से मार्च',
     darshan_timings: '09:30 AM - 08:00 PM (Closed on Mondays)',
     youtube_id: 'K8_R7w2M9aC',
     accessibility: {
       wheelchair: true,
       vip_darshan: false,
       battery_car: true,
-      elderly_support_notes: 'Extremely senior-friendly; free wheelchairs, motorized golf carts, and smooth ramps across all halls.'
+      elderly_support_notes: 'Extremely senior-friendly; free wheelchairs, motorized golf carts, and smooth ramps across all halls.',
+      elderly_support_notes_hi: 'अत्यंत वरिष्ठ-मित्र; निःशुल्क व्हीलचेयर, मोटराइज़्ड गोल्फ कार्ट एवं सभी हॉल में सुगम रैंप।',
     }
   },
   {
@@ -1303,17 +1468,20 @@ export const templesData: Temple[] = [
     longitude: 74.8682,
     deity_id: 'durga',
     deity_name: 'Devi Durga, Lakshmi & Narayana',
+    deity_name_hi: 'देवी दुर्गा, लक्ष्मी एवं नारायण',
     circuit: ['north_india'],
     significance_hi: 'पवित्र सरोवर के मध्य स्वर्ण मंदिर की स्थापत्य शैली में बना माँ दुर्गा व लक्ष्मी नारायण का भव्य पावन मंदिर।',
     significance_en: 'Historic lake temple in Amritsar built in the architectural style of the Golden Temple, dedicated to Goddess Durga and Lakshmi Narayana.',
     best_time: 'October to March; Navratri & Janmashtami',
+    best_time_hi: 'अक्टूबर से मार्च; नवरात्रि एवं जन्माष्टमी',
     darshan_timings: '05:00 AM - 10:00 PM',
     youtube_id: 'aG9_W7k3Q8k',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Bridge across the lake is wide and flat; wheelchairs available at front deori.'
+      elderly_support_notes: 'Bridge across the lake is wide and flat; wheelchairs available at front deori.',
+      elderly_support_notes_hi: 'झील पर पुल चौड़ा एवं समतल; सामने की डेवड़ी पर व्हीलचेयर उपलब्ध।',
     }
   },
   {
@@ -1326,17 +1494,20 @@ export const templesData: Temple[] = [
     longitude: 78.3364,
     deity_id: 'shiva',
     deity_name: 'Lord Neelkanth (Shiva)',
+    deity_name_hi: 'भगवान नीलकंठ (शिव)',
     circuit: ['north_india'],
     significance_hi: 'समुद्र मंथन से निकले कालकूट विष का पान करने के पश्चात भगवान शिव का कंठ नीला पड़ गया था। वे इसी स्थान पर ध्यानमग्न हुए थे।',
     significance_en: 'Where Shiva consumed the cosmic Halahala poison churned from the ocean, turning His throat blue.',
     best_time: 'October to April; Shravan month',
+    best_time_hi: 'अक्टूबर से अप्रैल; श्रावण मास',
     darshan_timings: '05:00 AM - 08:30 PM',
     youtube_id: 'W6_Y4r9X0cE',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Vehicles go up to the entrance gate; rampways facilitate elder access to sanctum.'
+      elderly_support_notes: 'Vehicles go up to the entrance gate; rampways facilitate elder access to sanctum.',
+      elderly_support_notes_hi: 'वाहन प्रवेश द्वार तक; रैंप से वरिष्ठ नागरिकों की गर्भगृह तक पहुँच।',
     }
   },
   {
@@ -1349,17 +1520,20 @@ export const templesData: Temple[] = [
     longitude: 76.3236,
     deity_id: 'durga',
     deity_name: 'Maa Jwala Ji (Sacred Eternal Flames)',
+    deity_name_hi: 'माँ ज्वाला जी (पवित्र शाश्वत ज्वालाएँ)',
     circuit: ['shakti_peetha', 'north_india'],
     significance_hi: '51 शक्तिपीठों में एक जहाँ सती की जिह्वा गिरी थी। यहाँ बिना तेल या बाती के चट्टानों से 9 पवित्र ज्योति ज्वालाएं अखंड रूप से प्रज्वलित रहती हैं।',
     significance_en: 'Unique Shakti Peetha where Sati’s tongue fell, manifested as nine eternal blue flames leaping naturally from the rock fissures.',
     best_time: 'September to April; Navratri',
+    best_time_hi: 'सितंबर से अप्रैल; नवरात्रि',
     darshan_timings: '05:00 AM - 10:00 PM',
     youtube_id: 'N8_Y7w3Q1aA',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Paved walkways and gentle ramps; porter and palanquin support available from lower bazaar.'
+      elderly_support_notes: 'Paved walkways and gentle ramps; porter and palanquin support available from lower bazaar.',
+      elderly_support_notes_hi: 'पक्की पगडंडियाँ एवं सौम्य रैंप; निचले बाज़ार से कुली एवं पालकी सहायता।',
     }
   },
   {
@@ -1372,17 +1546,20 @@ export const templesData: Temple[] = [
     longitude: 76.5369,
     deity_id: 'durga',
     deity_name: 'Maa Naina Devi (Eyes of Sati)',
+    deity_name_hi: 'माँ नैना देवी (सती के नेत्र)',
     circuit: ['shakti_peetha', 'north_india'],
     significance_hi: 'गोविंद सागर झील के ऊपर त्रिकूटा पर्वत श्रृंखला पर स्थित। यहाँ सती के दोनों नेत्र गिरे थे। महर्षि कश्यप की तपोस्थली।',
     significance_en: 'Perched on a cliff overlooking Gobind Sagar lake where Sati’s eyes fell; ropeway cable car available for easy ascent.',
     best_time: 'All year round; Navratri & Shravan Ashtami',
+    best_time_hi: 'वर्षभर; नवरात्रि एवं श्रावण अष्टमी',
     darshan_timings: '05:00 AM - 09:30 PM',
     youtube_id: 'd9_V7w2Q4aK',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Modern cable car (ropeway) carries elderly directly to temple entrance within 5 minutes.'
+      elderly_support_notes: 'Modern cable car (ropeway) carries elderly directly to temple entrance within 5 minutes.',
+      elderly_support_notes_hi: 'आधुनिक केबल कार (रोपवे) वरिष्ठ नागरिकों को 5 मिनट में सीधे मंदिर प्रवेश तक ले जाती है।',
     }
   },
   {
@@ -1395,17 +1572,20 @@ export const templesData: Temple[] = [
     longitude: 72.8494,
     deity_id: 'durga',
     deity_name: 'Maa Amba (Viso Yantra)',
+    deity_name_hi: 'माँ अम्बा (विसो यंत्र)',
     circuit: ['shakti_peetha', 'west_india'],
     significance_hi: '51 शक्तिपीठों में सती के हृदय का पावन स्थल। गर्भगृह में कोई मूर्ति नहीं बल्कि अखंड प्रज्वलित ज्योति और पवित्र "वीसो यंत्र" की पूजा होती है। गब्बर पर्वत की पावन ज्योति।',
     significance_en: 'Foremost Shakti Peetha where Sati’s heart fell. Worshipped not as an idol but as the consecrated gold Viso Yantra.',
     best_time: 'September to March; Bhadrapadi Purnima',
+    best_time_hi: 'सितंबर से मार्च; भाद्रपदी पूर्णिमा',
     darshan_timings: '07:00 AM - 11:30 AM, 12:30 PM - 04:30 PM, 06:30 PM - 09:00 PM',
     youtube_id: 'k7_Y9w4M0bC',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Ropeway at Gabbar Hill; golf carts within Ambaji temple precinct; wheelchair assistance at entry.'
+      elderly_support_notes: 'Ropeway at Gabbar Hill; golf carts within Ambaji temple precinct; wheelchair assistance at entry.',
+      elderly_support_notes_hi: 'गब्बर पहाड़ी पर रोपवे; अंबाजी मंदिर परिसर में गोल्फ कार्ट; प्रवेश पर व्हीलचेयर सहायता।',
     }
   },
   {
@@ -1418,17 +1598,20 @@ export const templesData: Temple[] = [
     longitude: 79.0886,
     deity_id: 'lakshmi',
     deity_name: 'Sri Lakshmi Narayani',
+    deity_name_hi: 'श्री लक्ष्मी नारायणी',
     circuit: ['south_mahatirtha'],
     significance_hi: '1500 किलो शुद्ध स्वर्ण से मढ़ाया गया विश्व का सबसे बड़ा स्वर्ण मंदिर। 100 एकड़ में श्री चक्र रूपी 1.8 किमी लंबे आध्यात्मिक स्टार-पथ के मध्य स्थित।',
     significance_en: 'Built with over 1,500 kg of pure gold in the shape of Sri Yantra, surrounded by an eco-friendly green spiritual sanctuary.',
     best_time: 'October to March',
+    best_time_hi: 'अक्टूबर से मार्च',
     darshan_timings: '08:00 AM - 08:00 PM',
     youtube_id: 'X7_N9k2M1aA',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: true,
-      elderly_support_notes: 'Free battery-operated vehicles convey elderly throughout the entire star-shaped walking path.'
+      elderly_support_notes: 'Free battery-operated vehicles convey elderly throughout the entire star-shaped walking path.',
+      elderly_support_notes_hi: 'तारे के आकार की पूरी पैदल पथ में वरिष्ठ नागरिकों हेतु निःशुल्क बैटरी वाहन।',
     }
   },
   {
@@ -1441,17 +1624,20 @@ export const templesData: Temple[] = [
     longitude: 77.5186,
     deity_id: 'kartikeya',
     deity_name: 'Lord Dhandayuthapani (Murugan)',
+    deity_name_hi: 'भगवान दण्डायुधपाणि (मुरुगन)',
     circuit: ['south_mahatirtha'],
     significance_hi: 'मुरुगन स्वामी के 6 पावन धामों (अरुपडै वीडु) में सबसे प्रमुख। सिद्ध भोगर द्वारा 9 औषधीय पाषाणों (नवरपाषाण) से निर्मित चमत्कारी विग्रह। पंचामृत प्रसादम।',
     significance_en: 'The foremost of the six holy abodes of Murugan, housing the idol crafted by Sage Bhogar from nine medicinal minerals (Navapashana).',
     best_time: 'October to March; Thaipusam & Panguni Uthiram',
+    best_time_hi: 'अक्टूबर से मार्च; थाईपूसम एवं पंगुनि उत्तिरम',
     darshan_timings: '06:00 AM - 08:30 PM',
     youtube_id: 'V9_X4k7W0bM',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Modern winch train and ropeway transport elderly pilgrims directly to hilltop temple in minutes.'
+      elderly_support_notes: 'Modern winch train and ropeway transport elderly pilgrims directly to hilltop temple in minutes.',
+      elderly_support_notes_hi: 'आधुनिक विंच ट्रेन एवं रोपवे वरिष्ठ तीर्थयात्रियों को मिनटों में पहाड़ी मंदिर तक ले जाते हैं।',
     }
   },
   {
@@ -1464,17 +1650,20 @@ export const templesData: Temple[] = [
     longitude: 79.2173,
     deity_id: 'shiva',
     deity_name: 'Lord Tungnath (Highest Shiva Temple on Earth)',
+    deity_name_hi: 'भगवान तुंगनाथ (पृथ्वी पर सर्वोच्च शिव मंदिर)',
     circuit: ['north_india'],
     significance_hi: 'विश्व का सबसे ऊंचा शिव मंदिर (3,680 मीटर समुद्र तल से)। पंच केदारों में द्वितीय केदार जहाँ शिवजी की भुजाओं (बाहु) की पूजा होती है। चंद्रशिला चोटी के निकट।',
     significance_en: 'The highest Shiva shrine on earth at 12,073 ft, where Shiva’s arms manifested in the Panch Kedar pilgrimage circuit.',
     best_time: 'May to October',
+    best_time_hi: 'मई से अक्टूबर',
     darshan_timings: '06:00 AM - 07:00 PM',
     youtube_id: 'aT6q21c_M80',
     accessibility: {
       wheelchair: false,
       vip_darshan: false,
       battery_car: false,
-      elderly_support_notes: '3.5 km paved trek from Chopta; pony/horse services readily available for elderly travelers.'
+      elderly_support_notes: '3.5 km paved trek from Chopta; pony/horse services readily available for elderly travelers.',
+      elderly_support_notes_hi: 'चोपता से 3.5 किमी पक्का ट्रेक; वरिष्ठ यात्रियों हेतु टट्टू/घोड़ा सेवा सुलभ।',
     }
   },
   {
@@ -1487,17 +1676,20 @@ export const templesData: Temple[] = [
     longitude: 86.3312,
     deity_id: 'durga',
     deity_name: 'Goddess Biraja & Nabhi Gaya Pitru Tirtha',
+    deity_name_hi: 'माता बिरजा एवं नाभि गया पितृ तीर्थ',
     circuit: ['shakti_peetha', 'east_india'],
     significance_hi: 'सती की नाभि गिरने से बना पावन शक्तिपीठ। यहाँ वैतरणी नदी के तट पर "नाभि गया" कूप है जहाँ पूर्वजों के तर्पण से गया जी समान फल मिलता है।',
     significance_en: 'Ancient Shakti Peetha on the Vaitarani river where Sati’s navel fell, housing the sacred Nabhi Gaya well for ancestral liberation.',
     best_time: 'October to March; Sharad Navratri & Mahalaya',
+    best_time_hi: 'अक्टूबर से मार्च; शारद नवरात्रि एवं महालया',
     darshan_timings: '06:00 AM - 01:00 PM, 03:00 PM - 09:00 PM',
     youtube_id: '7v-m8aW9T0E',
     accessibility: {
       wheelchair: true,
       vip_darshan: true,
       battery_car: false,
-      elderly_support_notes: 'Flat temple grounds; seating arrangements available near Nabhi Gaya for elderly performing rituals.'
+      elderly_support_notes: 'Flat temple grounds; seating arrangements available near Nabhi Gaya for elderly performing rituals.',
+      elderly_support_notes_hi: 'समतल मंदिर परिसर; नाभि गया के पास अनुष्ठान करने वाले वरिष्ठ नागरिकों हेतु बैठने की व्यवस्था।',
     }
   },
   {
@@ -1510,17 +1702,20 @@ export const templesData: Temple[] = [
     longitude: 73.4735,
     deity_id: 'surya',
     deity_name: 'Lord Surya Narayana',
+    deity_name_hi: 'भगवान सूर्य नारायण',
     circuit: ['north_india'],
     significance_hi: 'अरावली की वादियों में स्थित 13वीं शताब्दी का अद्वितीय सूर्य मंदिर। सात घोड़ों द्वारा खींचे जाते रथ पर सूर्यदेव की भव्य प्रतिमा।',
     significance_en: 'Exquisite 13th-century Sun temple in the Aravalli valley featuring finely sculpted relief of Surya on his seven-horse chariot.',
     best_time: 'October to March',
+    best_time_hi: 'अक्टूबर से मार्च',
     darshan_timings: '06:00 AM - 07:00 PM',
     youtube_id: 'Konark_Sun_T7',
     accessibility: {
       wheelchair: true,
       vip_darshan: false,
       battery_car: false,
-      elderly_support_notes: 'Smooth marble ramps and accessible corridors throughout.'
+      elderly_support_notes: 'Smooth marble ramps and accessible corridors throughout.',
+      elderly_support_notes_hi: 'सम्पूर्ण परिसर में चिकने संगमरमर रैंप एवं सुलभ गलियारे।',
     }
   }
 ];

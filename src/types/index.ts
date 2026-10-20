@@ -85,10 +85,12 @@ export interface Temple {
   longitude: number;
   deity_id: string;
   deity_name: string;
+  deity_name_hi?: string;
   circuit: string[];  // 'char_dham', 'jyotirlinga', 'sapta_puri', 'shakti_peetha', 'divya_desam', 'south_mahatirtha'
   significance_hi: string;
   significance_en: string;
   best_time: string;
+  best_time_hi?: string;
   youtube_id?: string;
   darshan_timings?: string;
   accessibility?: {
@@ -96,6 +98,7 @@ export interface Temple {
     vip_darshan: boolean;
     battery_car: boolean;
     elderly_support_notes?: string;
+    elderly_support_notes_hi?: string;
   };
 }
 
