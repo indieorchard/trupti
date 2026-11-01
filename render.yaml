@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: trupti
+    runtime: node
+    region: oregon
+    plan: free
+    branch: main
+    buildCommand: npm install --legacy-peer-deps && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: NODE_ENV
+        value: production
